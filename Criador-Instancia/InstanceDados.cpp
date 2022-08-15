@@ -14,10 +14,10 @@ InstanceDados::InstanceDados(std::vector < Orientador * > *orientadores) {
 
 InstanceDados::~InstanceDados() {
 
-	for(auto constIterator = orientadoresPtr->cbegin(); constIterator != orientadoresPtr->cend(); ++constIterator) {
+	for(auto iterator = orientadoresPtr->begin(); iterator != orientadoresPtr->end(); ++iterator) {
 		
-		std::cout << (*constIterator)->getNome() << std::endl;
-		delete *constIterator;
+		std::cout << (*iterator)->getNome() << std::endl;
+		delete *iterator;
 	}
 	delete this->orientadoresPtr;
 }
@@ -27,16 +27,17 @@ void InstanceDados::adicionaOrientador(Orientador& orientadorDados) {
 
 	bool existe = false;
 
-	for(auto constIterator = orientadoresPtr->cbegin(); constIterator != orientadoresPtr->cend(); ++constIterator) {
+	for(auto iterator = orientadoresPtr->begin(); iterator != orientadoresPtr->end(); ++iterator) {
 
-		if(orientadorDados.getNome() == (*constIterator)->getNome()) {
+		if(orientadorDados.getNome() == (*iterator)->getNome()) {
 
 			existe = true;
 		}
-
+	
 	}
 
 	if(!existe) {
+			
 			std::string nome = orientadorDados.getNome();
 			std::string area = orientadorDados.getArea();
 			std::string subArea = orientadorDados.getSubArea();

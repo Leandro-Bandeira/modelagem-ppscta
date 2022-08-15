@@ -26,6 +26,7 @@ void Arquivo::lerArquivo() {
 	std::string buffer;
 	std::getline(*ptrInput, buffer); //Armazena o lixo do buffer inicial
 
+	int i = 0;
 	while(1) {
 
 		
@@ -35,14 +36,22 @@ void Arquivo::lerArquivo() {
 		}
 		
 		
-		std::vector < std::string > *ptrString = StringAlgorithm::retornaStringSeparada(linha, ',');
-		/*Queremos os indices 3, 5, 6 que são os orientadores, areas e subAreas*/
-		//Orientador orientador1((*ptrString)[3], (*ptrString)[5], (*ptrString)[6]);
 		
-		//dados.adicionaOrientador(orientador1);
+		std::vector < std::string > *ptrString = StringAlgorithm::retornaStringSeparada(linha, ',');
+
+		/* Verifica se existe algo	*/
+		if(ptrString == NULL) {
+			continue;
+		}
+		
+		/*Queremos os indices 3, 5, 6 que são os orientadores, areas e subAreas*/
+		Orientador orientador1((*ptrString)[3], (*ptrString)[5], (*ptrString)[6]);
+		dados.adicionaOrientador(orientador1);
 		
 	
 		delete ptrString;
 	
+	
 	}
+
 }

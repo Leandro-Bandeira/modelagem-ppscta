@@ -1,6 +1,6 @@
 #include "StringAlgorithm.h"
-
-
+#include <iostream>
+#include <ctype.h>
 
 
 
@@ -14,20 +14,29 @@
 	std::string valor;
 
 	ptrVector->clear();
+	valor.clear();
 
-	for(auto constIterator = linha.cbegin(); constIterator != linha.cend(); ++constIterator) {
+	
+	for(int i = 0; i < linha.size() - 1; i++) {
 
-		/*Quando achar achar o separador, coloca todos os valores dentro da string e limpar a string*/	
-		if(*constIterator == separador) {
+		/*Quando achar achar o separador, coloca todos os valores dentro da string e limpar a string*/
+		if(linha[i] == separador) {
 			
 			ptrVector->push_back(valor);
 			valor.clear();
 			continue;
 
 		}
-		valor.push_back(*constIterator);
+		valor.push_back(linha[i]);
+		
 	
 	}
-	return ptrVector;
+	if(ptrVector->size() != 0) {
+		
+		return ptrVector;
+	}
+
+	return NULL;
+	
 
 }
