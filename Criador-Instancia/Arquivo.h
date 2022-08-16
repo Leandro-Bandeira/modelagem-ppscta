@@ -7,6 +7,7 @@
 #include <vector> 
 #include "StringAlgorithm.h"
 #include "InstanceDados.h"
+#include "Trabalho.h"
 
 class Arquivo {
 	 

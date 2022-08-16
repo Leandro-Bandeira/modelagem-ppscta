@@ -18,15 +18,16 @@ Arquivo::~Arquivo() {
 
 void Arquivo::lerArquivo() {
 
-	std::string linha;
+	std::string linha; // Linha do arquivo
 
 	std::vector < Orientador* > *orientadoresVec = new std::vector < Orientador * > (); // Ponteiro para um vector de Orientador
-	InstanceDados dados(orientadoresVec); // Inicializa o objeto static que será padrão para todos os objetos
+	std::vector < Trabalho * > *trabalhosVec = new std::vector < Trabalho * > (); // Ponteiro para um vector de trabalhos
+
+	InstanceDados dados(orientadoresVec, trabalhosVec); // Inicializa o objeto static que será padrão para todos os objetos
 
 	std::string buffer;
 	std::getline(*ptrInput, buffer); //Armazena o lixo do buffer inicial
 
-	int i = 0;
 	while(1) {
 
 		
@@ -37,7 +38,7 @@ void Arquivo::lerArquivo() {
 		
 		
 		
-		std::vector < std::string > *ptrString = StringAlgorithm::retornaStringSeparada(linha, ',');
+		std::vector < std::string > *ptrString = StringAlgorithm::retornaStringSeparada(linha, ','); // Retorna a linha separada
 
 		/* Verifica se existe algo	*/
 		if(ptrString == NULL) {
@@ -46,9 +47,14 @@ void Arquivo::lerArquivo() {
 		
 		/*Queremos os indices 3, 5, 6 que são os orientadores, areas e subAreas*/
 		Orientador orientador1((*ptrString)[3], (*ptrString)[5], (*ptrString)[6]);
+		Orientador orientador2((*ptrString)[3], (*ptrString)[5], (*ptrString)[6]);
+		
+		/* Adiciona tanto os orientadores como os trabalhos em dados	*/
 		dados.adicionaOrientador(orientador1);
+		dados.adicionaTrabalho(orientador2);
 		
 	
+		/* Deleta a região de memória criada pelo ob jeto	*/
 		delete ptrString;
 	
 	

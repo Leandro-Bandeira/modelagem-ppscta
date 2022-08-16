@@ -4,29 +4,25 @@
 
 
 std::vector < Orientador* >  *InstanceDados::orientadoresPtr; //Declaração para dizer que todos os nomes dado como orientadoresPtr é o membro da classe
+std::vector < Trabalho * >   *InstanceDados::trabalhos;
 
-
-InstanceDados::InstanceDados(std::vector < Orientador * > *orientadores) {
+InstanceDados::InstanceDados(std::vector < Orientador * > *orientadores, std::vector < Trabalho * > *trabalhosPtr) {
 
 	orientadoresPtr = orientadores;
+	trabalhos = trabalhosPtr;
 }
 
 
 InstanceDados::~InstanceDados() {
 
-	for(auto iterator = orientadoresPtr->begin(); iterator != orientadoresPtr->end(); ++iterator) {
-		
-		std::cout << (*iterator)->getNome() << std::endl;
-		delete *iterator;
-	}
-	delete this->orientadoresPtr;
 }
 
 
 void InstanceDados::adicionaOrientador(Orientador& orientadorDados) {
 
 	bool existe = false;
-
+	
+	/* Verifica a existencia no vector do autor, caso não exista adiciona ele */
 	for(auto iterator = orientadoresPtr->begin(); iterator != orientadoresPtr->end(); ++iterator) {
 
 		if(orientadorDados.getNome() == (*iterator)->getNome()) {
@@ -45,4 +41,11 @@ void InstanceDados::adicionaOrientador(Orientador& orientadorDados) {
 			Orientador* ptrOrientador = new Orientador(nome, area, subArea);
 			orientadoresPtr->push_back(ptrOrientador);
 	}
+}
+
+void InstanceDados::adicionaTrabalho(Orientador& orientadorDados) {
+	/* O trabalho não precisa ter a mesma logica dos orientadores, pegamos todos os trabalhos	*/
+
+	Trabalho* trabalhoptr = new Trabalho(orientadorDados);
+	trabalhos->push_back(trabalhoptr);
 }
