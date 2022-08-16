@@ -28,22 +28,26 @@ void Arquivo::lerArquivo() {
 	std::string buffer;
 	std::getline(*ptrInput, buffer); //Armazena o lixo do buffer inicial
 
+	
+	
 	while(1) {
 
 		
 		std::getline(*ptrInput, linha);
+		
 		if(ptrInput->eof()) {
 			break;
 		}
 		
-		
+
 		
 		std::vector < std::string > *ptrString = StringAlgorithm::retornaStringSeparada(linha, ','); // Retorna a linha separada
-
+		
 		/* Verifica se existe algo	*/
 		if(ptrString == NULL) {
 			continue;
 		}
+		
 		
 		/*Queremos os indices 3, 5, 6 que são os orientadores, areas e subAreas*/
 		Orientador orientador1((*ptrString)[3], (*ptrString)[5], (*ptrString)[6]);
@@ -56,8 +60,11 @@ void Arquivo::lerArquivo() {
 	
 		/* Deleta a região de memória criada pelo ptrString	*/
 		delete ptrString;
+		
+		
 	
 	
 	}
+	
 
 }

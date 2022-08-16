@@ -10,12 +10,13 @@
 	
 	/* Aloca a região de memória	*/
 	std::vector < std::string > *ptrVector = new std::vector < std::string > ();
+	
 
 	std::string valor;
 
 	ptrVector->clear();
 	valor.clear();
-
+	
 	
 	for(int i = 0; i < linha.size() - 1; i++) {
 
@@ -31,15 +32,16 @@
 		
 	
 	}
-	if(ptrVector->size() != 0) {
-		
+
+	
+	if(ptrVector->size() != 0) {	
 		return ptrVector;
 	}
 
-	else {
-		delete ptrVector;
-		return NULL;
-	}
+	
+	delete ptrVector;
+	return NULL;
+		
 	
 
 }
