@@ -16,8 +16,8 @@ int main(int argc, char** argv) {
 	}
 
 
-	Arquivo input(argv[1]);
-	Resultado output(argv[2]);
+	Arquivo input(argv[1]); // Abre o arquivo para leitura de dados
+	Resultado output(argv[2]); // Abre o arquivo para inserção de dados
 
 	input.lerArquivo();
 

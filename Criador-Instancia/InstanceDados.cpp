@@ -44,8 +44,8 @@ void InstanceDados::adicionaOrientador(Orientador& orientadorDados) {
 }
 
 void InstanceDados::adicionaTrabalho(Orientador& orientadorDados) {
+	
 	/* O trabalho não precisa ter a mesma logica dos orientadores, pegamos todos os trabalhos	*/
-
 	Trabalho* trabalhoptr = new Trabalho(orientadorDados);
 	trabalhos->push_back(trabalhoptr);
 }

@@ -54,7 +54,7 @@ void Arquivo::lerArquivo() {
 		dados.adicionaTrabalho(orientador2);
 		
 	
-		/* Deleta a região de memória criada pelo ob jeto	*/
+		/* Deleta a região de memória criada pelo ptrString	*/
 		delete ptrString;
 	
 	

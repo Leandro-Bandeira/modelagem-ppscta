@@ -36,7 +36,10 @@
 		return ptrVector;
 	}
 
-	return NULL;
+	else {
+		delete ptrVector;
+		return NULL;
+	}
 	
 
 }

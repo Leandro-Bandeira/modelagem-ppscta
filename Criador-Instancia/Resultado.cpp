@@ -17,7 +17,6 @@ Resultado::~Resultado() {
 
 	std::vector < Orientador * > *orientadoresPtr = InstanceDados::orientadoresPtr;
 	std::vector < Trabalho * > *trabalhos= InstanceDados::trabalhos;
-
 	
 	for(auto iterator = orientadoresPtr->begin(); iterator != orientadoresPtr->end(); ++iterator) {
 		
@@ -85,15 +84,16 @@ void Resultado::geraResultado() {
 		matriz.push_back(linha);
 	}
 
+	/* Assume o valor da linha do vector	*/
 	for(std::vector < double > linha : matriz) {
 
+		/* Cria uma string stream	*/
 		std::stringstream string;
 	
 
 		for(auto constIterator = linha.cbegin(); constIterator != linha.cend(); ++constIterator) {
 
-				
-				string << *constIterator  <<  ' ';
+			string << *constIterator  <<  ' ';
 		}
 		string << '\n';
 
