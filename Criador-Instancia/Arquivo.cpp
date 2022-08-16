@@ -29,12 +29,12 @@ void Arquivo::lerArquivo() {
 	std::getline(*ptrInput, buffer); //Armazena o lixo do buffer inicial
 
 	
-	
+	int linhas = 0;
 	while(1) {
 
 		
 		std::getline(*ptrInput, linha);
-		
+		linhas++;
 		if(ptrInput->eof()) {
 			break;
 		}
@@ -65,6 +65,7 @@ void Arquivo::lerArquivo() {
 	
 	
 	}
+	dados.adicionaLinha(linhas);
 	
 
 }

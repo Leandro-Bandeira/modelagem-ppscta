@@ -5,6 +5,7 @@
 
 std::vector < Orientador* >  *InstanceDados::orientadoresPtr; //Declaração para dizer que todos os nomes dado como orientadoresPtr é o membro da classe
 std::vector < Trabalho * >   *InstanceDados::trabalhos;
+int InstanceDados::tamanhoLinhas;
 
 InstanceDados::InstanceDados(std::vector < Orientador * > *orientadores, std::vector < Trabalho * > *trabalhosPtr) {
 
@@ -48,4 +49,9 @@ void InstanceDados::adicionaTrabalho(Orientador& orientadorDados) {
 	/* O trabalho não precisa ter a mesma logica dos orientadores, pegamos todos os trabalhos	*/
 	Trabalho* trabalhoptr = new Trabalho(orientadorDados);
 	trabalhos->push_back(trabalhoptr);
+}
+
+void InstanceDados::adicionaLinha(int valor) {
+
+	tamanhoLinhas = valor;
 }

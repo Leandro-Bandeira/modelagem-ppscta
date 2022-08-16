@@ -84,6 +84,10 @@ void Resultado::geraResultado() {
 		matriz.push_back(linha);
 	}
 
+	std::stringstream dados;
+	dados << ptrOrientador->size() << " " << ptrTrabalhos->size() << '\n';
+	*resultado << dados.str();
+
 	/* Assume o valor da linha do vector	*/
 	for(std::vector < double > linha : matriz) {
 

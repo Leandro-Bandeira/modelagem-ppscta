@@ -17,7 +17,10 @@ public:
   
 	virtual ~InstanceDados(); 
 	static std::vector < Orientador* > * orientadoresPtr; //Devemos deixar como public, pois ele é um dado da classe e é unico
-	static std::vector < Trabalho * > * trabalhos;	
+	static std::vector < Trabalho * > * trabalhos;
+	static int tamanhoLinhas;
+
+	void adicionaLinha(int valor);
 };
 
 
