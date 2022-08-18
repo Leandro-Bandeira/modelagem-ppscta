@@ -5,10 +5,11 @@
 #include <sstream>
 #include <stdlib.h>
 #include "ilcplex/ilocplex.h"
+#include <chrono>
 
-
-
-
+#define NA 3 // Numero maximo de avaliadores por trabalho
+#define LMini  5// Limite minimo de trabalhos por professor i
+#define LMaxi 10 // Limite maximo de trabalhos por professor i
 
 
 
@@ -105,6 +106,8 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos) {
 
+	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
+
 	IloEnv env; // Cria o ambiente de modelagem
 
 	/* Criação do modelo, responsável por função objetivo e restrições	*/
@@ -134,7 +137,6 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
-
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 			
 			exp0 += beneficios[i][j] * x[i][j];
@@ -143,7 +145,69 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	}
 
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
+
+
+
+	/* Restrições do problema 	*/
+
 	
+	/* Mantém fixo o valor de j e varia os valores de i	*/
+	/* Como x[i][j] é uma variável binária que indica se o professor i foi alocado ao trabalho j ou não	*/
+	/* Mantém fixo um determinado trabalho j e verifica se a soma dos professores que irão avaliar aquele trabalho	*/
+	/* é igual ao número de avaliadores por trabalho	*/
+
+	for(int j = 0; j < quantiaTrabalhos; j++) {
+		IloExpr exp1(env); // Inicializa uma expressão
+
+		for(int i = 0; i < quantiaOrientadores; i++) {
+			
+			exp1 += x[i][j];
+		}
+		Model.add(exp1 == NA); // Adiciona ao modelo
+	}
+
+	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
+	/* de Trabalhos para avaliar	*/
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		IloExpr exp2(env);
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			exp2 += x[i][j];
+		}
+
+		Model.add(LMini <= exp2 <= LMaxi);
+	}
+
+	IloCplex cplex(Model);
+	if(!cplex.solve()) {
+
+		env.error() << "Erro ao otimizar o problema" << '\n';
+		throw(-1);
+	}
+
+	double obj = cplex.getObjValue();
+	
+
+	auto end = std::chrono::high_resolution_clock::now();
+
+	auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
+
+	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
+	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
+
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			double x = cplex.getValue(x[i][j]);
+
+			std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << x << '\n';
+		}
+	}
+
+
 
 }
 
