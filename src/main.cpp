@@ -7,12 +7,12 @@
 #include "ilcplex/ilocplex.h"
 #include <chrono>
 
-#define NA 3 // Numero maximo de avaliadores por trabalho
-#define LMini  5// Limite minimo de trabalhos por professor i
-#define LMaxi 10 // Limite maximo de trabalhos por professor i
+#define NA 4 // Numero maximo de avaliadores por trabalho
+#define LMini  10// Limite minimo de trabalhos por professor i
+#define LMaxi  20 // Limite maximo de trabalhos por professor i
 
 
-
+ 
 
 
 int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
@@ -147,6 +147,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
 
 
+	
 
 	/* Restrições do problema 	*/
 
@@ -177,10 +178,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 			exp2 += x[i][j];
 		}
 
-		Model.add(LMini <= exp2 <= LMaxi);
+		Model.add(exp2 <= LMaxi);
+		Model.add(exp2 >= LMini);
 	}
 
 	IloCplex cplex(Model);
+	std::cout << "here" << std::endl;
 	if(!cplex.solve()) {
 
 		env.error() << "Erro ao otimizar o problema" << '\n';
@@ -197,15 +200,17 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 
+	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		for(int j = 0; j < quantiaTrabalhos; j++) {
+ 
+			int xValue = cplex.getValue(x[i][j]);
 
-			double x = cplex.getValue(x[i][j]);
-
-			std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << x << '\n';
+			std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << xValue << '\n';
 		}
 	}
+	
 
 
 
