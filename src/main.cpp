@@ -178,8 +178,8 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 			exp2 += x[i][j];
 		}
 
-		Model.add(exp2 <= LMaxi);
-		Model.add(exp2 >= LMini);
+		Model.add(LMini <= exp2 <= LMaxi);
+		
 	}
 
 	IloCplex cplex(Model);
