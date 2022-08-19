@@ -106,7 +106,7 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos) {
 
-	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
+	//auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
 
 	IloEnv env; // Cria o ambiente de modelagem
 
@@ -178,26 +178,37 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 			exp2 += x[i][j];
 		}
 
-		Model.add(LMini <= exp2 <= LMaxi);
+		//Model.add(LMini <= exp2 <= LMaxi);
+		Model.add(exp2 >= LMini);
+		Model.add(exp2 <= LMaxi);
 		
 	}
 
+	
 	IloCplex cplex(Model);
-	std::cout << "here" << std::endl;
+	cplex.exportModel("modelo.lp"); // Exporta o modelo no formato lp
+
+	cplex.setParam(IloCplex::Param::WorkMem,  6000);
+	
+
+	
 	if(!cplex.solve()) {
 
 		env.error() << "Erro ao otimizar o problema" << '\n';
 		throw(-1);
 	}
+	else {
+		env.out() << "Otimizavel" << '\n';
+	}
 
 	double obj = cplex.getObjValue();
 	
 
-	auto end = std::chrono::high_resolution_clock::now();
+	//auto end = std::chrono::high_resolution_clock::now();
 
-	auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
+	//auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
 
-	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
+	//std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 
 	
@@ -211,8 +222,8 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		}
 	}
 	
-
-
+	
+	env.end();
 
 }
 
