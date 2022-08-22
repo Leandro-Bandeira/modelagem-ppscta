@@ -107,12 +107,13 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < std::vector < int > >& trabalhosInteressesAvaliador) {
+void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < std::vector < int > >& trabalhosInteressesAvaliador, std::vector < std::vector < int > >& conjuntoAvaliadoresApto) {
 
 	std::cout << "limiteMinimo: " << LMini << std::endl;
 	std::cout << "limiteMaximo: " << LMaxi << std::endl;
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
 
+	
 	IloEnv env; // Cria o ambiente de modelagem
 
 	/* Criação do modelo, responsável por função objetivo e restrições	*/
@@ -124,8 +125,10 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	// Devemos enviar os parametros de ambiente  e quantia de linha inicial
 
 	/* Utilização do template de classe IloArray para criar um	array de duas dimensões*/
-	/* Do tipo IloNumVarArray, chamado x*/
+	/* Do tipo IloNumVarArray, chamado x	*/
 	IloArray < IloNumVarArray > x(env, quantiaOrientadores);
+	
+
 
 	/* Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
@@ -134,7 +137,6 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		// Limite inferior 0 e limite superior 1, todos como inteiro
 		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
 	}
-
 
 	/* Adicionando nome das variaveis	*/
 	char var[100];
@@ -183,6 +185,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	/* Mantém fixo um determinado trabalho j e verifica se a soma dos professores que irão avaliar aquele trabalho	*/
 	/* é igual ao número de avaliadores por trabalho	*/
 	
+	
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
 
@@ -196,7 +199,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	}
 	
 
-	
+
 
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
 	/* de Trabalhos para avaliar	*/
@@ -204,6 +207,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 		IloExpr exp2(env);
 
+		/*
 		int j = 0;
 		while(j < trabalhosInteressesAvaliador[i].size())
 		{
@@ -211,12 +215,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 			exp2 += x[i][indiceInteresse];
 			j++;
 		}
-		/*
+		*/
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			exp2 += x[i][j];
 		}
-		*/
+		
 
 
 		Model.add(exp2 <= LMaxi);
@@ -303,7 +307,23 @@ int main(int argc, char** argv) {
 	}
 
 
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador);
+	std::vector < std::vector < int > > conjuntoAvaliadoresAptos;
+	std::vector < int > avaliadoresInteresse;
+
+	for(int j = 0; j < quantiaTrabalhos; j++) {
+
+		for(int i = 0; i < quantiaOrientadores; i++) {
+
+			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
+
+				avaliadoresInteresse.push_back(i);
+			}
+		}
+		conjuntoAvaliadoresAptos.push_back(avaliadoresInteresse);
+		avaliadoresInteresse.clear();
+	}
+	
+	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador, conjuntoAvaliadoresAptos);
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
