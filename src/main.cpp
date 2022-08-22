@@ -6,10 +6,16 @@
 #include <stdlib.h>
 #include "ilcplex/ilocplex.h"
 #include <chrono>
+#include <sstream>
 
 #define NA 4 // Numero maximo de avaliadores por trabalho
-#define LMini  10// Limite minimo de trabalhos por professor i
-#define LMaxi  20 // Limite maximo de trabalhos por professor i
+<<<<<<< HEAD
+#define LMini  4// Limite minimo de trabalhos por professor i
+#define LMaxi  5 // Limite maximo de trabalhos por professor i
+=======
+#define LMini  3// Limite minimo de trabalhos por professor i
+#define LMaxi  4 // Limite maximo de trabalhos por professor i
+>>>>>>> eb527e2f9664a7ebc3f139556998e1034e1a654c
 
 
  
@@ -106,7 +112,7 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos) {
 
-	//auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
+	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
 
 	IloEnv env; // Cria o ambiente de modelagem
 
@@ -129,6 +135,23 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		// Limite inferior 0 e limite superior 1, todos como inteiro
 		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
 	}
+
+
+	/* Adicionando nome das variaveis	*/
+	char var[100];
+
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			/* Armazena a string formatada  na variável var e seta o nome	*/
+			sprintf(var, "x[%d][%d]", i, j);
+			x[i][j].setName(var);
+			Model.add(x[i][j]);
+
+		}
+	}
+
 
 
 	/* Criação da função objetivo	*/
@@ -161,7 +184,6 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		IloExpr exp1(env); // Inicializa uma expressão
 
 		for(int i = 0; i < quantiaOrientadores; i++) {
-			
 			exp1 += x[i][j];
 		}
 		Model.add(exp1 == NA); // Adiciona ao modelo
@@ -186,10 +208,13 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	
 	IloCplex cplex(Model);
-	cplex.exportModel("modelo.lp"); // Exporta o modelo no formato lp
+<<<<<<< HEAD
+	cplex.exportModel("modelo5.lp"); // Exporta o modelo no formato lp
+=======
+	cplex.exportModel("modeloName.lp"); // Exporta o modelo no formato lp
+>>>>>>> eb527e2f9664a7ebc3f139556998e1034e1a654c
 
 	cplex.setParam(IloCplex::Param::WorkMem,  6000);
-	
 
 	
 	if(!cplex.solve()) {
@@ -204,11 +229,11 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	double obj = cplex.getObjValue();
 	
 
-	//auto end = std::chrono::high_resolution_clock::now();
+	auto end = std::chrono::high_resolution_clock::now();
 
-	//auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
+	auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
 
-	//std::cout << "Duracao(ms): " << elapsed.count() << '\n';
+	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 
 	
