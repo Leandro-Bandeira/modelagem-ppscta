@@ -9,8 +9,8 @@
 #include <sstream>
 
 #define NA 4 // Numero maximo de avaliadores por trabalho
-#define LMini  3// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
+#define LMini  4// Limite minimo de trabalhos por professor i
+#define LMaxi  5 // Limite maximo de trabalhos por professor i
 
 
  
