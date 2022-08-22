@@ -8,17 +8,11 @@
 #include <chrono>
 #include <sstream>
 
-<<<<<<< HEAD
-#define NA 4 // Numero maximo de avaliadores por trabalho
-#define LMini  4// Limite minimo de trabalhos por professor i
-#define LMaxi  5 // Limite maximo de trabalhos por professor i
-=======
 #define NA 3 // Numero maximo de avaliadores por trabalho
 
 #define LMini  4// Limite minimo de trabalhos por professor i
 #define LMaxi  5 // Limite maximo de trabalhos por professor i
 
->>>>>>> 7474b63a8cc98901502109ddfa48e4083b260a98
 
 
  
