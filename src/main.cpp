@@ -9,13 +9,10 @@
 #include <sstream>
 
 #define NA 4 // Numero maximo de avaliadores por trabalho
-<<<<<<< HEAD
+
 #define LMini  4// Limite minimo de trabalhos por professor i
 #define LMaxi  5 // Limite maximo de trabalhos por professor i
-=======
-#define LMini  3// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
->>>>>>> eb527e2f9664a7ebc3f139556998e1034e1a654c
+
 
 
  
@@ -208,11 +205,8 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	
 	IloCplex cplex(Model);
-<<<<<<< HEAD
+
 	cplex.exportModel("modelo5.lp"); // Exporta o modelo no formato lp
-=======
-	cplex.exportModel("modeloName.lp"); // Exporta o modelo no formato lp
->>>>>>> eb527e2f9664a7ebc3f139556998e1034e1a654c
 
 	cplex.setParam(IloCplex::Param::WorkMem,  6000);
 
