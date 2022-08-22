@@ -8,7 +8,7 @@
 #include <chrono>
 #include <sstream>
 
-#define NA 4 // Numero maximo de avaliadores por trabalho
+#define NA 3 // Numero maximo de avaliadores por trabalho
 
 #define LMini  4// Limite minimo de trabalhos por professor i
 #define LMaxi  5 // Limite maximo de trabalhos por professor i
@@ -107,8 +107,10 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos) {
+void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < std::vector < int > >& trabalhosInteressesAvaliador) {
 
+	std::cout << "limiteMinimo: " << LMini << std::endl;
+	std::cout << "limiteMaximo: " << LMaxi << std::endl;
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
 
 	IloEnv env; // Cria o ambiente de modelagem
@@ -157,10 +159,11 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
-		for(int j = 0; j < quantiaTrabalhos; j++) {
+		int j = 0;
+		while(j < trabalhosInteressesAvaliador[i].size()) {
 			
 			exp0 += beneficios[i][j] * x[i][j];
-
+			j++;
 		}
 	}
 
@@ -192,23 +195,29 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 		IloExpr exp2(env);
 
+		int j = 0;
+		while(j < trabalhosInteressesAvaliador[i].size())
+		{
+
+			exp2 += x[i][j];
+			j++;
+		}
+		/*
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			exp2 += x[i][j];
 		}
+		*/
 
-		//Model.add(LMini <= exp2 <= LMaxi);
-		Model.add(exp2 >= LMini);
+
 		Model.add(exp2 <= LMaxi);
-		
+		Model.add(exp2 >= LMini);
 	}
 
 	
 	IloCplex cplex(Model);
 
-	cplex.exportModel("modelo5.lp"); // Exporta o modelo no formato lp
-
-	cplex.setParam(IloCplex::Param::WorkMem,  6000);
+	cplex.exportModel("i2014.lp"); // Exporta o modelo no formato lp
 
 	
 	if(!cplex.solve()) {
@@ -263,8 +272,26 @@ int main(int argc, char** argv) {
 
 	
 	int** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
-	
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos);
+
+	std::vector < std:: vector < int > > trabalhosDeInteresseAvaliador;
+	std::vector < int > trabalhosDeInteresse;
+
+	/* Criação da matriz de trabalhos percentes a área de interesse de um professor i	*/
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
+			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
+				trabalhosDeInteresse.push_back(beneficios[i][j]);
+			}
+		}
+		/* Adiciona os trabalhos de interesse do avaliador i a matriz	*/
+		trabalhosDeInteresseAvaliador.push_back(trabalhosDeInteresse);
+		trabalhosDeInteresse.clear(); // Limpa o vector
+	}
+
+	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador);
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
