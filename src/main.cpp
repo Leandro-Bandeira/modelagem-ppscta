@@ -6,10 +6,11 @@
 #include <stdlib.h>
 #include "ilcplex/ilocplex.h"
 #include <chrono>
+#include <sstream>
 
 #define NA 4 // Numero maximo de avaliadores por trabalho
-#define LMini  10// Limite minimo de trabalhos por professor i
-#define LMaxi  20 // Limite maximo de trabalhos por professor i
+#define LMini  3// Limite minimo de trabalhos por professor i
+#define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
  
@@ -131,6 +132,23 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	}
 
 
+	/* Adicionando nome das variaveis	*/
+	char var[100];
+
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			/* Armazena a string formatada  na variável var e seta o nome	*/
+			sprintf(var, "x[%d][%d]", i, j);
+			x[i][j].setName(var);
+			Model.add(x[i][j]);
+
+		}
+	}
+
+
+
 	/* Criação da função objetivo	*/
 	IloExpr exp0(env); // Inicializa uma expressão
 
@@ -161,7 +179,6 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		IloExpr exp1(env); // Inicializa uma expressão
 
 		for(int i = 0; i < quantiaOrientadores; i++) {
-			
 			exp1 += x[i][j];
 		}
 		Model.add(exp1 == NA); // Adiciona ao modelo
@@ -186,7 +203,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	
 	IloCplex cplex(Model);
-	cplex.exportModel("modelo.lp"); // Exporta o modelo no formato lp
+	cplex.exportModel("modeloName.lp"); // Exporta o modelo no formato lp
 
 	cplex.setParam(IloCplex::Param::WorkMem,  6000);
 	
