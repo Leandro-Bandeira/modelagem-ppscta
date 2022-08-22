@@ -10,8 +10,8 @@
 
 #define NA 3 // Numero maximo de avaliadores por trabalho
 
-#define LMini  4// Limite minimo de trabalhos por professor i
-#define LMaxi  5 // Limite maximo de trabalhos por professor i
+#define LMini  3// Limite minimo de trabalhos por professor i
+#define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
 
@@ -160,9 +160,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		int j = 0;
+		/* Entra-se no loop de um determinado conjunto de trabalhos de interesse do professor i	*/
 		while(j < trabalhosInteressesAvaliador[i].size()) {
 			
-			exp0 += beneficios[i][j] * x[i][j];
+			/* Pega-se o índice de interesse do professor i e realiza o calculo	*/
+			int indiceInteresse = trabalhosInteressesAvaliador[i][j];
+			exp0 += beneficios[i][j] * x[i][indiceInteresse];
 			j++;
 		}
 	}
@@ -179,15 +182,21 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	/* Como x[i][j] é uma variável binária que indica se o professor i foi alocado ao trabalho j ou não	*/
 	/* Mantém fixo um determinado trabalho j e verifica se a soma dos professores que irão avaliar aquele trabalho	*/
 	/* é igual ao número de avaliadores por trabalho	*/
-
+	
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
 
+		
 		for(int i = 0; i < quantiaOrientadores; i++) {
 			exp1 += x[i][j];
 		}
+		
+
 		Model.add(exp1 == NA); // Adiciona ao modelo
 	}
+	
+
+	
 
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
 	/* de Trabalhos para avaliar	*/
@@ -198,8 +207,8 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		int j = 0;
 		while(j < trabalhosInteressesAvaliador[i].size())
 		{
-
-			exp2 += x[i][j];
+			int indiceInteresse = trabalhosInteressesAvaliador[i][j];
+			exp2 += x[i][indiceInteresse];
 			j++;
 		}
 		/*
@@ -283,13 +292,16 @@ int main(int argc, char** argv) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
 			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
-				trabalhosDeInteresse.push_back(beneficios[i][j]);
+
+				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
+				trabalhosDeInteresse.push_back(j);
 			}
 		}
 		/* Adiciona os trabalhos de interesse do avaliador i a matriz	*/
 		trabalhosDeInteresseAvaliador.push_back(trabalhosDeInteresse);
 		trabalhosDeInteresse.clear(); // Limpa o vector
 	}
+
 
 	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador);
 
