@@ -14,8 +14,14 @@
 #define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
+typedef struct {
+	std::vector < int > trabalhosInteresse; // Trabalhos de interesse de um determinado orientador
+} Orientador;
 
- 
+
+typedef struct {
+	std::vector < int > orientadoresAptos; // Vector de orientadores que podem avaliar determinado trabalho
+}Trabalho;
 
 
 int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
@@ -298,44 +304,52 @@ int main(int argc, char** argv) {
 	
 	int** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
 
-	std::vector < std:: vector < int > > trabalhosDeInteresseAvaliador;
-	std::vector < int > trabalhosDeInteresse;
+	/* Inicializando vetor de orientadores	*/
+	std::vector < Orientador > orientadores;
+	std::vector < int > trabalhosInteresse;
 
-	/* Criação da matriz de trabalhos percentes a área de interesse de um professor i	*/
+	/* Criação da matriz de trabalhos percentes a área de interesse de um professor/orientador i	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
+		Orientador orientador; // Instancia de um orientador
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
 			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
-				trabalhosDeInteresse.push_back(j);
+				trabalhosInteresse.push_back(j);
 			}
 		}
-		/* Adiciona os trabalhos de interesse do avaliador i a matriz	*/
-		trabalhosDeInteresseAvaliador.push_back(trabalhosDeInteresse);
-		trabalhosDeInteresse.clear(); // Limpa o vector
+		/* Adiciona os trabalhos de interesse do orientador i ao seus dados na struct	*/
+		orientador.trabalhosInteresse = trabalhosInteresse;
+
+		orientadores.push_back(orientador); // Adiciona o orientador
+
+		trabalhosInteresse.clear(); // Limpa o vector
 	}
 
-
-	std::vector < std::vector < int > > conjuntoAvaliadoresAptos;
-	std::vector < int > avaliadoresInteresse;
+	/* Inicializando vector de trabalhos e seus dados	*/
+	std::vector < Trabalho > trabalhos;
+	std::vector < int > orientadoresAptos;
 
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 
+		Trabalho trabalho; // Inicializa um trabalho
 		for(int i = 0; i < quantiaOrientadores; i++) {
-
-			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
-
-				avaliadoresInteresse.push_back(i);
+			
+			/* Se o beneficio é diferente de zero, é porque o orientador está apto para avaliar aquele projeto */
+			if(beneficios[i][j] != 0) {
+				orientadoresAptos.push_back(i);
 			}
 		}
-		conjuntoAvaliadoresAptos.push_back(avaliadoresInteresse);
-		avaliadoresInteresse.clear();
+		trabalho.orientadoresAptos = orientadoresAptos;
+		trabalhos.push_back(trabalho);
+		orientadoresAptos.clear();
 	}
-	
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador, conjuntoAvaliadoresAptos);
+
+
+	//resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador, conjuntoAvaliadoresAptos);
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
