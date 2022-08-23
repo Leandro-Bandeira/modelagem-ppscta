@@ -10,7 +10,7 @@
 
 #define NA 3 // Numero maximo de avaliadores por trabalho
 
-#define LMini  3// Limite minimo de trabalhos por professor i
+#define LMini  0// Limite minimo de trabalhos por professor i
 #define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
@@ -113,7 +113,7 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < std::vector < int > >& trabalhosInteressesAvaliador, std::vector < std::vector < int > >& conjuntoAvaliadoresApto) {
+void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos) {
 
 	std::cout << "limiteMinimo: " << LMini << std::endl;
 	std::cout << "limiteMaximo: " << LMaxi << std::endl;
@@ -166,28 +166,16 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
-
 	
-		if(trabalhosInteressesAvaliador[i].size() == 0) {
+		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
+
+		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
-			for(int j = 0; j < quantiaTrabalhos; j++) {
-
-				exp0 += beneficios[i][j] * x[i][j];
-			}
+			int trabalhoIndice = trabalhosInteresseOrientador[j];
+			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
 		}
-		else {
+		trabalhosInteresseOrientador.clear();
 
-			int j = 0;
-			/* Entra-se no loop de um determinado conjunto de trabalhos de interesse do professor i	*/
-			while(j < trabalhosInteressesAvaliador[i].size()) {
-				
-				/* Pega-se o índice de interesse do professor i e realiza o calculo	*/
-				int indiceInteresse = trabalhosInteressesAvaliador[i][j];
-				exp0 += beneficios[i][j] * x[i][indiceInteresse];
-				j++;
-			}
-
-		}
 	}
 
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
@@ -207,14 +195,20 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
 
-		
-		for(int i = 0; i < quantiaOrientadores; i++) {
-			exp1 += x[i][j];
+		std::vector < int > orientadoresAptos = trabalhos[j].orientadoresAptos;
+
+		for(int i = 0; i < orientadoresAptos.size(); i++) {
+
+			int indiceOrientadoresAptos = orientadoresAptos[i];
+			exp1 += x[indiceOrientadoresAptos][j];
 		}
 		
+		orientadoresAptos.clear();
 
 		Model.add(exp1 == NA); // Adiciona ao modelo
 	}
+
+	std::cout << "gerou segunda restricao" << std::endl;
 	
 
 
@@ -225,18 +219,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 		IloExpr exp2(env);
 
-		/*
-		int j = 0;
-		while(j < trabalhosInteressesAvaliador[i].size())
-		{
-			int indiceInteresse = trabalhosInteressesAvaliador[i][j];
-			exp2 += x[i][indiceInteresse];
-			j++;
-		}
-		*/
-		for(int j = 0; j < quantiaTrabalhos; j++) {
+		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
-			exp2 += x[i][j];
+		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+
+			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
+			exp2 += x[i][indiceTrabalhoInteresseOrientador];
 		}
 		
 
@@ -349,7 +337,7 @@ int main(int argc, char** argv) {
 	}
 
 
-	//resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, trabalhosDeInteresseAvaliador, conjuntoAvaliadoresAptos);
+	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos);
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
