@@ -161,14 +161,26 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
-		int j = 0;
-		/* Entra-se no loop de um determinado conjunto de trabalhos de interesse do professor i	*/
-		while(j < trabalhosInteressesAvaliador[i].size()) {
+	
+		if(trabalhosInteressesAvaliador[i].size() == 0) {
 			
-			/* Pega-se o índice de interesse do professor i e realiza o calculo	*/
-			int indiceInteresse = trabalhosInteressesAvaliador[i][j];
-			exp0 += beneficios[i][j] * x[i][indiceInteresse];
-			j++;
+			for(int j = 0; j < quantiaTrabalhos; j++) {
+
+				exp0 += beneficios[i][j] * x[i][j];
+			}
+		}
+		else {
+
+			int j = 0;
+			/* Entra-se no loop de um determinado conjunto de trabalhos de interesse do professor i	*/
+			while(j < trabalhosInteressesAvaliador[i].size()) {
+				
+				/* Pega-se o índice de interesse do professor i e realiza o calculo	*/
+				int indiceInteresse = trabalhosInteressesAvaliador[i][j];
+				exp0 += beneficios[i][j] * x[i][indiceInteresse];
+				j++;
+			}
+
 		}
 	}
 
