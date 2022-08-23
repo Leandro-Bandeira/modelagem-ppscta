@@ -113,7 +113,7 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome) {
+IloCplex* resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
 
 	
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
@@ -237,12 +237,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	}
 
 	
-	IloCplex cplex(Model);
+	IloCplex* cplexPtr = new IloCplex(Model);
 
-	cplex.exportModel(saidaNome); // Exporta o modelo no formato lp
+	cplexPtr->exportModel(saidaNome); // Exporta o modelo no formato lp
 
 	
-	if(!cplex.solve()) {
+	if(!cplexPtr->solve()) {
 
 		env.error() << "Erro ao otimizar o problema" << '\n';
 		throw(-1);
@@ -251,7 +251,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		env.out() << "Otimizavel" << '\n';
 	}
 
-	double obj = cplex.getObjValue();
+	double obj = cplexPtr->getObjValue();
 	
 
 	auto end = std::chrono::high_resolution_clock::now();
@@ -260,23 +260,53 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
+	
+	int alocadosAreaEpecialidade = 0;
+	int alocadosSubAreaEspecialidade = 0;
+	int alocadosAreaDesconhecida = 0;
+	int alocadosAoProprioTrabalho = 0;
+	int alocadosANenhumaArea = 0;
 
-	/*
-	for(int i = 0; i < quantiaOrientadores; i++) {
 
-		for(int j = 0; j < quantiaTrabalhos; j++) {
- 
-			int xValue = cplex.getValue(x[i][j]);
+	for(int j  = 0; j < quantiaTrabalhos; j++) {
 
-				if(xValue == 1) 
+		for(int i = 0; i < quantiaOrientadores; i++) {
 
-				std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << xValue << '\n';
+			int xValue = cplexPtr->getValue(x[i][j]);
+
+			if(xValue == 1) {
+				
+				if(beneficios[i][j] == 100) {
+					alocadosSubAreaEspecialidade++;
+				}
+				else if(beneficios[i][j] == 10) {
+					alocadosAreaEpecialidade++;
+				}
+				else if(beneficios[i][j] == 1) {
+					alocadosANenhumaArea++;
+				}
+				else {
+					alocadosAoProprioTrabalho;
+				}
+
+			}
 		}
 	}
-	*/
 	
-	env.end();
 
+	std::fstream *resultado = new std::fstream(resultadoNome, std::ios::out);
+
+	std::stringstream result;
+	result << "Alocados a sub area de especialidade: " << alocadosSubAreaEspecialidade << '\n' <<
+	"Alocados a area de especialidade: " << alocadosAreaEpecialidade << '\n' <<
+	"Alocados a nenhuma area de sua especialidade: " << alocadosANenhumaArea << '\n' << 
+	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n';
+
+	*resultado << result.str();
+	resultado->close();
+	delete resultado;
+
+	return cplexPtr;
 }
 
 
@@ -285,7 +315,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 int main(int argc, char** argv) {
 	
-	if(argc <  3) {
+	if(argc <  4) {
 
 		std::cout << "Digite mais argumentos" << '\n';
 		exit(1);
@@ -342,8 +372,13 @@ int main(int argc, char** argv) {
 	}
 
 
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2]);
+	IloCplex* cplex = resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2], argv[3]);
+	
 
+
+	
+	cplex->getEnv().end();
+	delete cplex;
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
