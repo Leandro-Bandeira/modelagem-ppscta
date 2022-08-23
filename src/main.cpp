@@ -138,9 +138,20 @@ IloCplex* resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTr
 	/* Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
+		// Retorna os trabalhos de interesse daquele orientador
+		//std::vector < int > trabalhosInteresse = orientadores[i].trabalhosInteresse;
 		// Criamos um array com numero de colunas igual a quantia de trabalho
 		// Limite inferior 0 e limite superior 1, todos como inteiro
-		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
+		//x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
+		/*
+		for(int j = 0; j < trabalhosInteresse.size(); j++) {
+			int indiceTrabalhoInteresse = trabalhosInteresse[j];
+			x[i] = IloNumVarArray(env, )
+		}
+		*/
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+			x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
+		}
 	}
 
 	/* Adicionando nome das variaveis	*/
@@ -153,7 +164,6 @@ IloCplex* resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTr
 			/* Armazena a string formatada  na variável var e seta o nome	*/
 			sprintf(var, "x[%d][%d]", i, j);
 			x[i][j].setName(var);
-			Model.add(x[i][j]);
 
 		}
 	}
