@@ -11,7 +11,7 @@
 #define NA 3 // Numero maximo de avaliadores por trabalho
 
 #define LMini  0// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
+#define LMaxi  3 // Limite maximo de trabalhos por professor i
 
 
 typedef struct {
@@ -113,10 +113,9 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos) {
+void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome) {
 
-	std::cout << "limiteMinimo: " << LMini << std::endl;
-	std::cout << "limiteMaximo: " << LMaxi << std::endl;
+	
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
 
 	
@@ -166,9 +165,12 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
-	
+		
+		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
+		/* Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	*/
+		/* Que são os trabalhos de interesse*/
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
@@ -195,8 +197,10 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
 
+		/* Retorna o vector contendo os indices dos orientadores aptos a avaliares o trabalho j	*/
 		std::vector < int > orientadoresAptos = trabalhos[j].orientadoresAptos;
 
+		/* Percorre o vector e armazena os índices dos orientadores aptos e realiza o somatório */
 		for(int i = 0; i < orientadoresAptos.size(); i++) {
 
 			int indiceOrientadoresAptos = orientadoresAptos[i];
@@ -208,10 +212,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 		Model.add(exp1 == NA); // Adiciona ao modelo
 	}
 
-	std::cout << "gerou segunda restricao" << std::endl;
 	
-
-
 
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
 	/* de Trabalhos para avaliar	*/
@@ -219,8 +220,10 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 		IloExpr exp2(env);
 
+		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
+		/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
 			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
@@ -236,7 +239,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	
 	IloCplex cplex(Model);
 
-	cplex.exportModel("i2014.lp"); // Exporta o modelo no formato lp
+	cplex.exportModel(saidaNome); // Exporta o modelo no formato lp
 
 	
 	if(!cplex.solve()) {
@@ -258,17 +261,19 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 
-	
+	/*
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		for(int j = 0; j < quantiaTrabalhos; j++) {
  
 			int xValue = cplex.getValue(x[i][j]);
 
-			std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << xValue << '\n';
+				if(xValue == 1) 
+
+				std::cout << "x[ " << i << "]" << "[" << j << "]" << " = " << xValue << '\n';
 		}
 	}
-	
+	*/
 	
 	env.end();
 
@@ -280,7 +285,7 @@ void resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalh
 
 int main(int argc, char** argv) {
 	
-	if(argc <  2) {
+	if(argc <  3) {
 
 		std::cout << "Digite mais argumentos" << '\n';
 		exit(1);
@@ -337,7 +342,7 @@ int main(int argc, char** argv) {
 	}
 
 
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos);
+	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2]);
 
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
