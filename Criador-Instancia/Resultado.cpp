@@ -105,4 +105,11 @@ void Resultado::geraResultado() {
 		string.clear();
 	}
 
+	std::fstream *ptrsaida = new std::fstream("orientadores2017.txt", std::ios::out);
+
+	for(int i = 0; i < ptrOrientador->size(); i++) {
+		*ptrsaida << (*ptrOrientador)[i]->getNome() << '\n';
+	}
+	ptrsaida->close();
+	delete ptrsaida;
 }
