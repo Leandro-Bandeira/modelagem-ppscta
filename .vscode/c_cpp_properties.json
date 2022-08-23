@@ -4,8 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/leandrobandeira/CPLEX_Studio201/concert/include/**",
-                "/home/leandrobandeira/CPLEX_Studio201/cplex/include/**"
+                "/home/leandro/CPLEX_Studio201/concert/include/**",
+                "/home/leandro/CPLEX_Studio201/cplex/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

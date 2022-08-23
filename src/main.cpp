@@ -149,9 +149,9 @@ IloCplex* resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTr
 			x[i] = IloNumVarArray(env, )
 		}
 		*/
-		for(int j = 0; j < quantiaTrabalhos; j++) {
-			x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
-		}
+		
+		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
+		
 	}
 
 	/* Adicionando nome das variaveis	*/
