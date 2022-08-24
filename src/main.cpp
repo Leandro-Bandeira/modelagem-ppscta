@@ -24,13 +24,13 @@ typedef struct {
 }Trabalho;
 
 
-int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
+double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
 	
 	std::fstream* ptrArquivo = new std::fstream(caminho, std::ios::in); // Abre o arquivo para entrada de dados
 	
 	std::string linha; // Linha lida no arquivo
 	
-	std::vector < int > valoresLinha; // Valores que vão estar na linha
+	std::vector < double > valoresLinha; // Valores que vão estar na linha
 
 
 
@@ -42,9 +42,10 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 	std::stringstream dadosLinha(linha); // Cria uma stream de string da linha
 	std::string palavra; // Variável onde será armazenada temporariamente a palavra
+	
 
 	while(std::getline(dadosLinha, palavra, ' ')) {
-			
+		
 		valoresLinha.push_back(atoi(palavra.c_str())); // Converte para inteiro e colocar no vector valores da linha
 	}
 		
@@ -52,22 +53,19 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 	quantiaOrientadores = valoresLinha[0];
 	quantiaTrabalhos = valoresLinha[1];
 
-		
-		
-
 	
 	valoresLinha.clear(); // Limpa o vector
 	linha.clear();
 
 	/* Criação da matriz de beneficios	*/
-	int** matriz = new int*[quantiaOrientadores];
+	double** matriz = new double*[quantiaOrientadores];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
-		matriz[i] = new int[quantiaTrabalhos];
+		matriz[i] = new double[quantiaTrabalhos];
 	}
 	
-
+	
 	int indiceLinha = 0;
 	while(1) {
 		
@@ -83,12 +81,23 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 		// Separa os dados da string de stream pelo espaço e então armazena no vector de valores
 		while(std::getline(dados, palavra, ' ')) {
 
-			valoresLinha.push_back(atoi(palavra.c_str()));
+			std::string::size_type sz;
+			if(palavra.size() >  0) {
+				//std::cout << palavra << " " << palavra.size();
+				valoresLinha.push_back(std::stod(palavra, &sz));
+			}
+			
+			
+			
 		}
 		
 		// Percorre em relação a coluna, mantendo o indice da linha fixo
 		for(int j = 0; j < valoresLinha.size(); j++) {
 			
+			/* Garantir q iremos armazenar apenas a quantia de trabalhos	*/
+			if(j == quantiaTrabalhos) {
+				break;
+			}
 			matriz[indiceLinha][j] = valoresLinha[j];
 
 		}
@@ -113,7 +122,7 @@ int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int
 
 
 
-IloCplex* resolveModelo(int** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
+IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
 
 	
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
@@ -321,8 +330,18 @@ int main(int argc, char** argv) {
 	int quantiaTrabalhos = 0;
 
 	
-	int** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
+	double** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
 
+
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+			
+			std::cout << beneficios[i][j] << " ";
+		}
+		getchar();
+		std::cout << std::endl;
+	}
 	/* Inicializando vetor de orientadores	*/
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
