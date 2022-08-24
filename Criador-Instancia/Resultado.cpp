@@ -105,10 +105,10 @@ void Resultado::geraResultado() {
 		string.clear();
 	}
 
-	std::fstream *ptrsaida = new std::fstream("orientadores2017.txt", std::ios::out);
+	std::fstream *ptrsaida = new std::fstream("orientadores2017Areas.txt", std::ios::out);
 
 	for(int i = 0; i < ptrOrientador->size(); i++) {
-		*ptrsaida << (*ptrOrientador)[i]->getNome() << '\n';
+		*ptrsaida << (*ptrOrientador)[i]->getNome() << ' ' << (*ptrOrientador)[i]->getArea() << ' ' << (*ptrOrientador)[i]->getSubArea() << '\n';
 	}
 	ptrsaida->close();
 	delete ptrsaida;
