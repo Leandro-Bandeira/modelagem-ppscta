@@ -172,12 +172,22 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
+		
+		if(trabalhosInteresseOrientador.size() == 0) {
+			
+			for(int j = 0; j < quantiaTrabalhos; j++) {
+
+				exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
+			}
+		}
+		
+
 		/* Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	*/
 		/* Que são os trabalhos de interesse*/
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
-			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
+			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice] * 2;
 		}
 		trabalhosInteresseOrientador.clear();
 
@@ -273,12 +283,15 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 	
-	int alocadosAreaEpecialidade = 0;
-	int alocadosSubAreaEspecialidade = 0;
+	int quantiaSimilaridadeMaior20 = 0;
+	int quantiaSimilaridadeMaior50 = 0;
 	int alocadosAreaDesconhecida = 0;
 	int alocadosAoProprioTrabalho = 0;
-	int alocadosANenhumaArea = 0;
+	int quantiaSimilaridadeMenor20 = 0;
 
+	int orientadorNaoAlocado = 0;
+
+	bool alocado = false;
 
 	for(int j  = 0; j < quantiaTrabalhos; j++) {
 
@@ -287,21 +300,25 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			int xValue = cplex.getValue(x[i][j]);
 
 			if(xValue == 1) {
-				
-				if(beneficios[i][j] == 100) {
-					alocadosSubAreaEspecialidade++;
+
+				alocado = true;			
+				if(beneficios[i][j] > 0.5) {
+					quantiaSimilaridadeMaior50++;
 				}
-				else if(beneficios[i][j] == 10) {
-					alocadosAreaEpecialidade++;
+				else if(beneficios[i][j] >= 0.1) {
+					quantiaSimilaridadeMaior20++;
 				}
-				else if(beneficios[i][j] == 1) {
-					alocadosANenhumaArea++;
+				else if(beneficios[i][j] == -1) {
+					alocadosAoProprioTrabalho;
 				}
 				else {
-					alocadosAoProprioTrabalho;
+					quantiaSimilaridadeMenor20++;
 				}
 
 			}
+		}
+		if(!alocado) {
+			orientadorNaoAlocado++;
 		}
 	}
 	
@@ -309,10 +326,11 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::fstream *resultado = new std::fstream(resultadoNome, std::ios::out);
 
 	std::stringstream result;
-	result << "Alocados a sub area de especialidade: " << alocadosSubAreaEspecialidade << '\n' <<
-	"Alocados a area de especialidade: " << alocadosAreaEpecialidade << '\n' <<
-	"Alocados a nenhuma area de sua especialidade: " << alocadosANenhumaArea << '\n' << 
-	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n';
+	result << "Alocados a sub area de especialidade: " << quantiaSimilaridadeMaior50 << '\n' <<
+	"Alocados a area de especialidade: " << quantiaSimilaridadeMaior20 << '\n' <<
+	"Alocados a nenhuma area de sua especialidade: " << quantiaSimilaridadeMenor20 << '\n' << 
+	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n' << 
+	"orientador nao alocado: " << orientadorNaoAlocado << '\n';
 
 	*resultado << result.str();
 	resultado->close();
@@ -361,7 +379,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] > 0.2) {
+			if(beneficios[i][j] > 0.1) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
