@@ -170,37 +170,27 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/
-		//std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
+		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
 		
-		//if(trabalhosInteresseOrientador.size() == 0) {
+		if(trabalhosInteresseOrientador.size() == 0) {
 			
-		//	for(int j = 0; j < quantiaTrabalhos; j++) {
+		for(int j = 0; j < quantiaTrabalhos; j++) {
 
-		//		exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
-		//	}
-		//}
+				exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
+			}
+		}
 		
 
 		/* Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	*/
 		/* Que são os trabalhos de interesse*/
-		//for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
-		//	int trabalhoIndice = trabalhosInteresseOrientador[j];
-		//	exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice] * 2;
-		//}
-		//trabalhosInteresseOrientador.clear();
-
-		for(int j = 0; j < quantiaTrabalhos; j++) {
-
-			if(beneficios[i][j] > 0.2) {
-
-				exp0 += 2 * x[i][j];
-			}
-			else {
-				exp0 += beneficios[i][j] * x[i][j];
-			}
+			int trabalhoIndice = trabalhosInteresseOrientador[j];
+			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
 		}
+		trabalhosInteresseOrientador.clear();
+
 
 	}
 
@@ -246,22 +236,27 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 		
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
-		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
+		//std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
 		
 		/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
-		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		//for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
-			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
-			exp2 += x[i][indiceTrabalhoInteresseOrientador];
-		}
+			//int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
+			//exp2 += x[i][indiceTrabalhoInteresseOrientador];
+		//}
 		/* As vezes o orientador não tem trabalho de interesse, então ele tem "interesse" a avaliar todos os trabalhos	*/
-		if(trabalhosInteresseOrientador.size() == 0) {
+		//if(trabalhosInteresseOrientador.size() == 0) {
 			
-			for(int j = 0; j < quantiaTrabalhos; j++) {
+		//	for(int j = 0; j < quantiaTrabalhos; j++) {
 				
-				exp2 += x[i][j];
-			}
+		//		exp2 += x[i][j];
+		//	}
+		//}
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			exp2 += x[i][j];
 		}
 
 
@@ -295,16 +290,27 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 	
 	int quantiaSimilaridadeMaior20 = 0;
+	bool similaridadeMaior20 = false;
+
 	int quantiaSimilaridadeMaior50 = 0;
-	int alocadosAreaDesconhecida = 0;
+	bool similaridadeMaior50 = false;
+
+	
 	int alocadosAoProprioTrabalho = 0;
+
 	int quantiaSimilaridadeMenor20 = 0;
+	bool similaridadeMenor20 = false;
 
 	int orientadorNaoAlocado = 0;
 
 	bool alocado = false;
 
 	for(int j  = 0; j < quantiaTrabalhos; j++) {
+
+		alocado = false;
+		similaridadeMaior20 = false;
+		similaridadeMaior50 = false;
+		similaridadeMenor20 = false;
 
 		for(int i = 0; i < quantiaOrientadores; i++) {
 
@@ -313,23 +319,33 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			if(xValue == 1) {
 
 				alocado = true;			
-				if(beneficios[i][j] > 0.5) {
-					quantiaSimilaridadeMaior50++;
+				if(beneficios[i][j] >= 0.5) {
+					similaridadeMaior50 = true;
 				}
-				else if(beneficios[i][j] >= 0.1) {
-					quantiaSimilaridadeMaior20++;
+				else if(beneficios[i][j] >= 0.2) {
+					similaridadeMaior20 = true;
 				}
 				else if(beneficios[i][j] == -1) {
 					alocadosAoProprioTrabalho;
 				}
 				else {
-					quantiaSimilaridadeMenor20++;
+					similaridadeMenor20 = true;
 				}
 
 			}
 		}
 		if(!alocado) {
 			orientadorNaoAlocado++;
+		}
+		if(!similaridadeMaior50) {
+			quantiaSimilaridadeMaior50++;
+		}
+		if(!similaridadeMaior20) {
+
+			quantiaSimilaridadeMaior20++;
+		}
+		if(!similaridadeMenor20) {
+			quantiaSimilaridadeMenor20++;
 		}
 	}
 	
@@ -390,7 +406,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] > 0.1) {
+			if(beneficios[i][j] >= 0.4) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);

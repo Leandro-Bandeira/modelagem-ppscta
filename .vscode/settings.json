@@ -50,6 +50,10 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "list": "cpp",
+        "numbers": "cpp"
     }
 }
