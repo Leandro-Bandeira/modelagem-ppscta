@@ -170,26 +170,37 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/
-		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
+		//std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
 		
-		if(trabalhosInteresseOrientador.size() == 0) {
+		//if(trabalhosInteresseOrientador.size() == 0) {
 			
-			for(int j = 0; j < quantiaTrabalhos; j++) {
+		//	for(int j = 0; j < quantiaTrabalhos; j++) {
 
-				exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
-			}
-		}
+		//		exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
+		//	}
+		//}
 		
 
 		/* Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	*/
 		/* Que são os trabalhos de interesse*/
-		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		//for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
-			int trabalhoIndice = trabalhosInteresseOrientador[j];
-			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice] * 2;
+		//	int trabalhoIndice = trabalhosInteresseOrientador[j];
+		//	exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice] * 2;
+		//}
+		//trabalhosInteresseOrientador.clear();
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			if(beneficios[i][j] > 0.2) {
+
+				exp0 += 2 * x[i][j];
+			}
+			else {
+				exp0 += beneficios[i][j] * x[i][j];
+			}
 		}
-		trabalhosInteresseOrientador.clear();
 
 	}
 
@@ -326,9 +337,9 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::fstream *resultado = new std::fstream(resultadoNome, std::ios::out);
 
 	std::stringstream result;
-	result << "Alocados a sub area de especialidade: " << quantiaSimilaridadeMaior50 << '\n' <<
-	"Alocados a area de especialidade: " << quantiaSimilaridadeMaior20 << '\n' <<
-	"Alocados a nenhuma area de sua especialidade: " << quantiaSimilaridadeMenor20 << '\n' << 
+	result << "Alocados a similaridade maior que 50: " << quantiaSimilaridadeMaior50 << '\n' <<
+	"Alocados a similaridade maior que 20: " << quantiaSimilaridadeMaior20 << '\n' <<
+	"Alocados a similaridade menor que 20: " << quantiaSimilaridadeMenor20 << '\n' << 
 	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n' << 
 	"orientador nao alocado: " << orientadorNaoAlocado << '\n';
 
