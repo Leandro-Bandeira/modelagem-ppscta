@@ -10,7 +10,7 @@
 
 #define NA 3 // Numero maximo de avaliadores por trabalho
 
-#define LMini  0// Limite minimo de trabalhos por professor i
+#define LMini  1// Limite minimo de trabalhos por professor i
 #define LMaxi  3 // Limite maximo de trabalhos por professor i
 
 
@@ -122,7 +122,7 @@ double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, 
 
 
 
-IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
+void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
 
 	
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
@@ -153,13 +153,11 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 	char var[100];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
-
 		for(int j = 0; j < quantiaTrabalhos; j++) {
-
 			/* Armazena a string formatada  na variável var e seta o nome	*/
 			sprintf(var, "x[%d][%d]", i, j);
 			x[i][j].setName(var);
-
+			Model.add(x[i][j]);
 		}
 	}
 
@@ -225,16 +223,25 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 
 		IloExpr exp2(env);
 
+		
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
+		
 		/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
 			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
 			exp2 += x[i][indiceTrabalhoInteresseOrientador];
 		}
-		
+		/* As vezes o orientador não tem trabalho de interesse, então ele tem "interesse" a avaliar todos os trabalhos	*/
+		if(trabalhosInteresseOrientador.size() == 0) {
+			
+			for(int j = 0; j < quantiaTrabalhos; j++) {
+				
+				exp2 += x[i][j];
+			}
+		}
 
 
 		Model.add(exp2 <= LMaxi);
@@ -242,12 +249,12 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 	}
 
 	
-	IloCplex* cplexPtr = new IloCplex(Model);
+	IloCplex cplex(Model);
 
-	cplexPtr->exportModel(saidaNome); // Exporta o modelo no formato lp
+	cplex.exportModel(saidaNome); // Exporta o modelo no formato lp
 
 	
-	if(!cplexPtr->solve()) {
+	if(!cplex.solve()) {
 
 		env.error() << "Erro ao otimizar o problema" << '\n';
 		throw(-1);
@@ -256,7 +263,7 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 		env.out() << "Otimizavel" << '\n';
 	}
 
-	double obj = cplexPtr->getObjValue();
+	double obj = cplex.getObjValue();
 	
 
 	auto end = std::chrono::high_resolution_clock::now();
@@ -277,7 +284,7 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 
 		for(int i = 0; i < quantiaOrientadores; i++) {
 
-			int xValue = cplexPtr->getValue(x[i][j]);
+			int xValue = cplex.getValue(x[i][j]);
 
 			if(xValue == 1) {
 				
@@ -311,7 +318,7 @@ IloCplex* resolveModelo(double** beneficios, int quantiaOrientadores, int quanti
 	resultado->close();
 	delete resultado;
 
-	return cplexPtr;
+	env.end();
 }
 
 
@@ -332,7 +339,7 @@ int main(int argc, char** argv) {
 	
 	double** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
 
-
+	/*
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		for(int j = 0; j < quantiaTrabalhos; j++) {
@@ -342,6 +349,7 @@ int main(int argc, char** argv) {
 		getchar();
 		std::cout << std::endl;
 	}
+	*/
 	/* Inicializando vetor de orientadores	*/
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
@@ -353,7 +361,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] == 10 || beneficios[i][j] == 100) {
+			if(beneficios[i][j] > 0.2) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
@@ -377,7 +385,7 @@ int main(int argc, char** argv) {
 		for(int i = 0; i < quantiaOrientadores; i++) {
 			
 			/* Se o beneficio é diferente de zero, é porque o orientador está apto para avaliar aquele projeto */
-			if(beneficios[i][j] != 0) {
+			if(beneficios[i][j] != -1) {
 				orientadoresAptos.push_back(i);
 			}
 		}
@@ -387,13 +395,11 @@ int main(int argc, char** argv) {
 	}
 
 
-	IloCplex* cplex = resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2], argv[3]);
+	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2], argv[3]);
 	
 
 
 	
-	cplex->getEnv().end();
-	delete cplex;
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
