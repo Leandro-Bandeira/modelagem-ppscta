@@ -169,7 +169,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
-		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/
+		
+		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
 		
@@ -182,14 +183,22 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		}
 		
 
-		/* Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	*/
-		/* Que são os trabalhos de interesse*/
+		Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
+		Que são os trabalhos de interesse
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
 			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
 		}
 		trabalhosInteresseOrientador.clear();
+		*/
+		
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+			
+			exp0 += beneficios[i][j] * x[i][j];
+		}
+
+
 
 
 	}
@@ -406,7 +415,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 0.4) {
+			if(beneficios[i][j] >= 0.1) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
