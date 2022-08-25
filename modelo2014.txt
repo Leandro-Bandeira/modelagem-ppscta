@@ -1,5 +1,5 @@
-Alocados a similaridade maior que 50: 785
-Alocados a similaridade maior que 20: 1175
-Alocados a similaridade menor que 20: 602
+Alocados a similaridade maior que 50: 786
+Alocados a similaridade maior que 20: 1216
+Alocados a similaridade menor que 20: 546
 Alocados ao proprio trabalho: 0
 orientador nao alocado: 0

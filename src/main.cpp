@@ -236,29 +236,23 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 		
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
-		//std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
+		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 
 		
 		/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
-		//for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
-			//int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
-			//exp2 += x[i][indiceTrabalhoInteresseOrientador];
-		//}
-		/* As vezes o orientador não tem trabalho de interesse, então ele tem "interesse" a avaliar todos os trabalhos	*/
-		//if(trabalhosInteresseOrientador.size() == 0) {
-			
-		//	for(int j = 0; j < quantiaTrabalhos; j++) {
-				
-		//		exp2 += x[i][j];
-		//	}
-		//}
-
-		for(int j = 0; j < quantiaTrabalhos; j++) {
-
-			exp2 += x[i][j];
+			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
+			exp2 += x[i][indiceTrabalhoInteresseOrientador];
 		}
-
+		/* As vezes o orientador não tem trabalho de interesse, então ele tem "interesse" a avaliar todos os trabalhos	*/
+		if(trabalhosInteresseOrientador.size() == 0) {
+			
+			for(int j = 0; j < quantiaTrabalhos; j++) {
+				
+				exp2 += x[i][j];
+			}
+		}
 
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
@@ -290,7 +284,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 	
 	int quantiaSimilaridadeMaior20 = 0;
-	bool similaridadeMaior20 = false;
+	bool similaridadeMaior30 = false;
 
 	int quantiaSimilaridadeMaior50 = 0;
 	bool similaridadeMaior50 = false;
@@ -299,7 +293,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	int alocadosAoProprioTrabalho = 0;
 
 	int quantiaSimilaridadeMenor20 = 0;
-	bool similaridadeMenor20 = false;
+	bool similaridadeMenor30 = false;
 
 	int orientadorNaoAlocado = 0;
 
@@ -308,9 +302,9 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	for(int j  = 0; j < quantiaTrabalhos; j++) {
 
 		alocado = false;
-		similaridadeMaior20 = false;
+		similaridadeMaior30 = false;
 		similaridadeMaior50 = false;
-		similaridadeMenor20 = false;
+		similaridadeMenor30 = false;
 
 		for(int i = 0; i < quantiaOrientadores; i++) {
 
@@ -322,14 +316,14 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 				if(beneficios[i][j] >= 0.5) {
 					similaridadeMaior50 = true;
 				}
-				else if(beneficios[i][j] >= 0.2) {
-					similaridadeMaior20 = true;
+				else if(beneficios[i][j] >= 0.3) {
+					similaridadeMaior30 = true;
 				}
 				else if(beneficios[i][j] == -1) {
 					alocadosAoProprioTrabalho;
 				}
 				else {
-					similaridadeMenor20 = true;
+					similaridadeMenor30 = true;
 				}
 
 			}
@@ -340,11 +334,11 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		if(!similaridadeMaior50) {
 			quantiaSimilaridadeMaior50++;
 		}
-		if(!similaridadeMaior20) {
+		if(!similaridadeMaior30) {
 
 			quantiaSimilaridadeMaior20++;
 		}
-		if(!similaridadeMenor20) {
+		if(!similaridadeMenor30) {
 			quantiaSimilaridadeMenor20++;
 		}
 	}
@@ -384,17 +378,6 @@ int main(int argc, char** argv) {
 	
 	double** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
 
-	/*
-	for(int i = 0; i < quantiaOrientadores; i++) {
-
-		for(int j = 0; j < quantiaTrabalhos; j++) {
-			
-			std::cout << beneficios[i][j] << " ";
-		}
-		getchar();
-		std::cout << std::endl;
-	}
-	*/
 	/* Inicializando vetor de orientadores	*/
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
@@ -406,7 +389,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 0.4) {
+			if(beneficios[i][j] >= 0.2) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
