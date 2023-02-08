@@ -357,11 +357,11 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	std::stringstream result;
 	result << "Alocados a similaridade maior que 50: " << quantiaSimilaridadeMaior50 << '\n' <<
-	"Alocados a similaridade maior que 20: " << quantiaSimilaridadeMaior20 << '\n' <<
-	"Alocados a similaridade menor que 20: " << quantiaSimilaridadeMenor20 << '\n' << 
+	"Alocados a similaridade maior que 30: " << quantiaSimilaridadeMaior20 << '\n' <<
+	"Alocados a similaridade menor que 30: " << quantiaSimilaridadeMenor20 << '\n' << 
 	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n' << 
-	"orientador nao alocado: " << orientadorNaoAlocado << '\n';
-
+	"orientador nao alocado: " << orientadorNaoAlocado << '\n' <<
+	"Limite Minimo: " << LMini << " " << "Limite Maximo: " << LMaxi << '\n';
 	*resultado << result.str();
 	resultado->close();
 	delete resultado;
@@ -398,11 +398,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-<<<<<<< HEAD
-			if(beneficios[i][j] >= 0.1) {
-=======
 			if(beneficios[i][j] >= 0.2) {
->>>>>>> 5f8ad000ef0456ecd3974493fbb386f8a9ea9db5
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
