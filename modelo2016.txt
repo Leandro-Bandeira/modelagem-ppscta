@@ -1,5 +1,0 @@
-Alocados a similaridade maior que 50: 519
-Alocados a similaridade maior que 20: 1221
-Alocados a similaridade menor que 20: 508
-Alocados ao proprio trabalho: 0
-orientador nao alocado: 0
