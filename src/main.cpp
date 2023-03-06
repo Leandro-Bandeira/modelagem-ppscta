@@ -8,7 +8,7 @@
 #include <chrono>
 #include <sstream>
 
-#define NA 3 // Numero maximo de avaliadores por trabalho
+#define NA 2 // Numero maximo de avaliadores por trabalho
 
 #define LMini  1// Limite minimo de trabalhos por professor i
 #define LMaxi  3 // Limite maximo de trabalhos por professor i
@@ -306,11 +306,10 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	int orientadorNaoAlocado = 0;
 
-	bool alocado = false;
 
 	for(int j  = 0; j < quantiaTrabalhos; j++) {
 
-		alocado = false;
+		bool alocado = false;
 		similaridadeMaior30 = false;
 		similaridadeMaior50 = false;
 		similaridadeMenor30 = false;
@@ -375,6 +374,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 int main(int argc, char** argv) {
 	
+	/* O primeiro argumento é a instancia, segundo o nome do arquivo em formato lp e o terceiro a saida do resultado*/
 	if(argc <  4) {
 
 		std::cout << "Digite mais argumentos" << '\n';
@@ -398,7 +398,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 0.2) {
+			if(beneficios[i][j] >= 0.4) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
