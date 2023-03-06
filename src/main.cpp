@@ -52,6 +52,7 @@ double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, 
 			
 	quantiaOrientadores = valoresLinha[0];
 	quantiaTrabalhos = valoresLinha[1];
+	
 
 	
 	valoresLinha.clear(); // Limpa o vector
@@ -390,7 +391,20 @@ int main(int argc, char** argv) {
 	/* Inicializando vetor de orientadores	*/
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
+	
+	/*
+	std::cout << "QuantiaOrientadores: " << quantiaOrientadores << std::endl;
+	std::cout << "QuantiaTrabalhos: " << quantiaTrabalhos << std::endl;
+	
+	for(int i = 0; i < quantiaOrientadores; i++) {
 
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+
+			std::cout << beneficios[i][j] << " ";
+		}
+		getchar();
+	}*/
+	
 	/* Criação da matriz de trabalhos percentes a área de interesse de um professor/orientador i	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
@@ -411,7 +425,17 @@ int main(int argc, char** argv) {
 
 		trabalhosInteresse.clear(); // Limpa o vector
 	}
+	
+	/*
+	for(int i = 0; i < orientadores.size(); i++) {
 
+		for(int j = 0; j < orientadores[i].trabalhosInteresse.size(); j++) {
+
+			std::cout << orientadores[i].trabalhosInteresse[j] << " ";
+		}
+		getchar();
+	}
+	*/
 	/* Inicializando vector de trabalhos e seus dados	*/
 	std::vector < Trabalho > trabalhos;
 	std::vector < int > orientadoresAptos;
