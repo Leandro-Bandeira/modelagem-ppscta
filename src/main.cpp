@@ -173,15 +173,17 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/	
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
-
+	
+		/*
 		
 		if(trabalhosInteresseOrientador.size() == 0) {
 			
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
-				exp0 += -0.2 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
+				exp0 += 0.1 * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
 			}
 		}
+		*/
 		
 
 		//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
@@ -309,6 +311,19 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	int orientadorNaoAlocado = 0;
 
+	std::fstream* saidaBinario = new std::fstream("binario14.txt", std::ios::out);
+
+	for(int i = 0; i < quantiaOrientadores; i++) {
+
+		for(int j = 0; j < quantiaTrabalhos; j++) {
+			
+			if(cplex.getValue(x[i][j]) == 1)
+				*saidaBinario << j << " ";
+		}
+		*saidaBinario << "\n";
+
+	}
+	delete saidaBinario;
 
 	for(int j  = 0; j < quantiaTrabalhos; j++) {
 
@@ -316,7 +331,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		similaridadeMaior30 = false;
 		similaridadeMaior50 = false;
 		similaridadeMenor30 = false;
-
+		
+		
 		for(int i = 0; i < quantiaOrientadores; i++) {
 
 			int xValue = cplex.getValue(x[i][j]);
@@ -378,6 +394,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 int main(int argc, char** argv) {
 	
 	/* O primeiro argumento é a instancia, segundo o nome do arquivo em formato lp e o terceiro a saida do resultado*/
+	//
 	if(argc <  4) {
 
 		std::cout << "Digite mais argumentos" << '\n';
@@ -412,13 +429,14 @@ int main(int argc, char** argv) {
 
 	
 	/* Devemos avaliar o menor valor do beneficio para que o trabalho seja considerado de interesse do orientador, 0.1 indica que são pelo menos da mesma área e subárea*/
+	/* Se aumentarmos o limite do beneficio para ser trabalho de interesse, resolvemos o problema	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		Orientador orientador; // Instancia de um orientador
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 0.1) {
+			if(beneficios[i][j] >= 0.05) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
@@ -446,8 +464,8 @@ int main(int argc, char** argv) {
 			getchar();
 		}
 	}
-	*/
 	
+	*/
 	/* Inicializando vector de trabalhos e seus dados	*/
 	std::vector < Trabalho > trabalhos;
 	std::vector < int > orientadoresAptos;
