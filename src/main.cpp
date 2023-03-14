@@ -11,7 +11,7 @@
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
 #define LMini  1// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
+#define LMaxi  3 // Limite maximo de trabalhos por professor i
 
 
 typedef struct {
@@ -260,6 +260,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			exp2 += x[i][indiceTrabalhoInteresseOrientador];
 		}
 		/* As vezes o orientador não tem trabalho de interesse, então ele tem "interesse" a avaliar todos os trabalhos	*/
+		/*
 		if(trabalhosInteresseOrientador.size() == 0) {
 			
 			for(int j = 0; j < quantiaTrabalhos; j++) {
@@ -267,7 +268,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 				exp2 += x[i][j];
 			}
 		}
-
+		*/
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
 	}
