@@ -11,7 +11,7 @@
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
 #define LMini  1// Limite minimo de trabalhos por professor i
-#define LMaxi  3 // Limite maximo de trabalhos por professor i
+#define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
 typedef struct {
