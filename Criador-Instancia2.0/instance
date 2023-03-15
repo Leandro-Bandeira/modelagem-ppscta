@@ -1,0 +1,3 @@
+Código responsável por criar a instancia do modelo
+Precisa da similaridade entre todos os trabalhos, além do json contendo os dados de todos os orientadores.
+A partir da similaridade, vamos percorar todas as instancias de similaridade do mesmo orientador e verificar qual a maior, e então deixá-lo na matirz

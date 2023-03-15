@@ -25,6 +25,7 @@ def open_orientadores(path, len_projects, orientadores_list):
     orientadores = list()
     with open(path) as file:
         orientadores_data = json.load(file)
+        # Armazena todos os dados do orientadores
         orientadores_list.append(orientadores_data)
         len_projects.append(len(orientadores_data))
         for data in orientadores_data:
@@ -65,6 +66,8 @@ def main():
     # Verifica se é maior do que a antiga e atualiza. Fazemos isso com todas as "instancias" do mesmo orientador para achar a sua melhor similaridade, após isso com a linha de melhor similaridade encontrada
     # Percorremos novamente a matriz, verificando se o trabalho da coluna é do mesmo orientador, para indicar que é viável alocar ele naquele trabalho e então adicionamos no arquivo de instancia
     # o loop continua até que todos os orientadores sejam varridos. Criando assim, uma matriz orientador x similaridade
+    # Vamos normalizar a similaridade
+    # Valores entre 0 e 5% recebem 1 como afindade, 5% e 40% recebem 10 e o restante 100
     while (i < len(orientadores_dic)):
         
         if orientadores_dic[i]['Orientador:'] not in orientadores_visitados:
@@ -88,13 +91,22 @@ def main():
             # Armazena a melhor linha do orientador no arquivo de instancia
             for j in range(len(similarity_data[indice_maior_media])):
                 # Se o orientador da linha for o mesmo da coluna, então -1 para indicar que o trabalho é inviável
+                # Cso ele não for inviável, vamos normalizar as similares
+                similarity = 0
                 if orientadores_dic[indice_maior_media]["Orientador:"] == orientadores_dic[j]["Orientador:"]:
-                    similarity_data[indice_maior_media][j] = "-1"
-
-                if j == len(similarity_data[indice_maior_media]) - 1:
-                    line = str(similarity_data[indice_maior_media][j]) + '\n'
+                    similarity = "-1"
                 else:
-                    line = str(similarity_data[indice_maior_media][j]) + ' '
+                    if float(similarity_data[indice_maior_media][j]) <= 0.05:
+                        similarity = "1"
+                    elif float(similarity_data[indice_maior_media][j]) <= 0.4:
+                        similarity = "10"
+                    else:
+                        similarity = "100"
+                if j == len(similarity_data[indice_maior_media]) - 1:
+
+                    line = similarity + '\n'
+                else:
+                    line = similarity + ' '
                 arq.write(line)
     
         i += 1
