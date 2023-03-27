@@ -243,7 +243,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 		
-		if(trabalhosInteresseOrientador.size() < 2) {
+		if(trabalhosInteresseOrientador.size() < 3) {
 
 			for(int j = 0; j < quantiaTrabalhos; j++){
 
@@ -251,11 +251,13 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			}
 		}
 		
-		/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
-		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		else{
+			/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
+			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
-			int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
-			exp2 += x[i][indiceTrabalhoInteresseOrientador];
+				int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
+				exp2 += x[i][indiceTrabalhoInteresseOrientador];
+			}
 		}
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
@@ -301,17 +303,28 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	int orientadorNaoAlocado = 0;
 
 	std::fstream* saidaBinario = new std::fstream("binario14.txt", std::ios::out);
-
+	
+	
+	int quantiaAlocados = 0;
 	for(int i = 0; i < quantiaOrientadores; i++) {
-
+		
+		int number_aloc = 0;
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 			
-			if(cplex.getValue(x[i][j]) == 1)
+			if(cplex.getValue(x[i][j]) == 1){
 				*saidaBinario << j << " ";
+				number_aloc++;
+			}
+			
+		}
+		if(number_aloc > 4){
+			quantiaAlocados++;
 		}
 		*saidaBinario << "\n";
 
 	}
+
+	*saidaBinario << "Superaram o limite de alocacoes: " << quantiaAlocados << std::endl;
 	delete saidaBinario;
 
 	for(int j  = 0; j < quantiaTrabalhos; j++) {

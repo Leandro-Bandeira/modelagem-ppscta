@@ -6,6 +6,7 @@ import json
 path_bin = "../src/binario14.txt"
 path_orien = "../Criador-Instancia2.0/resumoOrientadores/resumoOrientadores14.json"
 path_out_json = "relacao14.json"
+path_chico = "projetos2014.json"
 
 def read_orien(path_orien):
 
@@ -24,17 +25,21 @@ def read_bin(path_bin):
     return data
 
 
-def main():
-    data_trabalhos = read_orien(path_orien)
-    data_bin = read_bin(path_bin)
+def read_trabalhos_alocados(path_chico):
 
+    with open(path_chico) as file:
+        data = json.load(file)
+    
+    return data
+
+def main():
+    data_trabalhos = read_orien(path_orien) # Todos os trabalhos possíveis
+    data_bin = read_bin(path_bin) # Arquivo contendo os dados binários
+    data_alocados = read_trabalhos_alocados(path_chico) # Todos os 955 trabalhos alocados
 
     list_aloc = list()
 
-    # Criação de uma lista de orientadores unica com area e subarea
-    # Na lista de alocação temos uma matriz orientadores x trabalhos
-    # Como ele nunca será alocado ao proprio trabalho e a matriz de similaridade
-    # Possui -1 como beneficio para os mesmos trabalhos, então podemos pegar pelo indice diretamente
+    # Criação de uma lista única de orientadores contendo os dados relevantes
     orientadores = list()
     orientadores_visited = list()
     for project in data_trabalhos:
@@ -46,43 +51,26 @@ def main():
             orientadores.append(data)
             orientadores_visited.append(project["Orientador:"])
     
-   
-    alocados_proprio_trabalho = 0
+    
+
+    
     alocados_a_mesma_subarea = 0
     alocados_a_mesma_area = 0
-    # Percorre as linhas do arquivo binário e verifica para onde o orientador i foi alocado
+    
+
+    # Como a quantia de linhas de data_bin representa o indice do orientador
+    # Entao podemos percorrer os seus valores e suas linhas e verificar se o orientador i
+    # foi alocado de forma correta aqueles trabalhos 
     for i, line in enumerate(data_bin):
         line = line.rstrip()
         trabalhos = line.split()
         
-        
         for trabalho in trabalhos:
-            if orientadores[i]["Area"] == data_trabalhos[int(trabalho)]["Area:"]:
-                alocados_a_mesma_area += 1
-                
-            if orientadores[i]["SubArea"] == data_trabalhos[int(trabalho)]["SubArea:"]:
-                alocados_a_mesma_subarea += 1
             
+
     print(alocados_a_mesma_area)
     print(alocados_a_mesma_subarea)
-    #for i, line in enumerate(data_bin):
-    #    line = line.rstrip()
-    #    data_dict = dict()
-    #    trabalhos = line.split()
-    #    data_dict['Area Primeiro'] = orientadores[i]['Area']
-    #    data_dict['SubArea Primeiro'] = orientadores[i]['SubArea']
-
-        # A partir daqui pegamos de data_orien que indica o total de trabalhos
-    #    for j, trabalho in enumerate(trabalhos):
-    #        data_dict[f'Area {j}'] = data_orien[int(trabalho)]["Area:"]
-    #        data_dict[f"SubArea {j}"] = data_orien[int(trabalho)]["SubArea:"]
-
-    #   list_aloc.append(data_dict)
-
-    # Responsável por criar o json do resumo dos orientadores
-    #with open(path_out_json, 'w') as bin_js:
-    #    json.dump(list_aloc, bin_js, indent = 4, ensure_ascii=False)
-    #bin_js.close()
+    
 
     
 
