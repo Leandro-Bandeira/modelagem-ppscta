@@ -68,6 +68,7 @@ def main():
     # o loop continua até que todos os orientadores sejam varridos. Criando assim, uma matriz orientador x similaridade
     # Vamos normalizar a similaridade
     # Valores entre 0 e 5% recebem 1 como afindade, 5% e 40% recebem 10 e o restante 100
+    # Precisamos indicar o indice do orientador
     while (i < len(orientadores_dic)):
         
         if orientadores_dic[i]['Orientador:'] not in orientadores_visitados:
