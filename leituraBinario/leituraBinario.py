@@ -3,8 +3,8 @@
 #Precisamos do caminho do arquivo json e do binario
 import json
 
-path_bin = "../src/binario14.txt"
-path_orien = "../Criador-Instancia2.0/resumoOrientadores/resumoOrientadores14.json"
+path_bin = "../src/binario14Alin.txt"
+path_orien = "../Criador-Instancia2.0/resumoOrientadores/resumoOrientadores14Alin.json"
 path_out_json = "relacao14.json"
 path_chico = "projetos2014.json"
 
@@ -64,8 +64,12 @@ def main():
     for i, line in enumerate(data_bin):
         line = line.rstrip()
         trabalhos = line.split()
-        
+
         for trabalho in trabalhos:
+            if orientadores[i]["Area"] == data_alocados[int(trabalho)]['Area:']:
+                alocados_a_mesma_area += 1
+            if orientadores[i]["SubArea"] == data_alocados[int(trabalho)]["SubArea:"]:
+                alocados_a_mesma_subarea += 1
             
 
     print(alocados_a_mesma_area)

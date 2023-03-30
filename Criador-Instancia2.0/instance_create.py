@@ -9,12 +9,14 @@ def open_similarity(path):
     lines = arq.readlines()
     arq.close()
 
-    similarity_data = list()
-    for line in lines:
-        line = line.rstrip()
-        similarity_data.append(line.split())
+    similarity_dic = list() 
+    for i in range(len(lines) - 1):
+        data = dict()
+        data["indice"] = lines[i].rstrip() 
+        data["similarity"] = lines[i + 1].rstrip().split()
+        similarity_dic.append(data)
 
-    return similarity_data
+    return similarity_dic
 
 # retorna uma lista contendo todos os nomes dos orientadore
 
@@ -36,10 +38,11 @@ def open_orientadores(path, len_projects, orientadores_list):
     return orientadores
 
 
+
 def main():
-    path_similarity = "../SimilaridadesOrientadores/similarityOrientadores14.txt"
-    path_orientadores = "resumoOrientadores/resumoOrientadores14.json"
-    path_instance = "instance14.txt"
+    path_similarity = "../SimilaridadesOrientadores/similarityOrientadores14Alin.txt"
+    path_orientadores = "resumoOrientadores/resumoOrientadores14Alin.json"
+    path_instance = "instance14Alin.txt"
     orientadores_list = list()  # Contém todos os dados dos orientadores
     similarity_data = open_similarity(path_similarity)
     len_projects = list()
@@ -60,6 +63,9 @@ def main():
     orientadores_visitados = list()
     i = 0
     
+    for similarity in similarity_data:
+        print(similarity)
+        a = input()
     
     # Orientadores_dic representa todo o arquivo json, então vamos andar por todas as "instancias" de orientadores, que seriam todos os seus trabalhos e adicionar a uma lista daquele orientador ja visitado
     # Após isso, percorremos a matriz quadrada de similaridade, verificando qual linha representa ao orientador adicionado a lista, achado a sua linha, calculamos a media aritmetica daquela linha de similaridade
