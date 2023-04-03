@@ -1,0 +1,4 @@
+-> Perceba que precisamos criar uma matriz orientadores x trabalhos
+-> Cada valor contendo o beneficio de similaridade daquele orientador com tal trabalho.
+-> Porém, Um orientador tem vários trabalhos, então a ideia é achar uma maneira que um orientador
+-> tenha apenas uma relação com os trabalhos, então vamos achar aquela linha 
