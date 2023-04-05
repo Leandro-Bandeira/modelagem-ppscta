@@ -4,16 +4,9 @@
 import json
 
 path_bin = "../src/binario14Alin.txt"
-path_orien = "../Criador-Instancia2.0/resumoOrientadores/resumoOrientadores14Alin.json"
 path_out_json = "relacao14.json"
-path_chico = "projetos2014.json"
+path_projetos = "projetos2014.json"
 
-def read_orien(path_orien):
-
-    with open(path_orien) as file:
-        data = json.load(file)
-    
-    return data
 
 #O arquivo bin está setado para orientadores x trabalhos
 def read_bin(path_bin):
@@ -25,35 +18,18 @@ def read_bin(path_bin):
     return data
 
 
-def read_trabalhos_alocados(path_chico):
+def read_projetos(path_projetos):
 
-    with open(path_chico) as file:
+    with open(path_projetos) as file:
         data = json.load(file)
     
     return data
 
 def main():
-    data_trabalhos = read_orien(path_orien) # Todos os trabalhos possíveis
     data_bin = read_bin(path_bin) # Arquivo contendo os dados binários
-    data_alocados = read_trabalhos_alocados(path_chico) # Todos os 955 trabalhos alocados
+    data_projetos = read_projetos(path_projetos) # Todos os 955 trabalhos alocados
 
-    list_aloc = list()
-
-    # Criação de uma lista única de orientadores contendo os dados relevantes
-    orientadores = list()
-    orientadores_visited = list()
-    for project in data_trabalhos:
-        if project["Orientador:"] not in orientadores_visited:
-            data = dict()
-            data['Orientador'] = project["Orientador:"]
-            data["Area"] = project["Area:"]
-            data["SubArea"] = project["SubArea:"]
-            orientadores.append(data)
-            orientadores_visited.append(project["Orientador:"])
-    
-    
-
-    
+     
     alocados_a_mesma_subarea = 0
     alocados_a_mesma_area = 0
     
@@ -64,11 +40,12 @@ def main():
     for i, line in enumerate(data_bin):
         line = line.rstrip()
         trabalhos = line.split()
-
         for trabalho in trabalhos:
-            if orientadores[i]["Area"] == data_alocados[int(trabalho)]['Area:']:
+            print(f'Professor area: {data_projetos[i]["Area:"]}')
+            print(f'Projeto area: {data_projetos[int(trabalho)]["Area"]}')
+            if data_projetos[i]["Area:"] == data_projetos[int(trabalho)]['Area:']:
                 alocados_a_mesma_area += 1
-            if orientadores[i]["SubArea"] == data_alocados[int(trabalho)]["SubArea:"]:
+            if data_projetos[i]["SubArea:"] == data_projetos[int(trabalho)]["SubArea:"]:
                 alocados_a_mesma_subarea += 1
             
 

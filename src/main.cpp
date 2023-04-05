@@ -176,28 +176,46 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 	
 		
-			
+		
+		/* Caso o orientador tenha poucos interesses, então fazemos ele ter interesse em todos os projetos
+		 * Além disso usamos o beneficio que ele tem com os trabalhos */
 		if(trabalhosInteresseOrientador.size() < 3) {
 			
-		for(int j = 0; j < quantiaTrabalhos; j++) {
+			for(int j = 0; j < quantiaTrabalhos; j++) {
+				
+				int trabalhoInteresseIndice = -1;
+				int encontrou = false;
+				
+				/* Verificamos se aquele trabalho é um trabalho de interesse do orientador
+				 * Caso for, então usamos o beneficio que ele possui com aquele trabalho*/
+				for(int i = 0; i < trabalhosInteresseOrientador.size(); i++){
 
-				exp0 += beneficios[i][j] * x[i][j]; // Adição de penalidade caso ele não tenha nenhum trabalho de interesse 
+					if(j == trabalhosInteresseOrientador[i]){
+						encontrou = true;
+						trabalhoInteresseIndice = j;
+						break;
+					}
+				}
+				if(encontrou){
+					exp0 += beneficios[i][trabalhoInteresseIndice] * x[i][trabalhoInteresseIndice];
+				}
+				else{
+					exp0 += beneficios[i][j] * x[i][j];
+				}
 			}
-		}
-		
-		
-
-		//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
-		//Que são os trabalhos de interesse
-		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		}	
+		else{
+			//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
+			//Que são os trabalhos de interesse
+			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
-			int trabalhoIndice = trabalhosInteresseOrientador[j];
-			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
+				int trabalhoIndice = trabalhosInteresseOrientador[j];
+				exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
+			}
+			trabalhosInteresseOrientador.clear();
 		}
-		trabalhosInteresseOrientador.clear();
-		
-		
 	}
+
 
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
 
@@ -246,11 +264,29 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		if(trabalhosInteresseOrientador.size() < 3) {
 
 			for(int j = 0; j < quantiaTrabalhos; j++){
+				
+				int encontrou = false;
+				int trabalhoInteresseIndice = -1;
 
-				exp2 += x[i][j];
+				for(int k = 0; k < trabalhosInteresseOrientador.size(); k++){
+					
+					if(j == trabalhosInteresseOrientador[k]){
+
+						encontrou = true;
+						trabalhoInteresseIndice = j;
+						break;
+					}
+
+				}
+
+				if(encontrou){
+					exp2 += x[i][trabalhoInteresseIndice];
+				}
+				else{
+					exp2 += x[i][j];
+				}
 			}
-		}
-		
+		}	
 		else{
 			/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
 			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
@@ -438,7 +474,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >=10) {
+			if(beneficios[i][j] >= 10) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
@@ -456,18 +492,7 @@ int main(int argc, char** argv) {
 	/* Debugado (v)	*/		
 	for(int i = 0; i < orientadores.size(); i++) {
 			
-		/*
-		if(orientadores[i].trabalhosInteresse.size() >= 1) {
-			//std::cout << "indice: " << i << std::endl;
-			//std::cout << "tam: " << orientadores[i].trabalhosInteresse.size() << std::endl;	
-			for(int j = 0; j < orientadores[i].trabalhosInteresse.size(); j++) {
-
-				std::cout << orientadores[i].trabalhosInteresse[j] << " ";
-			}
-			std::cout << std::endl;
-		}
-		*/
-		if(!orientadores[i].trabalhosInteresse.size()){
+		if(orientadores[i].trabalhosInteresse.size() == 0){
 
 			nao_interesse++;
 		}

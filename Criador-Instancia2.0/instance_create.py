@@ -87,26 +87,30 @@ def main():
             
 
             # Pegamos entãoo a similaridade de maior indice daquele orientador
+            # Nosso arquivo estará dividido em em uma linha indice pego do autor correspondente aos projetos e seus beneficios
+
             avg_similarity = similarity_data[indice_maior_media]["similaridade"].rstrip().lstrip().split()
+            #arq.write(str(indice_maior_media) + '\n')
             for j, similarity in enumerate(avg_similarity):
                 # Se o orientador da linha for o mesmo da coluna, então -1 para indicar que o trabalho é inviável
                 # Cso ele não for inviável, vamos normalizar as similaridades
-                similarity = 0
+                # Como analises indicam que 0.1 já indica pelo menos mesma área e sub temos os seguintes valores para similaridade
+                similarity_str = 0
                 if projetos_data[indice_maior_media]["Orientador:"] == projetos_data[j]["Orientador:"]:
-                    similarity = "-1"
+                    similarity_str = "-1"
                 else:
-                    if float(similarity) > 0.3:
-                        similarity = "100"
-                    elif float(similarity) >= 0.1 and float(similarity) <= 0.3:
-                        similarity = "10"
+                    if float(similarity) > 0.1:
+                        similarity_str = "100"
+                    elif float(similarity) >= 0.05 and float(similarity) <= 0.1:
+                        similarity_str = "10"
                     else:
-                        similarity = "1"
+                        similarity_str = "1"
                 
                 if j == len(avg_similarity) - 1:
-
-                    line = similarity + '\n'
+                    
+                    line = similarity_str + '\n'
                 else:
-                    line = similarity + ' '
+                    line = similarity_str + ' '
                 arq.write(line)
     
         i += 1
