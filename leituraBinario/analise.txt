@@ -1,0 +1,6 @@
+-> Para 0.2 como subareas iguais
+mesma area = 58
+mesma subarea = 20
+-> para 0.1 como subAreas iguais
+mesma area = 56
+mesma subarea = 20

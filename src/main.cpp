@@ -10,7 +10,7 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-#define LMini  2// Limite minimo de trabalhos por professor i
+#define LMini  1// Limite minimo de trabalhos por professor i
 #define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
@@ -178,8 +178,9 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		
 		
 		/* Caso o orientador tenha poucos interesses, então fazemos ele ter interesse em todos os projetos
-		 * Além disso usamos o beneficio que ele tem com os trabalhos */
-		if(trabalhosInteresseOrientador.size() < 3) {
+		 * Além disso usamos o beneficio que ele tem com os trabalhos*/ 
+		
+		if(1) {
 			
 			for(int j = 0; j < quantiaTrabalhos; j++) {
 				
@@ -187,7 +188,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 				int encontrou = false;
 				
 				/* Verificamos se aquele trabalho é um trabalho de interesse do orientador
-				 * Caso for, então usamos o beneficio que ele possui com aquele trabalho*/
+				 * Caso for, então usamos o beneficio que ele possui com aquele trabalho */
 				for(int i = 0; i < trabalhosInteresseOrientador.size(); i++){
 
 					if(j == trabalhosInteresseOrientador[i]){
@@ -200,10 +201,18 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 					exp0 += beneficios[i][trabalhoInteresseIndice] * x[i][trabalhoInteresseIndice];
 				}
 				else{
-					exp0 += beneficios[i][j] * x[i][j];
+					exp0 += beneficios[i][j] * x[i][j] * 0.01;
 				}
 			}
-		}	
+		}
+		
+		/*
+		if(trabalhosInteresseOrientador.size() == 0){
+			for(int j = 0; j < quantiaTrabalhos; j++){
+
+				exp0 += beneficios[i][j] * x[i][j];
+			}
+		}
 		else{
 			//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
 			//Que são os trabalhos de interesse
@@ -214,6 +223,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			}
 			trabalhosInteresseOrientador.clear();
 		}
+		*/
+		trabalhosInteresseOrientador.clear();
 	}
 
 
@@ -261,7 +272,9 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 		
-		if(trabalhosInteresseOrientador.size() < 3) {
+		
+		/*
+		if(1) {
 
 			for(int j = 0; j < quantiaTrabalhos; j++){
 				
@@ -286,14 +299,27 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 					exp2 += x[i][j];
 				}
 			}
-		}	
+		}
+		
+		if(trabalhosInteresseOrientador.size() == 0){
+
+			for(int j = 0; j < quantiaTrabalhos; j++){
+				exp2 += x[i][j];
+			}
+		}
 		else{
-			/* Pega os índices de trabalho de interesse do orientador e realiza o somatório	*/
+			 Pega os índices de trabalho de interesse do orientador e realiza o somatório
 			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 
 				int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
 				exp2 += x[i][indiceTrabalhoInteresseOrientador];
 			}
+		}
+		*/
+		
+		/* Mudamos para quantia de todos os trabalhos do modelo de chico, mesma coisa na função principal	*/
+		for(int j = 0; j < quantiaTrabalhos; j++){
+			exp2 += x[i][j];
 		}
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
@@ -449,19 +475,6 @@ int main(int argc, char** argv) {
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
 	
-	/* Debugado (v)
-	std::cout << "QuantiaOrientadores: " << quantiaOrientadores << std::endl;
-	std::cout << "QuantiaTrabalhos: " << quantiaTrabalhos << std::endl;
-	
-	for(int i = 0; i < quantiaOrientadores; i++) {
-
-		for(int j = 0; j < quantiaTrabalhos; j++) {
-
-			std::cout << beneficios[i][j] << " ";
-		}
-		getchar();
-	}
-	*/
 
 	/* Criação da matriz de trabalhos percentes a área de interesse de um professor/orientador i	*/
 

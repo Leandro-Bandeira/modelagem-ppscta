@@ -56,12 +56,13 @@ def main():
     orientadores_visitados = list()
     i = 0
 
-    # A ideia agoria é achar a partir de similarity_data o trabalho que
+    # A ideia agora é achar a partir de similarity_data o trabalho que
     # possui maiores similaridades
     # Achado o trabalho do orientador com maiores similaridades
     # vamos utilizar um padrão dependendo da similaridade
     # e indicar que aquelas similaridades são daquele indice
     # que representa o trabalho dele
+    counter_similarity02 = 0
     while (i < len(projetos_data)):
 
         if projetos_data[i]['Orientador:'] not in orientadores_visitados:
@@ -108,9 +109,10 @@ def main():
                 if projetos_data[indice_maior_media]["Orientador:"] == projetos_data[j]["Orientador:"]:
                     similarity_str = "-1"
                 else:
-                    if float(similarity) > 0.1:
+                    if float(similarity) >= 0.1:
                         similarity_str = "100"
-                    elif float(similarity) >= 0.05 and float(similarity) <= 0.1:
+                        counter_similarity02 += 1
+                    elif float(similarity) >= 0.08 and float(similarity) < 0.1:
                         similarity_str = "10"
                     else:
                         similarity_str = "1"
@@ -122,7 +124,8 @@ def main():
                     line = similarity_str + ' '
                 arq.write(line)
         i += 1
-    arq.close()        
+    arq.close()
+    print(f'Foram encontrados {counter_similarity02} 100')
     return 0
 
 
