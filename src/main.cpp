@@ -10,7 +10,7 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-#define LMini  1// Limite minimo de trabalhos por professor i
+#define LMini  2// Limite minimo de trabalhos por professor i
 #define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 

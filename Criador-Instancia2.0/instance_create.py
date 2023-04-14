@@ -109,10 +109,10 @@ def main():
                 if projetos_data[indice_maior_media]["Orientador:"] == projetos_data[j]["Orientador:"]:
                     similarity_str = "-1"
                 else:
-                    if float(similarity) >= 0.1:
+                    if float(similarity) >= 0.05:
                         similarity_str = "100"
                         counter_similarity02 += 1
-                    elif float(similarity) >= 0.08 and float(similarity) < 0.1:
+                    elif float(similarity) >= 0.03 and float(similarity) < 0.05:
                         similarity_str = "10"
                     else:
                         similarity_str = "1"
