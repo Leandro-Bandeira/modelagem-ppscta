@@ -66,7 +66,6 @@ def main():
             if data_projetos[i]["SubArea:"] == data_projetos[
                     int(trabalho)]["SubArea:"]:
                 alocados_a_mesma_subarea += 1
-        a = input()
     print(alocados_a_mesma_area)
     print(alocados_a_mesma_subarea)
     

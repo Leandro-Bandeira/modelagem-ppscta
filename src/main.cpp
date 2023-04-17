@@ -364,7 +364,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	int orientadorNaoAlocado = 0;
 
-	std::fstream* saidaBinario = new std::fstream("binario14Alin.txt", std::ios::out);
+	std::fstream* saidaBinario = new std::fstream("binario14.txt", std::ios::out);
 	
 	
 	int quantiaAlocados = 0;
