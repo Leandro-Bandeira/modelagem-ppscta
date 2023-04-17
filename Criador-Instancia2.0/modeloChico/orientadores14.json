@@ -1,0 +1,4070 @@
+[
+    {
+        "Indice": 0,
+        "Orientador": "ELADIO JOSE DE GOES BRENNAND",
+        "Area": "Física",
+        "SubArea": "Física Geral"
+    },
+    {
+        "Indice": 1,
+        "Orientador": "JOEL BATISTA DA FONSECA NETO",
+        "Area": "Física",
+        "SubArea": "Física Geral"
+    },
+    {
+        "Indice": 2,
+        "Orientador": "EDMUNDO MARINHO DO MONTE",
+        "Area": "Astronomia",
+        "SubArea": "Instrumentação Astronômica"
+    },
+    {
+        "Indice": 3,
+        "Orientador": "SILVANDA DE MELO SILVA",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 4,
+        "Orientador": "VIRGINIA ANGELA MENEZES DE LUCENA E CARVALHO",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 5,
+        "Orientador": "JOSÉ FELIX DA SILVA NETO",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Sistemas Elétricos de Potência"
+    },
+    {
+        "Indice": 6,
+        "Orientador": "MARIVALDO WAGNER DE SOUSA SILVA",
+        "Area": "Desenho Industrial",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 7,
+        "Orientador": "SANDRA HELENA GURGEL DANTAS DE MEDEIROS",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 8,
+        "Orientador": "HEMILIO FERNANDES CAMPOS COELHO",
+        "Area": "Probabilidade e Estatística",
+        "SubArea": "Estatística"
+    },
+    {
+        "Indice": 9,
+        "Orientador": "MARCIA REGINA PIUVEZAM",
+        "Area": "Imunologia",
+        "SubArea": "Imunologia Celular"
+    },
+    {
+        "Indice": 10,
+        "Orientador": "PEDRO COSTA GUEDES VIANNA",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 11,
+        "Orientador": "LENILDE DUARTE DE SA",
+        "Area": "Enfermagem",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 12,
+        "Orientador": "WAGNER DE MENDONÇA FAUSTINO",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 13,
+        "Orientador": "ROBSON CAVALCANTE VERAS",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Geral"
+    },
+    {
+        "Indice": 14,
+        "Orientador": "MARCIANE MAGNANI",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 15,
+        "Orientador": "AMILTON DA CRUZ SANTOS",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 16,
+        "Orientador": "LÚCIO ROBERTO CANÇADO CASTELLANO",
+        "Area": "Parasitologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 17,
+        "Orientador": "LEONIA MARIA BATISTA",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 18,
+        "Orientador": "ALDA LÚCIA DE LIMA AMANCIO",
+        "Area": "Recursos Pesqueiros e Engenharia de Pesca",
+        "SubArea": "Aqüicultura"
+    },
+    {
+        "Indice": 20,
+        "Orientador": "EDUARDO ANTONIO DE PONTES COSTA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 21,
+        "Orientador": "MARIA DA CONCEIÇÃO RODRIGUES GONÇALVES",
+        "Area": "Nutrição",
+        "SubArea": "Análise Nutricional de População"
+    },
+    {
+        "Indice": 22,
+        "Orientador": "ORLEANS SILVA MARTINS",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 23,
+        "Orientador": "EDINEIDE JEZINI MESQUITA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 24,
+        "Orientador": "CHARLITON JOSE DOS SANTOS MACHADO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 25,
+        "Orientador": "NEIVA MARIA DE ALMEIDA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 26,
+        "Orientador": "GEOVANIA DA SILVA TOSCANO",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 27,
+        "Orientador": "SANDRO MARDEN TORRES",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 28,
+        "Orientador": "VIVIAN STUMPF MADEIRA",
+        "Area": "Engenharia Química",
+        "SubArea": "Operações Industriais e Equipamentos para Engenharia Química"
+    },
+    {
+        "Indice": 29,
+        "Orientador": "VALDIR DE ANDRADE BRAGA",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 30,
+        "Orientador": "ROSEANE BATISTA FEITOSA NICOLAU",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Histórica"
+    },
+    {
+        "Indice": 31,
+        "Orientador": "JEAN CARLO DE CARVALHO COSTA",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 32,
+        "Orientador": "JAMES BATISTA VIEIRA",
+        "Area": "Administração",
+        "SubArea": "Administração Pública"
+    },
+    {
+        "Indice": 33,
+        "Orientador": "EDVALDO CARVALHO ALVES",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 34,
+        "Orientador": "JAN EDSON RODRIGUES LEITE",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 35,
+        "Orientador": "ANTONIO CARLOS PINHEIRO",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 36,
+        "Orientador": "FRANCISCO ANTONIO BELO",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Engenharia Térmica"
+    },
+    {
+        "Indice": 37,
+        "Orientador": "ABEL CAVALCANTE LIMA FILHO",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Mecânica dos Sólidos"
+    },
+    {
+        "Indice": 38,
+        "Orientador": "MARIA BETANIA HERMENEGILDO DOS SANTOS",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 39,
+        "Orientador": "MARTA SUELY MADRUGA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 40,
+        "Orientador": "FABIANA SATAKE",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Patologia Animal"
+    },
+    {
+        "Indice": 41,
+        "Orientador": "PRISCILLA DINIZ LIMA DA SILVA BERNARDINO",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 42,
+        "Orientador": "BELÍSIA LÚCIA MOREIRA TOSCANO DINIZ",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 43,
+        "Orientador": "MARCIA VERONICA COSTA MIRANDA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 44,
+        "Orientador": "DAYSE DAS NEVES MOREIRA",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 45,
+        "Orientador": "EMEIDE NOBREGA DUARTE",
+        "Area": "Ciência da Informação",
+        "SubArea": "Teoria da Informação"
+    },
+    {
+        "Indice": 46,
+        "Orientador": "MARIA DO SOCORRO CIRILO DE SOUSA",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 47,
+        "Orientador": "CHRISTIANNE MARIA MOURA REIS",
+        "Area": "Geociências",
+        "SubArea": "Geografia Física"
+    },
+    {
+        "Indice": 48,
+        "Orientador": "KATIA SUELY QUEIROZ SILVA RIBEIRO",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 49,
+        "Orientador": "NELSON TORRO ALVES",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Desenvolvimento Humano"
+    },
+    {
+        "Indice": 50,
+        "Orientador": "ELIZETE VENTURA DO MONTE",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 52,
+        "Orientador": "DARLAN ALEXANDRIA FERNANDES",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Eletrônica Industrial, Sistemas e Controles"
+    },
+    {
+        "Indice": 53,
+        "Orientador": "CRISTIANNE DA SILVA ALEXANDRE",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 54,
+        "Orientador": "ROBERTO MENDOZA",
+        "Area": "Ciência Política",
+        "SubArea": "Políticas Públicas"
+    },
+    {
+        "Indice": 55,
+        "Orientador": "GILVANEIDE ALVES DE AZEREDO",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 57,
+        "Orientador": "SHARLINE FLORENTINO DE MELO SANTOS",
+        "Area": "Engenharia Química",
+        "SubArea": "Operações Industriais e Equipamentos para Engenharia Química"
+    },
+    {
+        "Indice": 58,
+        "Orientador": "CIZONE MARIA CARNEIRO ACIOLY",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 59,
+        "Orientador": "GENILDA ALVES DE AZEREDO",
+        "Area": "Letras",
+        "SubArea": "Literatura Brasileira"
+    },
+    {
+        "Indice": 60,
+        "Orientador": "JOSE MARIA BARBOSA FILHO",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 62,
+        "Orientador": "LILIANE DOS SANTOS MACHADO",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 63,
+        "Orientador": "TEREZINHA DOMICIANO DANTAS MARTINS",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 64,
+        "Orientador": "THIAGO ANTONIO AVELLAR DE AQUINO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 65,
+        "Orientador": "ANGELA MARIA DIAS FERNANDES",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Ensino e da Aprendizagem"
+    },
+    {
+        "Indice": 66,
+        "Orientador": "FRANKLIN DELANO SOARES FORTE",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 67,
+        "Orientador": "ISLANIA GISELIA ALBUQUERQUE GONÇALVES",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Cardiorenal"
+    },
+    {
+        "Indice": 68,
+        "Orientador": "ROSE MARY DE SOUZA ARAUJO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 69,
+        "Orientador": "ENEAS RICARDO DE MORAIS GOMES",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 70,
+        "Orientador": "WILSON HONORATO ARAGAO",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 71,
+        "Orientador": "MARIO CESAR UGULINO DE ARAUJO",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 72,
+        "Orientador": "ANA EMILIA BARROS E SILVA",
+        "Area": "Genética",
+        "SubArea": "Genética Vegetal"
+    },
+    {
+        "Indice": 73,
+        "Orientador": "ADRIANA EVANGELISTA RODRIGUES",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 74,
+        "Orientador": "RISELANE DE LUCENA ALCANTARA BRUNO",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 75,
+        "Orientador": "SANDRA RODRIGUES MASCARENHAS",
+        "Area": "Imunologia",
+        "SubArea": "Imunologia Celular"
+    },
+    {
+        "Indice": 76,
+        "Orientador": "CLAUDIA ENGLER CURY",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 77,
+        "Orientador": "REJANE MARIA NUNES MENDONCA",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 78,
+        "Orientador": "EDILSON PAES SARAIVA",
+        "Area": "Zootecnia",
+        "SubArea": "Ecologia dos Animais Domésticos e Etologia"
+    },
+    {
+        "Indice": 79,
+        "Orientador": "LEONARDO VIDAL BATISTA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Metodologia e Técnicas da Computação"
+    },
+    {
+        "Indice": 80,
+        "Orientador": "FABIO SANTOS DE SOUZA",
+        "Area": "Farmácia",
+        "SubArea": "Análise e Controle e Medicamentos"
+    },
+    {
+        "Indice": 81,
+        "Orientador": "NEIDE MARIA GOMES DE LUCENA",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 82,
+        "Orientador": "CLAUDIA MARIA RAMOS MEDEIROS SOUTO",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Obstétrica"
+    },
+    {
+        "Indice": 83,
+        "Orientador": "BETANIA PASSOS MEDRADO",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 84,
+        "Orientador": "MARIA DE FATIMA BARBOSA DE MESQUITA BATISTA",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 85,
+        "Orientador": "JACINTO DE LUNA BATISTA",
+        "Area": "Agronomia",
+        "SubArea": "Fitossanidade"
+    },
+    {
+        "Indice": 86,
+        "Orientador": "ROSENES LIMA DOS SANTOS",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 87,
+        "Orientador": "ANAND SUBRAMANIAN",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Pesquisa Operacional"
+    },
+    {
+        "Indice": 88,
+        "Orientador": "GREICY KELLY GOUVEIA DIAS BITTENCOURT",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Doenças Contagiosas"
+    },
+    {
+        "Indice": 89,
+        "Orientador": "RODRIGO SILVA ROSAL DE ARAJO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 90,
+        "Orientador": "CACILDA CHAVES MORAIS DE LIMA",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 91,
+        "Orientador": "CARLA SORAIA SOARES DE CASTRO",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 92,
+        "Orientador": "ROMERO LEANDRO ANDERSEN",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Eletrônica Industrial, Sistemas e Controles"
+    },
+    {
+        "Indice": 94,
+        "Orientador": "VENIA CAMELO DE SOUZA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 100,
+        "Orientador": "MARIA REGINA BARACUHY LEITE",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 101,
+        "Orientador": "ANTONIO CARLOS FERREIRA PINHEIRO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 102,
+        "Orientador": "VALESKA SHELDA PESSOA DE MELO",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Medicina Veterinária Preventiva"
+    },
+    {
+        "Indice": 103,
+        "Orientador": "ALVANIRA LUCIA DE BARROS",
+        "Area": "Letras",
+        "SubArea": "Língua Portuguesa"
+    },
+    {
+        "Indice": 104,
+        "Orientador": "FILLIPE SILVEIRA MARINI",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 105,
+        "Orientador": "RAFAEL FELIPE DA COSTA VIEIRA",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Medicina Veterinária Preventiva"
+    },
+    {
+        "Indice": 106,
+        "Orientador": "JULIANA SILVA DE OLIVEIRA",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 107,
+        "Orientador": "BRUNO FREITAS LIRA",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 108,
+        "Orientador": "NIVANIA PEREIRA DA COSTA",
+        "Area": "Agronomia",
+        "SubArea": "Fitossanidade"
+    },
+    {
+        "Indice": 109,
+        "Orientador": "HENRY IURE DE PAIVA SILVA",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 110,
+        "Orientador": "DAMIÃO PERGENTINO DE SOUSA",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 111,
+        "Orientador": "EDUARDO SERGIO SOARES SOUSA",
+        "Area": "Medicina",
+        "SubArea": "Saúde Materno-Infantil"
+    },
+    {
+        "Indice": 112,
+        "Orientador": "LUIZ MOREIRA COELHO JUNIOR",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Engenharia Econômica"
+    },
+    {
+        "Indice": 113,
+        "Orientador": "MÉRCIA MELO DE ALMEIDA MOTA",
+        "Area": "Engenharia Química",
+        "SubArea": "Processos Industriais de Engenharia Química"
+    },
+    {
+        "Indice": 114,
+        "Orientador": "MARCIO MARTINS LEITÃO",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 115,
+        "Orientador": "PATRICIA NUNES DA FONSECA",
+        "Area": "Psicologia",
+        "SubArea": "Fundamentos e Medidas da Psicologia"
+    },
+    {
+        "Indice": 116,
+        "Orientador": "YURI PERCY MOLINA RODRIGUEZ",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Sistemas Elétricos de Potência"
+    },
+    {
+        "Indice": 117,
+        "Orientador": "ENOQUE FEITOSA SOBREIRA FILHO",
+        "Area": "Direito",
+        "SubArea": "Teoria do Direito"
+    },
+    {
+        "Indice": 118,
+        "Orientador": "GLÁUCIA MARQUES FREITAS RIBEIRO",
+        "Area": "Morfologia",
+        "SubArea": "Histologia"
+    },
+    {
+        "Indice": 119,
+        "Orientador": "PAULO SERGIO RODRIGUES DA SILVA",
+        "Area": "Física",
+        "SubArea": "Física das Partículas Elementares e Campos"
+    },
+    {
+        "Indice": 120,
+        "Orientador": "HEBER SIVINI FERREIRA",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 121,
+        "Orientador": "RICARDO DIAS DE CASTRO",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 122,
+        "Orientador": "MAURA LUCIA FERNANDES PENNA",
+        "Area": "Artes",
+        "SubArea": "Música"
+    },
+    {
+        "Indice": 123,
+        "Orientador": "VIVIANY SILVA ARAÚJO PESSOA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 124,
+        "Orientador": "NATALY ALBUQUERQUE DOS SANTOS",
+        "Area": "Engenharia Química",
+        "SubArea": "Tecnologia Química"
+    },
+    {
+        "Indice": 125,
+        "Orientador": "IEDA MARIA GARCIA DOS SANTOS",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 126,
+        "Orientador": "HERMANO DE FRANCA RODRIGUES",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 127,
+        "Orientador": "MARIA DE FATIMA ALMEIDA",
+        "Area": "Letras",
+        "SubArea": "Língua Portuguesa"
+    },
+    {
+        "Indice": 128,
+        "Orientador": "MARIA DO SOCORRO BRASILEIRO SANTOS",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 129,
+        "Orientador": "JOSEAN FECHINE TAVARES",
+        "Area": "Farmácia",
+        "SubArea": "Bromatologia"
+    },
+    {
+        "Indice": 130,
+        "Orientador": "LIANA CLEBIA DE MORAIS PORDEUS",
+        "Area": "Nutrição",
+        "SubArea": "Desnutrição e Desenvolvimento Fisiológico"
+    },
+    {
+        "Indice": 131,
+        "Orientador": "FLAVIO FREITAS BARBOSA",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Fisiológica"
+    },
+    {
+        "Indice": 132,
+        "Orientador": "MARIA SILENE ALEXANDRE LEITE",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Gerência de Produção"
+    },
+    {
+        "Indice": 133,
+        "Orientador": "EVANEIDE FERREIRA SILVA",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 134,
+        "Orientador": "FRANCISCO JOSÉ DA COSTA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 135,
+        "Orientador": "SOCORRO DE FATIMA PACIFICO BARBOSA",
+        "Area": "Letras",
+        "SubArea": "Outras Literaturas Vernáculas"
+    },
+    {
+        "Indice": 136,
+        "Orientador": "CARLA ALECSANDRA DE MELO BONIFACIO",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 137,
+        "Orientador": "ELISABETTA ROMANO",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Projeto de Arquitetuta e Urbanismo"
+    },
+    {
+        "Indice": 138,
+        "Orientador": "LUCIANO COSTA SANTOS",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Gerência de Produção"
+    },
+    {
+        "Indice": 139,
+        "Orientador": "NEIR ANTUNES PAES",
+        "Area": "Demografia",
+        "SubArea": "Componentes da Dinâmica Demográfica"
+    },
+    {
+        "Indice": 140,
+        "Orientador": "RUBENS MARQUES DE LUCENA",
+        "Area": "Lingüística",
+        "SubArea": "Sociolingüística e Dialetologia"
+    },
+    {
+        "Indice": 141,
+        "Orientador": "SEVERINO JACKSON GUEDES DE LIMA",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Processos de Fabricação"
+    },
+    {
+        "Indice": 142,
+        "Orientador": "LORENA DE MELO FREITAS",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 143,
+        "Orientador": "SIMPLICIO ARNAUD DA SILVA",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Mecânica dos Sólidos"
+    },
+    {
+        "Indice": 144,
+        "Orientador": "HELON DAVID DE MACÊDO BRAZ",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Sistemas Elétricos de Potência"
+    },
+    {
+        "Indice": 145,
+        "Orientador": "BARBARA VIVIANA DE OLIVEIRA SANTOS",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 146,
+        "Orientador": "JOSIANE DE CAMPOS CRUZ",
+        "Area": "Fisiologia",
+        "SubArea": "Fisiologia de Órgaos e Sistemas"
+    },
+    {
+        "Indice": 149,
+        "Orientador": "EVERTON BARBOSA CORREIA",
+        "Area": "Letras",
+        "SubArea": "Teoria Literária"
+    },
+    {
+        "Indice": 150,
+        "Orientador": "BARTOLOMEU LEITE DA SILVA",
+        "Area": "Filosofia",
+        "SubArea": "Ética"
+    },
+    {
+        "Indice": 151,
+        "Orientador": "TATJANA KEESEN DE SOUZA LIMA CLEMENTE",
+        "Area": "Imunologia",
+        "SubArea": "Imunologia Celular"
+    },
+    {
+        "Indice": 152,
+        "Orientador": "JOAO ANDRADE DA SILVA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 153,
+        "Orientador": "ISA MARIA FREIRE",
+        "Area": "Ciência da Informação",
+        "SubArea": "Biblioteconomia"
+    },
+    {
+        "Indice": 154,
+        "Orientador": "GUILHERME BARBOSA SCHULZE",
+        "Area": "Artes",
+        "SubArea": "Dança"
+    },
+    {
+        "Indice": 155,
+        "Orientador": "LUCIANA CORDEIRO DO NASCIMENTO",
+        "Area": "Agronomia",
+        "SubArea": "Fitossanidade"
+    },
+    {
+        "Indice": 158,
+        "Orientador": "SOLANGE FATIMA GERALDO DA COSTA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 159,
+        "Orientador": "ALEXANDRE NOBREGA DUARTE",
+        "Area": "Ciência da Computação",
+        "SubArea": "Metodologia e Técnicas da Computação"
+    },
+    {
+        "Indice": 160,
+        "Orientador": "EDILSON PAULO",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 161,
+        "Orientador": "RODRIGO RONELLI DUARTE DE ANDRADE",
+        "Area": "Física",
+        "SubArea": "Física Geral"
+    },
+    {
+        "Indice": 162,
+        "Orientador": "ELAINE BERNINI",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 163,
+        "Orientador": "CLAUDIA BATISTA MELO",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 164,
+        "Orientador": "SHERLAN GUIMARAES LEMOS",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 165,
+        "Orientador": "EMILIA MARIA DA TRINDADE PRESTES",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 167,
+        "Orientador": "ANTONIO GIOVANNI BOAES GONCALVES",
+        "Area": "Sociologia",
+        "SubArea": "Sociologia Urbana"
+    },
+    {
+        "Indice": 168,
+        "Orientador": "ALEXANDRE SERGIO SILVA",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 169,
+        "Orientador": "EDVAN CIRINO DA SILVA",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 170,
+        "Orientador": "ED PORTO BEZERRA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 171,
+        "Orientador": "MARIA LUCIA DA CONCEICAO",
+        "Area": "Nutrição",
+        "SubArea": "Bioquímica da Nutrição"
+    },
+    {
+        "Indice": 172,
+        "Orientador": "MARIA DO SOCORRO NOBREGA QUEIROGA",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 173,
+        "Orientador": "CESAR EMANOEL BARBOSA DE LIMA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 174,
+        "Orientador": "ÁLVARO CARLOS GONÇALVES NETO",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 177,
+        "Orientador": "MARIA DE OLIVEIRA ALVES CAVALCANTI",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 178,
+        "Orientador": "VERUSCKA ARAUJO SILVA",
+        "Area": "Engenharia Química",
+        "SubArea": "Processos Industriais de Engenharia Química"
+    },
+    {
+        "Indice": 179,
+        "Orientador": "VALDEREZ ARAUJO DE LIMA RAMOS",
+        "Area": "Medicina",
+        "SubArea": "Saúde Materno-Infantil"
+    },
+    {
+        "Indice": 180,
+        "Orientador": "THIAGO LIMA DA SILVA",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 181,
+        "Orientador": "SIMONE ELIZABETH DUARTE COUTINHO",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Pediátrica"
+    },
+    {
+        "Indice": 182,
+        "Orientador": "SILVANIA MARIA DE SOUZA GOMES NASCIMENTO",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 183,
+        "Orientador": "SELMA DOS PASSOS BRAGA",
+        "Area": "Turismo",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 184,
+        "Orientador": "ROSEILTON FERNANDES DOS SANTOS",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 186,
+        "Orientador": "RONALDO BEZERRA DE QUEIROZ",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 187,
+        "Orientador": "RENATA MONTEIRO GARCIA",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Ensino e da Aprendizagem"
+    },
+    {
+        "Indice": 188,
+        "Orientador": "RAFAEL DE ALMEIDA TRAVASSOS",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Geral"
+    },
+    {
+        "Indice": 189,
+        "Orientador": "PERICLES DE FARIAS BORGES",
+        "Area": "Agronomia",
+        "SubArea": "Agrometeorologia"
+    },
+    {
+        "Indice": 190,
+        "Orientador": "ORIANA DEYZE CORREIA PAIVA LEADEBAL",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 191,
+        "Orientador": "NUBIA PEREIRA DA COSTA",
+        "Area": "Biologia Geral",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 193,
+        "Orientador": "NADJA DE AZEVEDO CORREIA",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Geral"
+    },
+    {
+        "Indice": 196,
+        "Orientador": "MARIA GERMANA GALVAO CORREIA LIMA",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 197,
+        "Orientador": "MARIA DE LOURDES DE FARIAS PONTES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 198,
+        "Orientador": "MARIA CLAUDIA GATTO CARDIA",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 201,
+        "Orientador": "MARIA BERNADETE DE SOUSA COSTA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 202,
+        "Orientador": "MARCO ANTONIO DE VIVO BARROS",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 203,
+        "Orientador": "LUCIENE CHAVES DE AQUINO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 204,
+        "Orientador": "LUCIANE QUEIROZ MOTA DE LIMA",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 205,
+        "Orientador": "LUCIANE ALVES SANTOS",
+        "Area": "Letras",
+        "SubArea": "Teoria Literária"
+    },
+    {
+        "Indice": 206,
+        "Orientador": "LUCIANA PIMENTEL FERNANDES DE MELO",
+        "Area": "Fonoaudiologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 207,
+        "Orientador": "LENYNEVES DUARTE ALVINO DE ARAUJO",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 208,
+        "Orientador": "LENILMA BENTO DE ARAUJO MENESES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 209,
+        "Orientador": "LEILA DE CASSIA TAVARES DA FONSECA",
+        "Area": "Enfermagem",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 210,
+        "Orientador": "LAURENIA SOUTO SALES",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 211,
+        "Orientador": "JULIANA TOLEDO A. ROCHA",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 212,
+        "Orientador": "JOSÉ HENRIQUE PADOVANI VELLOSO",
+        "Area": "Artes",
+        "SubArea": "Música"
+    },
+    {
+        "Indice": 213,
+        "Orientador": "JOSE DA PAZ OLIVEIRA ALVARENGA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 215,
+        "Orientador": "JORIA VIANA GUERREIRO",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Epidemiologia"
+    },
+    {
+        "Indice": 217,
+        "Orientador": "JANA LUIZA TOSCANO MENDES DE OLIVEIRA",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 218,
+        "Orientador": "IVIA CARMEM TALIERI",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Clínica e Cirurgia Animal"
+    },
+    {
+        "Indice": 219,
+        "Orientador": "ISABELLE PIMENTEL GOMES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Pediátrica"
+    },
+    {
+        "Indice": 220,
+        "Orientador": "INGRID CONCEIÇÃO DANTAS GUERRA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 221,
+        "Orientador": "HENRIQUE ELIAS PESSOA GUTIERRES",
+        "Area": "Geociências",
+        "SubArea": "Geografia Física"
+    },
+    {
+        "Indice": 222,
+        "Orientador": "HAROLDO DE LUCENA BEZERRA",
+        "Area": "Medicina",
+        "SubArea": "Saúde Materno-Infantil"
+    },
+    {
+        "Indice": 224,
+        "Orientador": "HAISSA ROBERTA CARDARELLI",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 226,
+        "Orientador": "GEORGIA FREIRE PAIVA WINKELER",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 227,
+        "Orientador": "GENARO ZENAIDE CLERICUZI",
+        "Area": "Engenharia Química",
+        "SubArea": "Tratamentos e Aproveitamento de Rejeitos"
+    },
+    {
+        "Indice": 228,
+        "Orientador": "FRANCILEIDE DE ARAUJO RODRIGUES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 229,
+        "Orientador": "FLAVIANNE FERNANDA BITENCOURT NOBREGA",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 231,
+        "Orientador": "FABIOLA DA SILVA ALBUQUERQUE",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Experimental"
+    },
+    {
+        "Indice": 232,
+        "Orientador": "EVELISE MARCIA LOCATELLI DE SOUZA",
+        "Area": "Botânica",
+        "SubArea": "Morfologia Vegetal"
+    },
+    {
+        "Indice": 235,
+        "Orientador": "ESTHER BASTOS PALITOT",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 238,
+        "Orientador": "ELAINE FOLLY RAMOS",
+        "Area": "Ecologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 239,
+        "Orientador": "EDUARDO FERNANDES DE ARAUJO",
+        "Area": "Direito",
+        "SubArea": "Direito Público"
+    },
+    {
+        "Indice": 240,
+        "Orientador": "DANIEL DE CAMPOS ANTIQUERA",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 242,
+        "Orientador": "CLAYTON ZAMBELI OLIVEIRA",
+        "Area": "Bioquímica",
+        "SubArea": "Química de Macromoléculas"
+    },
+    {
+        "Indice": 243,
+        "Orientador": "CLAUDIA MENEGAZ ZACCARON CRISTIANO",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 245,
+        "Orientador": "CARLOS FERNANDO DE MELLO JUNIOR",
+        "Area": "Medicina",
+        "SubArea": "Radiologia Médica"
+    },
+    {
+        "Indice": 246,
+        "Orientador": "CARLOS AUGUSTO DE MELO",
+        "Area": "Letras",
+        "SubArea": "Teoria Literária"
+    },
+    {
+        "Indice": 247,
+        "Orientador": "CARLA APARECIDA SOARES SARAIVA",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 249,
+        "Orientador": "BRUNNA THAIS LUCKWU DE LUCENA",
+        "Area": "Fonoaudiologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 250,
+        "Orientador": "BELARMINO BARBOSA LIRA",
+        "Area": "Engenharia Civil",
+        "SubArea": "Construção Civil"
+    },
+    {
+        "Indice": 252,
+        "Orientador": "AUGUSTO WAGNER MENEZES TEIXEIRA JUNIOR",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 253,
+        "Orientador": "ARISTIDES MEDEIROS LEITE",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 254,
+        "Orientador": "ANA PAULA CORREIA DE ALBUQUERQUE DA COSTA",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 255,
+        "Orientador": "ANA MARIA BARROS CHAVES PEREIRA",
+        "Area": "Morfologia",
+        "SubArea": "Histologia"
+    },
+    {
+        "Indice": 256,
+        "Orientador": "ANA CANDIDA FERREIRA VIEIRA",
+        "Area": "Economia",
+        "SubArea": "Economias Agrária e dos Recursos Naturais"
+    },
+    {
+        "Indice": 258,
+        "Orientador": "ALESSANDRA SOUSA BRAZ CALDAS DE ANDRADE",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 260,
+        "Orientador": "ADRIANO MARTELETO GODINHO",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 261,
+        "Orientador": "ADRIANE PEREIRA WANDENESS",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 262,
+        "Orientador": "PATRICIA PINHEIRO FERNANDES VIEIRA",
+        "Area": "Microbiologia",
+        "SubArea": "Micologia"
+    },
+    {
+        "Indice": 263,
+        "Orientador": "CARMEN WALENTINA AMORIM GAUDENCIO BEZERRA",
+        "Area": "Psicologia",
+        "SubArea": "Tratamento e Prevenção Psicológica"
+    },
+    {
+        "Indice": 268,
+        "Orientador": "MARIA DA PENHA DE LIMA COUTINHO",
+        "Area": "Psicologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 269,
+        "Orientador": "EDUARDO RODRIGUES VIANA DE LIMA",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 270,
+        "Orientador": "ELIZANILDA RAMALHO DO REGO",
+        "Area": "Agronomia",
+        "SubArea": "Floricultura, Parques e Jardins"
+    },
+    {
+        "Indice": 272,
+        "Orientador": "ROBERTO WAGNER CAVALCANTI RAPOSO",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 273,
+        "Orientador": "FERNANDA LEMOS",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 274,
+        "Orientador": "TANIA LIPARINI CAMPOS",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 276,
+        "Orientador": "HUGO LEMES CARLO",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 277,
+        "Orientador": "MAURUS MARQUES DE ALMEIDA HOLANDA",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 279,
+        "Orientador": "CAMILA NATHÁLIA DE OLIVEIRA BRAGA",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 280,
+        "Orientador": "FLÁVIA DE OLIVEIRA PAULINO",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 283,
+        "Orientador": "LEBIAM TAMAR GOMES SILVA",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 284,
+        "Orientador": "CARLOS ROBERTO MARINHO DA SILVA FILHO",
+        "Area": "Administração",
+        "SubArea": "Administração de Setores Específicos"
+    },
+    {
+        "Indice": 285,
+        "Orientador": "MAX ROCHA QUIRINO",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 286,
+        "Orientador": "DANNIEL FERREIRA DE OLIVEIRA",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Metalurgia Fisica"
+    },
+    {
+        "Indice": 287,
+        "Orientador": "SWAMY DE PAULA LIMA SOARES",
+        "Area": "Educação",
+        "SubArea": "Planejamento e Avaliação Educacional"
+    },
+    {
+        "Indice": 288,
+        "Orientador": "LUIZ MEDEIROS DE ARAUJO LIMA FILHO",
+        "Area": "Probabilidade e Estatística",
+        "SubArea": "Probabilidade e Estatística Aplicadas"
+    },
+    {
+        "Indice": 289,
+        "Orientador": "LUCIA FATIMA FERNANDES NOBRE",
+        "Area": "Letras",
+        "SubArea": "Literatura Comparada"
+    },
+    {
+        "Indice": 291,
+        "Orientador": "GICIANE CARVALHO VIEIRA",
+        "Area": "Imunologia",
+        "SubArea": "Imunologia Celular"
+    },
+    {
+        "Indice": 292,
+        "Orientador": "GILBERTO AUGUSTO AMADO MOREIRA",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Fenômenos de Transporte"
+    },
+    {
+        "Indice": 293,
+        "Orientador": "BRIVALDO ANDRÉ MARINHO DA SILVA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 294,
+        "Orientador": "VANDERSON GONÇALVES CARNEIRO",
+        "Area": "Ciência Política",
+        "SubArea": "Políticas Públicas"
+    },
+    {
+        "Indice": 295,
+        "Orientador": "PEDRO PARINI MARQUES DE LIMA",
+        "Area": "Direito",
+        "SubArea": "Teoria do Direito"
+    },
+    {
+        "Indice": 296,
+        "Orientador": "ANA VALERIA ENDRES",
+        "Area": "Turismo",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 297,
+        "Orientador": "JANINE MARTA COELHO RODRIGUES",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 298,
+        "Orientador": "DILAINE SOARES SAMPAIO",
+        "Area": "Teologia",
+        "SubArea": "História da Teologia"
+    },
+    {
+        "Indice": 299,
+        "Orientador": "ADEMAR PEREIRA DE OLIVEIRA",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 300,
+        "Orientador": "ADELAIDE ALVES DIAS",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 301,
+        "Orientador": "JOANA COELI RIBEIRO GARCIA",
+        "Area": "Ciência da Informação",
+        "SubArea": "Biblioteconomia"
+    },
+    {
+        "Indice": 302,
+        "Orientador": "MARIA DE FATIMA VANDERLEI DE SOUZA",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 303,
+        "Orientador": "LUCIANA ELEONORA DE FREITAS CALADO DEPLAGNE",
+        "Area": "Letras",
+        "SubArea": "Literatura Comparada"
+    },
+    {
+        "Indice": 304,
+        "Orientador": "ROBERTO GERMANO COSTA",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 305,
+        "Orientador": "HAMILCAR JOSE ALMEIDA FILGUEIRA",
+        "Area": "Planejamento Urbano e Regional",
+        "SubArea": "Serviços Urbanos e Regionais"
+    },
+    {
+        "Indice": 306,
+        "Orientador": "EDVALDO MESQUITA BELTRAO FILHO",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 307,
+        "Orientador": "ALINE MARIA BATISTA MACHADO",
+        "Area": "Serviço Social",
+        "SubArea": "Serviço Social Aplicado"
+    },
+    {
+        "Indice": 308,
+        "Orientador": "HELEODORIO HONORATO DOS SANTOS",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 309,
+        "Orientador": "CARLO GABRIEL PORTO BELLINI",
+        "Area": "Administração",
+        "SubArea": "Administração Pública"
+    },
+    {
+        "Indice": 311,
+        "Orientador": "MARCOS BARROS DE MEDEIROS",
+        "Area": "Agronomia",
+        "SubArea": "Fitossanidade"
+    },
+    {
+        "Indice": 312,
+        "Orientador": "PAULO GIOVANI ANTONINO NUNES",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 313,
+        "Orientador": "SEVERINO AIRES DE ARAUJO NETO",
+        "Area": "Medicina",
+        "SubArea": "Radiologia Médica"
+    },
+    {
+        "Indice": 314,
+        "Orientador": "DANIELLE GUEDES DE LIMA CAVALCANTE",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Metalurgia de Transformação"
+    },
+    {
+        "Indice": 315,
+        "Orientador": "LUCIANA NODA",
+        "Area": "Artes",
+        "SubArea": "Música"
+    },
+    {
+        "Indice": 316,
+        "Orientador": "TELMA CRISTINA DELGADO D FERNANDES",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 317,
+        "Orientador": "MAGNO VAMBERTO BATISTA DA SILVA",
+        "Area": "Economia",
+        "SubArea": "Economia Regional e Urbana"
+    },
+    {
+        "Indice": 318,
+        "Orientador": "MARTA PRAGANA DANTAS",
+        "Area": "Letras",
+        "SubArea": "Línguas Estrangeiras Modernas"
+    },
+    {
+        "Indice": 319,
+        "Orientador": "THIERRY MARCELINO PASSERAT DE SILANS",
+        "Area": "Física",
+        "SubArea": "Física Atômica e Molecular"
+    },
+    {
+        "Indice": 320,
+        "Orientador": "MARCIA BATISTA DA FONSECA",
+        "Area": "Economia",
+        "SubArea": "Economia Internacional"
+    },
+    {
+        "Indice": 321,
+        "Orientador": "JOAO MARTINHO BRAGA DE MENDONCA",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Urbana"
+    },
+    {
+        "Indice": 322,
+        "Orientador": "ALFREDO RICARDO LANGUTH BONINO",
+        "Area": "Zoologia",
+        "SubArea": "Morfologia dos Grupos Recentes"
+    },
+    {
+        "Indice": 323,
+        "Orientador": "SOLANGE PEREIRA DA ROCHA",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 324,
+        "Orientador": "MARCO ANTONIO MITIDIERO JUNIOR",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 325,
+        "Orientador": "SERIOJA RODRIGUES CORDEIRO MARIANO",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 326,
+        "Orientador": "MARCIO COTRIM CUNHA",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 327,
+        "Orientador": "CLAUDIO CARDOSO DE PAIVA",
+        "Area": "Comunicação",
+        "SubArea": "Teoria da Comunicação"
+    },
+    {
+        "Indice": 328,
+        "Orientador": "MARIA DE FATIMA ALCANTARA BARROS",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 329,
+        "Orientador": "WILTON WILNEY NASCIMENTO PADILHA",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 330,
+        "Orientador": "VALDINEY VELOSO GOUVEIA",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 331,
+        "Orientador": "UBERLANDIO BATISTA SEVERO",
+        "Area": "Matemática",
+        "SubArea": "Análise"
+    },
+    {
+        "Indice": 332,
+        "Orientador": "SILVANA CARNEIRO MACIEL",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 334,
+        "Orientador": "NATANAEL ANTONIO DOS SANTOS",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Fisiológica"
+    },
+    {
+        "Indice": 335,
+        "Orientador": "MARIANNA VIEIRA SOBRAL CASTELLO BRANCO",
+        "Area": "Farmacologia",
+        "SubArea": "Toxicologia"
+    },
+    {
+        "Indice": 336,
+        "Orientador": "MARIA LUCIA DA SILVA NUNES",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 337,
+        "Orientador": "MARIA DE FATIMA PEREIRA ALBERTO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 338,
+        "Orientador": "MARCOS ANTONIO NICOLAU",
+        "Area": "Comunicação",
+        "SubArea": "Comunicação Visual"
+    },
+    {
+        "Indice": 339,
+        "Orientador": "KATIA NEYLA DE FREITAS MACEDO",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 340,
+        "Orientador": "JULIO SANTOS REBOUCAS",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 341,
+        "Orientador": "HILZETH DE LUNA FREIRE PESSOA",
+        "Area": "Farmacologia",
+        "SubArea": "Toxicologia"
+    },
+    {
+        "Indice": 342,
+        "Orientador": "EMILIA DE RODAT FERNANDES MOREIRA",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 343,
+        "Orientador": "DEMETRIUS ANTONIO MACHADO DE ARAUJO",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 345,
+        "Orientador": "CLEONICE PEREIRA DOS SANTOS CAMINO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Desenvolvimento Humano"
+    },
+    {
+        "Indice": 346,
+        "Orientador": "CARLA MARY DA SILVA OLIVEIRA",
+        "Area": "História",
+        "SubArea": "História do Brasil"
+    },
+    {
+        "Indice": 347,
+        "Orientador": "BERNADETE DE LOURDES FIGUEIREDO DE ALMEIDA",
+        "Area": "Serviço Social",
+        "SubArea": "Serviço Social Aplicado"
+    },
+    {
+        "Indice": 348,
+        "Orientador": "ANIELSON BARBOSA DA SILVA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 349,
+        "Orientador": "ANA MARIA GONDIM VALENCA",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 352,
+        "Orientador": "MARCEL VIEIRA BARRETO SILVA",
+        "Area": "Comunicação",
+        "SubArea": "Rádio e Televisão"
+    },
+    {
+        "Indice": 353,
+        "Orientador": "NELCI TINEM",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 354,
+        "Orientador": "RILVA LOPES DE SOUSA MUNOZ",
+        "Area": "Medicina",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 355,
+        "Orientador": "RONALDO BASTOS FRANCINI FILHO",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 356,
+        "Orientador": "MARIA DE OLIVEIRA FERREIRA FILHA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Psiquiátrica"
+    },
+    {
+        "Indice": 357,
+        "Orientador": "MAILSON MONTEIRO DO REGO",
+        "Area": "Genética",
+        "SubArea": "Genética Vegetal"
+    },
+    {
+        "Indice": 358,
+        "Orientador": "CELSO JOSE BRUNO DE OLIVEIRA",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Medicina Veterinária Preventiva"
+    },
+    {
+        "Indice": 359,
+        "Orientador": "LEONARDO WANDERLEY LOPES",
+        "Area": "Fonoaudiologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 360,
+        "Orientador": "IERECE MARIA DE LUCENA ROSA",
+        "Area": "Recursos Pesqueiros e Engenharia de Pesca",
+        "SubArea": "Aqüicultura"
+    },
+    {
+        "Indice": 361,
+        "Orientador": "ELITON SOUTO DE MEDEIROS",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 362,
+        "Orientador": "EDUARDO RAMALHO RABENHORST",
+        "Area": "Direito",
+        "SubArea": "Teoria do Direito"
+    },
+    {
+        "Indice": 363,
+        "Orientador": "JOSE JORDAO FILHO",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 365,
+        "Orientador": "ROBERTO SASSI",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 366,
+        "Orientador": "RITA DE CASSIA RAMOS DO EGYPTO QUEIROGA",
+        "Area": "Nutrição",
+        "SubArea": "Bioquímica da Nutrição"
+    },
+    {
+        "Indice": 367,
+        "Orientador": "MARIA MIRIAM LIMA DA NOBREGA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 368,
+        "Orientador": "CLAUDIA HELENA SOARES DE MORAIS FREITAS",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 369,
+        "Orientador": "ANTONIA OLIVEIRA SILVA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Psiquiátrica"
+    },
+    {
+        "Indice": 371,
+        "Orientador": "MARIA GARDENNIA DA FONSECA",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 372,
+        "Orientador": "ELEONIDAS MOURA LIMA",
+        "Area": "Genética",
+        "SubArea": "Genética Humana e Médica"
+    },
+    {
+        "Indice": 373,
+        "Orientador": "MATHEUS DA CRUZ E ZICA",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 374,
+        "Orientador": "LAÍS ANGÉLICA DE ANDRADE PINHEIRO BORGES",
+        "Area": "Botânica",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 375,
+        "Orientador": "MARINEUMA DE OLIVEIRA COSTA CAVALCANTI",
+        "Area": "Letras",
+        "SubArea": "Língua Portuguesa"
+    },
+    {
+        "Indice": 376,
+        "Orientador": "MARIA ALVES DE AZEREDO",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 377,
+        "Orientador": "FLAVIA CRISTINA FERNANDES PIMENTA",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 378,
+        "Orientador": "GUSTAVO RABAY GUERRA",
+        "Area": "Direito",
+        "SubArea": "Teoria do Direito"
+    },
+    {
+        "Indice": 379,
+        "Orientador": "ITAMARA FARIAS LEITE",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 380,
+        "Orientador": "BIANCA MARQUES SANTIAGO",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 381,
+        "Orientador": "ANA DORZIAT BARBOSA DE MELO",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 382,
+        "Orientador": "ANDRESSA FEITOSA BEZERRA DE OLIVEIRA",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 385,
+        "Orientador": "THIAGO JARDELINO DIAS",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 388,
+        "Orientador": "PATRICIA MIRELLA DA SILVA SCARDUA",
+        "Area": "Recursos Pesqueiros e Engenharia de Pesca",
+        "SubArea": "Aqüicultura"
+    },
+    {
+        "Indice": 389,
+        "Orientador": "MARTINE PATRICIA ARLTTE CHEVROLLER",
+        "Area": "Física",
+        "SubArea": "Física Atômica e Molecular"
+    },
+    {
+        "Indice": 392,
+        "Orientador": "MARIA DJAIR DIAS",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 394,
+        "Orientador": "FLAVIO LUIZ HONORATO DA SILVA",
+        "Area": "Engenharia Química",
+        "SubArea": "Processos Industriais de Engenharia Química"
+    },
+    {
+        "Indice": 395,
+        "Orientador": "FAGNER DIAS ARARUNA",
+        "Area": "Matemática",
+        "SubArea": "Análise"
+    },
+    {
+        "Indice": 396,
+        "Orientador": "CARLOS ANTONIO DE SOUSA PIRES",
+        "Area": "Física",
+        "SubArea": "Física das Partículas Elementares e Campos"
+    },
+    {
+        "Indice": 398,
+        "Orientador": "ANA ALAYDE WERBA SALDANHA PICHELLI",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 399,
+        "Orientador": "RICARDO DE SOUZA ROSA",
+        "Area": "Zoologia",
+        "SubArea": "Taxonomia dos Grupos Recentes"
+    },
+    {
+        "Indice": 400,
+        "Orientador": "JULIANO ELVIS OLIVEIRA",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 401,
+        "Orientador": "BAGNOLIA ARAUJO DA SILVA",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Geral"
+    },
+    {
+        "Indice": 402,
+        "Orientador": "JUAN MOISES MAURICIO VILLANUEVA",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Medidas Elétricas, Magnéticas e Eletrônicas"
+    },
+    {
+        "Indice": 403,
+        "Orientador": "MELYSSA KELLYANE CAVALCANTI GALDINO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Cognitiva"
+    },
+    {
+        "Indice": 404,
+        "Orientador": "MARIZE RAQUEL DINIZ DA ROSA",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 405,
+        "Orientador": "DANILA BARREIRO CAMPOS",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Reprodução Animal"
+    },
+    {
+        "Indice": 406,
+        "Orientador": "MARTA MIRIAM LOPES COSTA CUNHA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Doenças Contagiosas"
+    },
+    {
+        "Indice": 407,
+        "Orientador": "JULIANA ALVES VALE",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 408,
+        "Orientador": "RICARDO TARGINO MOREIRA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 410,
+        "Orientador": "MARIA JULIA GUIMARAES OLIVEIRA SOARES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 412,
+        "Orientador": "MARCIO ANDRE VERAS MACHADO",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 413,
+        "Orientador": "JOSE NELIO DE SOUSA SALES",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Reprodução Animal"
+    },
+    {
+        "Indice": 414,
+        "Orientador": "FREDERICO BARBOSA DE SOUSA",
+        "Area": "Morfologia",
+        "SubArea": "Histologia"
+    },
+    {
+        "Indice": 416,
+        "Orientador": "RENNIO FELIX DE SENA",
+        "Area": "Engenharia Química",
+        "SubArea": "Tecnologia Química"
+    },
+    {
+        "Indice": 418,
+        "Orientador": "ROBERTO VERAS DE OLIVEIRA",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 419,
+        "Orientador": "RICARDO BARBOSA DE LUCENA",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Patologia Animal"
+    },
+    {
+        "Indice": 420,
+        "Orientador": "PAULO ROGERIO FERRETI BONAN",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 421,
+        "Orientador": "MARIA REGINA DE VASCONCELLOS BARBOSA",
+        "Area": "Botânica",
+        "SubArea": "Taxonomia Vegetal"
+    },
+    {
+        "Indice": 422,
+        "Orientador": "MARIA DAS GRAÇAS MELO FERNANDES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 423,
+        "Orientador": "MARCELO DE SOUZA BISPO",
+        "Area": "Turismo",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 424,
+        "Orientador": "JOSE PINTO DE SIQUEIRA JUNIOR",
+        "Area": "Genética",
+        "SubArea": "Genética Molecular e de Microorganismos"
+    },
+    {
+        "Indice": 426,
+        "Orientador": "HELDER FARIAS PEREIRA DE ARAUJO",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Teórica"
+    },
+    {
+        "Indice": 428,
+        "Orientador": "DIONISIO BAZEIA FILHO",
+        "Area": "Física",
+        "SubArea": "Física da Matéria Condensada"
+    },
+    {
+        "Indice": 430,
+        "Orientador": "GIORVAN ANDERSON DOS SANTOS ALVES",
+        "Area": "Fonoaudiologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 431,
+        "Orientador": "GILMÁRIO RICARTE BATISTA",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 433,
+        "Orientador": "SILDIVANE VALCÁCIA SILVA",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Reprodução Animal"
+    },
+    {
+        "Indice": 434,
+        "Orientador": "FERNANDO GUILHERME PERAZZO COSTA",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 435,
+        "Orientador": "ADRIANO ROLIM DA PAZ",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Recursos Hídricos"
+    },
+    {
+        "Indice": 436,
+        "Orientador": "CALIANDRA MARIA BEZERRA LUNA LIMA",
+        "Area": "Parasitologia",
+        "SubArea": "Protozoologia de Parasitos"
+    },
+    {
+        "Indice": 437,
+        "Orientador": "MARIA EMILIA LIMEIRA LOPES",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 440,
+        "Orientador": "IOLANDA BESERRA DA COSTA SANTOS",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 441,
+        "Orientador": "MIGUEL ANTONIO DO NASCIMENTO",
+        "Area": "Filosofia",
+        "SubArea": "Metafísica"
+    },
+    {
+        "Indice": 442,
+        "Orientador": "DENISE DIAS DA CRUZ",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 443,
+        "Orientador": "RICARDO PEIXOTO SUASSUNA DUTRA",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 446,
+        "Orientador": "JOELMA RODRIGUES DE SOUZA",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Epidemiologia"
+    },
+    {
+        "Indice": 447,
+        "Orientador": "RAQUEL BASÍLIO DA CUNHA DIAS DE MELO",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 448,
+        "Orientador": "PALLOMA RODRIGUES DE ANDRADE",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 449,
+        "Orientador": "MARCIA ROSEANE TARGINO DE OLIVEIRA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 450,
+        "Orientador": "FABIANO SALVADORI",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Medidas Elétricas, Magnéticas e Eletrônicas"
+    },
+    {
+        "Indice": 451,
+        "Orientador": "ROSALIA GOUVEIA FILIZOLA",
+        "Area": "Medicina",
+        "SubArea": "Saúde Materno-Infantil"
+    },
+    {
+        "Indice": 452,
+        "Orientador": "MARIA PATRÍCIA LOPES GOLDFARB",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Urbana"
+    },
+    {
+        "Indice": 453,
+        "Orientador": "CRISTIANE FRANCISCA DA COSTA SASSI",
+        "Area": "Oceanografia",
+        "SubArea": "Oceanografia Biológica"
+    },
+    {
+        "Indice": 454,
+        "Orientador": "PATRICIA SERPA DE SOUZA BATISTA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 455,
+        "Orientador": "LISZANDRA FERNANDA ARAUJO CAMPOS",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 456,
+        "Orientador": "MARILIA GABRIELA DOS SANTOS CAVALCANTI",
+        "Area": "Parasitologia",
+        "SubArea": "Helmintologia de Parasitos"
+    },
+    {
+        "Indice": 457,
+        "Orientador": "IVAN CAVALCANTI FILHO",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 459,
+        "Orientador": "LUCIANO MEIRELES DE PONTES",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 460,
+        "Orientador": "CLAUDIA COUTINHO NOBREGA",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Saneamento Básico"
+    },
+    {
+        "Indice": 461,
+        "Orientador": "ANNA ALICE FIGUEIREDO DE ALMEIDA",
+        "Area": "Fonoaudiologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 462,
+        "Orientador": "EUTILIA ANDRADE MEDEIROS FREIRE",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 463,
+        "Orientador": "ELISANGELA MARIA RODRIGUES ROCHA",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Saneamento Ambiental"
+    },
+    {
+        "Indice": 464,
+        "Orientador": "MAURICEIA ANANIAS",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 465,
+        "Orientador": "KRYSTYNA GORLACH LIRA",
+        "Area": "Microbiologia",
+        "SubArea": "Biologia e Fisiologia dos Microorganismos"
+    },
+    {
+        "Indice": 467,
+        "Orientador": "AMÉLIA SEVERINO FERREIRA E SANTOS",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 468,
+        "Orientador": "VALERIA PEIXOTO BEZERRA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 470,
+        "Orientador": "ALISSON VASCONCELOS DE BRITO",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 471,
+        "Orientador": "MARIA ELIZETE GUIMARAES CARVALHO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 472,
+        "Orientador": "VANIA DA SILVA FRAGA",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 473,
+        "Orientador": "TARCISO CABRAL DA SILVA",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Saneamento Ambiental"
+    },
+    {
+        "Indice": 474,
+        "Orientador": "SEVERINO GONZAGA NETO",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 475,
+        "Orientador": "ROBERTO LEAL PIMENTEL",
+        "Area": "Engenharia Civil",
+        "SubArea": "Estruturas"
+    },
+    {
+        "Indice": 477,
+        "Orientador": "REINALDO FARIAS PAIVA DE LUCENA",
+        "Area": "Botânica",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 479,
+        "Orientador": "MARIA AUGUSTA TAVARES",
+        "Area": "Serviço Social",
+        "SubArea": "Fundamentos do Serviço Social"
+    },
+    {
+        "Indice": 480,
+        "Orientador": "MARGARETH DE FATIMA FORMIGA MELO DINIZ",
+        "Area": "Farmacologia",
+        "SubArea": "Toxicologia"
+    },
+    {
+        "Indice": 481,
+        "Orientador": "LUIZ ANTONIO MOUSINHO MAGALHAES",
+        "Area": "Comunicação",
+        "SubArea": "Teoria da Comunicação"
+    },
+    {
+        "Indice": 482,
+        "Orientador": "LUIS FERNANDO MARQUES DOS SANTOS",
+        "Area": "Biologia Geral",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 483,
+        "Orientador": "LEONARDO AUGUSTO FONSECA PASCOAL",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 484,
+        "Orientador": "JOSE CAZUZA DE FARIAS JUNIOR",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 485,
+        "Orientador": "IRAQUITAN DE OLIVEIRA CAMINHA",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 486,
+        "Orientador": "FABIO CORREIA SAMPAIO",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 487,
+        "Orientador": "EDELTRUDES DE OLIVEIRA LIMA",
+        "Area": "Microbiologia",
+        "SubArea": "Micologia"
+    },
+    {
+        "Indice": 488,
+        "Orientador": "DANILO TANCLER STIPP",
+        "Area": "Medicina Veterinária",
+        "SubArea": "Medicina Veterinária Preventiva"
+    },
+    {
+        "Indice": 489,
+        "Orientador": "ANGELO VIEIRA MENDONCA",
+        "Area": "Engenharia Civil",
+        "SubArea": "Estruturas"
+    },
+    {
+        "Indice": 490,
+        "Orientador": "ADAILSON PEREIRA DE SOUZA",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 493,
+        "Orientador": "SILVIA LAYARA FLORIANI ANDERSEN",
+        "Area": "Engenharia Química",
+        "SubArea": "Tratamentos e Aproveitamento de Rejeitos"
+    },
+    {
+        "Indice": 494,
+        "Orientador": "ANDERSON DARC FERREIRA",
+        "Area": "Filosofia",
+        "SubArea": "História da Filosofia"
+    },
+    {
+        "Indice": 495,
+        "Orientador": "PEDRO FRANCISCO GUEDES DO NASCIMENTO",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Urbana"
+    },
+    {
+        "Indice": 496,
+        "Orientador": "MARIA DO SOCORRO DE FRANÇA SILVA",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Cardiorenal"
+    },
+    {
+        "Indice": 498,
+        "Orientador": "REGINA CELI MENDES PEREIRA DA SILVA",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 499,
+        "Orientador": "PIERRE NORMANDO GOMES-DA-SILVA",
+        "Area": "Educação Física",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 500,
+        "Orientador": "PATRICIA EMILIA NAVES GIVISIEZ",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 501,
+        "Orientador": "MARIA CRISTINA BASILIO CRISPIM DA SILVA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Teórica"
+    },
+    {
+        "Indice": 502,
+        "Orientador": "ISAAC SOARES DE FREITAS",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Eletrônica Industrial, Sistemas e Controles"
+    },
+    {
+        "Indice": 503,
+        "Orientador": "FREDERICO GUSTAVO RODRIGUES FRANCA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 504,
+        "Orientador": "ERCULES EPAMINONDAS DE SOUSA TEOTONIO",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 505,
+        "Orientador": "PATRICIA MOREIRA RABELLO",
+        "Area": "Odontologia",
+        "SubArea": "Odontologia Social e Preventiva"
+    },
+    {
+        "Indice": 506,
+        "Orientador": "JOSE JAMACY DE ALMEIDA FERREIRA",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 507,
+        "Orientador": "HENRIQUE ZEFERINO DE MENEZES",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 508,
+        "Orientador": "FERNANDA VANESSA GOMES DA SILVA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 509,
+        "Orientador": "DARLENE CAMATI PERSUHN",
+        "Area": "Bioquímica",
+        "SubArea": "Metabolismo e Bioenergética"
+    },
+    {
+        "Indice": 510,
+        "Orientador": "JAILANE DE SOUZA AQUINO",
+        "Area": "Nutrição",
+        "SubArea": "Bioquímica da Nutrição"
+    },
+    {
+        "Indice": 512,
+        "Orientador": "GEORGE EMMANUEL CAVALCANTI DE MIRANDA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 513,
+        "Orientador": "RITA DE CASSIA DE FARIA PEREIRA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 514,
+        "Orientador": "PAULO SERGIO DE AZEVEDO",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 515,
+        "Orientador": "JULIO RIQUE NETO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Desenvolvimento Humano"
+    },
+    {
+        "Indice": 517,
+        "Orientador": "EVANDRO LEITE DE SOUZA",
+        "Area": "Nutrição",
+        "SubArea": "Dietética"
+    },
+    {
+        "Indice": 519,
+        "Orientador": "EDUARDO DE JESUS OLIVEIRA",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 520,
+        "Orientador": "BELINDA PEREIRA DA CUNHA",
+        "Area": "Direito",
+        "SubArea": "Direito Público"
+    },
+    {
+        "Indice": 522,
+        "Orientador": "JOAO EUCLIDES FERNANDES BRAGA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Psiquiátrica"
+    },
+    {
+        "Indice": 524,
+        "Orientador": "ANA KARINA MACIEL DE ANDRADE",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 525,
+        "Orientador": "CARLA ALEXANDRA DA SILVA MOITA MINERVINO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Cognitiva"
+    },
+    {
+        "Indice": 526,
+        "Orientador": "PEDRO FARIAS FRANCELINO",
+        "Area": "Lingüística",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 528,
+        "Orientador": "MARIA LUIZA PEREIRA DE ALENCAR MAYER FEITOSA",
+        "Area": "Direito",
+        "SubArea": "Direitos Especiais"
+    },
+    {
+        "Indice": 529,
+        "Orientador": "MÁRCIO JOSÉ COELHO DE PONTES",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 531,
+        "Orientador": "RODRIGO FREIRE DE CARVALHO E SILVA",
+        "Area": "Ciência Política",
+        "SubArea": "Comportamento Político"
+    },
+    {
+        "Indice": 532,
+        "Orientador": "SAFIRA VALENCA BISPO",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 533,
+        "Orientador": "JORGE GABRIEL GOMES DE SOUZA RAMOS",
+        "Area": "Física",
+        "SubArea": "Física Geral"
+    },
+    {
+        "Indice": 537,
+        "Orientador": "EVANGELINA MARIA BRITO DE FARIA",
+        "Area": "Lingüística",
+        "SubArea": "Psicolingüística"
+    },
+    {
+        "Indice": 538,
+        "Orientador": "CRISTIANO DAS NEVES ALMEIDA",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Recursos Hídricos"
+    },
+    {
+        "Indice": 540,
+        "Orientador": "RONEI MARCOS DE MORAES",
+        "Area": "Probabilidade e Estatística",
+        "SubArea": "Probabilidade e Estatística Aplicadas"
+    },
+    {
+        "Indice": 542,
+        "Orientador": "IVAN TARGINO MOREIRA",
+        "Area": "Economia",
+        "SubArea": "Economias Agrária e dos Recursos Naturais"
+    },
+    {
+        "Indice": 544,
+        "Orientador": "RAMON ALVES TORQUATO",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 545,
+        "Orientador": "IZABEL FRANÇA DE LIMA",
+        "Area": "Ciência da Informação",
+        "SubArea": "Biblioteconomia"
+    },
+    {
+        "Indice": 546,
+        "Orientador": "JOEL SILVA DOS SANTOS",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 547,
+        "Orientador": "ANDRÉ JACOMEL TORII",
+        "Area": "Engenharia Civil",
+        "SubArea": "Estruturas"
+    },
+    {
+        "Indice": 548,
+        "Orientador": "SONIA SAEGER MEIRELES MONTE RASO",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 550,
+        "Orientador": "GUSTAVO HENRIQUE CALAZANS VIEIRA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Teórica"
+    },
+    {
+        "Indice": 551,
+        "Orientador": "THOMPSON LOPES DE OLIVEIRA",
+        "Area": "Microbiologia",
+        "SubArea": "Biologia e Fisiologia dos Microorganismos"
+    },
+    {
+        "Indice": 552,
+        "Orientador": "ROBSON COSTA CORDEIRO",
+        "Area": "Filosofia",
+        "SubArea": "Metafísica"
+    },
+    {
+        "Indice": 553,
+        "Orientador": "SINEZIO FERNANDES MAIA",
+        "Area": "Economia",
+        "SubArea": "Métodos Quantitativos em Economia"
+    },
+    {
+        "Indice": 554,
+        "Orientador": "MARCILIO TOSCANO FRANCA FILHO",
+        "Area": "Direito",
+        "SubArea": "Direito Público"
+    },
+    {
+        "Indice": 556,
+        "Orientador": "GILSON BARBOSA ATHAYDE JUNIOR",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Tratamento de Águas de Abastecimento e Residuárias"
+    },
+    {
+        "Indice": 557,
+        "Orientador": "LARA TOLEDO HENRIQUES",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 558,
+        "Orientador": "SILMAR ANDRADE DO MONTE",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 559,
+        "Orientador": "LUCIDIO DOS ANJOS FORMIGA CABRAL",
+        "Area": "Ciência da Computação",
+        "SubArea": "Matemática da Computação"
+    },
+    {
+        "Indice": 560,
+        "Orientador": "FABIANA DE ANDRADE CAVALCANTE",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Geral"
+    },
+    {
+        "Indice": 561,
+        "Orientador": "LILIANA DE FATIMA BEZERRA LIRA DE PONTES",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 562,
+        "Orientador": "ERENILDO JOAO CARLOS",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 563,
+        "Orientador": "RAUNIRA DA COSTA ARAUJO",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 564,
+        "Orientador": "DJAIL SANTOS",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 565,
+        "Orientador": "SVEN PETERKE",
+        "Area": "Direito",
+        "SubArea": "Direito Público"
+    },
+    {
+        "Indice": 567,
+        "Orientador": "NEIDE QUEIROZ",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 568,
+        "Orientador": "MONICA LOURDES FRANCH GUTIERREZ",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Urbana"
+    },
+    {
+        "Indice": 569,
+        "Orientador": "MARIANNE CARVALHO BEZERRA CAVALCANTE",
+        "Area": "Lingüística",
+        "SubArea": "Psicolingüística"
+    },
+    {
+        "Indice": 570,
+        "Orientador": "MARIA ZULEIDE DA COSTA PEREIRA",
+        "Area": "Educação",
+        "SubArea": "Currículo"
+    },
+    {
+        "Indice": 571,
+        "Orientador": "MARIA DE FATIMA AGRA",
+        "Area": "Botânica",
+        "SubArea": "Botânica Aplicada"
+    },
+    {
+        "Indice": 573,
+        "Orientador": "LOURIVAL FERREIRA CAVALCANTE",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 575,
+        "Orientador": "JOSE MAURICIO ALVES DE MATOS GURGEL",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Engenharia Térmica"
+    },
+    {
+        "Indice": 576,
+        "Orientador": "ELIO CHAVES FLORES",
+        "Area": "História",
+        "SubArea": "História Moderna e Contemporânea"
+    },
+    {
+        "Indice": 577,
+        "Orientador": "EDSON MAURO SANTOS",
+        "Area": "Zootecnia",
+        "SubArea": "Pastagem e Forragicultura"
+    },
+    {
+        "Indice": 578,
+        "Orientador": "EDNA GUSMAO DE GOES BRENNAND",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 579,
+        "Orientador": "DERMEVAL DA HORA OLIVEIRA",
+        "Area": "Lingüística",
+        "SubArea": "Sociolingüística e Dialetologia"
+    },
+    {
+        "Indice": 580,
+        "Orientador": "CELSO FEITOSA MARTINS",
+        "Area": "Zoologia",
+        "SubArea": "Comportamento Animal"
+    },
+    {
+        "Indice": 581,
+        "Orientador": "ANA RAQUEL ROSAS TORRES",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia Social"
+    },
+    {
+        "Indice": 583,
+        "Orientador": "MARIO LUIZ ARAUJO DE ALMEIDA VASCONCELLOS",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 584,
+        "Orientador": "FERNANDO JOSE VOLPI EUSEBIO DE OLIVEIRA",
+        "Area": "Química",
+        "SubArea": "Química Inorgânica"
+    },
+    {
+        "Indice": 585,
+        "Orientador": "ZELMA GLEBYA MACIEL QUIRINO",
+        "Area": "Botânica",
+        "SubArea": "Morfologia Vegetal"
+    },
+    {
+        "Indice": 587,
+        "Orientador": "KELLY CRISTIANE GOMES DA SILVA",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 589,
+        "Orientador": "SERGIO RIBEIRO DOS SANTOS",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem Médico-Cirúrgica"
+    },
+    {
+        "Indice": 590,
+        "Orientador": "RODRIGO CRISTIANO",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 592,
+        "Orientador": "MARIA JOSE DE CARVALHO COSTA",
+        "Area": "Nutrição",
+        "SubArea": "Dietética"
+    },
+    {
+        "Indice": 597,
+        "Orientador": "LUCINA ROCHA SOUSA",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 598,
+        "Orientador": "RITA BALTAZAR DE LIMA",
+        "Area": "Botânica",
+        "SubArea": "Taxonomia Vegetal"
+    },
+    {
+        "Indice": 600,
+        "Orientador": "ANIERES BARBOSA DA SILVA",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 601,
+        "Orientador": "NAILA FRANCIS PAULO DE OLIVEIRA",
+        "Area": "Genética",
+        "SubArea": "Genética Humana e Médica"
+    },
+    {
+        "Indice": 602,
+        "Orientador": "WENNER GLAUCIO LOPES LUCENA",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 603,
+        "Orientador": "VIVEK NIGAM",
+        "Area": "Ciência da Computação",
+        "SubArea": "Teoria da Computação"
+    },
+    {
+        "Indice": 604,
+        "Orientador": "REINALDO NOBREGA DE ALMEIDA",
+        "Area": "Farmacologia",
+        "SubArea": "Etnofarmacologia"
+    },
+    {
+        "Indice": 605,
+        "Orientador": "JOVANKA BARACUHY CAVALCANTI",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 606,
+        "Orientador": "JORDANA DE ALMEIDA NOGUEIRA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Doenças Contagiosas"
+    },
+    {
+        "Indice": 609,
+        "Orientador": "CLAUDIA FABIANA GOHR",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Gerência de Produção"
+    },
+    {
+        "Indice": 611,
+        "Orientador": "MARTIN LINDSEY CHRISTOFFERSEN",
+        "Area": "Zoologia",
+        "SubArea": "Zoologia Aplicada"
+    },
+    {
+        "Indice": 613,
+        "Orientador": "PAULO ROBERTO PALHANO SILVA",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 614,
+        "Orientador": "MARCIA REIS MACHADO",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 615,
+        "Orientador": "RENATA MARTINS BRAGA",
+        "Area": "Engenharia Química",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 616,
+        "Orientador": "ANGELINA DIAS LEAO COSTA",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Tecnologia de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 617,
+        "Orientador": "SIMONE HELENA DOS SANTOS OLIVEIRA",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 618,
+        "Orientador": "LAESIO PEREIRA MARTINS",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 623,
+        "Orientador": "CARLOS HENRIQUE DE BRITO",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 625,
+        "Orientador": "POLLYANA CAETANO RIBEIRO FERNANDES",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 626,
+        "Orientador": "JOSE SOARES DO NASCIMENTO",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 627,
+        "Orientador": "FABIO MURA",
+        "Area": "Antropologia",
+        "SubArea": "Etnologia Indígena"
+    },
+    {
+        "Indice": 632,
+        "Orientador": "ANTONIO PRALON FERREIRA LEITE",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Engenharia Térmica"
+    },
+    {
+        "Indice": 638,
+        "Orientador": "TARCIANA LIBERAL PEREIRA",
+        "Area": "Probabilidade e Estatística",
+        "SubArea": "Estatística"
+    },
+    {
+        "Indice": 639,
+        "Orientador": "CRISTIANE KELLY FERREIRA DA SILVA",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Engenharia Térmica"
+    },
+    {
+        "Indice": 640,
+        "Orientador": "FLÁVIA DE MEDEIROS AQUINO",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 641,
+        "Orientador": "ULRICH VASCONCELOS DA ROCHA GOMES",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 645,
+        "Orientador": "RICARDO ALMEIDA DE MELO",
+        "Area": "Engenharia Civil",
+        "SubArea": "Geotécnica"
+    },
+    {
+        "Indice": 647,
+        "Orientador": "MARIA BERTHILDE DE BARROS LIMA E MOURA FILHA",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 650,
+        "Orientador": "MARIA CREUSA DE ARAUJO BORGES",
+        "Area": "Direito",
+        "SubArea": "Direito Privado"
+    },
+    {
+        "Indice": 651,
+        "Orientador": "LUCIANA GOMES BARBOSA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 653,
+        "Orientador": "CLAUDIO SERGIO MEDEIROS PAIVA",
+        "Area": "Medicina",
+        "SubArea": "Saúde Materno-Infantil"
+    },
+    {
+        "Indice": 654,
+        "Orientador": "ANTONIO GERALDO CIDRAO DE CARVALHO",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 655,
+        "Orientador": "JOAO WANDEMBERG GONCALVES MACIEL",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 656,
+        "Orientador": "IAPONIRA CORTEZ COSTA DE OLIVEIRA",
+        "Area": "Medicina",
+        "SubArea": "Clínica Médica"
+    },
+    {
+        "Indice": 657,
+        "Orientador": "VALERIO FIEL DA COSTA",
+        "Area": "Artes",
+        "SubArea": "Música"
+    },
+    {
+        "Indice": 658,
+        "Orientador": "MARIA DO SOCORRO XAVIER BATISTA",
+        "Area": "Educação",
+        "SubArea": "Planejamento e Avaliação Educacional"
+    },
+    {
+        "Indice": 659,
+        "Orientador": "WAGNER JUNQUEIRA DE ARAUJO",
+        "Area": "Ciência da Informação",
+        "SubArea": "Arquivologia"
+    },
+    {
+        "Indice": 661,
+        "Orientador": "THIAGO SOARES",
+        "Area": "Comunicação",
+        "SubArea": "Rádio e Televisão"
+    },
+    {
+        "Indice": 662,
+        "Orientador": "WALLACE DUARTE FRAGOSO",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 663,
+        "Orientador": "MARIA ADELAIDE SILVA PAREDES MOREIRA",
+        "Area": "Enfermagem",
+        "SubArea": "Enfermagem de Saúde Pública"
+    },
+    {
+        "Indice": 664,
+        "Orientador": "JOSE AUGUSTO RIBEIRO DA SILVEIRA",
+        "Area": "Planejamento Urbano e Regional",
+        "SubArea": "Métodos e Técnicas do Planejamento Urbano e Regional"
+    },
+    {
+        "Indice": 665,
+        "Orientador": "GERD BRUNO DA ROCHA",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 666,
+        "Orientador": "EUGENIO RAMOS BEZERRA DE MELO",
+        "Area": "Física",
+        "SubArea": "Física das Partículas Elementares e Campos"
+    },
+    {
+        "Indice": 667,
+        "Orientador": "ERIVALDO PEREIRA DO NASCIMENTO",
+        "Area": "Lingüística",
+        "SubArea": "Teoria e Análise Lingüística"
+    },
+    {
+        "Indice": 668,
+        "Orientador": "DIVAN SOARES DA SILVA",
+        "Area": "Zootecnia",
+        "SubArea": "Pastagem e Forragicultura"
+    },
+    {
+        "Indice": 670,
+        "Orientador": "CARLOS XAVIER DE AZEVEDO NETTO",
+        "Area": "Arqueologia",
+        "SubArea": "Arqueologia Pré-Histórica"
+    },
+    {
+        "Indice": 671,
+        "Orientador": "ARIOSVALDO NUNES DE MEDEIROS",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 672,
+        "Orientador": "TATIENE CORREIA DE SOUZA",
+        "Area": "Probabilidade e Estatística",
+        "SubArea": "Estatística"
+    },
+    {
+        "Indice": 675,
+        "Orientador": "KRISTERSON REINALDO DE LUNA FREIRE",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 676,
+        "Orientador": "JOSEMBERG MOURA DE ANDRADE",
+        "Area": "Psicologia",
+        "SubArea": "Fundamentos e Medidas da Psicologia"
+    },
+    {
+        "Indice": 677,
+        "Orientador": "MANOEL BANDEIRA DE ALBUQUERQUE",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 679,
+        "Orientador": "LEONALDO ALVES DE ANDRADE",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 680,
+        "Orientador": "CLEONILSON PROTASIO DE SOUZA",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Medidas Elétricas, Magnéticas e Eletrônicas"
+    },
+    {
+        "Indice": 681,
+        "Orientador": "ALICIA FERREIRA GONCALVES",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Rural"
+    },
+    {
+        "Indice": 682,
+        "Orientador": "NADY ROCHA",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Eletrônica Industrial, Sistemas e Controles"
+    },
+    {
+        "Indice": 686,
+        "Orientador": "ROBSON ANTAO DE MEDEIROS",
+        "Area": "Direito",
+        "SubArea": "Direitos Especiais"
+    },
+    {
+        "Indice": 689,
+        "Orientador": "NELSIO RODRIGUES DE ABREU",
+        "Area": "Comunicação",
+        "SubArea": "Jornalismo e Editoração"
+    },
+    {
+        "Indice": 691,
+        "Orientador": "HEBER PIMENTEL GOMES",
+        "Area": "Engenharia Civil",
+        "SubArea": "Engenharia Hidráulica"
+    },
+    {
+        "Indice": 695,
+        "Orientador": "RODRIGO PINHEIRO DE TOLEDO VIANNA",
+        "Area": "Nutrição",
+        "SubArea": "Análise Nutricional de População"
+    },
+    {
+        "Indice": 696,
+        "Orientador": "EDGARD CAVALCANTI PIMENTA FILHO",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 699,
+        "Orientador": "JULIANA SAMPAIO",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 700,
+        "Orientador": "RAUL ROSENHAIM",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 702,
+        "Orientador": "ANDRE ULISSES DANTAS BATISTA",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 706,
+        "Orientador": "FELIPE WARTCHOW",
+        "Area": "Botânica",
+        "SubArea": "Taxonomia Vegetal"
+    },
+    {
+        "Indice": 708,
+        "Orientador": "PIERRE CORRÊA MARTINS",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Engenharia de Alimentos"
+    },
+    {
+        "Indice": 709,
+        "Orientador": "GERMANA COELI DE FARIAS SALES",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 710,
+        "Orientador": "ADRIANA VALERIA SANTOS DINIZ",
+        "Area": "Educação",
+        "SubArea": "Administração Educacional"
+    },
+    {
+        "Indice": 711,
+        "Orientador": "KATY LISIAS GONDIM DIAS",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 713,
+        "Orientador": "ELISA PEREIRA GONSALVES",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 715,
+        "Orientador": "OSICLEIDE DE LIMA BEZERRA",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 716,
+        "Orientador": "LUCIANA DE OLIVEIRA CHIANCA",
+        "Area": "Antropologia",
+        "SubArea": "Antropologia Urbana"
+    },
+    {
+        "Indice": 717,
+        "Orientador": "MAURICIO SARDA DE FARIA",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 718,
+        "Orientador": "PAULO CESAR ZAMBRONI DE SOUZA",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Trabalho e Organizacional"
+    },
+    {
+        "Indice": 719,
+        "Orientador": "LINCOLN ELOI DE ARAUJO",
+        "Area": "Geociências",
+        "SubArea": "Geografia Física"
+    },
+    {
+        "Indice": 720,
+        "Orientador": "JORGE ADRIANO LUBENOW",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 721,
+        "Orientador": "COSME RAFAEL MARTINEZ SALINAS",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 722,
+        "Orientador": "MARIA ADAILZA MARTINS DE ALBUQUERQUE",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 723,
+        "Orientador": "SIMONE MAGALHAES BRITO",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 724,
+        "Orientador": "RICHARDE MARQUES DA SILVA",
+        "Area": "Geociências",
+        "SubArea": "Geografia Física"
+    },
+    {
+        "Indice": 725,
+        "Orientador": "MARIA EULINA PESSOA DE CARVALHO",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 726,
+        "Orientador": "MARCOS CESAR SANTOS ORIA",
+        "Area": "Física",
+        "SubArea": "Física Geral"
+    },
+    {
+        "Indice": 727,
+        "Orientador": "MARCELO SOBRAL DA SILVA",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 728,
+        "Orientador": "LUIZ BUENO DA SILVA",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Engenharia do Produto"
+    },
+    {
+        "Indice": 729,
+        "Orientador": "GUILHERME ATAIDE DIAS",
+        "Area": "Ciência da Informação",
+        "SubArea": "Biblioteconomia"
+    },
+    {
+        "Indice": 730,
+        "Orientador": "GEORGE RODRIGO BELTRAO DA CRUZ",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 733,
+        "Orientador": "ALEXANDRE VASCONCELLOS",
+        "Area": "Zoologia",
+        "SubArea": "Comportamento Animal"
+    },
+    {
+        "Indice": 736,
+        "Orientador": "FABIOLA DE SOUSA BRAZ AQUINO",
+        "Area": "Psicologia",
+        "SubArea": "Psicologia do Ensino e da Aprendizagem"
+    },
+    {
+        "Indice": 738,
+        "Orientador": "RITA DE CASSIA DA SILVEIRA E SA",
+        "Area": "Biologia Geral",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 739,
+        "Orientador": "WALTER ESFRAIN PEREIRA",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 741,
+        "Orientador": "JORGE FERNANDO HERMIDA AVEIRO",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 744,
+        "Orientador": "CLAUIRTON DE ALBUQUERQUE SIEBRA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 745,
+        "Orientador": "SANDRA SOUZA DA SILVA",
+        "Area": "Psicologia",
+        "SubArea": "Tratamento e Prevenção Psicológica"
+    },
+    {
+        "Indice": 747,
+        "Orientador": "IAN PORTO GURGEL DO AMARAL",
+        "Area": "Recursos Pesqueiros e Engenharia de Pesca",
+        "SubArea": "Aqüicultura"
+    },
+    {
+        "Indice": 750,
+        "Orientador": "ANTONIO GOUVEIA DE SOUZA",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 751,
+        "Orientador": "ANTONIO AUGUSTO LISBOA DE SOUZA",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Circuitos Elétricos, Magnéticos e Eletrônico"
+    },
+    {
+        "Indice": 753,
+        "Orientador": "PEDRO FELIU RIBEIRO",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 756,
+        "Orientador": "EDNA URSULINO ALVES",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 758,
+        "Orientador": "MARIA LINDOMÁRCIA LEONARDO DA COSTA",
+        "Area": "Zootecnia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 759,
+        "Orientador": "ISMAEL IVAN ROCKENBACH",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 760,
+        "Orientador": "JOACIO DE ARAUJO MORAIS JUNIOR",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Saneamento Ambiental"
+    },
+    {
+        "Indice": 761,
+        "Orientador": "LUCIANO FARIAS DE ALMEIDA",
+        "Area": "Química",
+        "SubArea": "Química Analítica"
+    },
+    {
+        "Indice": 765,
+        "Orientador": "ESMERALDA PARANHOS DOS SANTOS",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 766,
+        "Orientador": "ALEXANDRE RAMLO TORRE PALMA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Teórica"
+    },
+    {
+        "Indice": 767,
+        "Orientador": "ZAETH AGUIAR DO NASCIMENTO",
+        "Area": "Psicologia",
+        "SubArea": "Tratamento e Prevenção Psicológica"
+    },
+    {
+        "Indice": 769,
+        "Orientador": "GUTTEMBERG DA SILVA SILVINO",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 771,
+        "Orientador": "MONICA DIAS PALITOT",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 772,
+        "Orientador": "NADJACLEIA VILAR ALMEIDA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia Aplicada"
+    },
+    {
+        "Indice": 774,
+        "Orientador": "CARMEM LUCIA MOREIRA GADELHA",
+        "Area": "Engenharia Sanitária",
+        "SubArea": "Saneamento Ambiental"
+    },
+    {
+        "Indice": 775,
+        "Orientador": "JOSÉ RODRIGUES DE CARVALHO FILHO",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 776,
+        "Orientador": "FABIANA SENA DA SILVA",
+        "Area": "Educação",
+        "SubArea": "Fundamentos da Educação"
+    },
+    {
+        "Indice": 780,
+        "Orientador": "MARIA LUCIA ABAURRE GNERRE",
+        "Area": "Teologia",
+        "SubArea": "História da Teologia"
+    },
+    {
+        "Indice": 782,
+        "Orientador": "PLINIO DELA TORRE",
+        "Area": "Bioquímica",
+        "SubArea": "Química de Macromoléculas"
+    },
+    {
+        "Indice": 789,
+        "Orientador": "BARTOLOMEU ISRAEL DE SOUZA",
+        "Area": "Geografia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 791,
+        "Orientador": "ADNA CRISTINA BARBOSA DE SOUSA",
+        "Area": "Microbiologia",
+        "SubArea": "Micologia"
+    },
+    {
+        "Indice": 792,
+        "Orientador": "CLAUDIA DE OLIVEIRA CUNHA",
+        "Area": "Química",
+        "SubArea": "Físico-Química"
+    },
+    {
+        "Indice": 795,
+        "Orientador": "RAIMUNDO APRIGIO DE MENEZES JUNIOR",
+        "Area": "Engenharia Mecânica",
+        "SubArea": "Mecânica dos Sólidos"
+    },
+    {
+        "Indice": 797,
+        "Orientador": "ALUISIO BRAZ DE MELO",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Tecnologia de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 798,
+        "Orientador": "GRACIELE DA SILVA CAMPELO BORGES",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 800,
+        "Orientador": "IGNACIO TAVARES DE ARAUJO JUNIOR",
+        "Area": "Economia",
+        "SubArea": "Métodos Quantitativos em Economia"
+    },
+    {
+        "Indice": 801,
+        "Orientador": "JOSE JASSUIPE DA SILVA MORAIS",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 802,
+        "Orientador": "PETRONIO FILGUEIRAS DE ATHAYDE FILHO",
+        "Area": "Química",
+        "SubArea": "Química Orgânica"
+    },
+    {
+        "Indice": 806,
+        "Orientador": "FLAVIA EMILIA LEITE DE LIMA FERREIRA",
+        "Area": "Nutrição",
+        "SubArea": "Análise Nutricional de População"
+    },
+    {
+        "Indice": 815,
+        "Orientador": "ALEXANDRE EDUARDO DE ARAUJO",
+        "Area": "Sociologia",
+        "SubArea": "Sociologia Rural"
+    },
+    {
+        "Indice": 816,
+        "Orientador": "DIEGO NUNES GUEDES",
+        "Area": "Farmacologia",
+        "SubArea": "Farmacologia Clínica"
+    },
+    {
+        "Indice": 817,
+        "Orientador": "SANDRA RAQUEW DOS SANTOS AZEVEDO",
+        "Area": "Comunicação",
+        "SubArea": "Jornalismo e Editoração"
+    },
+    {
+        "Indice": 818,
+        "Orientador": "GEOVANY JESSÉ ALEXANDRE SILVA",
+        "Area": "Arquitetura e Urbanismo",
+        "SubArea": "Fundamentos de Arquitetura e Urbanismo"
+    },
+    {
+        "Indice": 820,
+        "Orientador": "MARIA DE LOURDES BARRETO GOMES",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Gerência de Produção"
+    },
+    {
+        "Indice": 822,
+        "Orientador": "FERNANDO CEZAR BEZERRA DE ANDRADE",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 825,
+        "Orientador": "ALBERICIO PEREIRA DE ANDRADE",
+        "Area": "Agronomia",
+        "SubArea": "Fitotecnia"
+    },
+    {
+        "Indice": 826,
+        "Orientador": "CICERO DA ROCHA SOUTO",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Circuitos Elétricos, Magnéticos e Eletrônico"
+    },
+    {
+        "Indice": 829,
+        "Orientador": "ANDRÉA FARIAS DE ALMEIDA",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 830,
+        "Orientador": "DANIEL ARAÚJO DE MACEDO",
+        "Area": "Engenharia de Materiais e Metalúrgica",
+        "SubArea": "Materiais não Metálicos"
+    },
+    {
+        "Indice": 831,
+        "Orientador": "LUDMILA DA PAZ GOMES DA SILVA",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 833,
+        "Orientador": "ANA CLAUDIA DA SILVA RODRIGUES",
+        "Area": "Educação",
+        "SubArea": "Currículo"
+    },
+    {
+        "Indice": 838,
+        "Orientador": "FLAVIO PEREIRA DE OLIVEIRA",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 839,
+        "Orientador": "ANNE EVELYNE FRANCO DE SOUZA",
+        "Area": "Farmacologia",
+        "SubArea": "Etnofarmacologia"
+    },
+    {
+        "Indice": 840,
+        "Orientador": "ZAQUEU ERNESTO DA SILVA",
+        "Area": "Direito",
+        "SubArea": "Direitos Especiais"
+    },
+    {
+        "Indice": 841,
+        "Orientador": "ALBERTO SOTO LOCK",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Medidas Elétricas, Magnéticas e Eletrônicas"
+    },
+    {
+        "Indice": 843,
+        "Orientador": "NADIA JANE DE SOUSA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 844,
+        "Orientador": "JOSILENE AIRES MOREIRA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 845,
+        "Orientador": "LEOPOLDO OSWALDO ALCAZAR ROJAS",
+        "Area": "Engenharia Química",
+        "SubArea": "Operações Industriais e Equipamentos para Engenharia Química"
+    },
+    {
+        "Indice": 847,
+        "Orientador": "MARCKSON ROBERTO FERREIRA DE SOUSA",
+        "Area": "Ciência da Informação",
+        "SubArea": "Teoria da Informação"
+    },
+    {
+        "Indice": 852,
+        "Orientador": "FRANCISCO JOSE PEGADO ABILIO",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 856,
+        "Orientador": "SIMONE BASTOS PAIVA",
+        "Area": "Administração",
+        "SubArea": "Ciências Contábeis"
+    },
+    {
+        "Indice": 857,
+        "Orientador": "LEYLLIANE DE FATIMA LEAL INTERAMINENSE DE ANDRADE",
+        "Area": "Nutrição",
+        "SubArea": "Dietética"
+    },
+    {
+        "Indice": 859,
+        "Orientador": "ANA PATRICIA ALMEIDA BEZERRA",
+        "Area": "Zootecnia",
+        "SubArea": "Pastagem e Forragicultura"
+    },
+    {
+        "Indice": 860,
+        "Orientador": "EDUARDO JORGE LOPES DA SILVA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 862,
+        "Orientador": "RUY ALBERTO PISANI ALTAFIM",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Medidas Elétricas, Magnéticas e Eletrônicas"
+    },
+    {
+        "Indice": 863,
+        "Orientador": "MARIA SUELI MARQUES SOARES",
+        "Area": "Odontologia",
+        "SubArea": "Clínica Odontológica"
+    },
+    {
+        "Indice": 864,
+        "Orientador": "MANOEL ALEXANDRE DINIZ NETO",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 866,
+        "Orientador": "SOCORRO CLAUDIA TAVARES DE SOUSA",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 867,
+        "Orientador": "NILVANIA DOS SANTOS SILVA",
+        "Area": "Educação",
+        "SubArea": "Ensino-Aprendizagem"
+    },
+    {
+        "Indice": 868,
+        "Orientador": "KLEBER CARNEIRO DE OLIVEIRA",
+        "Area": "Engenharia Elétrica",
+        "SubArea": "Sistemas Elétricos de Potência"
+    },
+    {
+        "Indice": 870,
+        "Orientador": "MÁRCIA MARIA MONT' ALVERNE DE BARROS",
+        "Area": "Fisioterapia e Terapia Ocupacional",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 872,
+        "Orientador": "TIMOTHY DENIS IRELAND",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 875,
+        "Orientador": "MARCELO LUIS RODRIGUES",
+        "Area": "Zootecnia",
+        "SubArea": "Nutrição e Alimentação Animal"
+    },
+    {
+        "Indice": 876,
+        "Orientador": "FRANCISCO SOARES MASCULO",
+        "Area": "Engenharia de Produção",
+        "SubArea": "Engenharia do Produto"
+    },
+    {
+        "Indice": 881,
+        "Orientador": "DANIELA PRISCILA MARCHI SALVADOR",
+        "Area": "Biofísica",
+        "SubArea": "Biofísica Molecular"
+    },
+    {
+        "Indice": 882,
+        "Orientador": "RAISSA DALIA PAULINO",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 886,
+        "Orientador": "MARCOS ALAN SHAIKHZADEH VAHDAT FERREIRA",
+        "Area": "Ciência Política",
+        "SubArea": "Política Internacional"
+    },
+    {
+        "Indice": 887,
+        "Orientador": "MARINILSON BARBOSA DA SILVA",
+        "Area": "Educação",
+        "SubArea": "Tópicos Específicos de Educação"
+    },
+    {
+        "Indice": 888,
+        "Orientador": "LÍVIO CARVALHO DE FIGUEIRÊDO",
+        "Area": "Biotecnologia",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 889,
+        "Orientador": "ANDERSON MOEBUS RETONDAR",
+        "Area": "Sociologia",
+        "SubArea": "Outras Sociologias Específicas"
+    },
+    {
+        "Indice": 890,
+        "Orientador": "RENATA FRANCISCO BALDANZA",
+        "Area": "Administração",
+        "SubArea": "Administração de Empresas"
+    },
+    {
+        "Indice": 891,
+        "Orientador": "CARLOS ALBERTO DE ALMEIDA GADELHA",
+        "Area": "Bioquímica",
+        "SubArea": "Química de Macromoléculas"
+    },
+    {
+        "Indice": 895,
+        "Orientador": "IGUATEMI EDUARDO DA FONSECA",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 898,
+        "Orientador": "FABÍOLA FONSECA ÂNGELO",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 899,
+        "Orientador": "JAQUELINE BRITO VIDAL BATISTA",
+        "Area": "Saúde Coletiva",
+        "SubArea": "Saúde Publica"
+    },
+    {
+        "Indice": 900,
+        "Orientador": "FRANCISCO BORJA RUIZ REVERTER",
+        "Area": "Agronomia",
+        "SubArea": "Agrometeorologia"
+    },
+    {
+        "Indice": 901,
+        "Orientador": "RAQUEL LIMA SALGADO",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Tecnologia de Alimentos"
+    },
+    {
+        "Indice": 903,
+        "Orientador": "MARLUCE PEREIRA DA SILVA",
+        "Area": "Lingüística",
+        "SubArea": "Lingüística Aplicada"
+    },
+    {
+        "Indice": 905,
+        "Orientador": "GILVANILDO OLIVEIRA AVELINO",
+        "Area": "Ciência Política",
+        "SubArea": "Comportamento Político"
+    },
+    {
+        "Indice": 908,
+        "Orientador": "ELISÂNDRA COSTA ALMEIDA",
+        "Area": "Ciência e Tecnologia de Alimentos",
+        "SubArea": "Ciência de Alimentos"
+    },
+    {
+        "Indice": 911,
+        "Orientador": "ANA LÚCIA DE ARAÚJO LIMA COELHO",
+        "Area": "Administração",
+        "SubArea": "Administração de Setores Específicos"
+    },
+    {
+        "Indice": 912,
+        "Orientador": "JADER FREIRE SOBRAL FILHO",
+        "Area": "Medicina",
+        "SubArea": NaN
+    },
+    {
+        "Indice": 913,
+        "Orientador": "JOSE FERRARI NETO",
+        "Area": "Lingüística",
+        "SubArea": "Psicolingüística"
+    },
+    {
+        "Indice": 914,
+        "Orientador": "DEYVE REDYSON MELO DOS SANTOS",
+        "Area": "Filosofia",
+        "SubArea": "Metafísica"
+    },
+    {
+        "Indice": 916,
+        "Orientador": "TIAGO MARITAN UGULINO DE ARAUJO",
+        "Area": "Ciência da Computação",
+        "SubArea": "Sistemas de Computação"
+    },
+    {
+        "Indice": 917,
+        "Orientador": "ALEX DA SILVA BARBOSA",
+        "Area": "Ecologia",
+        "SubArea": "Ecologia de Ecossistemas"
+    },
+    {
+        "Indice": 919,
+        "Orientador": "ALEXANDRE JOSE SOARES MINA",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 921,
+        "Orientador": "ITALO DE SOUZA AQUINO",
+        "Area": "Zootecnia",
+        "SubArea": "Produção Animal"
+    },
+    {
+        "Indice": 922,
+        "Orientador": "GENYSON MARQUES EVANGELISTA",
+        "Area": "Sociologia",
+        "SubArea": "Sociologia Rural"
+    },
+    {
+        "Indice": 928,
+        "Orientador": "LEONARDO DANTAS DA SILVA",
+        "Area": "Agronomia",
+        "SubArea": "Fitossanidade"
+    },
+    {
+        "Indice": 929,
+        "Orientador": "GERALDO SÁVIO ALMEIDA HOLANDA",
+        "Area": "Odontologia",
+        "SubArea": "Materiais Odontológicos"
+    },
+    {
+        "Indice": 939,
+        "Orientador": "KARINA CHIANCA VENANCIO",
+        "Area": "Letras",
+        "SubArea": "Línguas Estrangeiras Modernas"
+    },
+    {
+        "Indice": 945,
+        "Orientador": "HEMMANNUELLA COSTA SANTOS",
+        "Area": "Agronomia",
+        "SubArea": "Ciência do Solo"
+    },
+    {
+        "Indice": 946,
+        "Orientador": "JUSSARA ELLEN MORAIS FRAZÃO",
+        "Area": "Agronomia",
+        "SubArea": "Floricultura, Parques e Jardins"
+    },
+    {
+        "Indice": 949,
+        "Orientador": "MARIA LUIZA TEIXEIRA BATISTA",
+        "Area": "Letras",
+        "SubArea": "Literaturas Estrangeiras Modernas"
+    },
+    {
+        "Indice": 952,
+        "Orientador": "IONALDO JOSÉ LIMA DINIZ BASÍLIO",
+        "Area": "Farmácia",
+        "SubArea": "Farmacognosia"
+    },
+    {
+        "Indice": 954,
+        "Orientador": "ROSALINA MARIA SALES CHIANCA",
+        "Area": "Letras",
+        "SubArea": "Literatura Brasileira"
+    }
+]
