@@ -285,24 +285,12 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 	
-	int quantiaSimilaridadeMaior20 = 0;
-	bool similaridadeMaior30 = false;
-
-	int quantiaSimilaridadeMaior50 = 0;
-	bool similaridadeMaior50 = false;
-
 	
-	int alocadosAoProprioTrabalho = 0;
-
-	int quantiaSimilaridadeMenor20 = 0;
-	bool similaridadeMenor30 = false;
-
-	int orientadorNaoAlocado = 0;
-
+	/* Gera o arquivo binario para leitura	*/
 	std::fstream* saidaBinario = new std::fstream("binario14.txt", std::ios::out);
 	
 	
-	int quantiaAlocados = 0;
+	int ultrapassou = 0;
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		int number_aloc = 0;
@@ -314,74 +302,15 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			}
 			
 		}
-		if(number_aloc > 4){
-			quantiaAlocados++;
+		if(number_aloc > LMaxi){
+			ultrapassou++;
 		}
 		*saidaBinario << "\n";
 
 	}
 
-	*saidaBinario << "Superaram o limite de alocacoes: " << quantiaAlocados << std::endl;
+	*saidaBinario << "Superaram o limite de alocacoes: " << ultrapassou << std::endl;
 	delete saidaBinario;
-
-	for(int j  = 0; j < quantiaTrabalhos; j++) {
-
-		bool alocado = false;
-		similaridadeMaior30 = false;
-		similaridadeMaior50 = false;
-		similaridadeMenor30 = false;
-		
-		
-		for(int i = 0; i < quantiaOrientadores; i++) {
-
-			int xValue = cplex.getValue(x[i][j]);
-
-			if(xValue == 1) {
-
-				alocado = true;			
-				if(beneficios[i][j] >= 0.5) {
-					similaridadeMaior50 = true;
-				}
-				else if(beneficios[i][j] >= 0.3) {
-					similaridadeMaior30 = true;
-				}
-				else if(beneficios[i][j] == -1) {
-					alocadosAoProprioTrabalho;
-				}
-				else {
-					similaridadeMenor30 = true;
-				}
-
-			}
-		}
-		if(!alocado) {
-			orientadorNaoAlocado++;
-		}
-		if(!similaridadeMaior50) {
-			quantiaSimilaridadeMaior50++;
-		}
-		if(!similaridadeMaior30) {
-
-			quantiaSimilaridadeMaior20++;
-		}
-		if(!similaridadeMenor30) {
-			quantiaSimilaridadeMenor20++;
-		}
-	}
-	
-
-	std::fstream *resultado = new std::fstream(resultadoNome, std::ios::out);
-
-	std::stringstream result;
-	result << "Alocados a similaridade maior que 50: " << quantiaSimilaridadeMaior50 << '\n' <<
-	"Alocados a similaridade maior que 30: " << quantiaSimilaridadeMaior20 << '\n' <<
-	"Alocados a similaridade menor que 30: " << quantiaSimilaridadeMenor20 << '\n' << 
-	"Alocados ao proprio trabalho: " << alocadosAoProprioTrabalho << '\n' << 
-	"orientador nao alocado: " << orientadorNaoAlocado << '\n' <<
-	"Limite Minimo: " << LMini << " " << "Limite Maximo: " << LMaxi << '\n';
-	*resultado << result.str();
-	resultado->close();
-	delete resultado;
 
 	env.end();
 }
