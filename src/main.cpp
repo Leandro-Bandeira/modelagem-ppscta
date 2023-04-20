@@ -180,8 +180,10 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		 * então ele terá interesse em todos os trabalhos	*/
 		if(trabalhosInteresseOrientador.size() == 0){
 			for(int j = 0; j < quantiaTrabalhos; j++){
-
-				exp0 += beneficios[i][j] * x[i][j];
+				
+				if(beneficios[i][j] != -1){
+					exp0 += beneficios[i][j] * x[i][j];
+				}
 			}
 		}
 		else{
@@ -289,7 +291,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Gera o arquivo binario para leitura	*/
 	std::fstream* saidaBinario = new std::fstream("binario14.txt", std::ios::out);
 	
-	
+	std::vector < int > ultrapassaram;
 	int ultrapassou = 0;
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
@@ -303,13 +305,16 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			
 		}
 		if(number_aloc > LMaxi){
-			ultrapassou++;
+			ultrapassaram.push_back(i);
 		}
 		*saidaBinario << "\n";
 
 	}
-
-	*saidaBinario << "Superaram o limite de alocacoes: " << ultrapassou << std::endl;
+	
+	for(int i = 0; i < ultrapassaram.size(); i++){
+		*saidaBinario << ultrapassaram[i] << " ";
+	}
+	*saidaBinario << "Superaram o limite de alocacoes: " << ultrapassaram.size() << std::endl;
 	delete saidaBinario;
 
 	env.end();
