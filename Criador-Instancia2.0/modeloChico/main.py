@@ -1,5 +1,6 @@
 """Codigo responsável por criar o modelo de chico
-baseado em area e subarea"
+baseado em area e subarea, caso tenham a mesma subarea
+o beneficio eh 100 caso não o beneficio eh 10"
 """
 import json
 
@@ -50,9 +51,9 @@ def write_instance(data_projetos, data_orientadores, path_instance):
                     beneficios += "-1 "
                     continue
                 if projeto["Area:"] == orientador["Area"]:
-                    beneficios += "100 "
-                elif projeto["SubArea:"] == orientador["SubArea"]:
                     beneficios += "10 "
+                elif projeto["SubArea:"] == orientador["SubArea"]:
+                    beneficios += "100 "
                 else:
                     beneficios += "1 "
             beneficios = beneficios.rstrip() + '\n'

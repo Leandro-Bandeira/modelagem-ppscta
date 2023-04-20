@@ -10,7 +10,7 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-#define LMini  2// Limite minimo de trabalhos por professor i
+#define LMini  1// Limite minimo de trabalhos por professor i
 #define LMaxi  4 // Limite maximo de trabalhos por professor i
 
 
@@ -176,37 +176,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 	
 		
-		
-		/* Caso o orientador tenha poucos interesses, então fazemos ele ter interesse em todos os projetos
-		 * Além disso usamos o beneficio que ele tem com os trabalhos*/ 
-		
-		if(1) {
-			
-			for(int j = 0; j < quantiaTrabalhos; j++) {
-				
-				int trabalhoInteresseIndice = -1;
-				int encontrou = false;
-				
-				/* Verificamos se aquele trabalho é um trabalho de interesse do orientador
-				 * Caso for, então usamos o beneficio que ele possui com aquele trabalho */
-				for(int i = 0; i < trabalhosInteresseOrientador.size(); i++){
-
-					if(j == trabalhosInteresseOrientador[i]){
-						encontrou = true;
-						trabalhoInteresseIndice = j;
-						break;
-					}
-				}
-				if(encontrou){
-					exp0 += beneficios[i][trabalhoInteresseIndice] * x[i][trabalhoInteresseIndice];
-				}
-				else{
-					exp0 += beneficios[i][j] * x[i][j] * 0.01;
-				}
-			}
-		}
-		
-		/*
+		/* Caso o orientador não tiver interesse em nenhum trabalho
+		 * então ele terá interesse em todos os trabalhos	*/
 		if(trabalhosInteresseOrientador.size() == 0){
 			for(int j = 0; j < quantiaTrabalhos; j++){
 
@@ -223,7 +194,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 			}
 			trabalhosInteresseOrientador.clear();
 		}
-		*/
+		
 		trabalhosInteresseOrientador.clear();
 	}
 
@@ -273,53 +244,17 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 		
 		
-		/*
-		if(1) {
-
-			for(int j = 0; j < quantiaTrabalhos; j++){
-				
-				int encontrou = false;
-				int trabalhoInteresseIndice = -1;
-
-				for(int k = 0; k < trabalhosInteresseOrientador.size(); k++){
-					
-					if(j == trabalhosInteresseOrientador[k]){
-
-						encontrou = true;
-						trabalhoInteresseIndice = j;
-						break;
-					}
-
-				}
-
-				if(encontrou){
-					exp2 += x[i][trabalhoInteresseIndice];
-				}
-				else{
-					exp2 += x[i][j];
-				}
-			}
-		}
-		
 		if(trabalhosInteresseOrientador.size() == 0){
-
-			for(int j = 0; j < quantiaTrabalhos; j++){
+			
+			for(int j = 0; j < quantiaTrabalhos; j++){	
 				exp2 += x[i][j];
 			}
 		}
 		else{
-			 Pega os índices de trabalho de interesse do orientador e realiza o somatório
-			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
-
-				int indiceTrabalhoInteresseOrientador = trabalhosInteresseOrientador[j];
-				exp2 += x[i][indiceTrabalhoInteresseOrientador];
+			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++){
+				int indiceTrabalhoInteresse = trabalhosInteresseOrientador[j];
+				exp2 += x[i][indiceTrabalhoInteresse];
 			}
-		}
-		*/
-		
-		/* Mudamos para quantia de todos os trabalhos do modelo de chico, mesma coisa na função principal	*/
-		for(int j = 0; j < quantiaTrabalhos; j++){
-			exp2 += x[i][j];
 		}
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
@@ -478,9 +413,10 @@ int main(int argc, char** argv) {
 
 	/* Criação da matriz de trabalhos percentes a área de interesse de um professor/orientador i	*/
 
-	
-	/* Devemos avaliar o menor valor do beneficio para que o trabalho seja considerado de interesse do orientador, 0.1 indica que são pelo menos da mesma área e subárea*/
-	/* Se aumentarmos o limite do beneficio para ser trabalho de interesse, resolvemos o problema	*/
+	/* Como a afinidade de um orientador é 10 caso
+	 * ele tenha a mesma area que o trabalho, então
+	 * consideramos qualquer beneficio acima ou igual disso
+	 * como um trabalho de interesse	*/
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		Orientador orientador; // Instancia de um orientador
