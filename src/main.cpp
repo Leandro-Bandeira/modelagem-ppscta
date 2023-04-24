@@ -176,25 +176,12 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 	
 		
-		/* Caso o orientador não tiver interesse em nenhum trabalho
-		 * então ele terá interesse em todos os trabalhos	*/
-		if(trabalhosInteresseOrientador.size() == 0){
-			for(int j = 0; j < quantiaTrabalhos; j++){
-				
-				if(beneficios[i][j] != -1){
-					exp0 += beneficios[i][j] * x[i][j];
-				}
-			}
-		}
-		else{
 			//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
 			//Que são os trabalhos de interesse
-			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
+		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
-				int trabalhoIndice = trabalhosInteresseOrientador[j];
-				exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
-			}
-			trabalhosInteresseOrientador.clear();
+			int trabalhoIndice = trabalhosInteresseOrientador[j];
+			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
 		}
 		
 		trabalhosInteresseOrientador.clear();
@@ -237,6 +224,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
 	/* de Trabalhos para avaliar	*/
 	/* Alguns orientadores nao tem interesse em nenhum trabalho, então x2 sairia vazio da setença e nao pode, vamos fazer isso apenas com quem não tem interesse	*/
+
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		IloExpr exp2(env);
@@ -245,18 +233,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 		
-		
-		if(trabalhosInteresseOrientador.size() == 0){
-			
-			for(int j = 0; j < quantiaTrabalhos; j++){	
-				exp2 += x[i][j];
-			}
-		}
-		else{
-			for(int j = 0; j < trabalhosInteresseOrientador.size(); j++){
-				int indiceTrabalhoInteresse = trabalhosInteresseOrientador[j];
-				exp2 += x[i][indiceTrabalhoInteresse];
-			}
+		for(int j = 0; j < quantiaTrabalhos; j++){
+			exp2 += x[i][j];
 		}
 		Model.add(exp2 <= LMaxi);
 		Model.add(exp2 >= LMini);
@@ -314,6 +292,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	for(int i = 0; i < ultrapassaram.size(); i++){
 		*saidaBinario << ultrapassaram[i] << " ";
 	}
+
 	*saidaBinario << "Superaram o limite de alocacoes: " << ultrapassaram.size() << std::endl;
 	delete saidaBinario;
 
@@ -373,7 +352,7 @@ int main(int argc, char** argv) {
 	
 	int nao_interesse = 0; // Indica a quantia de orientadores que não possuem interesse em trabalhos
 	/* Debugado (v)	*/		
-	for(int i = 0; i < orientadores.size(); i++) {
+	for(int i = 0; i < quantiaOrientadores; i++) {
 			
 		if(orientadores[i].trabalhosInteresse.size() == 0){
 
@@ -381,6 +360,26 @@ int main(int argc, char** argv) {
 		}
 	}
 	
+	trabalhosInteresse.clear(); // Limpeza do vetor
+
+	/* Como temos orientadores sem interesse de trabalho, vamos
+	 * fazer ele ter interesse em todos os trabalhos
+	 * que não são o dele*/
+	for(int i = 0; i < quantiaOrientadores; i++){
+
+		if(orientadores[i].trabalhosInteresse.size() == 0){
+			for(int j = 0; j < quantiaTrabalhos; j++){
+				
+				if(beneficios[i][j] != -1){
+					trabalhosInteresse.push_back(j);
+				}
+			}
+			orientadores[i].trabalhosInteresse = trabalhosInteresse;
+
+			trabalhosInteresse.clear();
+		}
+	}
+
 	std::cout << "Orientadores não interessados: " << nao_interesse << std::endl;
 	
 	/* Inicializando vector de trabalhos e seus dados	*/
@@ -392,7 +391,7 @@ int main(int argc, char** argv) {
 		Trabalho trabalho; // Inicializa um trabalho
 		for(int i = 0; i < quantiaOrientadores; i++) {
 			
-			/* Se o beneficio é diferente de zero, é porque o orientador está apto para avaliar aquele projeto */
+			/* Se o beneficio é diferente de -1, é porque o orientador está apto para avaliar aquele projeto */
 			if(beneficios[i][j] != -1) {
 				orientadoresAptos.push_back(i);
 			}
