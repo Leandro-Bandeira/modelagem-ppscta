@@ -13,6 +13,16 @@ def open_projetos(caminho):
     return data
 
 
+
+def open_similarity(caminho):
+
+    """Abre o arquivo de similaridade """
+
+    with open(caminho) as file:
+        data = json.load(file)
+
+    return data
+  
 def read_orientadores(data_projetos):
     """Funcao responsável por retornar
     lista de orientadores junto com sua area e sub
@@ -34,7 +44,7 @@ def read_orientadores(data_projetos):
     return orientadores_data
 
 
-def write_instance(data_projetos, data_orientadores, path_instance):
+def write_instance(data_projetos, data_orientadores, path_instance, data_similarity):
     """Funcao responsavel por dado a lista de projetos
     e a lista de orientadores, podemos então criar a sua instancia
     Se o orientador avalia o trabalho na mesma area 100
@@ -44,32 +54,48 @@ def write_instance(data_projetos, data_orientadores, path_instance):
     with open(path_instance, 'w+') as instance:
         text = f'{len(data_orientadores)} {len(data_projetos)}\n'
         instance.write(text)
-        for orientador in data_orientadores:
-            beneficios = ''
-            for projeto in data_projetos:
+        for i, orientador in enumerate(data_orientadores):
+            similarity_list = data_similarity[i]["similaridade"].split(' ')
+            
+            beneficios_string = ''
+            beneficios = float()
+
+            for j, projeto in enumerate(data_projetos):
+                similarity = float(similarity_list[j])
+                
+
                 if projeto["Orientador:"] == orientador["Orientador"]:
-                    beneficios += "-1 "
+                    beneficios_string += "-1 "
                     continue
+
                 if projeto["Area:"] == orientador["Area"]:
-                    beneficios += "10 "
+                    beneficios = (similarity * 10)
+                    beneficios_string += (str(beneficios)) + ' '
+
                 elif projeto["SubArea:"] == orientador["SubArea"]:
-                    beneficios += "100 "
+                    beneficios = (similarity * 100)
+                    beneficios_string += str(beneficios) + ' '
                 else:
-                    beneficios += "1 "
-            beneficios = beneficios.rstrip() + '\n'
-            instance.write(beneficios)
+                    
+                    beneficios_string += "1 "
+            beneficios_string = beneficios_string.rstrip() + '\n'
+            instance.write(beneficios_string)
     instance.close()
 
 
 def main():
     """Funcao main responsável pelo codigo"""
     path_projetos = "../../DadosTrabalhos/projetos2014.json"
-    path_instance = "instance14Chico.txt"
+    path_instance = "instance14ChicoSimi.txt"
     path_orientadores = "orientadores14.json"
+    path_similarity = "../../DadosTrabalhos/similarityOrientadores14Alin.json"
 
     data_projetos = open_projetos(path_projetos)
     data_orientadores = read_orientadores(data_projetos)
-    write_instance(data_projetos, data_orientadores, path_instance)
+    data_similarity = open_similarity(path_similarity)
+
+
+    write_instance(data_projetos, data_orientadores, path_instance, data_similarity)
     
     with open(path_orientadores, 'w') as file:
         json.dump(data_orientadores, file, indent=4, ensure_ascii=False)
