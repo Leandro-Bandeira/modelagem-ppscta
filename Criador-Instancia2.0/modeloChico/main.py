@@ -23,25 +23,17 @@ def open_similarity(caminho):
 
     return data
   
-def read_orientadores(data_projetos):
+def read_orientadores(path_orientadores):
     """Funcao responsável por retornar
     lista de orientadores junto com sua area e sub
     Verifica se um orientador ja foi visitado ou não
     Caso nao, cria um dicionario com seus dados importantes
     E entao o adiciona como visitado"""
 
-    orientadores_visitado = list()
-    orientadores_data = list()
-    for i, projeto in enumerate(data_projetos):
-        data_orientadores = dict()
-        if projeto["Orientador:"] not in orientadores_visitado:
-            orientadores_visitado.append(projeto["Orientador:"])
-            data_orientadores["Indice"] = i
-            data_orientadores["Orientador"] = projeto["Orientador:"]
-            data_orientadores["Area"] = projeto["Area:"]
-            data_orientadores["SubArea"] = projeto["SubArea:"]
-            orientadores_data.append(data_orientadores)
-    return orientadores_data
+    with open(path_orientadores) as file:
+        data = json.load(file)
+    
+    return data
 
 
 def write_instance(data_projetos, data_orientadores, path_instance, data_similarity):
@@ -55,16 +47,22 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
         text = f'{len(data_orientadores)} {len(data_projetos)}\n'
         instance.write(text)
         for i, orientador in enumerate(data_orientadores):
-            similarity_list = data_similarity[i]["similaridade"].split(' ')
+            indiceSimilarity = orientador["Projetos"][0] # Vamos retirar o primeiro projeto que ele orienta
+            projetos_orientados = orientador["Projetos"]
+            
+            similarity_list = data_similarity[indiceSimilarity]["similaridade"].split(' ') # Conjunto de similaridade entre todos os trabalhos do primeiro projeto do orientador
+            
             
             beneficios_string = ''
             beneficios = float()
 
             for j, projeto in enumerate(data_projetos):
+                
+                
                 similarity = float(similarity_list[j])
                 
 
-                if projeto["Orientador:"] == orientador["Orientador"]:
+                if projeto["Orientador:"] == orientador["Nome"]:
                     beneficios_string += "-1 "
                     continue
 
@@ -91,7 +89,7 @@ def main():
     path_similarity = "../../DadosTrabalhos/similarityOrientadores14AliDoc2Vec.json"
 
     data_projetos = open_projetos(path_projetos)
-    data_orientadores = read_orientadores(data_projetos)
+    data_orientadores = read_orientadores(path_orientadores)
     data_similarity = open_similarity(path_similarity)
 
 
