@@ -41,19 +41,24 @@ def main():
     alocados_mesmo_trabalho = 0
 
     for i, line in enumerate(data_bin):
-        trabalhos = line.lstrip().rstrip().split()
+        line = line.lstrip().rstrip().split()
+        
+        indice_orientador = int(line.pop(0))
+        trabalhos = line
+ 
+        
         alocado_conhecido = False
         for trabalho in trabalhos:
             
-            if data_orien[i]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
+            if data_orien[indice_orientador]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
                 alocados_mesmo_trabalho += 1
-                print(f'Orientador alocado ao mesmo trabalho: {i} {data_orien[i]["Nome"]}, indice do trabalho que foi alocado {int(trabalho)}')
+                print(f'Orientador alocado ao mesmo trabalho: {indice_orientador} {data_orien[indice_orientador]["Nome"]}, indice do trabalho que foi alocado {int(trabalho)}')
                 a = input()
-            if data_orien[i]["Area"] == data_projetos[int(trabalho)]["Area:"]:
+            if data_orien[indice_orientador]["Area"] == data_projetos[int(trabalho)]["Area:"]:
                 alocados_area += 1
                 alocado_conhecido = True
                 
-            if data_orien[i]["SubArea"] == data_projetos[int(trabalho)]["SubArea:"]:
+            if data_orien[indice_orientador]["SubArea"] == data_projetos[int(trabalho)]["SubArea:"]:
                 alocados_subArea += 1
                 alocado_conhecido = True
                 
