@@ -47,8 +47,8 @@ def main():
             
             if data_orien[i]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
                 alocados_mesmo_trabalho += 1
-                print(f'Orientador alocado ao mesmo trabalho: {data_orien[i]["Nome"]}, indice do trabalho que foi alocado {int(trabalho)}')
-                #a = input()
+                print(f'Orientador alocado ao mesmo trabalho: {i} {data_orien[i]["Nome"]}, indice do trabalho que foi alocado {int(trabalho)}')
+                a = input()
             if data_orien[i]["Area"] == data_projetos[int(trabalho)]["Area:"]:
                 alocados_area += 1
                 alocado_conhecido = True

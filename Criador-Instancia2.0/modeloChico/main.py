@@ -47,10 +47,10 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
         text = f'{len(data_orientadores)} {len(data_projetos)}\n'
         instance.write(text)
         for i, orientador in enumerate(data_orientadores):
-            indiceSimilarity = orientador["Projetos"][0] # Vamos retirar o primeiro projeto que ele orienta
+            id_primeiro_projeto = orientador["Projetos"][0] # Vamos retirar o primeiro projeto que ele orienta
             projetos_orientados = orientador["Projetos"]
             
-            similarity_list = data_similarity[indiceSimilarity]["similaridade"].split(' ') # Conjunto de similaridade entre todos os trabalhos do primeiro projeto do orientador
+            similarity_list = data_similarity[id_primeiro_projeto]["similaridade"].split(' ') # Conjunto de similaridade entre todos os trabalhos do primeiro projeto do orientador
             
             
             beneficios_string = ''
@@ -60,11 +60,17 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
                 
                 
                 similarity = float(similarity_list[j])
-                
+                if similarity < 0:
+                    similarity = 0
 
                 if projeto["Orientador:"] == orientador["Nome"]:
                     beneficios_string += "-1 "
+                    
+                    if i == 75:
+                        print(f'Trabalhos com -1 {j}')
+                        a = input()
                     continue
+                    
 
                 if projeto["Area:"] == orientador["Area"]:
                     beneficios = round((similarity * 100), 2)
@@ -76,6 +82,8 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
                 else:
                     
                     beneficios_string += "1 "
+                    
+                    
             beneficios_string = beneficios_string.rstrip() + '\n'
             instance.write(beneficios_string)
     instance.close()

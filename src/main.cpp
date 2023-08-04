@@ -176,8 +176,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 	
 		
-			//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
-			//Que são os trabalhos de interesse
+		//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
+		//Que são os trabalhos de interesse
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
