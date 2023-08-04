@@ -271,9 +271,12 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	
 	std::vector < int > ultrapassaram;
 	int ultrapassou = 0;
+
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		int number_aloc = 0;
+		*saidaBinario << i << " ";
+		
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 			
 			if(cplex.getValue(x[i][j]) == 1){
@@ -289,11 +292,6 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	}
 	
-	for(int i = 0; i < ultrapassaram.size(); i++){
-		*saidaBinario << ultrapassaram[i] << " ";
-	}
-
-	*saidaBinario << "Superaram o limite de alocacoes: " << ultrapassaram.size() << std::endl;
 	delete saidaBinario;
 
 	env.end();
