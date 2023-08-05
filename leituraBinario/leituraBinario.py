@@ -27,7 +27,7 @@ def read_bin(path_bin):
 
 def main():
     path_projetos = "../DadosTrabalhos/projetos2014.json"
-    path_orien = "../Criador-Instancia2.0/modeloChico/orientadores14.json"
+    path_orien = "../Criador-Instancia2.0/orientadores14.json"
     path_bin = "../src/binario14.txt"
     
     ### Todos os dados para ver o resultado do modelo ###
