@@ -71,12 +71,12 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
 
 
                 if projeto["Area:"] == orientador["Area"]:
-                    beneficios = round((similarity * 100), 2)
+                    beneficios = round((similarity * 10), 2)
                     
                     beneficios_string += (str(beneficios)) + ' '
 
                 elif projeto["SubArea:"] == orientador["SubArea"]:
-                    beneficios = round((similarity * 1000),2)
+                    beneficios = round((similarity * 100),2)
                     
                     beneficios_string += str(beneficios) + ' '
                 else:

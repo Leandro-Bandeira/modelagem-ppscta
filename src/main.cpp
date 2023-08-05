@@ -336,7 +336,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 10) {
+			if(beneficios[i][j] >= 2) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
