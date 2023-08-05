@@ -63,14 +63,12 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
                 if similarity < 0:
                     similarity = 0
 
-                if projeto["Orientador:"] == orientador["Nome"]:
+                if projeto["Orientador:"] == orientador["Nome"] or projeto["id"] in projetos_orientados:
                     beneficios_string += "-1 "
-                    
-                    if i == 75:
-                        print(f'Trabalhos com -1 {j}')
-                        a = input()
+                    #print(f'Foi dado -1 para o projeto {projeto["id"]} pois o orientador {i} o orienta')
+                    #a = input()
                     continue
-                    
+
 
                 if projeto["Area:"] == orientador["Area"]:
                     beneficios = round((similarity * 100), 2)

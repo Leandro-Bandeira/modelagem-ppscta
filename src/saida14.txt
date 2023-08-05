@@ -1,6 +1,0 @@
-Alocados a similaridade maior que 50: 0
-Alocados a similaridade maior que 30: 955
-Alocados a similaridade menor que 30: 955
-Alocados ao proprio trabalho: 0
-orientador nao alocado: 0
-Limite Minimo: 1 Limite Maximo: 4

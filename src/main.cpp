@@ -7,11 +7,12 @@
 #include "ilcplex/ilocplex.h"
 #include <chrono>
 #include <sstream>
+#include <algorithm>
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
 #define LMini  1// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
+#define LMaxi  3 // Limite maximo de trabalhos por professor i
 
 
 typedef struct {
@@ -145,24 +146,26 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	
 
 
-	/* Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	*/
+	// Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);		
 	}
-
-	/* Adicionando nome das variaveis	*/
+	
+	
+	
+	// Adicionando nome das variaveis	
 	char var[100];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
-			/* Armazena a string formatada  na variável var e seta o nome	*/
+			
 			sprintf(var, "x[%d][%d]", i, j);
 			x[i][j].setName(var);
 			Model.add(x[i][j]);
 		}
 	}
 
-
+	
 
 	/* Criação da função objetivo	*/
 	IloExpr exp0(env); // Inicializa uma expressão
@@ -170,12 +173,10 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
-		
-		
+			
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/	
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 	
-		
 		//Percorre o vector de trabalho de interesse do orientador i e retorna os indices armazenados	
 		//Que são os trabalhos de interesse
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
@@ -187,9 +188,9 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		trabalhosInteresseOrientador.clear();
 	}
 
-
+	
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
-
+	
 
 	
 
@@ -201,14 +202,13 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Mantém fixo um determinado trabalho j e verifica se a soma dos professores que irão avaliar aquele trabalho	*/
 	/* é igual ao número de avaliadores por trabalho	*/
 	
-	
+	std::cout << "antes primeira restricao" << std::endl;
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
-
-		/* Retorna o vector contendo os indices dos orientadores aptos a avaliares o trabalho j	*/
+		//Retorna o vector contendo os indices dos orientadores aptos a avaliares o trabalho j	
 		std::vector < int > orientadoresAptos = trabalhos[j].orientadoresAptos;
-
-		/* Percorre o vector e armazena os índices dos orientadores aptos e realiza o somatório */
+		
+		// Percorre o vector e armazena os índices dos orientadores aptos e realiza o somatório 
 		for(int i = 0; i < orientadoresAptos.size(); i++) {
 			int indiceOrientadoresAptos = orientadoresAptos[i];
 			exp1 += x[indiceOrientadoresAptos][j];
@@ -218,7 +218,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 		Model.add(exp1 == NA); // Adiciona ao modelo
 	}
-
+	
 	
 
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
@@ -229,11 +229,13 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 		IloExpr exp2(env);
 
-		
 		/* Retorna os trabalhos de interesse de um determinado orientador i	*/
 		std::vector < int > trabalhosInteresseOrientador = orientadores[i].trabalhosInteresse;
 		
 		for(int j = 0; j < quantiaTrabalhos; j++){
+			// Se ele não for um trabalho de interesse a gente pula
+			if(find(trabalhosInteresseOrientador.begin(), trabalhosInteresseOrientador.end(), j) == trabalhosInteresseOrientador.end())
+				continue;
 			exp2 += x[i][j];
 		}
 		Model.add(exp2 <= LMaxi);
