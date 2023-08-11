@@ -39,16 +39,18 @@ def main():
     alocados_subArea = 0
     alocados_nenhuma_area = 0
     alocados_mesmo_trabalho = 0
-
+    alocados_maximo_trabalho = 0
+    
     for i, line in enumerate(data_bin):
         line = line.lstrip().rstrip().split()
         
         indice_orientador = int(line.pop(0))
         trabalhos = line
- 
+        quantia_alocados = 0
         
         alocado_conhecido = False
         for trabalho in trabalhos:
+            quantia_alocados +=1 
             
             if data_orien[indice_orientador]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
                 alocados_mesmo_trabalho += 1
@@ -58,20 +60,26 @@ def main():
                 alocados_area += 1
                 alocado_conhecido = True
                 
+                
             if data_orien[indice_orientador]["SubArea"] == data_projetos[int(trabalho)]["SubArea:"]:
                 alocados_subArea += 1
                 alocado_conhecido = True
                 
         if not alocado_conhecido:
             alocados_nenhuma_area += 1
+        if quantia_alocados > 4:
+            alocados_maximo_trabalho
+        print(quantia_alocados)
+        a = input()
 
             
 
 
     print(f'Alocados a sub_area: {alocados_subArea}')
     print(f'Alocados a area: {alocados_area}')
-    print(f'Alocados a nenhuma area conhecida: {alocados_nenhuma_area}')
+    print(f'Alocados a nenhuma area desconhecida: {alocados_nenhuma_area}')
     print(f'Alocados ao mesmo trabalho: {alocados_mesmo_trabalho}')
+    print(f'alocados a mais de 4 trabalhos: {alocados_maximo_trabalho}')
 
 if __name__ == "__main__":
     main()
