@@ -41,6 +41,13 @@ def main():
     alocados_mesmo_trabalho = 0
     alocados_maximo_trabalho = 0
     
+    avaliadores_por_trabalho = list()
+    
+    # Inicializa em 0 os avaliadores para cada trabalho, o indice de cada trabalho é dado pelo indice do vetor
+    for i in range(len(data_projetos)):
+        avaliadores_por_trabalho.append(0)
+    
+    
     for i, line in enumerate(data_bin):
         line = line.lstrip().rstrip().split()
         
@@ -51,11 +58,11 @@ def main():
         alocado_conhecido = False
         for trabalho in trabalhos:
             quantia_alocados +=1 
+            avaliadores_por_trabalho[data_projetos[(int(trabalho))]["id"]] += 1
             
             if data_orien[indice_orientador]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
                 alocados_mesmo_trabalho += 1
-                print(f'Orientador alocado ao mesmo trabalho: {indice_orientador} {data_orien[indice_orientador]["Nome"]}, indice do trabalho que foi alocado {int(trabalho)}')
-                a = input()
+
             if data_orien[indice_orientador]["Area"] == data_projetos[int(trabalho)]["Area:"]:
                 alocados_area += 1
                 alocado_conhecido = True
@@ -69,9 +76,14 @@ def main():
             alocados_nenhuma_area += 1
         if quantia_alocados > 4:
             alocados_maximo_trabalho
-        print(quantia_alocados)
-        a = input()
 
+
+    trabalho_alocados_mais2 = 0
+    for i in range(len(data_projetos)):
+        if avaliadores_por_trabalho[i] > 2:
+            trabalho_alocados_mais2 += 1
+        
+        
             
 
 
@@ -80,6 +92,7 @@ def main():
     print(f'Alocados a nenhuma area desconhecida: {alocados_nenhuma_area}')
     print(f'Alocados ao mesmo trabalho: {alocados_mesmo_trabalho}')
     print(f'alocados a mais de 4 trabalhos: {alocados_maximo_trabalho}')
+    print(f'Trabalhos alocados para mais de 2 avaliadores: {trabalho_alocados_mais2}')
 
 if __name__ == "__main__":
     main()
