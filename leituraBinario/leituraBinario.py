@@ -64,25 +64,39 @@ def main():
         for trabalho in trabalhos:
             quantia_alocados +=1 
             avaliadores_por_trabalho[data_projetos[(int(trabalho))]["id"]] += 1
-            trabalhos_avaliados_por_orientador.append(int(trabalho)) # armazena o trabalho avaliado por aquele orientador
-            
-            
-            if data_orien[indice_orientador]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
-                alocados_mesmo_trabalho += 1
 
-            if data_orien[indice_orientador]["Area"] == data_projetos[int(trabalho)]["Area:"]:
-                alocados_area += 1
-                alocado_conhecido = True
-                
-                
-            if data_orien[indice_orientador]["SubArea"] == data_projetos[int(trabalho)]["SubArea:"]:
+            """Dados dos trabalhos"""
+            area_trabalho = data_projetos[int(trabalho)]["Area:"]
+            subArea_trabalho = data_projetos[int(trabalho)]["SubArea:"]
+            orientador_trabalho = data_projetos[int(trabalho)]["Orientador:"]
+            
+            """Dados do orientador"""
+            nome_orientador = data_orien[indice_orientador]["Nome"]
+            area_orientador = data_orien[indice_orientador]["Area"]
+            subArea_orientador = data_orien[indice_orientador]["SubArea"]
+
+
+            texto_trabalho = f'{trabalho}, {orientador_trabalho}, {area_trabalho}, {subArea_trabalho}'
+            trabalhos_avaliados_por_orientador.append(texto_trabalho) # armazena o trabalho avaliado por aquele orientador
+            
+            
+            if nome_orientador == orientador_trabalho:
+                alocados_mesmo_trabalho += 1
+                continue
+
+            if subArea_orientador == subArea_trabalho:
                 alocados_subArea += 1
-                alocado_conhecido = True
-        
+                continue
+
+            if area_orientador == area_trabalho:
+                alocados_area += 1
+                continue    
+            alocados_nenhuma_area += 1
+                
+            
         
         data_orien[indice_orientador]["Trabalhos Avaliados"] = trabalhos_avaliados_por_orientador    
-        if not alocado_conhecido:
-            alocados_nenhuma_area += 1
+
         if quantia_alocados > 4:
             alocados_maximo_trabalho
 
