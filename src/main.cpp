@@ -309,7 +309,7 @@ int main(int argc, char** argv) {
 	//
 	if(argc <  4) {
 
-		std::cout << "Digite mais argumentos" << '\n';
+		std::cout << "Digite os argumentos na ordem: instancia.txt modelo.lp saida.txt" << '\n';
 		exit(1);
 	}
 
