@@ -48,6 +48,9 @@ def main():
         avaliadores_por_trabalho.append(0)
     
     
+    
+
+    
     for i, line in enumerate(data_bin):
         line = line.lstrip().rstrip().split()
         
@@ -56,9 +59,13 @@ def main():
         quantia_alocados = 0
         
         alocado_conhecido = False
+        trabalhos_avaliados_por_orientador = list()
+
         for trabalho in trabalhos:
             quantia_alocados +=1 
             avaliadores_por_trabalho[data_projetos[(int(trabalho))]["id"]] += 1
+            trabalhos_avaliados_por_orientador.append(int(trabalho)) # armazena o trabalho avaliado por aquele orientador
+            
             
             if data_orien[indice_orientador]["Nome"] == data_projetos[(int(trabalho))]["Orientador:"]:
                 alocados_mesmo_trabalho += 1
@@ -71,7 +78,9 @@ def main():
             if data_orien[indice_orientador]["SubArea"] == data_projetos[int(trabalho)]["SubArea:"]:
                 alocados_subArea += 1
                 alocado_conhecido = True
-                
+        
+        
+        data_orien[indice_orientador]["Trabalhos Avaliados"] = trabalhos_avaliados_por_orientador    
         if not alocado_conhecido:
             alocados_nenhuma_area += 1
         if quantia_alocados > 4:
@@ -93,6 +102,14 @@ def main():
     print(f'Alocados ao mesmo trabalho: {alocados_mesmo_trabalho}')
     print(f'alocados a mais de 4 trabalhos: {alocados_maximo_trabalho}')
     print(f'Trabalhos alocados para mais de 2 avaliadores: {trabalho_alocados_mais2}')
+
+    path_trabalhos_avaliados = "orientadores14Projetos.json"
+
+    with open(path_trabalhos_avaliados, 'w') as file:
+        json.dump(data_orien, file, indent=4, ensure_ascii=False)
+
+
+
 
 if __name__ == "__main__":
     main()
