@@ -1,6 +1,9 @@
 """Codigo responsável por criar o modelo de chico
 baseado em area e subarea, caso tenham a mesma subarea
-o beneficio eh 100 caso não o beneficio eh 10"
+o beneficio eh 100 caso não o beneficio eh 10,
+além disso, caso um orientador oriente mais de um trabalho vamos considerar a maior similaridade dele
+por exemplo, caso ele oriente os trabalhos 1 e 2, mas a similaridade de 1 com 3 é 20% e a similaridade de 2 com 3 é 60%, então iremos pegar 60"
+caso ele oriente o trabalho seu beneficio é jogado para zero
 """
 import json
 
@@ -64,21 +67,22 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
                     similarity = 0
 
                 if projeto["Orientador:"] == orientador["Nome"] or projeto["id"] in projetos_orientados:
-                    beneficios_string += "-1 "
-                    #print(f'Foi dado -1 para o projeto {projeto["id"]} pois o orientador {i} o orienta')
-                    #a = input()
+                    beneficios_string += "0 "
                     continue
 
+                
 
-                if projeto["Area:"] == orientador["Area"]:
-                    beneficios = round((similarity * 10), 2)
+                #if projeto["Area:"] == orientador["Area"]:
+                #    beneficios = round((similarity * 10), 2)
                     
-                    beneficios_string += (str(beneficios)) + ' '
+                #    beneficios_string += (str(beneficios)) + ' '
 
-                elif projeto["SubArea:"] == orientador["SubArea"]:
-                    beneficios = round((similarity * 100),2)
+                #elif projeto["SubArea:"] == orientador["SubArea"]:
+                #    beneficios = round((similarity * 100),2)
                     
-                    beneficios_string += str(beneficios) + ' '
+                #    beneficios_string += str(beneficios) + ' '
+        
+
                 else:
                     
                     beneficios_string += "1 "
