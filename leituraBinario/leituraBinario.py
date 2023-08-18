@@ -96,6 +96,7 @@ def main():
                 continue    
             
             alocados_nenhuma_area += 1
+            print(f'O orientador {indice_orientador} foi alocado ao trabalho {trabalho} cujo não bateu área e subarea')
                 
             
         
