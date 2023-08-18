@@ -97,7 +97,7 @@ def main():
             
             alocados_nenhuma_area += 1
             print(f'O orientador {indice_orientador} foi alocado ao trabalho {trabalho} cujo não bateu área e subarea')
-                
+            a = input()   
             
         
         data_orien[indice_orientador]["Trabalhos Avaliados"] = trabalhos_avaliados_por_orientador    
