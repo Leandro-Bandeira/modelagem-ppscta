@@ -25,11 +25,14 @@ def read_bin(path_bin):
     return data
 
 
+
+
 def main():
+    
     path_projetos = "../DadosTrabalhos/projetos2014.json"
     path_orien = "../Criador-Instancia/orientadores14.json"
-    path_bin = "../src/binario15Novo.txt"
-    
+    path_bin = "../src/binario14.txt"
+     
     ### Todos os dados para ver o resultado do modelo ###
     data_projetos = read_projetos(path_projetos)
     data_orien = read_orien(path_orien)
@@ -46,6 +49,7 @@ def main():
     # Inicializa em 0 os avaliadores para cada trabalho, o indice de cada trabalho é dado pelo indice do vetor
     for i in range(len(data_projetos)):
         avaliadores_por_trabalho.append(0)
+    
     
     
     
@@ -79,7 +83,6 @@ def main():
             texto_trabalho = f'{trabalho}, {orientador_trabalho}, {area_trabalho}, {subArea_trabalho}'
             trabalhos_avaliados_por_orientador.append(texto_trabalho) # armazena o trabalho avaliado por aquele orientador
             
-            
             if nome_orientador == orientador_trabalho:
                 alocados_mesmo_trabalho += 1
                 continue
@@ -91,6 +94,7 @@ def main():
             if area_orientador == area_trabalho:
                 alocados_area += 1
                 continue    
+            
             alocados_nenhuma_area += 1
                 
             
