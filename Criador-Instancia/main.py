@@ -45,47 +45,51 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
     Se o orientador avalia o trabalho na mesma area 100
     mesma subarea eh 10, caso nenhuma vale 1 alem disso,
     caso oriente o trabalho será -1"""
+    is_instance_chico = False
 
     with open(path_instance, 'w+') as instance:
         text = f'{len(data_orientadores)} {len(data_projetos)}\n'
         instance.write(text)
         for i, orientador in enumerate(data_orientadores):
-            id_primeiro_projeto = orientador["Projetos"][0] # Vamos retirar o primeiro projeto que ele orienta
             projetos_orientados = orientador["Projetos"]
-            
-            similarity_list = data_similarity[id_primeiro_projeto]["similaridade"].split(' ') # Conjunto de similaridade entre todos os trabalhos do primeiro projeto do orientador
-            
             
             beneficios_string = ''
             beneficios = float()
 
             for j, projeto in enumerate(data_projetos):
+
+                similarity_list = data_similarity[projetos_orientados[0]]["similaridade"].split(' ') # Conjunto de similaridade entre todos os trabalhos do primeiro projeto do orientador
+                best_similarity = float(similarity_list[j]) # Retira a similaridade entre o primeiro projeto e aquele trabalho j
+
+                # Retorna a melhor similaridade em relação ao trabalho j de todos os trabalhos que o orientador orienta
+                for id_projetos_orientados in projetos_orientados:
+                    similarity_list = data_similarity[id_projetos_orientados]["similaridade"].split(' ')
+                    similarity_atual = float(similarity_list[j])
+
+                    if similarity_atual > best_similarity:
+                        best_similarity = similarity_atual  
                 
-                
-                similarity = float(similarity_list[j])
+                similarity = best_similarity
                 if similarity < 0:
                     similarity = 0
 
                 if projeto["Orientador:"] == orientador["Nome"] or projeto["id"] in projetos_orientados:
                     beneficios_string += "0 "
                     continue
-
-                
-
-                #if projeto["Area:"] == orientador["Area"]:
-                #    beneficios = round((similarity * 10), 2)
-                    
-                #    beneficios_string += (str(beneficios)) + ' '
-
-                #elif projeto["SubArea:"] == orientador["SubArea"]:
-                #    beneficios = round((similarity * 100),2)
-                    
-                #    beneficios_string += str(beneficios) + ' '
-        
-
+                #Se for a instancia de chico vamos apenas deixar beneficios como zero
+                if is_instance_chico:
+                    beneficios = 0
                 else:
+                    beneficios = round((similarity * 100), 2)
+                
+                if projeto["SubArea:"] == orientador["SubArea"]:
+                    beneficios_string += str(beneficios + 1000) + ' '
+
+                elif projeto["Area:"] == orientador["Area"]:
+                    beneficios_string += str(beneficios + 100) + ' '
+                else:
+                    beneficios_string += str(beneficios + 1) + ' '
                     
-                    beneficios_string += "1 "
                     
                     
             beneficios_string = beneficios_string.rstrip() + '\n'
@@ -95,10 +99,10 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
 
 def main():
     """Funcao main responsável pelo codigo"""
-    path_projetos = "../DadosTrabalhos/projetos2015.json"
-    path_instance = "instance15ChicoSimi.txt"
-    path_orientadores = "orientadores15.json"
-    path_similarity = "../DadosTrabalhos/similarityOrientadores15AliDoc2Vec.json"
+    path_projetos = "../DadosTrabalhos/projetos2014.json"
+    path_instance = "instance14Chico.txt"
+    path_orientadores = "orientadores14.json"
+    path_similarity = "../DadosTrabalhos/similarityOrientadores14AliDoc2Vec.json"
 
     data_projetos = open_projetos(path_projetos)
     data_orientadores = read_orientadores(path_orientadores)
