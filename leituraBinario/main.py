@@ -75,6 +75,8 @@ class Project:
         return self.subarea
 
 
+
+
 """Função responsável por ler todos os projetos e iniciar as instancias de projetos"""
 def extract_projects(path):
      
@@ -90,6 +92,7 @@ def extract_projects(path):
 
         data_project.append(Project(i, name, advisor, area, sub_area))
 
+    
     return data_project
 
 
@@ -133,11 +136,6 @@ def add_revisors_aloc_to_projects(path_aloc, path_simi, data_projects, data_advi
     first_revisor = aloc_df['Avaliador 1'].to_list()
     second_revisor = aloc_df['Avaliador 2'].to_list()
 
-   
-        
-
-        
-    
     # Percorre os projetos da alocação e verifica qual sua posição em data_projects pelo nome
     # Quando achado adiciona-se os revisores, procurando-os em data_advisors
     for i, project_aloc in enumerate(projects):
@@ -173,24 +171,64 @@ def add_similarity_to_projects(data_projects, data_advisors, data_similarity):
 
     for project in data_projects:
         id_project = project.get_id()
-        advisor = project.get_advisor()
         revisors = project.get_revisors()
         similarities = data_similarity[id_project]["similaridade"].split()
+        # Como cada adivsor orienta um conjunto de projetos, devemos pegar a maior similaridade referente aos trabalhos que ele avalia
+        # Em relação a esse projeto da iteração
+        similarities_project = list()
         
+        for revisor in revisors:            
+            projects_revisor = revisor.get_projects()
+            best_similarity = float(similarities[projects_revisor[0]]) # Considera inicialmente a maior similaridade do primeiro projetado orientado por ele
         
+            for id_project_revisor in projects_revisor:
+                similarity  = float(similarities[id_project_revisor])
+
+                if similarity > best_similarity:
+                    best_similarity = similarity        
+            
+            similarities_project.append(best_similarity)
+        
+        project.set_similarity(similarities_project)        
 
 
+#Isso deve funcionar, talvez
+def write_csv(path, data_projects):
+    output_csv = open(path, "w+")
+    output_csv.write(f'Trabalho, Avaliador 1, Avaliador 2, Avaliador 3, Avaliador 4, Similaridade 1, Similaridade 2\n')
+    
+    for i, project in enumerate(data_projects):
+        project_revisors = project.get_revisors()
+        project_similarities = project.get_similarity()
+        
+        line_output = f'{i},'
+        
+        for revisor in project_revisors:
+            line_output += f'{revisor.get_name(),}'
+        
+        for i, similarity in enumerate(project_similarities):
+            
+            line_output += f'{similarity}\n' if i == len(project_similarities) - 1 else f'{similarity},'
+    
+        
+        
+        output_csv.write(line_output)            
+            
+        
+    
 def main():
-    if len(sys.argv) < 6:
-        print("Insira as entradas corretamente: python3 main.py projetos.json orientadores.json alocacaoChicho.csv alocacaoSimi.csv similaridade.json  ano")
+    if len(sys.argv) < 7:
+        print("Insira as entradas corretamente: python3 main.py projetos.json orientadores.json alocacaoChicho.csv alocacaoSimi.csv similaridade.json saida.csv ano")
 
     path_projects = sys.argv[1]
     path_advisors = sys.argv[2]
     path_aloc = sys.argv[3]
     path_aloc_simi = sys.argv[4]
     path_simi = sys.argv[5]
-    year = sys.argv[6]
+    path_out = sys.argv[6]
+    year = sys.argv[7]
 
+    
 
     data_project = extract_projects(path_projects)
     data_advisors = extract_advisors(path_advisors)
@@ -198,7 +236,7 @@ def main():
 
     add_revisors_aloc_to_projects(path_aloc, path_aloc_simi, data_project, data_advisors)    
     add_similarity_to_projects(data_project, data_advisors, data_similarity)
-
+    write_csv(path_out, data_project)
 
 
 
