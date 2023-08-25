@@ -37,7 +37,7 @@ class Project:
     
     def __init__(self, id, name, advisor, area, subarea):
         self.advisor = advisor
-        self.revisors = None
+        self.revisors = list()
         self.id = id
         self.name = name
         self.area = area
@@ -86,9 +86,20 @@ def extract_projects(path):
     data_project = list()
     for i, project in enumerate(data):
         name = unidecode(project["Projeto:"]).lower().lstrip().rstrip()
-        advisor = unidecode(project["Orientador:"].lower().lstrip().rstrip())
-        area = unidecode(project["Area:"].lower().lstrip().rstrip())
-        sub_area = unidecode(project["SubArea:"].lower().lstrip().rstrip())
+        advisor = unidecode(project["Orientador:"]).lower().lstrip().rstrip()
+        area = project["Area:"]
+        if not pd.isna(area):
+            area = unidecode(area).lower().lstrip().rstrip()
+        
+        else:
+            area = ''
+        
+        sub_area = project["SubArea:"]
+       
+        if not pd.isna(sub_area):
+            sub_area = unidecode(sub_area).lower().lstrip().rstrip()
+        else:
+            sub_area = ''    
 
         data_project.append(Project(i, name, advisor, area, sub_area))
 
@@ -105,9 +116,20 @@ def extract_advisors(path):
     data_revisors = list()
 
     for i, revisor in enumerate(data):
-        name = unidecode(revisor["Nome"].lower().rstrip().lstrip())
-        area = unidecode(revisor["Area"].lower().rstrip().lstrip())
-        sub_area = unidecode(revisor["SubArea"].lower().rstrip().lstrip())
+        name = unidecode(revisor["Nome"]).lower().rstrip().lstrip()
+        area = revisor["Area"]
+
+        if not pd.isna(area):
+            area = unidecode(area).lower().rstrip().lstrip()
+        else:
+            area = ''
+        sub_area = revisor["SubArea"]
+
+        if not pd.isna(sub_area):
+            sub_area = unidecode(sub_area).lower().rstrip().lstrip()
+        else:
+            sub_area = ''
+
         projects = revisor["Projetos"]
         data_revisors.append(Advisor(i, name, area, sub_area, projects))
     
@@ -131,22 +153,26 @@ def extract_simi(path):
 
 def add_revisors_aloc_to_projects(path_aloc, path_simi, data_projects, data_advisors):
 
+    
     aloc_df = pd.read_csv(path_aloc, sep=',', encoding='UTF-8')
     projects = aloc_df['Projeto:'].to_list()
-    first_revisor = aloc_df['Avaliador 1'].to_list()
-    second_revisor = aloc_df['Avaliador 2'].to_list()
+    first_revisor = aloc_df['Avaliador 1:'].to_list()
+    second_revisor = aloc_df['Avaliador 2:'].to_list()
 
     # Percorre os projetos da alocação e verifica qual sua posição em data_projects pelo nome
     # Quando achado adiciona-se os revisores, procurando-os em data_advisors
     for i, project_aloc in enumerate(projects):
+        project_aloc_name = unidecode(project_aloc).lower().rstrip().lstrip()
         for project in data_projects:
-            project_aloc_name = unidecode(project_aloc).lower().rstrip().lstrip()
             if project_aloc_name == project.get_name():
                 revisor_first = first_revisor[i].lower().rstrip().lstrip()
                 revisor_second = second_revisor[i].lower().rstrip().lstrip()
+                
                 for advisor in data_advisors:
                     if revisor_first == advisor.get_name():
                         project.append_revisor(advisor)
+
+
                     if revisor_second == advisor.get_name():
                         project.append_revisor(advisor)
 
@@ -167,7 +193,7 @@ def add_revisors_aloc_to_projects(path_aloc, path_simi, data_projects, data_advi
 
 
 
-def add_similarity_to_projects(data_projects, data_advisors, data_similarity):
+def add_similarity_to_projects(data_projects, data_similarity):
 
     for project in data_projects:
         id_project = project.get_id()
@@ -177,7 +203,7 @@ def add_similarity_to_projects(data_projects, data_advisors, data_similarity):
         # Em relação a esse projeto da iteração
         similarities_project = list()
         
-        for revisor in revisors:            
+        for revisor in revisors:      
             projects_revisor = revisor.get_projects()
             best_similarity = float(similarities[projects_revisor[0]]) # Considera inicialmente a maior similaridade do primeiro projetado orientado por ele
         
@@ -193,40 +219,42 @@ def add_similarity_to_projects(data_projects, data_advisors, data_similarity):
 
 
 #Isso deve funcionar, talvez
-def write_csv(path, data_projects):
-    output_csv = open(path, "w+")
-    output_csv.write(f'Trabalho, Avaliador 1, Avaliador 2, Avaliador 3, Avaliador 4, Similaridade 1, Similaridade 2\n')
+def write_csv(data_projects, year):
+    output_csv = open(f'table{year}.csv', "w+")
+    output_csv.write(f'Trabalho, Avaliador 1, Avaliador 2, Avaliador 3, Avaliador 4, Similaridade 1, Similaridade 2, Similaridade 3, Similaridade 4\n')
     
     for i, project in enumerate(data_projects):
         project_revisors = project.get_revisors()
+        
         project_similarities = project.get_similarity()
         
         line_output = f'{i},'
         
         for revisor in project_revisors:
-            line_output += f'{revisor.get_name(),}'
+            line_output += f'{revisor.get_name()},'
         
-        for i, similarity in enumerate(project_similarities):
+        for j, similarity in enumerate(project_similarities):
             
-            line_output += f'{similarity}\n' if i == len(project_similarities) - 1 else f'{similarity},'
-    
-        
+            line_output += f'{similarity}\n' if j == len(project_similarities) - 1 else f'{similarity},'
+
         
         output_csv.write(line_output)            
-            
+    output_csv.close()
         
     
 def main():
+    
     if len(sys.argv) < 7:
-        print("Insira as entradas corretamente: python3 main.py projetos.json orientadores.json alocacaoChicho.csv alocacaoSimi.csv similaridade.json saida.csv ano")
+        print("Insira as entradas corretamente: python3 main.py projetos.json orientadores.json alocacaoChicho.csv alocacaoSimi.txt similaridade.json ano")
 
+    
+    print(sys.argv[1])
     path_projects = sys.argv[1]
     path_advisors = sys.argv[2]
     path_aloc = sys.argv[3]
     path_aloc_simi = sys.argv[4]
     path_simi = sys.argv[5]
-    path_out = sys.argv[6]
-    year = sys.argv[7]
+    year = sys.argv[6]
 
     
 
@@ -234,9 +262,9 @@ def main():
     data_advisors = extract_advisors(path_advisors)
     data_similarity = extract_simi(path_simi)
 
-    add_revisors_aloc_to_projects(path_aloc, path_aloc_simi, data_project, data_advisors)    
-    add_similarity_to_projects(data_project, data_advisors, data_similarity)
-    write_csv(path_out, data_project)
+    add_revisors_aloc_to_projects(path_aloc, path_aloc_simi, data_project, data_advisors) # Adiciona a cada projeto os revisores alocados por Chico
+    add_similarity_to_projects(data_project, data_similarity)
+    write_csv(data_project, year)
 
 
 
