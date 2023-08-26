@@ -274,7 +274,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	std::vector < int > ultrapassaram;
 	int ultrapassou = 0;
 	
-	/*
+	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		int number_aloc = 0;
@@ -294,8 +294,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		*saidaBinario << "\n";
 
 	}
-	*/
-
+	
+	/*
 	for (int j = 0; j < quantiaTrabalhos; j++){
 		
 		*saidaBinario << j << " ";
@@ -309,7 +309,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		}
 		*saidaBinario << "\n";
 	}
-	
+	*/
+
 	delete saidaBinario;
 
 	env.end();

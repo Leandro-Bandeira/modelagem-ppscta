@@ -54,11 +54,11 @@ def open_similarity(caminho):
 
 def main():
     
-    path_projetos = "../DadosTrabalhos/projetos2014.json"
-    path_orien = "../Criador-Instancia/orientadores14.json"
-    path_bin = "../src/binario14.txt"
+    path_projetos = "../DadosTrabalhos/projetos2015.json"
+    path_orien = "../Criador-Instancia/orientadores15.json"
+    path_bin = "../src/binario15.txt"
     path_aloc = "2014.csv"
-    path_similarity = "../DadosTrabalhos/similarityOrientadores14AliDoc2Vec.json"
+    path_similarity = "../DadosTrabalhos/similarityOrientadores15AliDoc2Vec.json"
     ### Todos os dados para ver o resultado do modelo ###
     data_projetos = read_projetos(path_projetos)
     data_orien = read_orien(path_orien)
