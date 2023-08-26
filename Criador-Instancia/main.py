@@ -99,10 +99,10 @@ def write_instance(data_projetos, data_orientadores, path_instance, data_similar
 
 def main():
     """Funcao main responsável pelo codigo"""
-    path_projetos = "../DadosTrabalhos/projetos2016.json"
-    path_instance = "instance16Chico.txt"
-    path_orientadores = "orientadores16.json"
-    path_similarity = "../DadosTrabalhos/similarityOrientadores16AliDoc2Vec.json"
+    path_projetos = "../DadosTrabalhos/projetos2017.json"
+    path_instance = "instance17Chico.txt"
+    path_orientadores = "orientadores17.json"
+    path_similarity = "../DadosTrabalhos/similarityOrientadores17AliDoc2Vec.json"
 
     data_projetos = open_projetos(path_projetos)
     data_orientadores = read_orientadores(path_orientadores)
