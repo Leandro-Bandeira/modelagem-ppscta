@@ -3,6 +3,9 @@ Baseada em trabalho, Quantia de orientadores na area do trabalho, Quantia de ori
 import sys
 import json
 import pandas as pd
+import matplotlib.pyplot as plt 
+import numpy as np
+
 from unidecode import unidecode
 
 class Advisor:
@@ -74,6 +77,8 @@ class Project:
     def get_subarea(self):
         return self.subarea
 
+    def get_similarity(self):
+        return self.similarity
 
 
 
@@ -241,6 +246,45 @@ def write_csv(data_projects, year):
         output_csv.write(line_output)            
     output_csv.close()
         
+        
+
+def write_boxplot(data_projects):
+    data_1 = list()
+    data_2 = list()
+    
+    
+    for project in data_projects:
+        similarity_media_1 = float()
+        similarity_media_2 = float()
+        
+        for i, similarity in enumerate(project.get_similarity()):
+            if i < 2:
+                similarity_media_1 += similarity
+            else:
+                similarity_media_2 += similarity
+        
+        data_1.append(similarity_media_1)
+        data_2.append(similarity_media_2)
+    
+    data = [data_1, data_2]
+    
+    fig, ax = plt.subplots()
+    boxprops = dict(linestyle='--', linewidth=1.5, color='red') # estilo de linha da caixa
+    flierprops = dict(marker='o', markerfacecolor='purple', markersize=5, alpha=0.5)
+    medianprops = dict(linestyle='-.', linewidth=1.5, color='blue')
+    whiskerprops = dict(linestyle='-', linewidth=1.5, color='green')
+    ax.boxplot(data, boxprops=boxprops, flierprops=flierprops, medianprops=medianprops, whiskerprops=whiskerprops)
+    ax.set_title('Média de similaridades por trabalho x Algoritmo, ano 2014')
+    ax.set_xlabel('Algoritmo')
+    ax.set_ylabel('Média de Similaridade')
+    xticks = ['Algoritmo Anterior', 'Algoritmo Atual']
+    ax.set_xticklabels(xticks)
+    
+    plt.savefig('2014', format='png')
+    plt.show()
+
+    
+    
     
 def main():
     
@@ -266,6 +310,7 @@ def main():
     add_similarity_to_projects(data_project, data_similarity)
     write_csv(data_project, year)
 
+    write_boxplot(data_project)
 
 
 
