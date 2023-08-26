@@ -269,7 +269,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	
 	
 	/* Gera o arquivo binario para leitura	*/
-	std::fstream* saidaBinario = new std::fstream("binario15.txt", std::ios::out);
+	std::fstream* saidaBinario = new std::fstream("binario16.txt", std::ios::out);
 	
 	std::vector < int > ultrapassaram;
 	int ultrapassou = 0;
