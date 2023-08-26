@@ -248,7 +248,7 @@ def write_csv(data_projects, year):
         
         
 
-def write_boxplot(data_projects):
+def write_boxplot(data_projects, year):
     data_1 = list()
     data_2 = list()
     
@@ -274,13 +274,13 @@ def write_boxplot(data_projects):
     medianprops = dict(linestyle='-.', linewidth=1.5, color='blue')
     whiskerprops = dict(linestyle='-', linewidth=1.5, color='green')
     ax.boxplot(data, boxprops=boxprops, flierprops=flierprops, medianprops=medianprops, whiskerprops=whiskerprops)
-    ax.set_title('Média de similaridades por trabalho x Algoritmo, ano 2014')
+    ax.set_title('Média de similaridade por avaliador alocado, ano ' + f'{year}')
     ax.set_xlabel('Algoritmo')
     ax.set_ylabel('Média de Similaridade')
     xticks = ['Algoritmo Anterior', 'Algoritmo Atual']
     ax.set_xticklabels(xticks)
     
-    plt.savefig('2014', format='png')
+    plt.savefig(f'{year}', format='png')
     plt.show()
 
     
@@ -310,7 +310,7 @@ def main():
     add_similarity_to_projects(data_project, data_similarity)
     write_csv(data_project, year)
 
-    write_boxplot(data_project)
+    write_boxplot(data_project, year)
 
 
 

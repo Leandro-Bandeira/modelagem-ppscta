@@ -309,8 +309,8 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		}
 		*saidaBinario << "\n";
 	}
+	
 	*/
-
 	delete saidaBinario;
 
 	env.end();
