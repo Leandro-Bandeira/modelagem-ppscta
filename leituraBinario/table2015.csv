@@ -1,0 +1,875 @@
+Trabalho, Avaliador 1, Avaliador 2, Avaliador 3, Avaliador 4, Similaridade 1, Similaridade 2, Similaridade 3, Similaridade 4
+0,solange fatima geraldo da costa,greicy kelly gouveia dias bittencourt,altamira pereira da silva reichert,greicy kelly gouveia dias bittencourt,0.05,0.49,0.37,0.49
+1,maria do socorro de franca silva,rafael de almeida travassos,islania giselia albuquerque goncalves,maria do socorro de franca silva,0.67,0.29,0.55,0.67
+2,anna alice figueiredo de almeida,leonardo wanderley lopes,marine raquel diniz da rosa,giorvan anderson dos santos alves,0.25,0.27,0.33,0.38
+3,fagner dias araruna,uberlandio batista severo,fagner dias araruna,uberlandio batista severo,0.45,0.32,0.45,0.32
+4,joao marcos bezerra do o,uberlandio batista severo,joao marcos bezerra do o,uberlandio batista severo,0.45,0.21,0.45,0.21
+5,hemilio fernandes campos coelho,ana flavia uzeda dos santos macambira,eufrasio de andrade lima neto,hemilio fernandes campos coelho,0.27,0.15,0.19,0.27
+6,tatiene correia de souza,hemilio fernandes campos coelho,hemilio fernandes campos coelho,ana flavia uzeda dos santos macambira,0.19,0.21,0.21,0.19
+7,eufrasio de andrade lima neto,ana flavia uzeda dos santos macambira,tatiene correia de souza,ana flavia uzeda dos santos macambira,0.21,0.28,0.27,0.28
+8,tatiene correia de souza,ana flavia uzeda dos santos macambira,eufrasio de andrade lima neto,hemilio fernandes campos coelho,0.06,0.09,0.45,0.27
+9,tatiene correia de souza,ana flavia uzeda dos santos macambira,tatiene correia de souza,eufrasio de andrade lima neto,0.36,0.26,0.36,0.35
+10,alisson vasconcelos de brito,ed porto bezerra,alisson vasconcelos de brito,iguatemi eduardo da fonseca,0.53,0.24,0.53,0.38
+11,leonardo vidal batista,danielle rousy dias da silva,clauirton de albuquerque siebra,ayla debora dantas de souza reboucas,0.29,0.35,0.37,0.36
+12,ayla debora dantas de souza reboucas,leonardo vidal batista,natasha correia queiroz lino,leonardo vidal batista,0.23,0.39,0.29,0.39
+13,ayla debora dantas de souza reboucas,danielle rousy dias da silva,natasha correia queiroz lino,leonardo vidal batista,0.13,0.26,0.37,0.39
+14,leonardo vidal batista,danielle rousy dias da silva,natasha correia queiroz lino,leonardo vidal batista,0.35,0.3,0.36,0.35
+15,natasha correia queiroz lino,clauirton de albuquerque siebra,clauirton de albuquerque siebra,danielle rousy dias da silva,0.29,0.39,0.39,0.33
+16,natasha correia queiroz lino,clauirton de albuquerque siebra,clauirton de albuquerque siebra,ayla debora dantas de souza reboucas,0.18,0.39,0.39,0.35
+17,liliane dos santos machado,ed porto bezerra,alexandre nobrega duarte,tiago maritan ugulino de araujo,0.18,0.17,0.53,0.39
+18,alexandre nobrega duarte,ed porto bezerra,jose marcilio filgueiras cruz,liliane dos santos machado,0.23,0.44,0.41,0.36
+19,alexandre nobrega duarte,ed porto bezerra,alisson vasconcelos de brito,jose marcilio filgueiras cruz,0.29,0.32,0.39,0.45
+20,tiago maritan ugulino de araujo,iguatemi eduardo da fonseca,tiago maritan ugulino de araujo,iguatemi eduardo da fonseca,0.45,0.41,0.45,0.41
+21,alisson vasconcelos de brito,tiago maritan ugulino de araujo,tiago maritan ugulino de araujo,jose marcilio filgueiras cruz,0.18,0.36,0.36,0.33
+22,alexandre nobrega duarte,tiago maritan ugulino de araujo,alexandre nobrega duarte,jose marcilio filgueiras cruz,0.38,0.25,0.38,0.41
+23,hugo leonardo davi de souza cavalcante,rodrigo ronelli duarte de andrade,carlos antonio de sousa pires,rodrigo ronelli duarte de andrade,0.25,0.31,0.38,0.31
+24,eugenio ramos bezerra de melo,dionisio bazeia filho,eugenio ramos bezerra de melo,carlos antonio de sousa pires,0.65,0.34,0.65,0.61
+25,dionisio bazeia filho,laercio losano,paulo sergio rodrigues da silva,carlos antonio de sousa pires,0.31,0.4,0.65,0.51
+26,eugenio ramos bezerra de melo,carlos antonio de sousa pires,paulo sergio rodrigues da silva,laercio losano,0.26,0.21,0.29,0.33
+27,paulo sergio rodrigues da silva,eugenio ramos bezerra de melo,paulo sergio rodrigues da silva,eugenio ramos bezerra de melo,0.61,0.51,0.61,0.51
+28,paulo sergio rodrigues da silva,dionisio bazeia filho,paulo sergio rodrigues da silva,dionisio bazeia filho,0.45,0.37,0.45,0.37
+29,marcos cesar santos oria,martine patricia arltte chevroller,martine patricia arltte chevroller,jorge gabriel gomes de souza ramos,0.36,0.45,0.45,0.45
+30,marcos cesar santos oria,thierry marcelino passerat de silans,eugenio ramos bezerra de melo,thierry marcelino passerat de silans,0.28,0.45,0.51,0.45
+31,paulo sergio rodrigues da silva,dionisio bazeia filho,eugenio ramos bezerra de melo,thierry marcelino passerat de silans,0.38,0.31,0.5,0.45
+32,eugenio ramos bezerra de melo,jorge gabriel gomes de souza ramos,marcos cesar santos oria,jorge gabriel gomes de souza ramos,0.31,0.31,0.38,0.31
+33,rodrigo cristiano,savio moita pinheiro,claudio gabriel lima junior,mario luiz araujo de almeida vasconcellos,0.28,0.32,0.45,0.51
+34,rodrigo cristiano,savio moita pinheiro,rodrigo cristiano,petronio filgueiras de athayde filho,0.61,0.23,0.61,0.54
+35,juliana alves vale,petronio filgueiras de athayde filho,juliana alves vale,bruno freitas lira,0.61,0.55,0.61,0.57
+36,juliana alves vale,petronio filgueiras de athayde filho,juliana alves vale,mario luiz araujo de almeida vasconcellos,0.45,0.38,0.45,0.53
+37,claudio gabriel lima junior,savio moita pinheiro,rodrigo cristiano,petronio filgueiras de athayde filho,0.41,0.04,0.57,0.57
+38,juliana alves vale,dayse das neves moreira,rodrigo cristiano,bruno freitas lira,0.54,0.21,0.55,0.57
+39,juliana alves vale,bruno freitas lira,claudio gabriel lima junior,mario luiz araujo de almeida vasconcellos,0.23,0.29,0.35,0.37
+40,rodrigo cristiano,mario luiz araujo de almeida vasconcellos,rodrigo cristiano,mario luiz araujo de almeida vasconcellos,0.4,0.38,0.4,0.38
+41,claudio gabriel lima junior,marcus tullius scotti,claudio gabriel lima junior,petronio filgueiras de athayde filho,0.53,0.37,0.53,0.55
+42,ieda maria garcia dos santos,ercules epaminondas de sousa teotonio,fernando jose volpi eusebio de oliveira,ieda maria garcia dos santos,0.46,0.34,0.36,0.46
+43,jose geraldo de paiva espinola,ieda maria garcia dos santos,ieda maria garcia dos santos,ercules epaminondas de sousa teotonio,0.36,0.5,0.5,0.47
+44,ieda maria garcia dos santos,ercules epaminondas de sousa teotonio,fernando jose volpi eusebio de oliveira,maria gardennia da fonseca,0.29,0.26,0.23,0.23
+45,jose geraldo de paiva espinola,julio santos reboucas,jose geraldo de paiva espinola,fernando jose volpi eusebio de oliveira,0.46,0.29,0.46,0.5
+46,jose geraldo de paiva espinola,julio santos reboucas,fernando jose volpi eusebio de oliveira,ieda maria garcia dos santos,0.34,0.22,0.47,0.48
+47,silmar andrade do monte,lucina rocha sousa,gerd bruno da rocha,silmar andrade do monte,0.39,0.13,0.21,0.39
+48,ismael ivan rockenbach,marcia roseane targino de oliveira,ismael ivan rockenbach,laesio pereira martins,0.43,0.14,0.43,0.36
+49,wagner de mendonca faustino,silmar andrade do monte,silmar andrade do monte,elizete ventura do monte,0.21,0.25,0.25,0.24
+50,wagner de mendonca faustino,gerd bruno da rocha,wagner de mendonca faustino,gerd bruno da rocha,0.39,0.25,0.39,0.25
+51,ilda antonieta salata toscano,ricardo alexandre cavalcanti de lima,mario cesar ugulino de araujo,edvan cirino da silva,0.25,0.16,0.48,0.28
+52,sherlan guimaraes lemos,williame farias ribeiro,williame farias ribeiro,maria betania hermenegildo dos santos,0.36,0.44,0.44,0.34
+53,sherlan guimaraes lemos,ricardo alexandre cavalcanti de lima,marcio jose coelho de pontes,wallace duarte fragoso,0.38,0.19,0.48,0.4
+54,marcio jose coelho de pontes,ricardo alexandre cavalcanti de lima,marcio jose coelho de pontes,wallace duarte fragoso,0.36,0.26,0.36,0.38
+55,mario cesar ugulino de araujo,williame farias ribeiro,marcio jose coelho de pontes,maria betania hermenegildo dos santos,0.32,0.25,0.28,0.27
+56,marcio jose coelho de pontes,wallace duarte fragoso,mario cesar ugulino de araujo,wallace duarte fragoso,0.31,0.45,0.43,0.45
+57,mario cesar ugulino de araujo,maria betania hermenegildo dos santos,ilda antonieta salata toscano,sherlan guimaraes lemos,0.4,0.33,0.36,0.45
+58,henrique elias pessoa gutierres,christianne maria moura reis,henrique elias pessoa gutierres,christianne maria moura reis,0.12,0.19,0.12,0.19
+59,luciana gomes barbosa,venia camelo de souza,cristiane francisca da costa sassi,david holanda de oliveira,0.23,0.24,0.2,0.18
+60,zelma glebya maciel quirino,venia camelo de souza,elaine bernini,carlos barros de araujo,0.32,0.34,0.32,0.57
+61,adna cristina barbosa de sousa,ana emilia barros e silva,adna cristina barbosa de sousa,ana emilia barros e silva,0.33,0.27,0.33,0.27
+62,cosme rafael martinez salinas,rubens teixeira de queiroz,rubens teixeira de queiroz,maria de fatima agra,0.26,0.45,0.45,0.41
+63,zelma glebya maciel quirino,manoel bandeira de albuquerque,zelma glebya maciel quirino,maria de fatima agra,0.32,0.42,0.32,0.32
+64,rita baltazar de lima,maria de fatima agra,rita baltazar de lima,maria de fatima agra,0.59,0.49,0.59,0.49
+65,rubens teixeira de queiroz,maria de fatima agra,rubens teixeira de queiroz,maria de fatima agra,0.59,0.49,0.59,0.49
+66,rubens teixeira de queiroz,rita baltazar de lima,rubens teixeira de queiroz,rita baltazar de lima,0.49,0.46,0.49,0.46
+67,rubens teixeira de queiroz,rita baltazar de lima,rubens teixeira de queiroz,rita baltazar de lima,0.49,0.49,0.49,0.49
+68,marcio bernardino da silva,glaucia marques freitas ribeiro,miodeli nogueira junor,glaucia marques freitas ribeiro,0.48,0.24,0.61,0.24
+69,martin lindsey christoffersen,miodeli nogueira junor,ricardo de souza rosa,marcio bernardino da silva,0.33,0.48,0.53,0.48
+70,miodeli nogueira junor,robson tamar da costa ramos,martin lindsey christoffersen,marcio bernardino da silva,0.53,0.36,0.54,0.48
+71,miodeli nogueira junor,robson tamar da costa ramos,miodeli nogueira junor,robson tamar da costa ramos,0.54,0.49,0.54,0.49
+72,ricardo de souza rosa,martin lindsey christoffersen,robson tamar da costa ramos,marcio bernardino da silva,0.61,0.54,0.55,0.48
+73,martin lindsey christoffersen,marcio bernardino da silva,martin lindsey christoffersen,marcio bernardino da silva,0.49,0.45,0.49,0.45
+74,ricardo de souza rosa,helder farias pereira de araujo,miodeli nogueira junor,robson tamar da costa ramos,0.48,0.36,0.48,0.45
+75,patricia mirella da silva scardua,alda lucia de lima amancio,patricia mirella da silva scardua,alda lucia de lima amancio,0.23,0.29,0.23,0.29
+76,celso feitosa martins,martin lindsey christoffersen,celso feitosa martins,martin lindsey christoffersen,0.35,0.38,0.35,0.38
+77,celso feitosa martins,glaucia marques freitas ribeiro,martin lindsey christoffersen,miodeli nogueira junor,0.24,0.2,0.31,0.41
+78,alexandre ramlo torre palma,helder farias pereira de araujo,denise dias da cruz,frederico gustavo rodrigues franca,0.07,0.49,0.42,0.49
+79,gustavo henrique calazans vieira,venia camelo de souza,alexandre ramlo torre palma,luciana gomes barbosa,0.32,0.49,0.32,0.33
+80,george emmanuel cavalcanti de miranda,alexandre ramlo torre palma,gustavo henrique calazans vieira,venia camelo de souza,0.1,0.07,0.32,0.41
+81,elaine bernini,venia camelo de souza,ana carolina figueiredo lacerda sakamoto,elaine bernini,0.35,0.36,0.51,0.35
+82,nadjacleia vilar almeida,denise dias da cruz,nadjacleia vilar almeida,venia camelo de souza,0.48,0.21,0.48,0.36
+83,nadjacleia vilar almeida,antonio christian de andrade moura,nadjacleia vilar almeida,frederico gustavo rodrigues franca,0.29,0.08,0.29,0.25
+84,joel silva dos santos,carlos barros de araujo,joel silva dos santos,braulio almeida santos,0.48,0.16,0.48,0.29
+85,joel silva dos santos,carlos barros de araujo,nadjacleia vilar almeida,antonio christian de andrade moura,0.21,0.18,0.37,0.3
+86,nadjacleia vilar almeida,denise dias da cruz,joel silva dos santos,frederico gustavo rodrigues franca,0.16,0.18,0.34,0.48
+87,joel silva dos santos,denise dias da cruz,joel silva dos santos,carlos barros de araujo,0.35,0.31,0.35,0.48
+88,neusa collet,belarmino barbosa lira,valdecir becker,belarmino barbosa lira,0.07,0.45,0.45,0.45
+89,tatiane santi gadelha,clayton zambeli oliveira,tatiane santi gadelha,clayton zambeli oliveira,0.45,0.35,0.45,0.35
+90,carlos alberto de almeida gadelha,clayton zambeli oliveira,carlos alberto de almeida gadelha,clayton zambeli oliveira,0.45,0.36,0.45,0.36
+91,tatiane santi gadelha,carlos alberto de almeida gadelha,ian porto gurgel do amaral,0.25,0.36,0.25
+92,carlos alberto de almeida gadelha,darlene camati persuhn,tatiane santi gadelha,darlene camati persuhn,0.4,0.21,0.53,0.21
+93,frederico barbosa de sousa,iaponira cortez costa de oliveira,neir antunes paes,luciana andrade dos passos,0.23,0.17,0.27,0.34
+94,bagnolia araujo da silva,diego nunes guedes,bagnolia araujo da silva,diego nunes guedes,0.69,0.36,0.69,0.36
+95,fabiana de andrade cavalcante,marianna vieira sobral castello branco,fabiana de andrade cavalcante,diego nunes guedes,0.69,0.21,0.69,0.42
+96,evandro leite de souza,flavia emilia leite de lima ferreira,nelson torro alves,natanael antonio dos santos,0.31,0.27,0.43,0.23
+97,maria do socorro de franca silva,rafael de almeida travassos,maria do socorro de franca silva,rafael de almeida travassos,0.57,0.32,0.57,0.32
+98,islania giselia albuquerque goncalves,rafael de almeida travassos,islania giselia albuquerque goncalves,rafael de almeida travassos,0.57,0.36,0.57,0.36
+99,marcia regina piuvezam,giciane carvalho vieira,marcia regina piuvezam,giciane carvalho vieira,0.55,0.37,0.55,0.37
+100,marcia regina piuvezam,giciane carvalho vieira,marcia regina piuvezam,tatjana keesen de souza lima clemente,0.7,0.51,0.7,0.55
+101,sandra rodrigues mascarenhas,giciane carvalho vieira,sandra rodrigues mascarenhas,giciane carvalho vieira,0.7,0.54,0.7,0.54
+102,sandra rodrigues mascarenhas,giciane carvalho vieira,sandra rodrigues mascarenhas,giciane carvalho vieira,0.63,0.55,0.63,0.55
+103,sandra rodrigues mascarenhas,marcia regina piuvezam,sandra rodrigues mascarenhas,marcia regina piuvezam,0.51,0.55,0.51,0.55
+104,hamilcar jose almeida filgueira,rita de cassia da silveira e sa,sandra rodrigues mascarenhas,marcia regina piuvezam,0.4,-0.01,0.55,0.54
+105,alessandra sousa braz caldas de andrade,esther bastos palitot,jose soares do nascimento,flavia cristina fernandes pimenta,0.15,0.4,0.41,0.38
+106,maria do socorro vieira pereira,thompson lopes de oliveira,maria do socorro vieira pereira,thompson lopes de oliveira,0.56,0.53,0.56,0.53
+107,maria do socorro vieira pereira,thompson lopes de oliveira,maria do socorro vieira pereira,thompson lopes de oliveira,0.48,0.58,0.48,0.58
+108,krystyna gorlach lira,edeltrudes de oliveira lima,krystyna gorlach lira,thompson lopes de oliveira,0.56,0.56,0.56,0.59
+109,krystyna gorlach lira,edeltrudes de oliveira lima,maria do socorro vieira pereira,edeltrudes de oliveira lima,0.58,0.52,0.59,0.52
+110,krystyna gorlach lira,thompson lopes de oliveira,maria do socorro vieira pereira,thompson lopes de oliveira,0.45,0.52,0.56,0.52
+111,caliandra maria bezerra luna lima,cristine hirsch monteiro,caliandra maria bezerra luna lima,cristine hirsch monteiro,0.47,0.46,0.47,0.46
+112,marilia gabriela dos santos cavalcanti,cristine hirsch monteiro,marilia gabriela dos santos cavalcanti,cristine hirsch monteiro,0.47,0.6,0.47,0.6
+113,marilia gabriela dos santos cavalcanti,caliandra maria bezerra luna lima,marilia gabriela dos santos cavalcanti,caliandra maria bezerra luna lima,0.46,0.6,0.46,0.6
+114,marilia gabriela dos santos cavalcanti,caliandra maria bezerra luna lima,marilia gabriela dos santos cavalcanti,caliandra maria bezerra luna lima,0.3,0.4,0.3,0.4
+115,cristine hirsch monteiro,neir antunes paes,caliandra maria bezerra luna lima,cristine hirsch monteiro,0.32,-0.02,0.3,0.32
+116,heber pimentel gomes,joacio de araujo morais junior,heber pimentel gomes,joacio de araujo morais junior,0.4,0.42,0.4,0.42
+117,roberto leal pimentel,angelo vieira mendonca,roberto leal pimentel,angelo vieira mendonca,0.33,0.39,0.33,0.39
+118,andre jacomel torii,angelo vieira mendonca,andre jacomel torii,angelo vieira mendonca,0.33,0.46,0.33,0.46
+119,andre jacomel torii,angelo vieira mendonca,andre jacomel torii,angelo vieira mendonca,0.21,0.44,0.21,0.44
+120,roberto leal pimentel,angelo vieira mendonca,andre jacomel torii,roberto leal pimentel,0.43,0.31,0.34,0.43
+121,andre jacomel torii,roberto leal pimentel,andre jacomel torii,roberto leal pimentel,0.39,0.46,0.39,0.46
+122,andre jacomel torii,heber pimentel gomes,roberto leal pimentel,angelo vieira mendonca,0.23,0.32,0.42,0.39
+123,roberto leal pimentel,celso augusto guimaraes santos,givanildo alves de azeredo,celso augusto guimaraes santos,0.27,0.25,0.33,0.25
+124,ricardo almeida de melo,celso augusto guimaraes santos,givanildo alves de azeredo,celso augusto guimaraes santos,0.25,0.21,0.4,0.21
+125,kelly cristiane gomes da silva,severino jackson guedes de lima,juliano elvis oliveira,severino jackson guedes de lima,0.36,-0.05,0.54,-0.05
+126,amelia severino ferreira e santos,max rocha quirino,fabiana de carvalho fim,heber sivini ferreira,0.38,0.25,0.55,0.54
+127,itamara farias leite,flavia de medeiros aquino,amelia severino ferreira e santos,heber sivini ferreira,0.05,0.29,0.53,0.55
+128,ricardo peixoto suassuna dutra,heber sivini ferreira,fabiana de carvalho fim,flavia de medeiros aquino,0.5,0.43,0.53,0.51
+129,liszandra fernanda araujo campos,debora albuquerque vieira,eliton souto de medeiros,fabiana de carvalho fim,0.31,0.32,0.49,0.53
+130,juliano elvis oliveira,jose felix da silva neto,ricardo peixoto suassuna dutra,flavia de medeiros aquino,0.45,0.15,0.54,0.49
+131,ramon alves torquato,heber sivini ferreira,eliton souto de medeiros,juliano elvis oliveira,0.38,0.38,0.53,0.5
+132,liszandra fernanda araujo campos,flavia de medeiros aquino,liszandra fernanda araujo campos,ricardo peixoto suassuna dutra,0.53,0.36,0.53,0.57
+133,amelia severino ferreira e santos,itamara farias leite,liszandra fernanda araujo campos,fabiana de carvalho fim,0.35,0.31,0.47,0.48
+134,ramon alves torquato,itamara farias leite,liszandra fernanda araujo campos,flavia de medeiros aquino,0.35,0.26,0.5,0.55
+135,euler cassio tavares de macedo,antonio augusto lisboa de souza,cleonilson protasio de souza,fabiano salvadori,0.42,0.07,0.56,0.51
+136,cleonilson protasio de souza,lucas vinicius hartmann,ruy alberto pisani altafim,lucas vinicius hartmann,0.33,0.13,0.41,0.13
+137,cleonilson protasio de souza,lucas vinicius hartmann,euler cassio tavares de macedo,lucas vinicius hartmann,0.49,0.26,0.41,0.26
+138,ruy alberto pisani altafim,lucas vinicius hartmann,isaac soares de freitas,simplicio arnaud da silva,0.49,0.14,0.58,0.23
+139,isaac soares de freitas,romero leandro andersen,alberto soto lock,darlan alexandria fernandes,0.5,0.31,0.51,0.61
+140,nady rocha,romero leandro andersen,alberto soto lock,darlan alexandria fernandes,0.5,0.31,0.44,0.45
+141,fabiano salvadori,darlan alexandria fernandes,nady rocha,darlan alexandria fernandes,0.44,0.55,0.51,0.55
+142,alberto soto lock,darlan alexandria fernandes,nady rocha,alberto soto lock,0.44,0.38,0.47,0.44
+143,nady rocha,fabiano salvadori,nady rocha,alberto soto lock,0.61,0.38,0.61,0.55
+144,gilberto augusto amado moreira,antonio pralon ferreira leite,gilberto augusto amado moreira,antonio pralon ferreira leite,0.37,0.38,0.37,0.38
+145,gilberto augusto amado moreira,antonio pralon ferreira leite,gilberto augusto amado moreira,antonio pralon ferreira leite,0.42,0.39,0.42,0.39
+146,joao alves de lima,antonio pralon ferreira leite,joao alves de lima,antonio pralon ferreira leite,0.42,0.24,0.42,0.24
+147,zaqueu ernesto da silva,emerson freitas jaguaribe,zaqueu ernesto da silva,emerson freitas jaguaribe,0.24,0.18,0.24,0.18
+148,gilberto augusto amado moreira,jose mauricio alves de matos gurgel,francisco antonio belo,jose mauricio alves de matos gurgel,0.4,0.57,0.36,0.57
+149,nady rocha,alberto soto lock,carlos antonio cabral dos santos,jose mauricio alves de matos gurgel,0.36,0.38,0.36,0.44
+150,monica carvalho,carlos antonio cabral dos santos,carlos antonio cabral dos santos,francisco antonio belo,0.11,0.57,0.57,0.44
+151,simplicio arnaud da silva,raimundo aprigio de menezes junior,francisco antonio belo,raimundo aprigio de menezes junior,0.17,0.08,0.59,0.08
+152,joao alves de lima,jose felix da silva neto,carlos antonio cabral dos santos,jose mauricio alves de matos gurgel,0.33,0.04,0.44,0.47
+153,abel cavalcante lima filho,jose felix da silva neto,jose mauricio alves de matos gurgel,abel cavalcante lima filho,0.41,0.01,0.35,0.41
+154,mercia melo de almeida mota,josilene de assis cavalcante,mercia melo de almeida mota,josilene de assis cavalcante,0.33,0.35,0.33,0.35
+155,vivian stumpf madeira,mercia melo de almeida mota,vivian stumpf madeira,josilene de assis cavalcante,0.34,0.26,0.34,0.48
+156,flavio luiz honorato da silva,josilene de assis cavalcante,vivian stumpf madeira,josilene de assis cavalcante,0.26,0.37,0.33,0.37
+157,silvia layara floriani andersen,josilene de assis cavalcante,vivian stumpf madeira,raul rosenhaim,0.14,0.25,0.33,0.34
+158,fabiola dias da silva curbelo,rennio felix de sena,leopoldo oswaldo alcazar rojas,fabiola dias da silva curbelo,0.47,0.33,0.45,0.47
+159,fabiola dias da silva curbelo,rennio felix de sena,fabiola dias da silva curbelo,rennio felix de sena,0.39,0.39,0.39,0.39
+160,nataly albuquerque dos santos,raul rosenhaim,leopoldo oswaldo alcazar rojas,nataly albuquerque dos santos,0.4,0.24,0.46,0.4
+161,rennio felix de sena,raul rosenhaim,nataly albuquerque dos santos,rennio felix de sena,0.42,0.32,0.47,0.42
+162,nataly albuquerque dos santos,fabiola dias da silva curbelo,fabiola dias da silva curbelo,joelma morais ferreira,0.39,0.42,0.42,0.61
+163,silvia layara floriani andersen,genaro zenaide clericuzi,raul rosenhaim,silvia layara floriani andersen,0.28,0.1,0.34,0.28
+164,silvia layara floriani andersen,genaro zenaide clericuzi,joelma morais ferreira,silvia layara floriani andersen,0.2,0.16,0.34,0.2
+165,cristiano das neves almeida,ricardo de aragao,cristiano das neves almeida,ricardo de aragao,0.34,0.09,0.34,0.09
+166,tarciso cabral da silva,ricardo de aragao,tarciso cabral da silva,ricardo de aragao,0.34,0.07,0.34,0.07
+167,cristiano das neves almeida,gilson barbosa athayde junior,gilson barbosa athayde junior,ricardo de aragao,0.14,0.29,0.29,0.26
+168,tarciso cabral da silva,claudia coutinho nobrega,tarciso cabral da silva,claudia coutinho nobrega,0.3,0.29,0.3,0.29
+169,carmem lucia moreira gadelha,elisangela maria rodrigues rocha,carmem lucia moreira gadelha,elisangela maria rodrigues rocha,0.46,0.25,0.46,0.25
+170,adriano rolim da paz,elisangela maria rodrigues rocha,adriano rolim da paz,elisangela maria rodrigues rocha,0.46,0.11,0.46,0.11
+171,maria silene alexandre leite,ricardo moreira da silva,maria silene alexandre leite,ricardo moreira da silva,0.32,0.23,0.32,0.23
+172,maria silene alexandre leite,ricardo moreira da silva,ricardo moreira da silva,claudia fabiana gohr,0.21,0.33,0.33,0.26
+173,luciano costa santos,maria de lourdes barreto gomes,luciano costa santos,ricardo moreira da silva,0.3,0.1,0.3,0.29
+174,maria de lourdes barreto gomes,claudia fabiana gohr,maria de lourdes barreto gomes,maria silene alexandre leite,0.33,0.32,0.33,0.29
+175,luciano costa santos,maria de lourdes barreto gomes,maria de lourdes barreto gomes,ricardo moreira da silva,0.2,0.26,0.26,0.32
+176,luiz bueno da silva,luiz moreira coelho junior,luciano costa santos,claudia fabiana gohr,0.29,0.3,0.32,0.34
+177,maria de lourdes barreto gomes,fabio morais borges,claudia fabiana gohr,fabio morais borges,0.31,0.23,0.49,0.23
+178,luciano costa santos,maria silene alexandre leite,luciano costa santos,anand subramanian,0.43,0.37,0.43,0.3
+179,luciano costa santos,luiz moreira coelho junior,luciano costa santos,luiz moreira coelho junior,0.32,0.28,0.32,0.28
+180,ana luiza mattos braga,tadeu antonio de azevedo melo,ronei marcos de moraes,rita de cassia da silveira e sa,0.24,0.4,0.34,0.35
+181,eutilia andrade medeiros freire,fatima maria macedo dos santos,eutilia andrade medeiros freire,esther bastos palitot,0.39,0.07,0.39,0.41
+182,fatima maria macedo dos santos,jose eymard moraes de medeiros filho,rosalia gouveia filizola,cristianne da silva alexandre,0.12,0.34,0.32,0.4
+183,maurus marques de almeida holanda,jader freire sobral filho,lucio roberto cancado castellano,maurus marques de almeida holanda,0.44,0.12,0.41,0.44
+184,juliana sousa soares de araujo,monica souza de miranda henriques,rilva lopes de sousa munoz,jose eymard moraes de medeiros filho,0.24,0.04,0.46,0.57
+185,juliana sousa soares de araujo,jose eymard moraes de medeiros filho,lucio roberto cancado castellano,esther bastos palitot,0.4,0.35,0.39,0.49
+186,eutilia andrade medeiros freire,cristianne da silva alexandre,alessandra sousa braz caldas de andrade,jose eymard moraes de medeiros filho,0.24,0.15,0.47,0.45
+187,rilva lopes de sousa munoz,esther bastos palitot,jose soares do nascimento,rilva lopes de sousa munoz,0.47,0.31,0.4,0.47
+188,rosalia gouveia filizola,haroldo de lucena bezerra,haroldo de lucena bezerra,gilka paiva oliveira costa,0.2,0.49,0.49,0.42
+189,eduardo sergio soares sousa,gilka paiva oliveira costa,jose soares do nascimento,eduardo sergio soares sousa,0.29,0.32,0.46,0.29
+190,claudio sergio medeiros paiva,gilka paiva oliveira costa,claudio sergio medeiros paiva,gilka paiva oliveira costa,0.29,0.53,0.29,0.53
+191,bianca marques santiago,dayane franco barros mangueira leite,andre ulisses dantas batista,hugo lemes carlo,0.41,0.21,0.98,0.48
+192,maria sueli marques soares,luciane queiroz mota de lima,paulo rogerio ferreti bonan,hugo lemes carlo,0.41,0.44,0.98,0.49
+193,paulo rogerio ferreti bonan,andre ulisses dantas batista,paulo rogerio ferreti bonan,maria sueli marques soares,0.44,0.44,0.44,0.4
+194,maria sueli marques soares,luciane queiroz mota de lima,paulo rogerio ferreti bonan,andre ulisses dantas batista,0.2,0.2,0.48,0.49
+195,andre ulisses dantas batista,luciane queiroz mota de lima,andre ulisses dantas batista,hugo lemes carlo,0.41,0.23,0.41,0.4
+196,ana maria gondim valenca,eliane batista de medeiros serpa,ana maria gondim valenca,eliane batista de medeiros serpa,0.42,0.18,0.42,0.18
+197,fabiola galbiatti de carvalho carlo,eliane batista de medeiros serpa,fabiola galbiatti de carvalho carlo,eliane batista de medeiros serpa,0.42,0.15,0.42,0.15
+198,bianca marques santiago,ednara mercia fernandes de andrade,fabiola galbiatti de carvalho carlo,bianca marques santiago,0.38,0.22,0.37,0.38
+199,paulo rogerio ferreti bonan,dayane franco barros mangueira leite,heloisa helena pinho veloso,eliane batista de medeiros serpa,0.41,0.03,0.38,0.49
+200,patricia moreira rabello,wilton wilney nascimento padilha,fabio correia sampaio,roberta moreira franca,0.19,0.33,0.32,0.46
+201,andressa feitosa bezerra de oliveira,fabio correia sampaio,wilton wilney nascimento padilha,andrea gadelha ribeiro targino,0.19,0.3,0.51,0.41
+202,roberta moreira franca,wilton wilney nascimento padilha,andressa feitosa bezerra de oliveira,wilton wilney nascimento padilha,0.26,0.42,0.32,0.42
+203,roberta moreira franca,andrea gadelha ribeiro targino,wilton wilney nascimento padilha,andrea gadelha ribeiro targino,0.2,0.38,0.48,0.38
+204,fabio correia sampaio,wilton wilney nascimento padilha,andressa feitosa bezerra de oliveira,patricia moreira rabello,0.26,0.38,0.46,0.33
+205,patricia moreira rabello,fabio correia sampaio,fabio correia sampaio,roberta moreira franca,0.38,0.48,0.48,0.34
+206,rosangela marques duarte,ana karina maciel de andrade,rosangela marques duarte,ana karina maciel de andrade,0.26,0.09,0.26,0.09
+207,rosangela marques duarte,ana karina maciel de andrade,robinsom viegas montenegro,rosangela marques duarte,0.28,0.26,0.39,0.28
+208,hugo lemes carlo,robinsom viegas montenegro,robinsom viegas montenegro,ana karina maciel de andrade,0.32,0.26,0.26,0.32
+209,vicente carlos de oliveira costa,damiao pergentino de sousa,marcelo sobral da silva,josean fechine tavares,0.35,0.45,0.47,0.49
+210,marcelo sobral da silva,josean fechine tavares,maria de fatima vanderlei de souza,leonia maria batista,0.3,0.14,0.52,0.24
+211,vicente carlos de oliveira costa,josean fechine tavares,ionaldo jose lima diniz basilio,celidarque da silva dias,0.31,0.39,0.47,0.42
+212,marcelo sobral da silva,damiao pergentino de sousa,jose maria barbosa filho,kristerson reinaldo de luna freire,0.37,0.29,0.52,0.38
+213,maria de fatima vanderlei de souza,leonia maria batista,ionaldo jose lima diniz basilio,celidarque da silva dias,0.2,0.04,0.35,0.43
+214,vicente carlos de oliveira costa,josean fechine tavares,josean fechine tavares,damiao pergentino de sousa,0.32,0.55,0.55,0.67
+215,ionaldo jose lima diniz basilio,leonia maria batista,barbara viviana de oliveira santos,damiao pergentino de sousa,0.49,0.17,0.55,0.76
+216,ionaldo jose lima diniz basilio,damiao pergentino de sousa,josean fechine tavares,damiao pergentino de sousa,0.33,0.61,0.58,0.61
+217,marcelo sobral da silva,kristerson reinaldo de luna freire,barbara viviana de oliveira santos,josean fechine tavares,0.41,0.21,0.67,0.76
+218,caliandra maria bezerra luna lima,ionaldo jose lima diniz basilio,vicente carlos de oliveira costa,barbara viviana de oliveira santos,0.3,0.38,0.55,0.54
+219,maria julia guimaraes oliveira soares,maria bernadete de sousa costa,maria julia guimaraes oliveira soares,francileide de araujo rodrigues,0.47,0.21,0.47,0.31
+220,iolanda beserra da costa santos,maria bernadete de sousa costa,iolanda beserra da costa santos,francileide de araujo rodrigues,0.47,0.03,0.47,0.48
+221,iolanda beserra da costa santos,maria eliane moreira freire,solange fatima geraldo da costa,maria eliane moreira freire,0.25,0.37,0.34,0.37
+222,iolanda beserra da costa santos,maria emilia limeira lopes,maria eliane moreira freire,francileide de araujo rodrigues,0.27,0.12,0.39,0.46
+223,neusa collet,patricia serpa de souza batista,neusa collet,maria bernadete de sousa costa,0.37,0.46,0.37,0.49
+224,maria julia guimaraes oliveira soares,jordana de almeida nogueira,jordana de almeida nogueira,lenilde duarte de sa,0.43,0.4,0.4,0.52
+225,maria julia guimaraes oliveira soares,jordana de almeida nogueira,jordana de almeida nogueira,katia neyla de freitas macedo,0.43,0.43,0.43,0.56
+226,maria julia guimaraes oliveira soares,greicy kelly gouveia dias bittencourt,greicy kelly gouveia dias bittencourt,maria bernadete de sousa costa,0.49,0.41,0.41,0.46
+227,greicy kelly gouveia dias bittencourt,jordana de almeida nogueira,greicy kelly gouveia dias bittencourt,jordana de almeida nogueira,0.43,0.49,0.43,0.49
+228,simone helena dos santos oliveira,maria djair dias,simone helena dos santos oliveira,katia neyla de freitas macedo,0.52,0.33,0.52,0.54
+229,maria adelaide silva paredes moreira,maria djair dias,maria adelaide silva paredes moreira,simone helena dos santos oliveira,0.63,0.37,0.63,0.62
+230,eduardo sergio soares sousa,haroldo de lucena bezerra,claudio sergio medeiros paiva,haroldo de lucena bezerra,0.32,0.37,0.38,0.37
+231,solange fatima geraldo da costa,francileide de araujo rodrigues,maria julia guimaraes oliveira soares,maria emilia limeira lopes,0.13,0.08,0.62,0.37
+232,maria djair dias,maria das gracas melo fernandes,maria adelaide silva paredes moreira,katia neyla de freitas macedo,0.35,0.38,0.52,0.56
+233,maria das gracas melo fernandes,katia neyla de freitas macedo,maria das gracas melo fernandes,lenilde duarte de sa,0.49,0.42,0.49,0.47
+234,jordana de almeida nogueira,valeria peixoto bezerra,simone helena dos santos oliveira,lenilde duarte de sa,0.46,0.32,0.49,0.49
+235,patricia serpa de souza batista,valeria peixoto bezerra,maria djair dias,patricia serpa de souza batista,0.4,0.28,0.49,0.4
+236,marta miriam lopes costa cunha,lenilma bento de araujo meneses,maria djair dias,marta miriam lopes costa cunha,0.49,0.17,0.47,0.49
+237,maria djair dias,maria de lourdes de farias pontes,patricia serpa de souza batista,katia neyla de freitas macedo,0.34,0.36,0.41,0.44
+238,marta miriam lopes costa cunha,lenilde duarte de sa,maria djair dias,maria de lourdes de farias pontes,0.29,0.41,0.45,0.46
+239,marta miriam lopes costa cunha,maria das gracas melo fernandes,maria adelaide silva paredes moreira,patricia serpa de souza batista,0.35,0.45,0.54,0.51
+240,flavia emilia leite de lima ferreira,maria lucia da conceicao,evandro leite de souza,maria lucia da conceicao,0.38,0.26,0.49,0.26
+241,robson cavalcante veras,selma dos passos braga,robson cavalcante veras,selma dos passos braga,0.33,0.4,0.33,0.4
+242,robson cavalcante veras,selma dos passos braga,robson cavalcante veras,selma dos passos braga,0.19,0.46,0.19,0.46
+243,maria jose de carvalho costa,maria da conceicao rodrigues goncalves,rodrigo pinheiro de toledo vianna,maria jose de carvalho costa,0.3,0.21,0.4,0.3
+244,maria jose de carvalho costa,maria da conceicao rodrigues goncalves,flavia emilia leite de lima ferreira,maria jose de carvalho costa,0.39,0.31,0.4,0.39
+245,rodrigo pinheiro de toledo vianna,maria da conceicao rodrigues goncalves,rodrigo pinheiro de toledo vianna,maria da conceicao rodrigues goncalves,0.39,0.56,0.39,0.56
+246,rodrigo pinheiro de toledo vianna,maria jose de carvalho costa,rodrigo pinheiro de toledo vianna,maria jose de carvalho costa,0.31,0.56,0.31,0.56
+247,jana luiza toscano mendes de oliveira,joria viana guerreiro,katia suely queiroz silva ribeiro,joria viana guerreiro,0.12,0.27,0.5,0.27
+248,solange fatima geraldo da costa,maria bernadete de sousa costa,maria julia guimaraes oliveira soares,maria bernadete de sousa costa,0.12,0.37,0.5,0.37
+249,joao euclides fernandes braga,jose da paz oliveira alvarenga,katia suely queiroz silva ribeiro,claudia helena soares de morais freitas,0.25,0.35,0.58,0.36
+250,claudia helena soares de morais freitas,ricardo de sousa soares,claudia helena soares de morais freitas,jose da paz oliveira alvarenga,0.45,0.27,0.45,0.51
+251,ana maria gondim valenca,ricardo de sousa soares,jaqueline brito vidal batista,ricardo de sousa soares,0.36,0.44,0.33,0.44
+252,katia suely queiroz silva ribeiro,joao euclides fernandes braga,joao euclides fernandes braga,jana luiza toscano mendes de oliveira,0.33,0.36,0.36,0.49
+253,katia suely queiroz silva ribeiro,jaqueline brito vidal batista,jaqueline brito vidal batista,jana luiza toscano mendes de oliveira,0.26,0.4,0.4,0.31
+254,claudia helena soares de morais freitas,ricardo de sousa soares,jaqueline brito vidal batista,joao euclides fernandes braga,0.29,0.32,0.49,0.31
+255,valeria peixoto borges,guttemberg da silva silvino,valeria peixoto borges,guttemberg da silva silvino,0.13,0.06,0.13,0.06
+256,demetrius antonio machado de araujo,marcia helena pontieri,roberto sassi,flavia de oliveira paulino,0.24,0.43,0.42,0.34
+257,patricia mirella da silva scardua,alda lucia de lima amancio,ierece maria de lucena rosa,alda lucia de lima amancio,0.16,0.22,0.18,0.22
+258,graciele da silva campelo borges,neiva maria de almeida,haissa roberta cardarelli,noadia priscila araujo rodrigues,0.17,0.2,0.38,0.28
+259,joao paulo de sousa prado,noadia priscila araujo rodrigues,joao paulo de sousa prado,solange de sousa,0.33,0.28,0.33,0.44
+260,marciane magnani,neiva maria de almeida,graciele da silva campelo borges,ingrid conceicao dantas guerra,0.37,0.25,0.48,0.57
+261,joao andrade da silva,solange de sousa,joao paulo de sousa prado,ingrid conceicao dantas guerra,0.03,0.17,0.37,0.41
+262,haissa roberta cardarelli,noadia priscila araujo rodrigues,marta suely madruga,ingrid conceicao dantas guerra,0.05,0.0,0.4,0.44
+263,carolina lima cavalcanti de albuquerque,ricardo targino moreira,antonio gouveia de souza,carolina lima cavalcanti de albuquerque,0.37,0.32,0.43,0.37
+264,ricardo targino moreira,priscilla diniz lima da silva bernardino,antonio gouveia de souza,laesio pereira martins,0.28,0.16,0.33,0.27
+265,ismael ivan rockenbach,ricardo targino moreira,ricardo targino moreira,laesio pereira martins,0.37,0.55,0.55,0.41
+266,carolina lima cavalcanti de albuquerque,marcia roseane targino de oliveira,carolina lima cavalcanti de albuquerque,laesio pereira martins,0.55,0.32,0.55,0.46
+267,ismael ivan rockenbach,carlos roberto marinho da silva filho,ismael ivan rockenbach,carlos roberto marinho da silva filho,0.28,0.3,0.28,0.3
+268,graciele da silva campelo borges,elisandra costa almeida,antonio gouveia de souza,ismael ivan rockenbach,0.39,0.24,0.63,0.51
+269,enoque feitosa sobreira filho,giscard farias agra,enoque feitosa sobreira filho,roberto cordoville efrem de lima filho,0.44,0.19,0.44,0.26
+270,narbal de marsillac fontes,giscard farias agra,adriana dias vieira,roberto cordoville efrem de lima filho,0.34,0.09,0.44,0.4
+271,adriana dias vieira,eduardo ramalho rabenhorst,enoque feitosa sobreira filho,roberto cordoville efrem de lima filho,0.2,0.23,0.34,0.31
+272,belinda pereira da cunha,eduardo fernandes de araujo,marcilio toscano franca filho,eduardo ramalho rabenhorst,-0.02,0.03,0.11,0.57
+273,eduardo ramalho rabenhorst,eduardo fernandes de araujo,sven peterke,belinda pereira da cunha,0.08,-0.08,0.11,0.32
+274,maria creusa de araujo borges,flavianne fernanda bitencourt nobrega,belinda pereira da cunha,maria creusa de araujo borges,0.42,0.24,0.55,0.42
+275,marcilio toscano franca filho,eduardo fernandes de araujo,marcilio toscano franca filho,eduardo fernandes de araujo,0.32,0.26,0.32,0.26
+276,jose ernesto pimentel filho,robson antao de medeiros,jose ernesto pimentel filho,marlene helena de oliveira franca,0.39,0.36,0.39,0.35
+277,belinda pereira da cunha,flavianne fernanda bitencourt nobrega,adriano marteleto godinho,gustavo rabay guerra,0.48,0.18,0.42,0.55
+278,jose ernesto pimentel filho,robson antao de medeiros,robson antao de medeiros,marlene helena de oliveira franca,0.3,0.4,0.4,0.45
+279,gustavo rabay guerra,robson antao de medeiros,maria luiza pereira de alencar mayer feitosa,robson antao de medeiros,0.3,0.44,0.39,0.44
+280,maria luiza pereira de alencar mayer feitosa,hugo belarmino de morais,jose ernesto pimentel filho,hugo belarmino de morais,0.36,0.3,0.44,0.3
+281,maria luiza pereira de alencar mayer feitosa,jose ernesto pimentel filho,maria luiza pereira de alencar mayer feitosa,robson antao de medeiros,0.46,0.37,0.46,0.39
+282,nelsio rodrigues de abreu,fabio walter,nelsio rodrigues de abreu,raissa dalia paulino,0.46,0.26,0.46,0.29
+283,nelsio rodrigues de abreu,fabio walter,kellen da silva coelho,nelsio rodrigues de abreu,0.32,0.17,0.24,0.32
+284,renata francisco baldanza,raissa dalia paulino,kellen da silva coelho,renata francisco baldanza,0.32,0.21,0.46,0.32
+285,orleans silva martins,jose mancinelli ledo do nascimento,orleans silva martins,jose mancinelli ledo do nascimento,0.47,0.23,0.47,0.23
+286,james batista vieira,aldo leonardo cunha callado,james batista vieira,aldo leonardo cunha callado,0.39,0.25,0.39,0.25
+287,kellen da silva coelho,maria angeluce soares peronico barbotin,james batista vieira,maria angeluce soares peronico barbotin,0.24,0.25,0.35,0.25
+288,orleans silva martins,edilson paulo,jose jassuipe da silva morais,edilson paulo,0.28,0.31,0.41,0.31
+289,edilson paulo,vera lucia cruz,wenner glaucio lopes lucena,rommel de santana freire,0.28,0.17,0.41,0.32
+290,jose jassuipe da silva morais,rommel de santana freire,edilson paulo,rommel de santana freire,0.19,0.4,0.36,0.4
+291,wenner glaucio lopes lucena,jose jassuipe da silva morais,orleans silva martins,rommel de santana freire,0.31,0.28,0.36,0.32
+292,adriano nascimento da paixao,ignacio tavares de araujo junior,adriano nascimento da paixao,ignacio tavares de araujo junior,0.32,0.31,0.32,0.31
+293,sinezio fernandes maia,edilean kleber da silva bejarano aragon,sinezio fernandes maia,ignacio tavares de araujo junior,0.23,0.09,0.23,0.29
+294,paulo aguiar do monte,adriano nascimento da paixao,marcia batista da fonseca,0.17,0.39,0.5
+295,edilean kleber da silva bejarano aragon,magno vamberto batista da silva,adriano nascimento da paixao,edilean kleber da silva bejarano aragon,0.28,0.03,0.4,0.28
+296,sinezio fernandes maia,adriano firmino valdevino de araujo,marcia batista da fonseca,magno vamberto batista da silva,0.35,0.37,0.41,0.24
+297,sinezio fernandes maia,adriano nascimento da paixao,sinezio fernandes maia,adriano nascimento da paixao,0.31,0.29,0.31,0.29
+298,sinezio fernandes maia,marcia batista da fonseca,sinezio fernandes maia,paulo aguiar do monte,0.36,0.17,0.36,0.24
+299,marcia batista da fonseca,adriano firmino valdevino de araujo,adriano firmino valdevino de araujo,ana candida ferreira vieira,0.22,0.12,0.12,0.18
+300,ivan targino moreira,adriano firmino valdevino de araujo,adriano firmino valdevino de araujo,ana candida ferreira vieira,0.18,0.32,0.32,0.18
+301,marcia batista da fonseca,ivan targino moreira,adriano firmino valdevino de araujo,ana candida ferreira vieira,0.49,0.15,0.27,0.21
+302,ivan targino moreira,ana candida ferreira vieira,ivan targino moreira,ana candida ferreira vieira,0.12,0.19,0.12,0.19
+303,jose augusto ribeiro da silveira,maria berthilde de barros lima e moura filha,jose augusto ribeiro da silveira,maria berthilde de barros lima e moura filha,0.25,0.33,0.25,0.33
+304,jose augusto ribeiro da silveira,maria berthilde de barros lima e moura filha,marcio cotrim cunha,maria berthilde de barros lima e moura filha,0.24,0.26,0.31,0.26
+305,jose augusto ribeiro da silveira,maria berthilde de barros lima e moura filha,jose augusto ribeiro da silveira,maria berthilde de barros lima e moura filha,0.5,0.38,0.5,0.38
+306,marcio cotrim cunha,maria berthilde de barros lima e moura filha,marcio cotrim cunha,maria berthilde de barros lima e moura filha,0.5,0.48,0.5,0.48
+307,marcio cotrim cunha,jose augusto ribeiro da silveira,marcio cotrim cunha,jose augusto ribeiro da silveira,0.38,0.48,0.38,0.48
+308,aluisio braz de melo,solange maria leder,aluisio braz de melo,solange maria leder,0.47,0.15,0.47,0.15
+309,angelina dias leao costa,solange maria leder,angelina dias leao costa,solange maria leder,0.47,0.1,0.47,0.1
+310,heloisa helena pinho veloso,wenner glaucio lopes lucena,daniela priscila marchi salvador,dayane franco barros mangueira leite,0.22,0.34,0.27,0.47
+311,marckson roberto ferreira de sousa,marcia veronica costa miranda,marckson roberto ferreira de sousa,marcia veronica costa miranda,0.21,0.14,0.21,0.14
+312,izabel franca de lima,guilherme ataide dias,eliane bezerra paiva,izabel franca de lima,0.22,0.13,0.37,0.22
+313,emeide nobrega duarte,marcia veronica costa miranda,emeide nobrega duarte,marcia veronica costa miranda,0.21,0.07,0.21,0.07
+314,izabel franca de lima,guilherme ataide dias,isa maria freire,guilherme ataide dias,0.31,0.33,0.37,0.33
+315,eliane bezerra paiva,guilherme ataide dias,eliane bezerra paiva,guilherme ataide dias,0.31,0.24,0.31,0.24
+316,eliane bezerra paiva,izabel franca de lima,eliane bezerra paiva,izabel franca de lima,0.33,0.22,0.33,0.22
+317,emeide nobrega duarte,isa maria freire,isa maria freire,marckson roberto ferreira de sousa,0.23,0.38,0.38,0.27
+318,emeide nobrega duarte,edvaldo carvalho alves,eliane bezerra paiva,edvaldo carvalho alves,0.34,0.27,0.44,0.27
+319,marcos antonio nicolau,marcel vieira barreto silva,marcos antonio nicolau,marcel vieira barreto silva,0.38,0.45,0.38,0.45
+320,marcel vieira barreto silva,valdecir becker,luiz antonio mousinho magalhaes,marcel vieira barreto silva,0.44,0.22,0.38,0.44
+321,marcos antonio nicolau,valdecir becker,luiz antonio mousinho magalhaes,marcos antonio nicolau,0.44,0.3,0.45,0.44
+322,alisson vasconcelos de brito,jose marcilio filgueiras cruz,tiago maritan ugulino de araujo,liliane dos santos machado,0.17,0.19,0.44,0.36
+323,claudia maria costa gomes,maria de fatima leite gomes,claudia maria costa gomes,aline maria batista machado,0.3,0.27,0.3,0.51
+324,bernadete de lourdes figueiredo de almeida,maria de fatima leite gomes,bernadete de lourdes figueiredo de almeida,maria de fatima leite gomes,0.3,0.41,0.3,0.41
+325,bernadete de lourdes figueiredo de almeida,aline maria batista machado,claudia maria costa gomes,aline maria batista machado,0.27,0.08,0.41,0.08
+326,bernadete de lourdes figueiredo de almeida,maria de fatima leite gomes,bernadete de lourdes figueiredo de almeida,maria de fatima leite gomes,0.51,0.08,0.51,0.08
+327,robson costa cordeiro,francisco de assis vale cavalcante filho,robson costa cordeiro,jorge adriano lubenow,0.42,0.02,0.42,0.36
+328,anderson darc ferreira,miguel antonio do nascimento,anderson darc ferreira,miguel antonio do nascimento,0.42,0.15,0.42,0.15
+329,anderson darc ferreira,jorge adriano lubenow,anderson darc ferreira,jorge adriano lubenow,0.33,0.3,0.33,0.3
+330,anderson darc ferreira,bartolomeu leite da silva,anderson darc ferreira,bartolomeu leite da silva,0.36,0.3,0.36,0.3
+331,roberto veras de oliveira,teresa cristina furtado matos,loreley gomes garcia,marcela zamboni lucena,0.32,0.31,0.4,0.4
+332,roberto veras de oliveira,mauricio sarda de faria,anderson moebus retondar,roberto veras de oliveira,0.35,0.32,0.4,0.35
+333,teresa cristina furtado matos,simone magalhaes brito,teresa cristina furtado matos,mauricio sarda de faria,0.47,0.19,0.47,0.44
+334,anderson moebus retondar,mauricio sarda de faria,geovania da silva toscano,mauricio sarda de faria,0.31,0.53,0.51,0.53
+335,roberto veras de oliveira,mauricio sarda de faria,teresa cristina furtado matos,mauricio sarda de faria,0.39,0.56,0.51,0.56
+336,anderson moebus retondar,teresa cristina furtado matos,teresa cristina furtado matos,geovania da silva toscano,0.4,0.53,0.53,0.56
+337,loreley gomes garcia,jose francisco de melo neto,anderson moebus retondar,mauricio sarda de faria,0.32,0.21,0.4,0.36
+338,loreley gomes garcia,teresa cristina furtado matos,anderson moebus retondar,loreley gomes garcia,0.33,0.19,0.39,0.33
+339,fabio mura,joao martinho braga de mendonca,fabio mura,mauro guilherme pinheiro koury,0.36,0.36,0.36,0.55
+340,ednalva maciel neves,joao martinho braga de mendonca,ednalva maciel neves,joao martinho braga de mendonca,0.36,0.64,0.36,0.64
+341,mauro guilherme pinheiro koury,pedro francisco guedes do nascimento,pedro francisco guedes do nascimento,maria patricia lopes goldfarb,0.26,0.28,0.28,0.41
+342,mauro guilherme pinheiro koury,maria patricia lopes goldfarb,pedro francisco guedes do nascimento,maria patricia lopes goldfarb,0.31,0.44,0.49,0.44
+343,monica lourdes franch gutierrez,pedro francisco guedes do nascimento,monica lourdes franch gutierrez,pedro francisco guedes do nascimento,0.31,0.31,0.31,0.31
+344,joao martinho braga de mendonca,monica lourdes franch gutierrez,monica lourdes franch gutierrez,maria patricia lopes goldfarb,0.28,0.49,0.49,0.6
+345,joao martinho braga de mendonca,monica lourdes franch gutierrez,monica lourdes franch gutierrez,pedro francisco guedes do nascimento,0.41,0.44,0.44,0.6
+346,telma cristina delgado d fernandes,carla mary da silva oliveira,telma cristina delgado d fernandes,solange pereira da rocha,0.32,0.31,0.32,0.4
+347,solange pereira da rocha,carla mary da silva oliveira,serioja rodrigues cordeiro mariano,carla mary da silva oliveira,0.38,0.49,0.47,0.49
+348,elio chaves flores,gilvanildo oliveira avelino,elio chaves flores,carla mary da silva oliveira,0.32,0.45,0.32,0.55
+349,serioja rodrigues cordeiro mariano,solange pereira da rocha,gilvanildo oliveira avelino,carla mary da silva oliveira,0.24,0.2,0.28,0.42
+350,solange pereira da rocha,carla mary da silva oliveira,gilvanildo oliveira avelino,carla mary da silva oliveira,0.39,0.46,0.47,0.46
+351,paulo giovani antonino nunes,carla mary da silva oliveira,gilvanildo oliveira avelino,serioja rodrigues cordeiro mariano,0.2,0.37,0.38,0.39
+352,serioja rodrigues cordeiro mariano,solange pereira da rocha,gilvanildo oliveira avelino,serioja rodrigues cordeiro mariano,0.46,0.28,0.49,0.46
+353,gilvanildo oliveira avelino,serioja rodrigues cordeiro mariano,paulo giovani antonino nunes,serioja rodrigues cordeiro mariano,0.34,0.46,0.42,0.46
+354,valdiney veloso gouveia,carla alexandra da silva moita minervino,carmen walentina amorim gaudencio bezerra,fabiola de sousa braz aquino,0.34,0.24,0.38,0.47
+355,liana clebia de morais pordeus,natanael antonio dos santos,nelson torro alves,natanael antonio dos santos,0.11,0.35,0.43,0.35
+356,flavio freitas barbosa,natanael antonio dos santos,flavio freitas barbosa,natanael antonio dos santos,0.53,0.17,0.53,0.17
+357,fabiola de sousa braz aquino,natanael antonio dos santos,josemberg moura de andrade,nelson torro alves,0.39,0.31,0.53,0.53
+358,silvana carneiro maciel,anisio jose da silva araujo,ana raquel rosas torres,ana alayde werba saldanha pichelli,0.27,0.13,0.43,0.35
+359,flavio freitas barbosa,natanael antonio dos santos,carlos eduardo pimentel,ana alayde werba saldanha pichelli,0.52,0.16,0.43,0.53
+360,carlos eduardo pimentel,maria de fatima fernandes martins catao,carlos eduardo pimentel,ana raquel rosas torres,0.35,0.18,0.35,0.53
+361,josemberg moura de andrade,valdiney veloso gouveia,josemberg moura de andrade,fabiola de sousa braz aquino,0.21,0.4,0.21,0.41
+362,ana alayde werba saldanha pichelli,maria de fatima fernandes martins catao,valdiney veloso gouveia,silvana carneiro maciel,0.09,0.18,0.33,0.5
+363,ana raquel rosas torres,silvana carneiro maciel,carlos eduardo pimentel,silvana carneiro maciel,0.21,0.36,0.3,0.36
+364,ana raquel rosas torres,carmen walentina amorim gaudencio bezerra,carlos eduardo pimentel,natanael antonio dos santos,0.17,0.4,0.23,0.36
+365,ana alayde werba saldanha pichelli,maria de fatima fernandes martins catao,carmen walentina amorim gaudencio bezerra,valdiney veloso gouveia,0.1,0.37,0.5,0.31
+366,ana raquel rosas torres,carmen walentina amorim gaudencio bezerra,valdiney veloso gouveia,fabiola de sousa braz aquino,0.16,0.43,0.3,0.46
+367,liana clebia de morais pordeus,carla alexandra da silva moita minervino,flavio freitas barbosa,carla alexandra da silva moita minervino,0.08,0.34,0.47,0.34
+368,nelson torro alves,melyssa kellyane cavalcanti galdino,melyssa kellyane cavalcanti galdino,maria de fatima fernandes martins catao,0.17,0.28,0.28,0.39
+369,nelson torro alves,melyssa kellyane cavalcanti galdino,melyssa kellyane cavalcanti galdino,maria de fatima fernandes martins catao,0.24,0.35,0.35,0.5
+370,flavio freitas barbosa,patricia nunes da fonseca,anderson darc ferreira,anisio jose da silva araujo,0.39,0.44,0.99,0.41
+371,thais augusta cunha de oliveira maximo,patricia nunes da fonseca,thais augusta cunha de oliveira maximo,marcia helena pontieri,0.55,0.22,0.55,0.63
+372,anisio jose da silva araujo,paulo cesar zambroni de souza,maria de fatima fernandes martins catao,anisio jose da silva araujo,0.46,0.08,0.34,0.46
+373,anisio jose da silva araujo,paulo cesar zambroni de souza,thais augusta cunha de oliveira maximo,anisio jose da silva araujo,0.33,-0.02,0.34,0.33
+374,thais augusta cunha de oliveira maximo,paulo cesar zambroni de souza,thais augusta cunha de oliveira maximo,maria de fatima fernandes martins catao,0.46,0.13,0.46,0.33
+375,antonio carlos ferreira pinheiro,maria do socorro nobrega queiroga,maria elizete guimaraes carvalho,antonio carlos ferreira pinheiro,0.38,0.26,0.39,0.38
+376,antonio carlos ferreira pinheiro,ivonaldo neres leite,fabiana sena da silva,antonio carlos ferreira pinheiro,0.48,0.24,0.39,0.48
+377,maria do socorro nobrega queiroga,maria lucia da silva nunes,maria elizete guimaraes carvalho,ivonaldo neres leite,0.4,0.19,0.48,0.43
+378,fabiana sena da silva,jean carlo de carvalho costa,antonio carlos ferreira pinheiro,ivonaldo neres leite,0.26,0.15,0.4,0.5
+379,antonio carlos ferreira pinheiro,ivonaldo neres leite,ivonaldo neres leite,jean carlo de carvalho costa,0.19,0.39,0.39,0.34
+380,fabiana sena da silva,charliton jose dos santos machado,maria do socorro nobrega queiroga,maria lucia da silva nunes,0.11,0.26,0.4,0.39
+381,fabiana sena da silva,jean carlo de carvalho costa,antonio carlos ferreira pinheiro,maria do socorro nobrega queiroga,0.27,0.2,0.43,0.5
+382,maria do socorro nobrega queiroga,luciene chaves de aquino,maria elizete guimaraes carvalho,rose mary de souza araujo,0.29,0.23,0.3,0.29
+383,maria elizete guimaraes carvalho,ivonaldo neres leite,maria lucia da silva nunes,rose mary de souza araujo,0.22,0.2,0.34,0.33
+384,alexandre sergio silva,jose cazuza de farias junior,amilton da cruz santos,jose cazuza de farias junior,0.32,0.34,0.37,0.34
+385,maria alves de azeredo,francisco jose pegado abilio,monica dias palitot,maria alves de azeredo,0.47,0.39,0.62,0.47
+386,marineuma de oliveira costa cavalcanti,maria alves de azeredo,marineuma de oliveira costa cavalcanti,maria alves de azeredo,0.62,0.44,0.62,0.44
+387,monica dias palitot,francisco jose pegado abilio,marineuma de oliveira costa cavalcanti,monica dias palitot,0.44,0.09,0.47,0.44
+388,rose mary de souza araujo,ana claudia da silva rodrigues,maria eulina pessoa de carvalho,eladio jose de goes brennand,0.33,0.15,0.55,0.45
+389,edineide jezini mesquita,lebiam tamar gomes silva,maria do socorro xavier batista,patricia nunes da fonseca,0.17,0.19,0.58,0.45
+390,viviany silva araujo pessoa,eduardo antonio de pontes costa,viviany silva araujo pessoa,maria eulina pessoa de carvalho,0.58,0.41,0.58,0.38
+391,ana dorziat barbosa de melo,lebiam tamar gomes silva,heleodorio honorato dos santos,jeronimo farias de alencar,0.43,0.5,0.5,0.4
+392,edna gusmao de goes brennand,eduardo jorge lopes da silva,edna gusmao de goes brennand,fernando cezar bezerra de andrade,0.47,0.15,0.47,0.4
+393,viviany silva araujo pessoa,fernando cezar bezerra de andrade,edna gusmao de goes brennand,eduardo antonio de pontes costa,0.27,0.23,0.38,0.5
+394,maria eulina pessoa de carvalho,ana dorziat barbosa de melo,maria eulina pessoa de carvalho,ana dorziat barbosa de melo,0.47,0.61,0.47,0.61
+395,ana dorziat barbosa de melo,eduardo antonio de pontes costa,edna gusmao de goes brennand,eduardo antonio de pontes costa,0.29,0.49,0.42,0.49
+396,edna gusmao de goes brennand,eduardo antonio de pontes costa,maria eulina pessoa de carvalho,edna gusmao de goes brennand,0.61,0.41,0.39,0.61
+397,viviany silva araujo pessoa,lebiam tamar gomes silva,eduardo antonio de pontes costa,erenildo joao carlos,0.3,0.41,0.54,0.44
+398,edineide jezini mesquita,patricia nunes da fonseca,edineide jezini mesquita,erenildo joao carlos,0.49,0.33,0.49,0.44
+399,viviany silva araujo pessoa,patricia nunes da fonseca,fernando cezar bezerra de andrade,patricia nunes da fonseca,0.47,0.57,0.54,0.57
+400,edineide jezini mesquita,ana claudia da silva rodrigues,viviany silva araujo pessoa,eduardo antonio de pontes costa,0.25,0.23,0.45,0.57
+401,maria eulina pessoa de carvalho,eduardo antonio de pontes costa,fernando cezar bezerra de andrade,lebiam tamar gomes silva,0.39,0.47,0.44,0.53
+402,maria eulina pessoa de carvalho,erenildo joao carlos,fernando cezar bezerra de andrade,erenildo joao carlos,0.4,0.53,0.41,0.53
+403,samir perrone de miranda,jose henrique artigas de godoy,samir perrone de miranda,henrique zeferino de menezes,0.3,0.17,0.3,0.33
+404,james batista vieira,marcelo burgos pimentel dos santos,marcelo burgos pimentel dos santos,jose henrique artigas de godoy,0.47,0.3,0.3,0.53
+405,samir perrone de miranda,xaman korai pinheiro minillo,augusto wagner menezes teixeira junior,jose henrique artigas de godoy,0.3,0.25,0.32,0.39
+406,rodrigo freire de carvalho e silva,jose henrique artigas de godoy,marcos alan shaikhzadeh vahdat ferreira,jose henrique artigas de godoy,0.31,0.53,0.49,0.53
+407,henrique zeferino de menezes,marcos alan shaikhzadeh vahdat ferreira,henrique zeferino de menezes,marcos alan shaikhzadeh vahdat ferreira,0.57,0.34,0.57,0.34
+408,augusto wagner menezes teixeira junior,thiago lima da silva,augusto wagner menezes teixeira junior,xaman korai pinheiro minillo,0.57,0.32,0.57,0.4
+409,henrique zeferino de menezes,thiago lima da silva,augusto wagner menezes teixeira junior,xaman korai pinheiro minillo,0.37,0.24,0.34,0.39
+410,augusto wagner menezes teixeira junior,henry iure de paiva silva,henrique zeferino de menezes,xaman korai pinheiro minillo,0.27,0.18,0.32,0.42
+411,deyve redyson melo dos santos,matheus da cruz e zica,deyve redyson melo dos santos,matheus da cruz e zica,0.35,0.24,0.35,0.24
+412,dilaine soares sampaio,matheus da cruz e zica,dilaine soares sampaio,matheus da cruz e zica,0.35,0.12,0.35,0.12
+413,pedro farias francelino,maria de fatima barbosa de mesquita batista,pedro farias francelino,maria de fatima barbosa de mesquita batista,0.22,0.07,0.22,0.07
+414,roseane batista feitosa nicolau,evangelina maria brito de faria,roseane batista feitosa nicolau,rubens marques de lucena,0.41,0.41,0.41,0.41
+415,beliza aurea de arruda melo,marcio martins leitao,beliza aurea de arruda melo,evangelina maria brito de faria,0.41,0.42,0.41,0.43
+416,hermano de franca rodrigues,beliza aurea de arruda melo,hermano de franca rodrigues,beliza aurea de arruda melo,0.44,0.32,0.44,0.32
+417,beliza aurea de arruda melo,evangelina maria brito de faria,regina celi mendes pereira da silva,fabio alexandre silva bezerra,0.41,0.31,0.5,0.48
+418,evangelina maria brito de faria,marianne carvalho bezerra cavalcante,evangelina maria brito de faria,marianne carvalho bezerra cavalcante,0.48,0.27,0.48,0.27
+419,marcio martins leitao,marianne carvalho bezerra cavalcante,marcio martins leitao,marianne carvalho bezerra cavalcante,0.48,0.31,0.48,0.31
+420,marcio martins leitao,evangelina maria brito de faria,marcio martins leitao,evangelina maria brito de faria,0.27,0.31,0.27,0.31
+421,marluce pereira da silva,joao wandemberg goncalves maciel,joao wandemberg goncalves maciel,alvanira lucia de barros,0.26,0.41,0.41,0.37
+422,marluce pereira da silva,fabio alexandre silva bezerra,joao wandemberg goncalves maciel,alvanira lucia de barros,0.31,0.37,0.36,0.42
+423,camila nathalia de oliveira braga,roberto carlos de assis,joao wandemberg goncalves maciel,sandra helena gurgel dantas de medeiros,0.31,0.16,0.55,0.32
+424,maria del pilar roca escalante,fabio alexandre silva bezerra,marluce pereira da silva,regina celi mendes pereira da silva,0.41,0.41,0.55,0.54
+425,joao wandemberg goncalves maciel,rosalina maria sales chianca,joao wandemberg goncalves maciel,fabio alexandre silva bezerra,0.54,0.19,0.54,0.48
+426,maria del pilar roca escalante,sandra helena gurgel dantas de medeiros,regina celi mendes pereira da silva,roberto carlos de assis,0.33,0.25,0.48,0.35
+427,karina chianca venancio,luciane alves santos,karina chianca venancio,luciane alves santos,0.31,0.33,0.31,0.33
+428,socorro de fatima pacifico barbosa,fabio de sousa dantas,genilda alves de azeredo,fabio de sousa dantas,0.28,0.18,0.4,0.18
+429,expedito ferraz junior,michelle bianca santos dantas,genilda alves de azeredo,luciane alves santos,0.22,0.19,0.31,0.28
+430,lucia fatima fernandes nobre,maria luiza teixeira batista,lucia fatima fernandes nobre,maria luiza teixeira batista,0.38,0.31,0.38,0.31
+431,alice lumi satomi,jose henrique padovani velloso,maura lucia fernandes penna,alice lumi satomi,0.36,0.07,0.39,0.36
+432,alice lumi satomi,jose henrique padovani velloso,luciana noda,alice lumi satomi,0.43,0.13,0.39,0.43
+433,maura lucia fernandes penna,jose henrique padovani velloso,luciana noda,maura lucia fernandes penna,0.43,-0.01,0.36,0.43
+434,luciana noda,carlos federico buonfiglio dowling,alice lumi satomi,carlos federico buonfiglio dowling,0.26,0.34,0.37,0.34
+435,neusa collet,ana valeria endres,ed porto bezerra,ana valeria endres,0.09,0.27,0.39,0.27
+436,maria luiza pereira de alencar mayer feitosa,jose ernesto pimentel filho,maria luiza pereira de alencar mayer feitosa,gustavo rabay guerra,0.35,0.28,0.35,0.45
+437,evandro leite de souza,selma dos passos braga,evandro leite de souza,selma dos passos braga,0.33,0.29,0.33,0.29
+438,marine raquel diniz da rosa,leonardo wanderley lopes,marine raquel diniz da rosa,leonardo wanderley lopes,0.46,0.48,0.46,0.48
+439,giorvan anderson dos santos alves,luciana pimentel fernandes de melo,anna alice figueiredo de almeida,giorvan anderson dos santos alves,0.37,0.17,0.46,0.37
+440,kelly cristiane gomes da silva,sandro marden torres,kelly cristiane gomes da silva,sandro marden torres,0.2,0.11,0.2,0.11
+441,marine raquel diniz da rosa,leonardo wanderley lopes,cirineu cecote stein,leonardo wanderley lopes,0.34,0.48,0.38,0.48
+442,paulo rogerio ferreti bonan,bianca marques santiago,luciane queiroz mota de lima,ednara mercia fernandes de andrade,0.21,0.03,0.3,0.17
+443,eliton souto de medeiros,flavia de medeiros aquino,ramon alves torquato,debora albuquerque vieira,0.21,0.11,0.32,0.33
+444,bagnolia araujo da silva,diego nunes guedes,bagnolia araujo da silva,diego nunes guedes,0.22,0.38,0.22,0.38
+445,maria de fatima alcantara barros,heleodorio honorato dos santos,janine marta coelho rodrigues,angela cristina dornelas da silva,0.03,0.35,0.4,0.39
+446,marcos antonio nicolau,marcel vieira barreto silva,marcos antonio nicolau,marcel vieira barreto silva,0.16,-0.02,0.16,-0.02
+447,hermano de franca rodrigues,maria de fatima barbosa de mesquita batista,hermano de franca rodrigues,maria de fatima barbosa de mesquita batista,0.26,0.14,0.26,0.14
+448,cirineu cecote stein,luciana pimentel fernandes de melo,wagner teobaldo lopes de andrade,luciana pimentel fernandes de melo,0.2,0.37,0.31,0.37
+449,cicero da rocha souto,darlan alexandria fernandes,cicero da rocha souto,cleonilson protasio de souza,0.5,0.5,0.5,0.48
+450,cirineu cecote stein,marine raquel diniz da rosa,marine raquel diniz da rosa,luciana pimentel fernandes de melo,0.09,0.33,0.33,0.29
+451,liszandra fernanda araujo campos,ricardo peixoto suassuna dutra,debora albuquerque vieira,max rocha quirino,0.2,0.31,0.3,0.36
+452,sildivane valcacia silva,demetrius antonio machado de araujo,sildivane valcacia silva,demetrius antonio machado de araujo,0.31,0.63,0.31,0.63
+453,antonio geraldo cidrao de carvalho,heleodorio honorato dos santos,antonio geraldo cidrao de carvalho,jose jamacy de almeida ferreira,0.18,0.19,0.18,0.49
+454,valdir de andrade braga,ulrich vasconcelos da rocha gomes,ulrich vasconcelos da rocha gomes,roberto sassi,0.15,0.46,0.46,0.49
+455,fabiola da cruz nunes,ulrich vasconcelos da rocha gomes,demetrius antonio machado de araujo,andrea farias de almeida,0.11,0.25,0.47,0.35
+456,anieres barbosa da silva,marcelo de oliveira moura,eduardo rodrigues viana de lima,maria de fatima ferreira rodrigues,0.14,0.19,0.32,0.3
+457,paulo giovani antonino nunes,josiane de campos cruz,josiane de campos cruz,joseilme fernandes gouveia,0.04,0.09,0.09,0.39
+458,neide maria gomes de lucena,angela cristina dornelas da silva,heleodorio honorato dos santos,jeronimo farias de alencar,0.06,0.22,0.31,0.28
+459,antonio geraldo cidrao de carvalho,heleodorio honorato dos santos,janine marta coelho rodrigues,palloma rodrigues de andrade,0.06,0.32,0.37,0.32
+460,rubens marques de lucena,carla alecsandra de melo bonifacio,roseane batista feitosa nicolau,carla alecsandra de melo bonifacio,0.12,0.39,0.41,0.39
+461,simone helena dos santos oliveira,patricia serpa de souza batista,maria miriam lima da nobrega,lenilma bento de araujo meneses,0.14,0.15,0.24,0.23
+462,eduardo rodrigues viana de lima,marcelo de oliveira moura,eduardo rodrigues viana de lima,anieres barbosa da silva,0.16,0.09,0.16,0.36
+463,jailane de souza aquino,flavia emilia leite de lima ferreira,jailane de souza aquino,maria da conceicao rodrigues goncalves,0.26,0.01,0.26,0.44
+464,richarde marques da silva,henrique elias pessoa gutierres,henrique elias pessoa gutierres,christianne maria moura reis,0.1,0.21,0.21,0.18
+465,fabiana sena da silva,maria zuleide da costa pereira,marineuma de oliveira costa cavalcanti,monica dias palitot,0.1,0.45,0.48,0.51
+466,palloma rodrigues de andrade,jeronimo farias de alencar,maria de fatima alcantara barros,angela cristina dornelas da silva,0.18,0.28,0.49,0.32
+467,alexandre sergio silva,jose cazuza de farias junior,gilmario ricarte batista,pierre normando gomes-da-silva,0.27,0.3,0.32,0.33
+468,antonio geraldo cidrao de carvalho,neide maria gomes de lucena,palloma rodrigues de andrade,jose jamacy de almeida ferreira,0.13,0.17,0.32,0.31
+469,doralice satyro maia,bartolomeu israel de souza,emilia de rodat fernandes moreira,anieres barbosa da silva,0.23,0.08,0.32,0.38
+470,emilia de rodat fernandes moreira,marcelo de oliveira moura,pedro costa guedes vianna,eduardo rodrigues viana de lima,0.14,0.31,0.36,0.38
+471,jorge fernando hermida aveiro,jose cazuza de farias junior,jorge fernando hermida aveiro,pierre normando gomes-da-silva,0.24,0.21,0.24,0.21
+472,adriana dias vieira,narbal de marsillac fontes,sven peterke,marcilio toscano franca filho,0.42,0.23,0.57,0.08
+473,eduardo rodrigues viana de lima,maria de fatima ferreira rodrigues,marcelo de oliveira moura,maria de fatima ferreira rodrigues,0.23,0.28,0.37,0.28
+474,ulrich vasconcelos da rocha gomes,marta maria da conceicao,valdir de andrade braga,andrea farias de almeida,0.19,0.09,0.47,0.42
+475,janine marta coelho rodrigues,neide maria gomes de lucena,maria de fatima alcantara barros,jose jamacy de almeida ferreira,0.13,0.18,0.42,0.52
+476,iraquitan de oliveira caminha,alexandre sergio silva,maria do socorro cirilo de sousa,alexandre sergio silva,0.0,0.47,0.49,0.47
+477,jorge fernando hermida aveiro,pierre normando gomes-da-silva,maria do socorro cirilo de sousa,alexandre sergio silva,0.16,0.33,0.37,0.45
+478,sildivane valcacia silva,demetrius antonio machado de araujo,eneas ricardo de morais gomes,andrea farias de almeida,0.23,0.22,0.31,0.31
+479,patricia pinheiro fernandes vieira,pablo brilhante de sousa,ana luiza mattos braga,patricia pinheiro fernandes vieira,0.27,0.14,0.36,0.27
+480,jorge fernando hermida aveiro,pierre normando gomes-da-silva,jorge fernando hermida aveiro,alexandre sergio silva,0.37,0.17,0.37,0.36
+481,marcelo sobral da silva,vicente carlos de oliveira costa,jose maria barbosa filho,marcelo sobral da silva,0.26,0.04,0.24,0.26
+482,alexandre nobrega duarte,tatjana keesen de souza lima clemente,waldir leite roque,hugo leonardo davi de souza cavalcante,0.22,-0.01,0.35,0.4
+483,iolanda beserra da costa santos,maria miriam lima da nobrega,jacira dos santos oliveira,solange fatima geraldo da costa,0.29,0.29,0.37,0.39
+484,fabiola da cruz nunes,flavia de oliveira paulino,sildivane valcacia silva,fabiola da cruz nunes,0.49,0.38,0.42,0.49
+485,maria do socorro cirilo de sousa,gilmario ricarte batista,gilmario ricarte batista,amilton da cruz santos,0.36,0.47,0.47,0.36
+486,iraquitan de oliveira caminha,gilmario ricarte batista,maria do socorro cirilo de sousa,gilmario ricarte batista,0.12,0.45,0.39,0.45
+487,maria do socorro cirilo de sousa,gilmario ricarte batista,maria do socorro cirilo de sousa,alexandre sergio silva,0.33,0.33,0.33,0.38
+488,emilia de rodat fernandes moreira,anieres barbosa da silva,eduardo rodrigues viana de lima,doralice satyro maia,0.19,0.31,0.33,0.37
+489,anna alice figueiredo de almeida,marine raquel diniz da rosa,leonardo wanderley lopes,wagner teobaldo lopes de andrade,0.05,0.29,0.37,0.29
+490,sildivane valcacia silva,marcia helena pontieri,fabiola da cruz nunes,livio carvalho de figueiredo,0.09,0.29,0.33,0.3
+491,ruy alberto pisani altafim,cleonilson protasio de souza,euler cassio tavares de macedo,ruy alberto pisani altafim,0.26,0.14,0.13,0.26
+492,gilmario ricarte batista,alexandre sergio silva,jorge fernando hermida aveiro,iraquitan de oliveira caminha,0.13,0.35,0.34,0.21
+493,emilia de rodat fernandes moreira,marcelo de oliveira moura,doralice satyro maia,maria de fatima ferreira rodrigues,-0.05,0.18,0.36,0.39
+494,reinaldo nobrega de almeida,rafael de almeida travassos,isac almeida de medeiros,maria do socorro de franca silva,0.22,0.06,0.39,0.39
+495,andressa feitosa bezerra de oliveira,fabio correia sampaio,andressa feitosa bezerra de oliveira,fabio correia sampaio,0.33,0.41,0.33,0.41
+496,anand subramanian,fabio morais borges,claudia fabiana gohr,fabio morais borges,0.05,0.14,0.33,0.14
+497,adriana dias vieira,roberto cordoville efrem de lima filho,narbal de marsillac fontes,flavianne fernanda bitencourt nobrega,0.19,0.18,0.29,0.2
+498,ricardo almeida de melo,heber pimentel gomes,ricardo almeida de melo,heber pimentel gomes,0.22,0.25,0.22,0.25
+499,hermano de franca rodrigues,pedro farias francelino,hermano de franca rodrigues,pedro farias francelino,0.3,0.14,0.3,0.14
+500,anderson moebus retondar,marcela zamboni lucena,loreley gomes garcia,simone magalhaes brito,0.2,0.21,0.34,0.33
+501,anderson moebus retondar,loreley gomes garcia,geovania da silva toscano,marcela zamboni lucena,0.2,0.11,0.27,0.28
+502,maria de fatima vanderlei de souza,celidarque da silva dias,damiao pergentino de sousa,kristerson reinaldo de luna freire,0.23,0.36,0.41,0.4
+503,joao marcos bezerra do o,fagner dias araruna,joao marcos bezerra do o,fagner dias araruna,0.21,0.17,0.21,0.17
+504,carlos antonio cabral dos santos,jose mauricio alves de matos gurgel,monica carvalho,emerson freitas jaguaribe,0.01,-0.11,0.24,0.29
+505,marckson roberto ferreira de sousa,wagner junqueira de araujo,izabel franca de lima,wagner junqueira de araujo,0.02,0.27,0.35,0.27
+506,thierry marcelino passerat de silans,martine patricia arltte chevroller,thierry marcelino passerat de silans,martine patricia arltte chevroller,0.1,0.21,0.1,0.21
+507,maria sueli marques soares,luciane queiroz mota de lima,hugo lemes carlo,maria sueli marques soares,0.04,0.0,0.23,0.04
+508,maria de fatima vanderlei de souza,damiao pergentino de sousa,marcelo sobral da silva,maria de fatima vanderlei de souza,0.38,0.21,0.4,0.38
+509,ian porto gurgel do amaral,alda lucia de lima amancio,ierece maria de lucena rosa,alda lucia de lima amancio,0.25,0.15,0.12,0.15
+510,ian porto gurgel do amaral,alda lucia de lima amancio,ierece maria de lucena rosa,alda lucia de lima amancio,0.16,0.23,0.23,0.23
+511,joao marcos bezerra do o,fagner dias araruna,joao marcos bezerra do o,fagner dias araruna,0.32,0.21,0.32,0.21
+512,zelma glebya maciel quirino,luciana gomes barbosa,alexandre ramlo torre palma,luciana gomes barbosa,0.14,0.23,0.31,0.23
+513,hugo lemes carlo,ana karina maciel de andrade,rosangela marques duarte,ana karina maciel de andrade,0.25,0.15,0.14,0.15
+514,loreley gomes garcia,geovania da silva toscano,teresa cristina furtado matos,jose francisco de melo neto,0.08,0.25,0.29,0.33
+515,robinsom viegas montenegro,rosangela marques duarte,robinsom viegas montenegro,rosangela marques duarte,0.15,0.32,0.15,0.32
+516,marineuma de oliveira costa cavalcanti,maria alves de azeredo,marineuma de oliveira costa cavalcanti,monica dias palitot,0.39,0.09,0.39,0.24
+517,marineuma de oliveira costa cavalcanti,nilvania dos santos silva,maria alves de azeredo,nilvania dos santos silva,0.04,0.28,0.04,0.28
+518,danielle guedes de lima cavalcante,sandro marden torres,danielle guedes de lima cavalcante,sandro marden torres,0.2,0.2,0.2,0.2
+519,maria de fatima alcantara barros,maria do socorro cirilo de sousa,janine marta coelho rodrigues,jose jamacy de almeida ferreira,0.19,0.19,0.28,0.21
+520,dilaine soares sampaio,deyve redyson melo dos santos,dilaine soares sampaio,deyve redyson melo dos santos,0.24,0.12,0.24,0.12
+521,flavio freitas barbosa,fabiola de sousa braz aquino,liana clebia de morais pordeus,flavio freitas barbosa,0.35,0.36,0.23,0.35
+522,carlos antonio cabral dos santos,jose mauricio alves de matos gurgel,carlos antonio cabral dos santos,zaqueu ernesto da silva,0.21,0.14,0.21,0.29
+523,eliane bezerra paiva,izabel franca de lima,isa maria freire,izabel franca de lima,0.05,0.24,0.13,0.24
+524,james batista vieira,marcelo burgos pimentel dos santos,samir perrone de miranda,thiago lima da silva,0.53,0.17,0.53,0.43
+525,jacira dos santos oliveira,maria bernadete de sousa costa,maria djair dias,valeria peixoto bezerra,0.23,0.22,0.29,0.24
+526,wagner de mendonca faustino,gerd bruno da rocha,gerd bruno da rocha,lucina rocha sousa,0.11,0.24,0.24,0.17
+527,joelma morais ferreira,genaro zenaide clericuzi,joelma morais ferreira,genaro zenaide clericuzi,0.14,0.31,0.14,0.31
+528,luis fernando marques dos santos,anne evelyne franco de souza,rafael de almeida travassos,anne evelyne franco de souza,0.21,0.37,0.45,0.37
+529,angelina dias leao costa,aluisio braz de melo,angelina dias leao costa,aluisio braz de melo,0.15,0.1,0.15,0.1
+530,maria de fatima alcantara barros,neide maria gomes de lucena,janine marta coelho rodrigues,jeronimo farias de alencar,0.07,0.22,0.5,0.45
+531,joao paulo de sousa prado,marciane magnani,joao andrade da silva,graciele da silva campelo borges,0.25,0.24,0.38,0.28
+532,thais augusta cunha de oliveira maximo,anisio jose da silva araujo,thais augusta cunha de oliveira maximo,anisio jose da silva araujo,0.08,0.13,0.08,0.13
+533,eliton souto de medeiros,amelia severino ferreira e santos,eliton souto de medeiros,daniel araujo de macedo,0.38,0.25,0.38,0.21
+534,paulo sergio rodrigues da silva,rodrigo ronelli duarte de andrade,marcos cesar santos oria,jorge gabriel gomes de souza ramos,0.13,0.1,0.35,0.27
+535,alberto soto lock,francisco antonio belo,fabiano salvadori,romero leandro andersen,0.09,0.16,0.32,0.4
+536,maura lucia fernandes penna,alice lumi satomi,luciana noda,maura lucia fernandes penna,0.13,-0.01,0.07,0.13
+537,roseane batista feitosa nicolau,maria de fatima almeida,maria de fatima almeida,maria de fatima barbosa de mesquita batista,0.31,0.39,0.39,0.52
+538,liana clebia de morais pordeus,fabiola de sousa braz aquino,liana clebia de morais pordeus,fabiola de sousa braz aquino,0.49,0.36,0.49,0.36
+539,joao alves de lima,rodinei medeiros gomes,joao alves de lima,gilberto augusto amado moreira,0.39,0.2,0.39,0.24
+540,gilberto augusto amado moreira,carlos antonio cabral dos santos,francisco antonio belo,zaqueu ernesto da silva,0.02,0.24,0.3,0.24
+541,ronei marcos de moraes,camille de moura balarini,maria da conceicao rodrigues goncalves,camille de moura balarini,0.15,0.09,0.6,0.09
+542,george emmanuel cavalcanti de miranda,david holanda de oliveira,george emmanuel cavalcanti de miranda,david holanda de oliveira,0.17,0.17,0.17,0.17
+543,givanildo alves de azeredo,heber pimentel gomes,givanildo alves de azeredo,heber pimentel gomes,0.42,0.36,0.42,0.36
+544,george emmanuel cavalcanti de miranda,david holanda de oliveira,george emmanuel cavalcanti de miranda,david holanda de oliveira,0.2,0.07,0.2,0.07
+545,joelma morais ferreira,genaro zenaide clericuzi,joelma morais ferreira,raul rosenhaim,0.28,0.07,0.28,0.35
+546,carlos alberto de almeida gadelha,clayton zambeli oliveira,carlos alberto de almeida gadelha,clayton zambeli oliveira,0.35,0.15,0.35,0.15
+547,tiberio andrade dos passos,kelly cristiane gomes da silva,tiberio andrade dos passos,tadeu antonio de azevedo melo,-0.05,0.05,-0.05,0.17
+548,ricardo de souza rosa,pedro cordeiro estrela de andrade pinto,pedro cordeiro estrela de andrade pinto,helder farias pereira de araujo,0.13,0.35,0.35,0.35
+549,juliano elvis oliveira,flavia de medeiros aquino,ramon alves torquato,max rocha quirino,0.3,0.21,0.4,0.39
+550,jose geraldo de paiva espinola,ercules epaminondas de sousa teotonio,ieda maria garcia dos santos,ercules epaminondas de sousa teotonio,0.29,0.35,0.36,0.35
+551,fernando jose volpi eusebio de oliveira,julio santos reboucas,julio santos reboucas,ercules epaminondas de sousa teotonio,0.22,0.22,0.22,0.31
+552,fernando jose volpi eusebio de oliveira,maria gardennia da fonseca,jose geraldo de paiva espinola,maria gardennia da fonseca,0.25,0.31,0.31,0.31
+553,abel cavalcante lima filho,raimundo aprigio de menezes junior,cleonilson protasio de souza,antonio augusto lisboa de souza,0.17,0.26,0.23,0.27
+554,joao andrade da silva,haissa roberta cardarelli,marciane magnani,ingrid conceicao dantas guerra,0.14,0.13,0.39,0.41
+555,fabiana de carvalho fim,heber sivini ferreira,liszandra fernanda araujo campos,ricardo peixoto suassuna dutra,0.36,0.35,0.51,0.55
+556,tiberio andrade dos passos,severino jackson guedes de lima,debora albuquerque vieira,heber sivini ferreira,0.26,0.17,0.49,0.5
+557,eduardo rodrigues viana de lima,bartolomeu israel de souza,bartolomeu israel de souza,maria de fatima ferreira rodrigues,0.21,0.36,0.36,0.47
+558,nataly albuquerque dos santos,fabiola dias da silva curbelo,nataly albuquerque dos santos,fabiola dias da silva curbelo,0.23,0.23,0.23,0.23
+559,emilia de rodat fernandes moreira,anieres barbosa da silva,doralice satyro maia,bartolomeu israel de souza,0.11,0.02,0.39,0.39
+560,ramon alves torquato,daniel araujo de macedo,ramon alves torquato,heber sivini ferreira,0.45,0.33,0.45,0.47
+561,cicero da rocha souto,kleber carneiro de oliveira,kleber carneiro de oliveira,romero leandro andersen,0.33,0.5,0.5,0.47
+562,pedro costa guedes vianna,anieres barbosa da silva,doralice satyro maia,bartolomeu israel de souza,0.11,0.15,0.47,0.32
+563,jose maria barbosa filho,barbara viviana de oliveira santos,marcelo sobral da silva,celidarque da silva dias,0.29,0.23,0.44,0.33
+564,joao paulo de sousa prado,solange de sousa,graciele da silva campelo borges,marciane magnani,0.28,0.13,0.3,0.4
+565,juliano elvis oliveira,ricardo peixoto suassuna dutra,ramon alves torquato,eliton souto de medeiros,0.39,0.44,0.54,0.55
+566,luis fernando marques dos santos,reinaldo nobrega de almeida,luis fernando marques dos santos,anne evelyne franco de souza,0.31,0.27,0.31,0.4
+567,rosalia gouveia filizola,fatima maria macedo dos santos,lucio roberto cancado castellano,rosalia gouveia filizola,0.39,0.23,0.38,0.39
+568,tatiane santi gadelha,clayton zambeli oliveira,tatiane santi gadelha,clayton zambeli oliveira,0.24,0.22,0.24,0.22
+569,fernando jose volpi eusebio de oliveira,julio santos reboucas,ercules epaminondas de sousa teotonio,maria gardennia da fonseca,0.09,0.05,0.31,0.18
+570,fabiola da cruz nunes,roberto sassi,eneas ricardo de morais gomes,ulrich vasconcelos da rocha gomes,0.23,0.14,0.63,0.29
+571,luis fernando marques dos santos,anne evelyne franco de souza,rafael de almeida travassos,anne evelyne franco de souza,0.22,0.28,0.48,0.28
+572,abel cavalcante lima filho,simplicio arnaud da silva,abel cavalcante lima filho,rodinei medeiros gomes,0.08,0.26,0.08,0.21
+573,danielle guedes de lima cavalcante,kelly cristiane gomes da silva,danielle guedes de lima cavalcante,kelly cristiane gomes da silva,0.11,0.2,0.11,0.2
+574,joao andrade da silva,elisandra costa almeida,joao paulo de sousa prado,elisandra costa almeida,0.08,0.37,0.48,0.37
+575,kellen da silva coelho,renata francisco baldanza,kellen da silva coelho,nelsio rodrigues de abreu,0.26,0.17,0.26,0.27
+576,josemberg moura de andrade,carmen walentina amorim gaudencio bezerra,josemberg moura de andrade,carmen walentina amorim gaudencio bezerra,0.4,0.3,0.4,0.3
+577,silvana carneiro maciel,fabiola de sousa braz aquino,ana alayde werba saldanha pichelli,silvana carneiro maciel,0.32,0.22,0.32,0.32
+578,carlos eduardo pimentel,silvana carneiro maciel,liana clebia de morais pordeus,paulo cesar zambroni de souza,0.17,0.14,0.28,0.22
+579,carlos eduardo pimentel,ana alayde werba saldanha pichelli,silvana carneiro maciel,paulo cesar zambroni de souza,0.16,0.11,0.26,0.4
+580,carlos alberto de almeida gadelha,tatiane santi gadelha,carlos alberto de almeida gadelha,tatiane santi gadelha,0.35,0.36,0.35,0.36
+581,maria del pilar roca escalante,alvanira lucia de barros,marluce pereira da silva,rosalina maria sales chianca,0.13,0.08,0.32,0.12
+582,naila francis paulo de oliveira,ana emilia barros e silva,naila francis paulo de oliveira,ana emilia barros e silva,0.21,0.12,0.21,0.12
+583,daniela priscila marchi salvador,janine marta coelho rodrigues,mario cesar ugulino de araujo,jose henrique padovani velloso,0.28,0.15,0.65,0.53
+584,karina chianca venancio,fabio de sousa dantas,luciane alves santos,fabio de sousa dantas,0.14,0.48,0.25,0.48
+585,socorro de fatima pacifico barbosa,fabio de sousa dantas,michelle bianca santos dantas,fabio de sousa dantas,0.12,0.28,0.21,0.28
+586,genilda alves de azeredo,fabio de sousa dantas,karina chianca venancio,fabio de sousa dantas,0.22,0.08,0.41,0.08
+587,joao alves de lima,rodinei medeiros gomes,pollyana caetano ribeiro fernandes,max rocha quirino,0.31,0.04,0.26,0.3
+588,silmar andrade do monte,elizete ventura do monte,sherlan guimaraes lemos,ricardo alexandre cavalcanti de lima,0.2,0.32,0.51,0.42
+589,expedito ferraz junior,socorro de fatima pacifico barbosa,expedito ferraz junior,michelle bianca santos dantas,0.31,0.2,0.31,0.46
+590,marluce pereira da silva,fabio alexandre silva bezerra,camila nathalia de oliveira braga,fabio alexandre silva bezerra,0.09,0.26,0.22,0.26
+591,nataly albuquerque dos santos,raul rosenhaim,nataly albuquerque dos santos,rennio felix de sena,0.29,0.2,0.29,0.22
+592,eufrasio de andrade lima neto,hemilio fernandes campos coelho,eufrasio de andrade lima neto,hemilio fernandes campos coelho,0.19,0.28,0.19,0.28
+593,rodrigo cristiano,antonia lucia de souza,antonia lucia de souza,dayse das neves moreira,0.16,0.36,0.36,0.35
+594,marcio jose coelho de pontes,mario cesar ugulino de araujo,mario cesar ugulino de araujo,sherlan guimaraes lemos,0.16,0.26,0.26,0.48
+595,ilda antonieta salata toscano,edvan cirino da silva,wallace duarte fragoso,ricardo alexandre cavalcanti de lima,-0.01,0.16,0.24,0.48
+596,richarde marques da silva,christianne maria moura reis,richarde marques da silva,christianne maria moura reis,0.12,0.08,0.12,0.08
+597,richarde marques da silva,henrique elias pessoa gutierres,richarde marques da silva,henrique elias pessoa gutierres,0.19,0.08,0.19,0.08
+598,islania giselia albuquerque goncalves,maria do socorro de franca silva,islania giselia albuquerque goncalves,maria do socorro de franca silva,0.32,0.36,0.32,0.36
+599,marianna vieira sobral castello branco,diego nunes guedes,marianna vieira sobral castello branco,diego nunes guedes,0.2,0.15,0.2,0.15
+600,marianna vieira sobral castello branco,diego nunes guedes,fabiana de andrade cavalcante,marianna vieira sobral castello branco,0.22,0.16,0.17,0.22
+601,waldir leite roque,luciana andrade dos passos,frederico barbosa de sousa,pablo brilhante de sousa,0.27,0.26,0.45,0.29
+602,cicero da rocha souto,kleber carneiro de oliveira,simplicio arnaud da silva,romero leandro andersen,0.07,0.2,0.27,0.21
+603,nady rocha,fabiano salvadori,isaac soares de freitas,darlan alexandria fernandes,0.31,0.25,0.31,0.47
+604,flavio luiz honorato da silva,veruscka araujo silva,flavio luiz honorato da silva,mercia melo de almeida mota,0.48,0.22,0.48,0.37
+605,mercia melo de almeida mota,leopoldo oswaldo alcazar rojas,flavio luiz honorato da silva,mercia melo de almeida mota,0.37,0.23,0.28,0.37
+606,flavio luiz honorato da silva,sharline florentino de melo santos,flavio luiz honorato da silva,sharline florentino de melo santos,0.28,0.64,0.28,0.64
+607,flavio luiz honorato da silva,josilene de assis cavalcante,flavio luiz honorato da silva,veruscka araujo silva,0.32,0.21,0.32,0.64
+608,rennio felix de sena,raul rosenhaim,rennio felix de sena,sharline florentino de melo santos,0.29,0.21,0.29,0.41
+609,tarciso cabral da silva,gilson barbosa athayde junior,gilson barbosa athayde junior,elisangela maria rodrigues rocha,0.22,0.07,0.07,0.69
+610,adriano rolim da paz,carmem lucia moreira gadelha,adriano rolim da paz,carmem lucia moreira gadelha,0.21,0.05,0.21,0.05
+611,adriano rolim da paz,carmem lucia moreira gadelha,adriano rolim da paz,carmem lucia moreira gadelha,0.25,0.11,0.25,0.11
+612,claudia fabiana gohr,luiz bueno da silva,maria silene alexandre leite,luiz bueno da silva,0.23,0.23,0.37,0.23
+613,tiberio andrade dos passos,joseilme fernandes gouveia,hamilcar jose almeida filgueira,ana lima dantas,0.22,0.02,0.36,0.51
+614,ana maria gondim valenca,joao euclides fernandes braga,cristianne da silva alexandre,jader freire sobral filho,0.29,0.27,0.32,0.36
+615,rilva lopes de sousa munoz,monica souza de miranda henriques,eutilia andrade medeiros freire,jose eymard moraes de medeiros filho,0.15,0.22,0.4,0.35
+616,juliana sousa soares de araujo,flavia cristina fernandes pimenta,angela de siqueira figueiredo,monica souza de miranda henriques,0.27,0.32,0.42,0.37
+617,rosalia gouveia filizola,jader freire sobral filho,cristianne da silva alexandre,fatima maria macedo dos santos,0.05,0.35,0.42,0.41
+618,rosalia gouveia filizola,cristianne da silva alexandre,jader freire sobral filho,monica souza de miranda henriques,0.07,0.26,0.48,0.46
+619,alessandra sousa braz caldas de andrade,cristianne da silva alexandre,maurus marques de almeida holanda,fatima maria macedo dos santos,0.06,0.35,0.61,0.48
+620,lucio roberto cancado castellano,monica souza de miranda henriques,eutilia andrade medeiros freire,esther bastos palitot,0.19,0.23,0.36,0.33
+621,alessandra sousa braz caldas de andrade,jader freire sobral filho,jader freire sobral filho,flavia cristina fernandes pimenta,0.17,0.61,0.61,0.43
+622,alessandra sousa braz caldas de andrade,esther bastos palitot,angela de siqueira figueiredo,monica souza de miranda henriques,0.08,0.37,0.4,0.41
+623,maurus marques de almeida holanda,fatima maria macedo dos santos,eutilia andrade medeiros freire,alessandra sousa braz caldas de andrade,0.16,0.15,0.31,0.27
+624,eutilia andrade medeiros freire,jose eymard moraes de medeiros filho,rosalia gouveia filizola,juliana sousa soares de araujo,0.35,0.15,0.41,0.33
+625,eutilia andrade medeiros freire,juliana sousa soares de araujo,rilva lopes de sousa munoz,jose eymard moraes de medeiros filho,0.31,0.4,0.54,0.44
+626,maurus marques de almeida holanda,cristianne da silva alexandre,flavia cristina fernandes pimenta,esther bastos palitot,0.32,0.28,0.36,0.54
+627,lucio roberto cancado castellano,jader freire sobral filho,maurus marques de almeida holanda,rilva lopes de sousa munoz,0.32,0.32,0.57,0.45
+628,jose soares do nascimento,maurus marques de almeida holanda,maurus marques de almeida holanda,juliana sousa soares de araujo,0.38,0.48,0.48,0.42
+629,jose soares do nascimento,gilka paiva oliveira costa,iaponira cortez costa de oliveira,gilka paiva oliveira costa,0.44,0.43,0.37,0.43
+630,jose soares do nascimento,gilka paiva oliveira costa,juliana sousa soares de araujo,gilka paiva oliveira costa,0.49,0.39,0.51,0.39
+631,jose soares do nascimento,haroldo de lucena bezerra,eduardo sergio soares sousa,haroldo de lucena bezerra,0.42,0.4,0.53,0.4
+632,claudio sergio medeiros paiva,eduardo sergio soares sousa,claudio sergio medeiros paiva,eduardo sergio soares sousa,0.32,0.28,0.32,0.28
+633,andre ulisses dantas batista,maria sueli marques soares,paulo rogerio ferreti bonan,andre ulisses dantas batista,0.44,0.23,0.45,0.44
+634,lucio roberto cancado castellano,dayane franco barros mangueira leite,maria sueli marques soares,ana maria gondim valenca,0.35,0.17,0.42,0.4
+635,fabiola galbiatti de carvalho carlo,ana maria gondim valenca,fabiola galbiatti de carvalho carlo,ana maria gondim valenca,0.26,0.43,0.26,0.43
+636,patricia moreira rabello,wilton wilney nascimento padilha,fabio correia sampaio,wilton wilney nascimento padilha,0.41,0.48,0.38,0.48
+637,andressa feitosa bezerra de oliveira,andrea gadelha ribeiro targino,patricia moreira rabello,andrea gadelha ribeiro targino,0.15,0.48,0.47,0.48
+638,patricia moreira rabello,roberta moreira franca,patricia moreira rabello,roberta moreira franca,0.51,0.38,0.51,0.38
+639,andressa feitosa bezerra de oliveira,roberta moreira franca,patricia moreira rabello,andrea gadelha ribeiro targino,0.24,0.28,0.5,0.39
+640,josean fechine tavares,leonia maria batista,vicente carlos de oliveira costa,celidarque da silva dias,0.24,0.19,0.25,0.28
+641,margareth de fatima formiga melo diniz,nadja de azevedo correia,margareth de fatima formiga melo diniz,nadja de azevedo correia,0.28,0.19,0.28,0.19
+642,simone helena dos santos oliveira,patricia serpa de souza batista,marta miriam lopes costa cunha,patricia serpa de souza batista,0.3,0.46,0.39,0.46
+643,evandro leite de souza,robson cavalcante veras,evandro leite de souza,robson cavalcante veras,0.46,0.29,0.46,0.29
+644,joelma rodrigues de souza,katia suely queiroz silva ribeiro,joelma rodrigues de souza,jose da paz oliveira alvarenga,0.27,0.36,0.27,0.4
+645,jaqueline brito vidal batista,jana luiza toscano mendes de oliveira,claudia helena soares de morais freitas,jana luiza toscano mendes de oliveira,0.07,0.32,0.44,0.32
+646,claudia helena soares de morais freitas,ricardo de sousa soares,ricardo de sousa soares,jose da paz oliveira alvarenga,0.33,0.47,0.47,0.44
+647,altamira pereira da silva reichert,katia neyla de freitas macedo,katia suely queiroz silva ribeiro,ricardo de sousa soares,0.42,0.42,0.51,0.32
+648,jaqueline brito vidal batista,joao euclides fernandes braga,jaqueline brito vidal batista,jana luiza toscano mendes de oliveira,0.48,0.32,0.48,0.47
+649,katia suely queiroz silva ribeiro,jana luiza toscano mendes de oliveira,claudia helena soares de morais freitas,jose da paz oliveira alvarenga,0.23,0.08,0.25,0.24
+650,neusa collet,antonio giovanni boaes goncalves,fabiola galbiatti de carvalho carlo,antonio giovanni boaes goncalves,0.42,0.48,0.62,0.48
+651,marciane magnani,elisandra costa almeida,joao andrade da silva,neiva maria de almeida,0.05,0.24,0.28,0.37
+652,graciele da silva campelo borges,noadia priscila araujo rodrigues,marta suely madruga,elisandra costa almeida,0.27,0.01,0.43,0.37
+653,joao paulo de sousa prado,elisandra costa almeida,joao paulo de sousa prado,marciane magnani,0.57,0.35,0.57,0.44
+654,enoque feitosa sobreira filho,giscard farias agra,giscard farias agra,roberto cordoville efrem de lima filho,0.17,0.18,0.18,0.27
+655,adriana dias vieira,narbal de marsillac fontes,enoque feitosa sobreira filho,narbal de marsillac fontes,0.26,0.31,0.4,0.31
+656,sven peterke,eduardo ramalho rabenhorst,belinda pereira da cunha,eduardo ramalho rabenhorst,0.03,0.06,0.26,0.06
+657,adriano marteleto godinho,belinda pereira da cunha,adriano marteleto godinho,maria creusa de araujo borges,0.23,0.26,0.23,0.11
+658,maria luiza pereira de alencar mayer feitosa,marlene helena de oliveira franca,jose ernesto pimentel filho,robson antao de medeiros,0.17,0.03,0.22,0.3
+659,wenner glaucio lopes lucena,orleans silva martins,orleans silva martins,vera lucia cruz,0.27,0.4,0.4,0.38
+660,wenner glaucio lopes lucena,jose mancinelli ledo do nascimento,vera lucia cruz,jose mancinelli ledo do nascimento,0.18,0.25,0.49,0.25
+661,orleans silva martins,edilson paulo,jose jassuipe da silva morais,rommel de santana freire,0.12,0.17,0.17,0.38
+662,ivan cavalcanti filho,angelina dias leao costa,ivan cavalcanti filho,aluisio braz de melo,0.31,0.2,0.31,0.3
+663,anderson darc ferreira,robson costa cordeiro,robson costa cordeiro,francisco de assis vale cavalcante filho,0.16,0.15,0.15,0.44
+664,robson costa cordeiro,miguel antonio do nascimento,robson costa cordeiro,miguel antonio do nascimento,0.23,0.44,0.23,0.44
+665,carmen walentina amorim gaudencio bezerra,valdiney veloso gouveia,carmen walentina amorim gaudencio bezerra,paulo cesar zambroni de souza,0.24,0.4,0.24,0.35
+666,josemberg moura de andrade,valdiney veloso gouveia,josemberg moura de andrade,paulo cesar zambroni de souza,0.22,0.28,0.22,0.22
+667,liana clebia de morais pordeus,thais augusta cunha de oliveira maximo,flavio freitas barbosa,carla alexandra da silva moita minervino,0.27,0.23,0.46,0.32
+668,ana raquel rosas torres,maria de fatima fernandes martins catao,ana raquel rosas torres,ana alayde werba saldanha pichelli,0.34,0.12,0.34,0.32
+669,carlos eduardo pimentel,ana alayde werba saldanha pichelli,ana raquel rosas torres,valdiney veloso gouveia,0.27,0.29,0.32,0.36
+670,nelson torro alves,carla alexandra da silva moita minervino,nelson torro alves,carla alexandra da silva moita minervino,0.47,0.35,0.47,0.35
+671,nelson torro alves,melyssa kellyane cavalcanti galdino,liana clebia de morais pordeus,melyssa kellyane cavalcanti galdino,0.25,0.19,0.28,0.19
+672,antonio carlos ferreira pinheiro,jean carlo de carvalho costa,charliton jose dos santos machado,jean carlo de carvalho costa,0.3,0.33,0.29,0.33
+673,augusto wagner menezes teixeira junior,marcos alan shaikhzadeh vahdat ferreira,henrique zeferino de menezes,marcos alan shaikhzadeh vahdat ferreira,0.02,0.24,0.37,0.24
+674,marcos alan shaikhzadeh vahdat ferreira,thiago lima da silva,henry iure de paiva silva,xaman korai pinheiro minillo,0.13,0.3,0.37,0.36
+675,henrique zeferino de menezes,marcos alan shaikhzadeh vahdat ferreira,marcos alan shaikhzadeh vahdat ferreira,thiago lima da silva,0.4,0.39,0.39,0.42
+676,maria del pilar roca escalante,joao wandemberg goncalves maciel,maria del pilar roca escalante,camila nathalia de oliveira braga,0.37,0.38,0.37,0.42
+677,regina celi mendes pereira da silva,fabio alexandre silva bezerra,fabio alexandre silva bezerra,alvanira lucia de barros,0.2,0.35,0.35,0.22
+678,expedito ferraz junior,genilda alves de azeredo,karina chianca venancio,maria luiza teixeira batista,0.28,0.24,0.46,0.37
+679,expedito ferraz junior,socorro de fatima pacifico barbosa,expedito ferraz junior,socorro de fatima pacifico barbosa,0.33,0.28,0.33,0.28
+680,genilda alves de azeredo,maria luiza teixeira batista,genilda alves de azeredo,maria luiza teixeira batista,0.38,0.54,0.38,0.54
+681,genilda alves de azeredo,lucia fatima fernandes nobre,genilda alves de azeredo,lucia fatima fernandes nobre,0.31,0.54,0.31,0.54
+682,luciana noda,erlon cherque pinto,maura lucia fernandes penna,erlon cherque pinto,0.01,0.34,0.34,0.34
+683,cirineu cecote stein,leonardo wanderley lopes,giorvan anderson dos santos alves,leonardo wanderley lopes,0.33,0.44,0.38,0.44
+684,anna alice figueiredo de almeida,wagner teobaldo lopes de andrade,anna alice figueiredo de almeida,marine raquel diniz da rosa,0.37,0.15,0.37,0.38
+685,rosangela marques duarte,ana karina maciel de andrade,robinsom viegas montenegro,ana karina maciel de andrade,0.12,0.15,0.24,0.15
+686,luiz antonio mousinho magalhaes,marcos antonio nicolau,luiz antonio mousinho magalhaes,marcel vieira barreto silva,0.26,0.22,0.26,0.3
+687,eneas ricardo de morais gomes,flavia de oliveira paulino,valdir de andrade braga,demetrius antonio machado de araujo,0.07,0.02,0.35,0.42
+688,cirineu cecote stein,giorvan anderson dos santos alves,anna alice figueiredo de almeida,giorvan anderson dos santos alves,0.27,0.48,0.48,0.48
+689,ricardo de souza rosa,celso feitosa martins,ricardo de souza rosa,helder farias pereira de araujo,0.24,0.27,0.24,0.34
+690,valdir de andrade braga,marta maria da conceicao,sildivane valcacia silva,demetrius antonio machado de araujo,0.36,0.05,0.43,0.37
+691,sildivane valcacia silva,marta maria da conceicao,ulrich vasconcelos da rocha gomes,andrea farias de almeida,0.27,0.08,0.43,0.3
+692,janine marta coelho rodrigues,heleodorio honorato dos santos,heleodorio honorato dos santos,angela cristina dornelas da silva,0.4,0.43,0.43,0.51
+693,janine marta coelho rodrigues,jose jamacy de almeida ferreira,heleodorio honorato dos santos,angela cristina dornelas da silva,0.39,0.28,0.45,0.37
+694,giscard farias agra,roberto cordoville efrem de lima filho,narbal de marsillac fontes,flavianne fernanda bitencourt nobrega,0.12,-0.05,0.25,0.31
+695,maria de fatima alcantara barros,jeronimo farias de alencar,palloma rodrigues de andrade,neide maria gomes de lucena,0.14,0.18,0.35,0.32
+696,marta maria da conceicao,andrea farias de almeida,fabiola da cruz nunes,valdir de andrade braga,0.29,0.09,0.46,0.43
+697,zelma glebya maciel quirino,elaine bernini,gustavo henrique calazans vieira,venia camelo de souza,0.15,0.32,0.31,0.53
+698,marta miriam lopes costa cunha,valeria peixoto bezerra,simone helena dos santos oliveira,lenilde duarte de sa,0.17,0.23,0.38,0.28
+699,solange fatima geraldo da costa,maria eliane moreira freire,maria julia guimaraes oliveira soares,solange fatima geraldo da costa,0.46,0.3,0.48,0.46
+700,jorge fernando hermida aveiro,pierre normando gomes-da-silva,gilmario ricarte batista,jose cazuza de farias junior,0.22,0.09,0.35,0.32
+701,ionaldo jose lima diniz basilio,margareth de fatima formiga melo diniz,ionaldo jose lima diniz basilio,barbara viviana de oliveira santos,0.31,0.26,0.31,0.36
+702,esther bastos palitot,jose eymard moraes de medeiros filho,fatima maria macedo dos santos,jader freire sobral filho,0.22,0.13,0.46,0.48
+703,denise dias da cruz,frederico gustavo rodrigues franca,denise dias da cruz,venia camelo de souza,0.3,0.06,0.3,0.38
+704,lucio roberto cancado castellano,angela de siqueira figueiredo,jose soares do nascimento,juliana sousa soares de araujo,0.36,0.22,0.43,0.45
+705,joelma morais ferreira,silvia layara floriani andersen,raul rosenhaim,silvia layara floriani andersen,0.1,0.31,0.16,0.31
+706,antonio geraldo cidrao de carvalho,jeronimo farias de alencar,palloma rodrigues de andrade,jeronimo farias de alencar,0.22,0.51,0.39,0.51
+707,melyssa kellyane cavalcanti galdino,carla alexandra da silva moita minervino,melyssa kellyane cavalcanti galdino,carla alexandra da silva moita minervino,0.11,0.25,0.11,0.25
+708,robson cavalcante veras,selma dos passos braga,robson cavalcante veras,selma dos passos braga,0.3,0.48,0.3,0.48
+709,maria do socorro cirilo de sousa,amilton da cruz santos,pierre normando gomes-da-silva,jose cazuza de farias junior,0.17,0.17,0.38,0.35
+710,ayla debora dantas de souza reboucas,leonardo vidal batista,natasha correia queiroz lino,leonardo vidal batista,0.3,0.33,0.35,0.33
+711,alberto soto lock,fabiano salvadori,nady rocha,fabiano salvadori,0.06,0.14,0.4,0.14
+712,cristine hirsch monteiro,jaqueline brito vidal batista,katia suely queiroz silva ribeiro,ricardo de sousa soares,0.32,0.26,0.48,0.28
+713,fabiola da cruz nunes,livio carvalho de figueiredo,sildivane valcacia silva,roberto sassi,0.31,0.19,0.34,0.38
+714,samir perrone de miranda,augusto wagner menezes teixeira junior,samir perrone de miranda,rodrigo freire de carvalho e silva,0.12,0.16,0.12,0.23
+715,ivan targino moreira,adriano firmino valdevino de araujo,ivan targino moreira,adriano firmino valdevino de araujo,0.18,0.19,0.18,0.19
+716,fabiana de andrade cavalcante,bagnolia araujo da silva,fabiana de andrade cavalcante,marianna vieira sobral castello branco,0.22,0.15,0.22,0.38
+717,bagnolia araujo da silva,marianna vieira sobral castello branco,fabiana de andrade cavalcante,bagnolia araujo da silva,0.42,0.17,0.36,0.42
+718,antonio gouveia de souza,ricardo targino moreira,ricardo targino moreira,marcia roseane targino de oliveira,0.05,0.3,0.3,0.42
+719,carolina lima cavalcanti de albuquerque,laesio pereira martins,carlos roberto marinho da silva filho,priscilla diniz lima da silva bernardino,0.29,0.29,0.42,0.38
+720,antonio gouveia de souza,marcia roseane targino de oliveira,antonio gouveia de souza,carlos roberto marinho da silva filho,0.34,0.14,0.34,0.36
+721,ismael ivan rockenbach,marcia roseane targino de oliveira,carolina lima cavalcanti de albuquerque,marcia roseane targino de oliveira,0.19,0.38,0.35,0.38
+722,haissa roberta cardarelli,noadia priscila araujo rodrigues,marta suely madruga,neiva maria de almeida,0.17,0.24,0.3,0.26
+723,raphael abrahao,carlos roberto marinho da silva filho,riselane de lucena alcantara bruno,alexandre paiva da silva,0.21,0.1,0.34,0.29
+724,laesio pereira martins,walter esfrain pereira,thiago jardelino dias,gilvaneide alves de azeredo,0.25,0.14,0.34,0.41
+725,jacinto de luna batista,carlos henrique de brito,carlos henrique de brito,luciana cordeiro do nascimento,0.29,0.34,0.34,0.33
+726,maria lindomarcia leonardo da costa,terezinha domiciano dantas martins,ludmila da paz gomes da silva,terezinha domiciano dantas martins,0.11,0.28,0.23,0.28
+727,edson mauro santos,divan soares da silva,edson mauro santos,albericio pereira de andrade,0.11,0.03,0.11,0.38
+728,juliana silva de oliveira,edvaldo mesquita beltrao filho,marcelo luis rodrigues,lara toledo henriques,0.16,0.13,0.2,0.26
+729,nivania pereira da costa,djail santos,lourival ferreira cavalcante,nivania pereira da costa,0.36,0.19,0.23,0.36
+730,belisia lucia moreira toscano diniz,ademar pereira de oliveira,fillipe silveira marini,walter esfrain pereira,0.2,0.27,0.47,0.27
+731,edilson paes saraiva,edson mauro santos,edilson paes saraiva,fernando guilherme perazzo costa,0.34,0.08,0.34,0.29
+732,marcio jose coelho de pontes,ricardo alexandre cavalcanti de lima,sherlan guimaraes lemos,maria betania hermenegildo dos santos,0.15,0.07,0.38,0.4
+733,ilda antonieta salata toscano,sherlan guimaraes lemos,ilda antonieta salata toscano,williame farias ribeiro,0.31,0.28,0.31,0.46
+734,wagner de mendonca faustino,gerd bruno da rocha,silmar andrade do monte,elizete ventura do monte,0.13,0.09,0.17,0.17
+735,ricardo barbosa de lucena,ivia carmem talieri,ricardo romao guerra,ivia carmem talieri,0.39,0.41,0.37,0.41
+736,liszandra fernanda araujo campos,heber sivini ferreira,juliano elvis oliveira,amelia severino ferreira e santos,0.12,0.29,0.29,0.38
+737,daniel araujo de macedo,pollyana caetano ribeiro fernandes,amelia severino ferreira e santos,debora albuquerque vieira,-0.04,0.31,0.39,0.29
+738,ramon alves torquato,ricardo peixoto suassuna dutra,pollyana caetano ribeiro fernandes,jose felix da silva neto,0.12,0.21,0.39,0.3
+739,eliton souto de medeiros,debora albuquerque vieira,pollyana caetano ribeiro fernandes,flavia de medeiros aquino,0.21,0.21,0.3,0.31
+740,maria do socorro xavier batista,ana dorziat barbosa de melo,lebiam tamar gomes silva,eduardo jorge lopes da silva,0.19,0.13,0.26,0.35
+741,maria do socorro nobrega queiroga,ivonaldo neres leite,maria elizete guimaraes carvalho,charliton jose dos santos machado,0.07,0.15,0.26,0.23
+742,marineuma de oliveira costa cavalcanti,francisco jose pegado abilio,maria alves de azeredo,francisco jose pegado abilio,0.25,0.28,0.27,0.28
+743,gustavo henrique calazans vieira,alexandre ramlo torre palma,gustavo henrique calazans vieira,elaine bernini,0.23,0.17,0.23,0.33
+744,braulio almeida santos,carlos barros de araujo,rejane maria nunes mendonca,leonaldo alves de andrade,0.27,0.04,0.36,0.43
+745,emeide nobrega duarte,marckson roberto ferreira de sousa,emeide nobrega duarte,marckson roberto ferreira de sousa,0.14,0.07,0.14,0.07
+746,rejane maria nunes mendonca,leonaldo alves de andrade,rejane maria nunes mendonca,djail santos,0.43,0.38,0.43,0.37
+747,silvanda de melo silva,djail santos,silvanda de melo silva,manoel bandeira de albuquerque,0.47,0.37,0.47,0.5
+748,thiago jardelino dias,bruno de oliveira dias,alexandre paiva da silva,bruno de oliveira dias,0.27,0.34,0.25,0.34
+749,ricardo barbosa de lucena,rafael felipe da costa vieira,ricardo barbosa de lucena,rafael felipe da costa vieira,0.2,0.19,0.2,0.19
+750,gilvaneide alves de azeredo,mailson monteiro do rego,nivania pereira da costa,djail santos,0.19,0.17,0.69,0.34
+751,silvanda de melo silva,silvania maria de souza gomes nascimento,rejane maria nunes mendonca,silvania maria de souza gomes nascimento,0.38,0.24,0.69,0.24
+752,raunira da costa araujo,ademar pereira de oliveira,thiago jardelino dias,gilvaneide alves de azeredo,0.18,0.15,0.36,0.38
+753,danila barreiro campos,rafael felipe da costa vieira,danila barreiro campos,rafael felipe da costa vieira,0.24,0.38,0.24,0.38
+754,simone bopp,danila barreiro campos,danila barreiro campos,ricardo barbosa de lucena,0.2,0.26,0.26,0.38
+755,petronio filgueiras de athayde filho,savio moita pinheiro,marcus tullius scotti,savio moita pinheiro,0.21,0.35,0.26,0.35
+756,raphael abrahao,guttemberg da silva silvino,raphael abrahao,guttemberg da silva silvino,0.13,0.46,0.13,0.46
+757,celso feitosa martins,marcio bernardino da silva,celso feitosa martins,glaucia marques freitas ribeiro,0.35,0.14,0.35,0.34
+758,nadjacleia vilar almeida,carlos barros de araujo,frederico gustavo rodrigues franca,antonio christian de andrade moura,0.25,0.24,0.37,0.38
+759,carla aparecida soares saraiva,terezinha domiciano dantas martins,maria lindomarcia leonardo da costa,terezinha domiciano dantas martins,0.09,0.39,0.47,0.39
+760,carla aparecida soares saraiva,maria lindomarcia leonardo da costa,maria lindomarcia leonardo da costa,terezinha domiciano dantas martins,0.32,0.5,0.5,0.41
+761,george rodrigo beltrao da cruz,safira valenca bispo,safira valenca bispo,ludmila da paz gomes da silva,0.17,0.33,0.33,0.3
+762,roberto germano costa,ludmila da paz gomes da silva,roberto germano costa,safira valenca bispo,0.47,0.3,0.47,0.5
+763,george rodrigo beltrao da cruz,maria lindomarcia leonardo da costa,roberto germano costa,terezinha domiciano dantas martins,0.37,0.3,0.31,0.37
+764,carla aparecida soares saraiva,ludmila da paz gomes da silva,george rodrigo beltrao da cruz,roseane madeira bezerra,0.23,0.39,0.46,0.62
+765,ana patricia almeida bezerra,divan soares da silva,ana patricia almeida bezerra,divan soares da silva,0.11,0.37,0.11,0.37
+766,ana patricia almeida bezerra,edson mauro santos,edson mauro santos,albericio pereira de andrade,0.03,0.37,0.37,0.25
+767,marcelo luis rodrigues,lara toledo henriques,leonardo augusto fonseca pascoal,edvaldo mesquita beltrao filho,0.1,0.05,0.43,0.47
+768,graciele da silva campelo borges,marta suely madruga,graciele da silva campelo borges,elisandra costa almeida,0.44,0.23,0.44,0.27
+769,ana lima dantas,mailson monteiro do rego,jacinto de luna batista,guttemberg da silva silvino,0.18,0.38,0.39,0.37
+770,tarciso cabral da silva,cristiano das neves almeida,tarciso cabral da silva,cristiano das neves almeida,0.09,0.07,0.09,0.07
+771,walter esfrain pereira,ademar pereira de oliveira,gilvaneide alves de azeredo,fillipe silveira marini,0.17,0.43,0.61,0.54
+772,silvanda de melo silva,walter esfrain pereira,raunira da costa araujo,belisia lucia moreira toscano diniz,0.45,0.2,0.54,0.46
+773,thiago jardelino dias,belisia lucia moreira toscano diniz,gilvaneide alves de azeredo,edna ursulino alves,0.37,0.39,0.58,0.47
+774,rejane maria nunes mendonca,riselane de lucena alcantara bruno,manoel bandeira de albuquerque,fillipe silveira marini,0.15,0.4,0.48,0.45
+775,raunira da costa araujo,riselane de lucena alcantara bruno,lourival ferreira cavalcante,silvania maria de souza gomes nascimento,0.23,0.24,0.27,0.38
+776,simone bopp,ivia carmem talieri,simone bopp,ivia carmem talieri,0.37,0.42,0.37,0.42
+777,danila barreiro campos,rafael felipe da costa vieira,simone bopp,rafael felipe da costa vieira,0.2,0.31,0.43,0.31
+778,leonardo dantas da silva,marcos barros de medeiros,marcos barros de medeiros,luciana cordeiro do nascimento,0.21,0.45,0.45,0.46
+779,marcos barros de medeiros,luciana cordeiro do nascimento,marcos barros de medeiros,luciana cordeiro do nascimento,0.47,0.6,0.47,0.6
+780,marcos barros de medeiros,luciana cordeiro do nascimento,leonardo dantas da silva,luciana cordeiro do nascimento,0.28,0.45,0.34,0.45
+781,adailson pereira de souza,bruno de oliveira dias,manoel alexandre diniz neto,flavio pereira de oliveira,0.43,0.34,0.48,0.51
+782,kellen da silva coelho,renata francisco baldanza,kellen da silva coelho,nelsio rodrigues de abreu,0.29,0.17,0.29,0.21
+783,hemmannuella costa santos,roseilton fernandes dos santos,manoel alexandre diniz neto,flavio pereira de oliveira,0.02,0.31,0.45,0.45
+784,roseilton fernandes dos santos,bruno de oliveira dias,roseilton fernandes dos santos,flavio pereira de oliveira,0.43,0.45,0.43,0.55
+785,ricardo barbosa de lucena,rafael felipe da costa vieira,ricardo barbosa de lucena,rafael felipe da costa vieira,0.24,0.36,0.24,0.36
+786,demetrius antonio machado de araujo,ulrich vasconcelos da rocha gomes,roberto sassi,marta maria da conceicao,0.19,0.13,0.29,0.3
+787,edson mauro santos,divan soares da silva,edson mauro santos,divan soares da silva,0.11,0.25,0.11,0.25
+788,antonio gouveia de souza,laesio pereira martins,carolina lima cavalcanti de albuquerque,carlos roberto marinho da silva filho,0.21,0.28,0.34,0.27
+789,maria zuleide da costa pereira,eladio jose de goes brennand,maria zuleide da costa pereira,luciene chaves de aquino,0.1,0.2,0.1,0.34
+790,mario cesar ugulino de araujo,sherlan guimaraes lemos,ilda antonieta salata toscano,maria betania hermenegildo dos santos,0.22,0.15,0.44,0.61
+791,ilda antonieta salata toscano,williame farias ribeiro,ilda antonieta salata toscano,williame farias ribeiro,0.34,0.61,0.34,0.61
+792,danila barreiro campos,ricardo barbosa de lucena,danila barreiro campos,ricardo barbosa de lucena,0.36,0.31,0.36,0.31
+793,george rodrigo beltrao da cruz,safira valenca bispo,safira valenca bispo,ludmila da paz gomes da silva,0.43,0.38,0.38,0.37
+794,carla aparecida soares saraiva,terezinha domiciano dantas martins,paulo sergio de azevedo,ludmila da paz gomes da silva,0.15,0.14,0.17,0.17
+795,gilvaneide alves de azeredo,djail santos,nivania pereira da costa,leonaldo alves de andrade,0.24,0.24,0.43,0.46
+796,safira valenca bispo,paulo sergio de azevedo,roberto germano costa,maria lindomarcia leonardo da costa,0.44,0.07,0.39,0.47
+797,roberto germano costa,edilson paes saraiva,edilson paes saraiva,albericio pereira de andrade,0.28,0.35,0.35,0.38
+798,jose jordao filho,lara toledo henriques,juliana silva de oliveira,edvaldo mesquita beltrao filho,0.36,0.25,0.43,0.29
+799,ierece maria de lucena rosa,ian porto gurgel do amaral,ierece maria de lucena rosa,patricia mirella da silva scardua,0.29,0.33,0.29,0.23
+800,leonardo augusto fonseca pascoal,roseane madeira bezerra,marcelo luis rodrigues,roseane madeira bezerra,0.36,0.28,0.23,0.28
+801,leonardo augusto fonseca pascoal,lara toledo henriques,severino gonzaga neto,jose jordao filho,0.21,0.24,0.2,0.23
+802,joao andrade da silva,solange de sousa,juliana silva de oliveira,leonardo augusto fonseca pascoal,0.11,0.08,0.47,0.29
+803,jose jordao filho,marcelo luis rodrigues,juliana silva de oliveira,jose jordao filho,0.35,0.08,0.27,0.35
+804,ana carolina figueiredo lacerda sakamoto,joel silva dos santos,ana carolina figueiredo lacerda sakamoto,nadjacleia vilar almeida,0.49,0.29,0.49,0.4
+805,carlos roberto marinho da silva filho,priscilla diniz lima da silva bernardino,ricardo targino moreira,marcia roseane targino de oliveira,0.31,0.28,0.33,0.29
+806,rejane maria nunes mendonca,edna ursulino alves,raunira da costa araujo,riselane de lucena alcantara bruno,0.21,0.46,0.53,0.49
+807,raphael abrahao,guttemberg da silva silvino,valeria peixoto borges,guttemberg da silva silvino,0.14,0.51,0.57,0.51
+808,adailson pereira de souza,bruno de oliveira dias,vania da silva fraga,adailson pereira de souza,0.46,0.39,0.39,0.46
+809,roberto germano costa,maria lindomarcia leonardo da costa,safira valenca bispo,paulo sergio de azevedo,0.09,0.25,0.32,0.27
+810,severino gonzaga neto,fernando guilherme perazzo costa,leonardo augusto fonseca pascoal,roseane madeira bezerra,0.26,0.56,0.46,0.38
+811,severino gonzaga neto,marcelo luis rodrigues,jose jordao filho,lara toledo henriques,0.23,0.11,0.38,0.46
+812,severino gonzaga neto,edilson paes saraiva,carla aparecida soares saraiva,lara toledo henriques,0.23,0.2,0.52,0.56
+813,ricardo romao guerra,ivia carmem talieri,ricardo romao guerra,ivia carmem talieri,0.42,0.54,0.42,0.54
+814,simone bopp,ricardo romao guerra,simone bopp,ricardo romao guerra,0.54,0.42,0.54,0.42
+815,simone bopp,ricardo romao guerra,simone bopp,ricardo romao guerra,0.38,0.42,0.38,0.42
+816,ricardo romao guerra,ivia carmem talieri,danila barreiro campos,ivia carmem talieri,0.3,0.29,0.32,0.29
+817,itamara farias leite,debora albuquerque vieira,amelia severino ferreira e santos,ricardo peixoto suassuna dutra,0.28,0.33,0.44,0.4
+818,vania da silva fraga,alexandre paiva da silva,vania da silva fraga,adailson pereira de souza,0.48,0.27,0.48,0.45
+819,eliton souto de medeiros,daniel araujo de macedo,itamara farias leite,pollyana caetano ribeiro fernandes,0.21,0.19,0.36,0.27
+820,amelia severino ferreira e santos,daniel araujo de macedo,juliano elvis oliveira,itamara farias leite,0.32,0.03,0.35,0.33
+821,edna gusmao de goes brennand,lebiam tamar gomes silva,patricia nunes da fonseca,eduardo jorge lopes da silva,0.07,0.2,0.29,0.3
+822,gustavo henrique calazans vieira,elaine bernini,alexandre ramlo torre palma,luciana gomes barbosa,0.21,0.35,0.38,0.36
+823,alexandre ramlo torre palma,luciana gomes barbosa,alexandre ramlo torre palma,luciana gomes barbosa,0.53,0.27,0.53,0.27
+824,george emmanuel cavalcanti de miranda,cristiane francisca da costa sassi,george emmanuel cavalcanti de miranda,cristiane francisca da costa sassi,0.18,0.17,0.18,0.17
+825,marcos cesar santos oria,hugo leonardo davi de souza cavalcante,marcos cesar santos oria,thierry marcelino passerat de silans,0.31,0.1,0.31,0.35
+826,cosme rafael martinez salinas,maria de fatima agra,zelma glebya maciel quirino,cosme rafael martinez salinas,0.11,0.13,0.21,0.11
+827,lourival ferreira cavalcante,leonaldo alves de andrade,thiago jardelino dias,nivania pereira da costa,0.18,0.17,0.35,0.38
+828,naila francis paulo de oliveira,adna cristina barbosa de sousa,naila francis paulo de oliveira,adna cristina barbosa de sousa,0.27,0.17,0.27,0.17
+829,isac almeida de medeiros,reinaldo nobrega de almeida,bagnolia araujo da silva,reinaldo nobrega de almeida,0.3,0.37,0.35,0.37
+830,leonardo augusto fonseca pascoal,marcelo luis rodrigues,leonardo augusto fonseca pascoal,roseane madeira bezerra,0.38,0.06,0.38,0.49
+831,severino gonzaga neto,jose jordao filho,juliana silva de oliveira,edvaldo mesquita beltrao filho,0.14,0.29,0.46,0.33
+832,antonio gouveia de souza,priscilla diniz lima da silva bernardino,ricardo targino moreira,priscilla diniz lima da silva bernardino,0.27,0.27,0.46,0.27
+833,haissa roberta cardarelli,ingrid conceicao dantas guerra,noadia priscila araujo rodrigues,elisandra costa almeida,0.1,0.16,0.37,0.26
+834,ana lima dantas,mailson monteiro do rego,marcos barros de medeiros,ademar pereira de oliveira,0.22,0.29,0.41,0.86
+835,manoel bandeira de albuquerque,albericio pereira de andrade,silvanda de melo silva,belisia lucia moreira toscano diniz,0.37,0.5,0.54,0.5
+836,rejane maria nunes mendonca,silvania maria de souza gomes nascimento,mailson monteiro do rego,silvania maria de souza gomes nascimento,0.38,0.35,0.36,0.35
+837,gilvaneide alves de azeredo,raunira da costa araujo,lourival ferreira cavalcante,silvania maria de souza gomes nascimento,0.31,0.38,0.47,0.29
+838,nivania pereira da costa,walter esfrain pereira,raunira da costa araujo,leonaldo alves de andrade,0.19,0.26,0.5,0.51
+839,thiago jardelino dias,albericio pereira de andrade,mailson monteiro do rego,ademar pereira de oliveira,0.4,0.53,0.53,0.6
+840,nivania pereira da costa,leonaldo alves de andrade,edna ursulino alves,djail santos,0.2,0.21,0.4,0.33
+841,carlos henrique de brito,luciana cordeiro do nascimento,leonardo dantas da silva,jacinto de luna batista,0.2,0.23,0.17,0.42
+842,leonardo dantas da silva,marcos barros de medeiros,carlos henrique de brito,marcos barros de medeiros,0.28,0.39,0.45,0.39
+843,leonardo dantas da silva,carlos henrique de brito,jacinto de luna batista,carlos henrique de brito,0.33,0.39,0.6,0.39
+844,hemmannuella costa santos,manoel alexandre diniz neto,roseilton fernandes dos santos,bruno de oliveira dias,0.27,0.18,0.32,0.44
+845,vania da silva fraga,manoel alexandre diniz neto,vania da silva fraga,manoel alexandre diniz neto,0.36,0.33,0.36,0.33
+846,hemmannuella costa santos,manoel alexandre diniz neto,vania da silva fraga,roseilton fernandes dos santos,0.1,0.39,0.51,0.44
+847,maria eulina pessoa de carvalho,edineide jezini mesquita,patricia nunes da fonseca,ana claudia da silva rodrigues,0.15,0.13,0.33,0.35
+848,george rodrigo beltrao da cruz,safira valenca bispo,roberto germano costa,maria lindomarcia leonardo da costa,0.39,0.41,0.39,0.37
+849,leonardo augusto fonseca pascoal,lara toledo henriques,jose jordao filho,lara toledo henriques,0.27,0.38,0.49,0.38
+850,marciane magnani,solange de sousa,marciane magnani,marta suely madruga,0.36,0.27,0.36,0.36
+851,manoel bandeira de albuquerque,leonaldo alves de andrade,silvanda de melo silva,thiago jardelino dias,0.44,0.3,0.53,0.53
+852,gilvaneide alves de azeredo,riselane de lucena alcantara bruno,rejane maria nunes mendonca,mailson monteiro do rego,0.3,0.29,0.46,0.53
+853,lourival ferreira cavalcante,belisia lucia moreira toscano diniz,walter esfrain pereira,belisia lucia moreira toscano diniz,0.21,0.44,0.4,0.44
+854,lourival ferreira cavalcante,albericio pereira de andrade,manoel bandeira de albuquerque,edna ursulino alves,0.17,0.43,0.48,0.49
+855,lourival ferreira cavalcante,belisia lucia moreira toscano diniz,silvanda de melo silva,edna ursulino alves,0.27,0.5,0.6,0.52
+856,leonardo dantas da silva,luciana cordeiro do nascimento,jacinto de luna batista,carlos henrique de brito,0.18,0.39,0.47,0.28
+857,vania da silva fraga,flavio pereira de oliveira,adailson pereira de souza,manoel alexandre diniz neto,0.32,0.43,0.65,0.41
+858,hemmannuella costa santos,manoel alexandre diniz neto,roseilton fernandes dos santos,bruno de oliveira dias,0.25,0.27,0.36,0.44
+859,gustavo henrique calazans vieira,elaine bernini,gustavo henrique calazans vieira,elaine bernini,0.13,0.41,0.13,0.41
+860,nivania pereira da costa,mailson monteiro do rego,manoel bandeira de albuquerque,fillipe silveira marini,0.28,0.36,0.55,0.56
+861,silvanda de melo silva,albericio pereira de andrade,raunira da costa araujo,riselane de lucena alcantara bruno,0.49,0.4,0.61,0.58
+862,roseilton fernandes dos santos,flavio pereira de oliveira,walter esfrain pereira,mailson monteiro do rego,0.34,0.18,0.38,0.32
+863,manoel bandeira de albuquerque,ademar pereira de oliveira,lourival ferreira cavalcante,ademar pereira de oliveira,0.31,0.5,0.32,0.5
+864,thiago jardelino dias,fillipe silveira marini,belisia lucia moreira toscano diniz,ademar pereira de oliveira,0.29,0.41,0.51,0.58
+865,laesio pereira martins,riselane de lucena alcantara bruno,riselane de lucena alcantara bruno,djail santos,0.39,0.47,0.47,0.49
+866,carlos roberto marinho da silva filho,valeria peixoto borges,raphael abrahao,valeria peixoto borges,0.51,0.46,0.06,0.46
+867,adailson pereira de souza,roseilton fernandes dos santos,adailson pereira de souza,bruno de oliveira dias,0.55,0.43,0.55,0.51
+868,adailson pereira de souza,flavio pereira de oliveira,hemmannuella costa santos,alexandre paiva da silva,0.43,0.43,0.34,0.36
+869,vania da silva fraga,flavio pereira de oliveira,flavio pereira de oliveira,alexandre paiva da silva,0.34,0.51,0.51,0.44
+870,raphael abrahao,elizanilda ramalho do rego,valeria peixoto borges,elizanilda ramalho do rego,0.15,0.38,0.57,0.38
+871,raunira da costa araujo,djail santos,walter esfrain pereira,leonaldo alves de andrade,0.43,0.34,0.34,0.58
+872,hermano de franca rodrigues,karina chianca venancio,michelle bianca santos dantas,maria luiza teixeira batista,0.48,0.08,0.14,0.21
+873,kellen da silva coelho,james batista vieira,james batista vieira,fabio walter,0.16,0.25,0.25,0.3

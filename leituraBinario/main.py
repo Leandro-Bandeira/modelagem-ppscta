@@ -248,7 +248,7 @@ def write_csv(data_projects, year):
         
         
 
-def write_boxplot(data_projects, year):
+def write_boxplot_all(data_projects, year):
     data_1 = list()
     data_2 = list()
     
@@ -283,8 +283,62 @@ def write_boxplot(data_projects, year):
     plt.savefig(f'{year}', format='png')
     plt.show()
 
+
+
+def write_boxplot_estrati(data_projects, year):
+    
+    # Devemos criar um grafico boxplot comparativo, quando:
+    # 1-> Ambos da subarea e area do projeto
+    # 2-> Um subarea ou area e o outro a mesma coisa
+    # 3-> Sem area definida
+    # 4-> sem subarea e area
+    # 5-> não sao da subarea 
     
     
+    data_1 = list()
+    data_2 = list()
+    
+    
+    for project in data_projects:
+        similarity_media_1 = float()
+        similarity_media_2 = float()
+        sub_area_project = project.get_subarea()
+        area_project = project.get_area()
+        
+        revisors = project.get_revisors()
+        
+        for i, similarity in enumerate(project.get_similarity()):
+            if i < 2:
+                if revisors[i].get_subarea() != sub_area_project:
+                    similarity_media_1 += similarity
+            else:
+                if  revisors[i].get_subarea() != sub_area_project:
+                    similarity_media_2 += similarity
+        
+        if similarity_media_1 != 0.0:
+            
+            data_1.append(similarity_media_1)
+        if similarity_media_2 != 0.0:
+            data_2.append(similarity_media_2)
+    
+    data = [data_1, data_2]
+    print(data)
+    fig, ax = plt.subplots()
+    boxprops = dict(linestyle='--', linewidth=1.5, color='red') # estilo de linha da caixa
+    flierprops = dict(marker='o', markerfacecolor='purple', markersize=5, alpha=0.5)
+    medianprops = dict(linestyle='-.', linewidth=1.5, color='blue')
+    whiskerprops = dict(linestyle='-', linewidth=1.5, color='green')
+    ax.boxplot(data, boxprops=boxprops, flierprops=flierprops, medianprops=medianprops, whiskerprops=whiskerprops)
+    ax.set_title('Ambos os revisores não são da subárea do projeto, ano ' + f'{year}')
+    ax.set_xlabel('Algoritmo')
+    ax.set_ylabel('Média de Similaridade')
+    xticks = ['Algoritmo Anterior', 'Algoritmo Atual']
+    ax.set_xticklabels(xticks)
+    
+    plt.savefig(f'estrati_5_{year}', format='png')
+    plt.show()
+   
+   
     
 def main():
     
@@ -310,8 +364,8 @@ def main():
     add_similarity_to_projects(data_project, data_similarity)
     write_csv(data_project, year)
 
-    write_boxplot(data_project, year)
-
+    #write_boxplot_all(data_project, year)
+    write_boxplot_estrati(data_project, year)
 
 
 
