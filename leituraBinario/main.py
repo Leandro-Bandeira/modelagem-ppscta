@@ -309,19 +309,19 @@ def write_boxplot_estrati(data_projects, year):
         
         for i, similarity in enumerate(project.get_similarity()):
             if i < 2:
-                if revisors[i].get_subarea() != sub_area_project and revisors[i].get_area != area_project:
+                if revisors[i].get_area == area_project:
                     similarity_media_1 += similarity
             else:
-                if  revisors[i].get_subarea() != sub_area_project and revisors[i].get_area != area_project:
+                if  revisors[i].get_area == area_project:
                     similarity_media_2 += similarity
         
-        if similarity_media_1 != 0.0:
-            similarity_media_1 = similarity_media_1/2
+        #if similarity_media_1 != 0.0:
+        similarity_media_1 = similarity_media_1/2
             
-            data_1.append(similarity_media_1)
-        if similarity_media_2 != 0.0:
-            similarity_media_2 = similarity_media_2/2
-            data_2.append(similarity_media_2)
+        data_1.append(similarity_media_1)
+        #if similarity_media_2 != 0.0:
+        similarity_media_2 = similarity_media_2/2
+        data_2.append(similarity_media_2)
         
     
     data = [data_1, data_2]
@@ -332,13 +332,13 @@ def write_boxplot_estrati(data_projects, year):
     medianprops = dict(linestyle='-.', linewidth=1.5, color='blue')
     whiskerprops = dict(linestyle='-', linewidth=1.5, color='green')
     ax.boxplot(data, boxprops=boxprops, flierprops=flierprops, medianprops=medianprops, whiskerprops=whiskerprops)
-    ax.set_title('Revisoes não são da subárea e área, ano ' + f'{year}')
+    ax.set_title('Revisoes da área, ano ' + f'{year}')
     ax.set_xlabel('Algoritmo')
     ax.set_ylabel('Média de Similaridade')
     xticks = ['Algoritmo Anterior', 'Algoritmo Atual']
     ax.set_xticklabels(xticks)
     
-    plt.savefig(f'estrati_6_{year}.png', format='png', dpi=600)
+    plt.savefig(f'estrati_2_{year}.png', format='png', dpi=300)
     plt.show()
    
    
