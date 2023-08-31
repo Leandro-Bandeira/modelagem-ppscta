@@ -25,16 +25,16 @@ barWidth = 0.25
 
 plt.figure(figsize=(10, 5))
 
-r1 = np.arange(len(algoritmo_atual_14))
+r1 = np.arange(len(algoritmo_atual_17))
 r2 = [x + barWidth for x in r1]
 r3 = [x + barWidth for x in r2]
 
-bar_atual =plt.bar(r1, algoritmo_atual_14, color='red', width=barWidth, label='Algoritmo Atual')
-bar_antigo = plt.bar(r2, algoritmo_antigo_14, color='orange', width=barWidth, label='Algoritmo Antigo')
-bar_nao_otimizado = plt.bar(r3, nao_otimizado_14, color='blue', width=barWidth, label='Algoritmo sem técnicas de otimização')
+bar_atual =plt.bar(r1, algoritmo_atual_17, color='red', width=barWidth, label='Abordagem atual')
+bar_antigo = plt.bar(r2, algoritmo_antigo_17, color='orange', width=barWidth, label='Abordagem de Cunha Neto')
+bar_nao_otimizado = plt.bar(r3, nao_otimizado_17, color='blue', width=barWidth, label='Abordagem manual')
 
 
-plt.xticks([r + barWidth for r in range(len(algoritmo_atual_14))], ['Alocados a\nsubárea de\nespecialidade', 'Alocados a\nárea de\nespecialidade', 'Alocados a\numa área\ndesconhecida', 'Alocados ao\npróprio trabalho', 'Sem área\ndefinida'])
+plt.xticks([r + barWidth for r in range(len(algoritmo_atual_17))], ['Alocados a\nsubárea de\nespecialidade', 'Alocados a\nárea de\nespecialidade', 'Alocados a\numa área\ndesconhecida', 'Alocados ao\npróprio trabalho', 'Sem área\ndefinida'])
 # Adicionar os valores exatos no topo das barras
 
 plt.bar_label(bar_atual, fmt="%.01f", size=8, label_type="edge")
@@ -42,8 +42,8 @@ plt.bar_label(bar_antigo, fmt="%.01f", size=8, label_type="edge")
 plt.bar_label(bar_nao_otimizado, fmt="%.01f", size=8, label_type="edge")
 
 plt.ylabel('Quantidade de avaliadores')
-plt.title('Alocação de avaliadores, 2014')
+plt.title('Alocação de avaliadores, 2017')
 plt.legend()
 
-plt.savefig('barras2014.png', dpi=600)
+plt.savefig('barras2017.png')
 plt.show()
