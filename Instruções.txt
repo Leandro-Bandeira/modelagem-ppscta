@@ -1,5 +1,0 @@
-1-> A partir das alocações realizadas por Chico, conseguimos ler o PDF de resumos do ENIC e retirar os resumos baseado nos orientadores e nome do projeto.
-2-> Após isso, alinhamos para que tenhamos o mesmo referencial
-3-> Vamos retirar a similaridade entre os resumos
-4-> Agora precisamos recriar o modelo de chico, para criar o modelo de chico, precisamos de um arquivo json, contendo area e subareas de cada projeto
-5-> Depois de criar a instancia de chico, vamos alterá-la baseada nas similaridades entre os projetos
