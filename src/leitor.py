@@ -1,6 +1,8 @@
 import pandas as pd
 import sys
 import os
+import math
+
 
 class Advisor:
 
@@ -140,6 +142,37 @@ class Data:
         
         resumes_csv.close()
 
+    
+    def create_variable_file(self, variable_path, enic_df):
+        variable_file = open(variable_path, "w")
+        
+
+        for advisor in self.advisors:
+            for index in range(enic_df.shape[0]):
+                row = enic_df.iloc[index]
+                author_name = row['ALUNO']
+
+                avaliador1 = row['AVALIADOR1']
+                avaliador2 = row['AVALIADOR2']
+                # Primeiro checa se o valor é nan e depois se a linha tem aluno
+                if author_name != author_name or author_name  == "ALUNO": 
+                    continue
+                
+                # Se ele foi alocado como avaliador, vamos achar
+                # o indice correspondente no array padrão e salvar no arquivo
+                if advisor.get_name().rstrip() == avaliador1.rstrip() or advisor.get_name() == avaliador2.rstrip():
+                    for id,resume in enumerate(self.resumes):
+                        
+                        if resume.get_name_author().rstrip() == author_name.rstrip():
+                            variable_file.write(str(id) + ' ')
+                            break
+                    
+
+            
+            variable_file.write('\n')
+
+        variable_file.close()
+                
 
 
 def find_advisor(advisors, name):
@@ -153,24 +186,33 @@ def find_advisor(advisors, name):
 
 def main():
     
-    if len(sys.argv) < 6:
-        print("Digite a entrada: python3 leitor.py arquivo.csv dia instancia.txt advisor.csv resumes.csv")
+    if len(sys.argv) < 8:
+        print("Digite a entrada: python3 leitor.py arquivo.csv dia instancia.txt variable.txt advisor.csv resumes.csv enic.csv")
         exit(1)
     
     input_path = str(sys.argv[1]) # Dados de entrada
     output_path = str(sys.argv[3])
-    advisor_path = str(sys.argv[4])
-    resumes_path = str(sys.argv[5])
+    variable_path = str(sys.argv[4])
+    advisor_path = str(sys.argv[5])
+    resumes_path = str(sys.argv[6])
+    enic_path = str(sys.argv[7])
+
+
 
     dia = int(sys.argv[2])
 
 
     resume_df = pd.read_csv(input_path, sep=',', encoding='UTF-8')
+    enic_df = pd.read_csv(enic_path, sep=',', encoding='UTF-8')
+
+
+
     data_df = Data(resume_df, dia)
-    
     data_df.create_advisor_data(advisor_path)
     data_df.create_resumes_data(resumes_path)
     data_df.create_instance(output_path)
+    data_df.create_variable_file(variable_path, enic_df)
+
     
     
 
