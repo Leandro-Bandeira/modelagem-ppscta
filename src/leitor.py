@@ -95,7 +95,7 @@ class Data:
     def create_instance(self, output_path):
         
         instance = open(output_path, 'w')
-        instance.write(str(len(self.advisors))+'\n'+str(len(self.resumes))+'\n')
+        instance.write(str(len(self.advisors))+' '+str(len(self.resumes))+'\n')
         
         for advisor in self.advisors:
             for resume in self.resumes:

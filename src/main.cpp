@@ -8,6 +8,7 @@
 #include <chrono>
 #include <sstream>
 #include <algorithm>
+#include <cmath>
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
@@ -25,13 +26,78 @@ typedef struct {
 }Trabalho;
 
 
-double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
+int **lerVariavelAuxiliar(const std::string& caminho, int quantiaOrientadores, int quantiaTrabalhos){
+		
+
+	/* Criação da variável auxiliar w, inicializa inicialmente todas com zero	*/
+	int **w = new int*[quantiaOrientadores];
+
+	for(int i = 0; i < quantiaOrientadores; i++){
+
+		for(int j = 0; j < quantiaTrabalhos; j++){
+
+			w[i] = new int[quantiaTrabalhos];
+			w[i][j] = 0;
+		}
+	}
+	
+
+	std::fstream* ptrArquivo = new std::fstream(caminho, std::ios::in); // Abre o arquivo para entrada de dados
+	std::string linha; // linha para ler o arquivo
+	std::string palavra;
+
+	int indiceOrientador = 0;
+	
+	std::vector < int > valoresLinha;
+	valoresLinha.clear();
+
+	while(1){
+		std::getline(*ptrArquivo, linha);
+		
+		if(ptrArquivo->eof())
+			break;
+
+		std::stringstream dados(linha); // Criacao de uma sstream
+
+		// Separa os dados da string de stream pelo espaço e então armazena no vector de valores
+		while(std::getline(dados, palavra, ' ')) {
+
+			std::string::size_type sz;
+			if(palavra.size() >  0) {
+				valoresLinha.push_back(std::stoi(palavra, &sz));
+			}
+			
+			
+			
+		}
+
+		/* Os valores em valoresLinha representa os trabalhos que o orientador i foram alocados
+		 * Como cada linha representa um orientador, vamos acessar o indice do trabalho
+		 * e então dar 1 para a variável*/
+		for(int i = 0; i < valoresLinha.size(); i++){
+			int indiceTrabalho = valoresLinha[i];
+			w[indiceOrientador][indiceTrabalho] = 1;
+			
+		}
+
+		indiceOrientador++;
+		valoresLinha.clear();
+		palavra.clear();
+		linha.clear();
+
+
+	}
+	
+	return w;
+
+}
+int **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, int& quantiaTrabalhos) {
 	
 	std::fstream* ptrArquivo = new std::fstream(caminho, std::ios::in); // Abre o arquivo para entrada de dados
 	
 	std::string linha; // Linha lida no arquivo
 	
-	std::vector < double > valoresLinha; // Valores que vão estar na linha
+	std::vector < int > valoresLinha; // Valores que vão estar na linha
 
 
 
@@ -60,11 +126,11 @@ double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, 
 	linha.clear();
 
 	/* Criação da matriz de beneficios	*/
-	double** matriz = new double*[quantiaOrientadores];
+	int** matriz = new int*[quantiaOrientadores];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
-		matriz[i] = new double[quantiaTrabalhos];
+		matriz[i] = new int[quantiaTrabalhos];
 	}
 	
 	
@@ -85,8 +151,7 @@ double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, 
 
 			std::string::size_type sz;
 			if(palavra.size() >  0) {
-				//std::cout << palavra << " " << palavra.size();
-				valoresLinha.push_back(std::stod(palavra, &sz));
+				valoresLinha.push_back(std::stoi(palavra, &sz));
 			}
 			
 			
@@ -124,7 +189,7 @@ double **matrizBeneficios(const std::string& caminho, int& quantiaOrientadores, 
 
 
 
-void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
+void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quantiaTrabalhos, std::vector < Orientador >& orientadores, std::vector < Trabalho >& trabalhos, const char * saidaNome, const char* resultadoNome) {
 
 	
 	auto start = std::chrono::high_resolution_clock::now(); // Pega o tempo do relogio
@@ -143,25 +208,40 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Utilização do template de classe IloArray para criar um	array de duas dimensões*/
 	/* Do tipo IloNumVarArray, chamado x	*/
 	IloArray < IloNumVarArray > x(env, quantiaOrientadores);
-	
-
+	IloArray < IloExprArray> z(env, quantiaOrientadores);
 
 	// Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	
 	for(int i = 0; i < quantiaOrientadores; i++) {
-		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);		
+		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
+		z[i] = IloExprArray(env, quantiaTrabalhos);
+
 	}
 	
+
 	
 	
 	// Adicionando nome das variaveis	
 	char var[100];
+	char var1[100];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
-			
 			sprintf(var, "x[%d][%d]", i, j);
 			x[i][j].setName(var);
 			Model.add(x[i][j]);
+			
+			
+			IloExpr aux(env);
+			aux += IloAbs(x[i][j] - w[i][j]);
+			
+			z[i][j] = aux;
+			
+			sprintf(var1, "|x[%d][%d] - %d|", i, j, w[i][j]);
+			
+			z[i][j].setName(var1);
+			Model.add(z[i][j]);
+			
+
 		}
 	}
 
@@ -182,16 +262,20 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		for(int j = 0; j < trabalhosInteresseOrientador.size(); j++) {
 			
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
+
 			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
+				//std::cout << "Expresao: " << "1" << "-" << z[i][trabalhoIndice].getName() << std::endl;
+			//getchar();
+			exp0 += 1 - z[i][trabalhoIndice];
 		}
+		
 		
 		trabalhosInteresseOrientador.clear();
 	}
 
-	
+	std::cout << "here2" << std::endl;
 	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
-	
-
+	std::cout << "here3" << std::endl;	
 	
 
 	/* Restrições do problema 	*/
@@ -202,7 +286,6 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Mantém fixo um determinado trabalho j e verifica se a soma dos professores que irão avaliar aquele trabalho	*/
 	/* é igual ao número de avaliadores por trabalho	*/
 	
-	std::cout << "antes primeira restricao" << std::endl;
 	for(int j = 0; j < quantiaTrabalhos; j++) {
 		IloExpr exp1(env); // Inicializa uma expressão
 		//Retorna o vector contendo os indices dos orientadores aptos a avaliares o trabalho j	
@@ -224,7 +307,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 	/* Mantém fixo um determinado avaliador e verificamos em relação ao trabalho se ele possui os valores minimos e máximos	*/
 	/* de Trabalhos para avaliar	*/
 	/* Alguns orientadores nao tem interesse em nenhum trabalho, então x2 sairia vazio da setença e nao pode, vamos fazer isso apenas com quem não tem interesse	*/
-
+	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 
 		IloExpr exp2(env);
@@ -242,12 +325,11 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 		Model.add(exp2 >= LMini);
 	}
 
-	
 	IloCplex cplex(Model);
-
+	std::cout << "here" << std::endl;
+	//cplex.extract(Model);
 	cplex.exportModel(saidaNome); // Exporta o modelo no formato lp
 
-	
 	if(!cplex.solve()) {
 
 		env.error() << "Erro ao otimizar o problema" << '\n';
@@ -264,7 +346,7 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	auto elapsed = std::chrono::duration_cast < std::chrono::milliseconds > (end - start);
 
-	std::cout << "Duracao(ms): " << elapsed.count() << '\n';
+	std::cout << "Duracao(s): " << elapsed.count() / 1000 << '\n';
 	std::cout << "O valor da função objetivo eh: " << obj << std::endl;
 	
 	
@@ -295,22 +377,6 @@ void resolveModelo(double** beneficios, int quantiaOrientadores, int quantiaTrab
 
 	}
 	
-	/*
-	for (int j = 0; j < quantiaTrabalhos; j++){
-		
-		*saidaBinario << j << " ";
-
-		for(int i = 0; i < quantiaOrientadores; i++){
-			
-			if(cplex.getValue(x[i][j]) == 1){
-
-				*saidaBinario << i << " ";
-			}
-		}
-		*saidaBinario << "\n";
-	}
-	
-	*/
 	delete saidaBinario;
 
 	env.end();
@@ -324,9 +390,9 @@ int main(int argc, char** argv) {
 	
 	/* O primeiro argumento é a instancia, segundo o nome do arquivo em formato lp e o terceiro a saida do resultado*/
 	//
-	if(argc <  4) {
+	if(argc <  5) {
 
-		std::cout << "Digite os argumentos na ordem: instancia.txt modelo.lp saida.txt" << '\n';
+		std::cout << "Digite os argumentos na ordem: instancia.txt variavel.txt modelo.lp saida.txt" << '\n';
 		exit(1);
 	}
 
@@ -334,7 +400,27 @@ int main(int argc, char** argv) {
 	int quantiaTrabalhos = 0;
 
 	
-	double** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
+	int** beneficios = matrizBeneficios(argv[1], quantiaOrientadores, quantiaTrabalhos);
+	int** w = lerVariavelAuxiliar(argv[2], quantiaOrientadores, quantiaTrabalhos);
+	
+	
+	/*
+	for(int i = 0; i < quantiaOrientadores; i++){
+		std::cout << "O orientador(" << i << ") foi alocado aos trabalhos no ENIC: ";
+		for(int j = 0; j < quantiaTrabalhos; j++){
+
+			if(w[i][j] != 0){
+				
+				std::cout << j << " ";
+			}
+		}
+		std::cout << std::endl;
+		getchar();
+	}
+	*/
+
+	std::cout << "QuantiaOrientadores: " << quantiaOrientadores << std::endl;
+	std::cout << "QuantiaTrabalhos: " << quantiaTrabalhos << std::endl;
 
 	/* Inicializando vetor de orientadores	*/
 	std::vector < Orientador > orientadores;
@@ -353,7 +439,7 @@ int main(int argc, char** argv) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 
 			/* Adiciona os trabalhos de interesse do avaliador i ao vector trabalhosDeInteresse	*/ 	
-			if(beneficios[i][j] >= 2) {
+			if(beneficios[i][j] >= 1) {
 
 				/* Insere o índice do trabalho que é da área de interesse do professor i	*/
 				trabalhosInteresse.push_back(j);
@@ -419,7 +505,7 @@ int main(int argc, char** argv) {
 	}
 
 	
-	resolveModelo(beneficios, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[2], argv[3]);
+	resolveModelo(beneficios, w, quantiaOrientadores, quantiaTrabalhos, orientadores, trabalhos, argv[3], argv[4]);
 	
 
 
