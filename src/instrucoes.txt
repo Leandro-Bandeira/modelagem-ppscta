@@ -1,0 +1,10 @@
+##################### Instruções ###########################################
+O arquivo instancia_dia.txt contém uma matriz orientadores x trabalhos
+No qual indica a afinidade entre cada orientador e cada trabalho.
+O arquivo variable_dia.txt é responsável por definir os valores 
+da variavel w_i_j que indica quais orientadores i foram alocados
+a quais trabalhos j no ENIC. É importante notar que as duas matrizes
+devem estar correspondentes, ou seja, o primeiro orientador
+do arquivo da instancia_dia.txt deve ser o mesmo da variável w_i_j assim como
+a ordem dos trabalhos.
+##############################################################################
