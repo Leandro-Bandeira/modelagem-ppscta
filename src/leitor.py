@@ -186,20 +186,22 @@ def find_advisor(advisors, name):
 
 def main():
     
-    if len(sys.argv) < 8:
-        print("Digite a entrada: python3 leitor.py arquivo.csv dia instancia.txt variable.txt advisor.csv resumes.csv enic.csv")
+    if len(sys.argv) < 4:
+        print("Digite a entrada: python3 leitor.py DadosEnic.csv dia ResultadosEnic.csv")
         exit(1)
     
     input_path = str(sys.argv[1]) # Dados de entrada
-    output_path = str(sys.argv[3])
-    variable_path = str(sys.argv[4])
-    advisor_path = str(sys.argv[5])
-    resumes_path = str(sys.argv[6])
-    enic_path = str(sys.argv[7])
-
-
-
     dia = int(sys.argv[2])
+    enic_path = str(sys.argv[3])
+
+    output_path = "../results/instancia_{dia}.txt".format(dia=dia)
+    variable_path = "../results/variable_{dia}.txt".format(dia=dia)
+    advisor_path = "../results/advisor_{dia}.csv".format(dia=dia)
+    resumes_path = "../results/resumes_{dia}.csv".format(dia=dia)
+    
+
+
+
 
 
     resume_df = pd.read_csv(input_path, sep=',', encoding='UTF-8')
