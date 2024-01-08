@@ -217,12 +217,12 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 
 	}
 	
+	
 
 	
 	
 	// Adicionando nome das variaveis	
 	char var[100];
-	char var1[100];
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		for(int j = 0; j < quantiaTrabalhos; j++) {
@@ -230,28 +230,21 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			x[i][j].setName(var);
 			Model.add(x[i][j]);
 			
-			
-			IloExpr aux(env);
-			aux += IloAbs(x[i][j] - w[i][j]);
-			
-			z[i][j] = aux;
-			
-			sprintf(var1, "|x[%d][%d] - %d|", i, j, w[i][j]);
-			
-			z[i][j].setName(var1);
-			Model.add(z[i][j]);
+
+			z[i][j] = IloAbs(x[i][j] - w[i][j]);
+			sprintf(var, "(x[%d][%d] - %d)", i, j, w[i][j]);	
+			z[i][j].setName(var);
+
 			
 
 		}
 	}
 
-	
+
 
 	/* Criação da função objetivo	*/
 	IloExpr exp0(env); // Inicializa uma expressão
-
-	
-	
+	int y = 0;
 	for(int i = 0; i < quantiaOrientadores; i++) {
 			
 		/*	Retorna o vector contendo os indices dos trabalhos de interesse do orientador i	*/	
@@ -264,18 +257,17 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
 
 			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
-				//std::cout << "Expresao: " << "1" << "-" << z[i][trabalhoIndice].getName() << std::endl;
-			//getchar();
-			exp0 += 1 - z[i][trabalhoIndice];
+			exp0 += 1 - z[i][trabalhoIndice];	
+			
+			y += 1;
 		}
 		
 		
 		trabalhosInteresseOrientador.clear();
 	}
-
-	std::cout << "here2" << std::endl;
-	Model.add(IloMaximize(env, exp0)); // Adiciona ao modelo para maximizar a função
-	std::cout << "here3" << std::endl;	
+	std::cout << "Quantia total do valor de k: " << y << std::endl;
+	getchar();
+	Model.add(IloMaximize(env,exp0)); // Adiciona ao modelo para maximizar a função
 	
 
 	/* Restrições do problema 	*/
@@ -326,8 +318,6 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	}
 
 	IloCplex cplex(Model);
-	std::cout << "here" << std::endl;
-	//cplex.extract(Model);
 	cplex.exportModel(saidaNome); // Exporta o modelo no formato lp
 
 	if(!cplex.solve()) {
