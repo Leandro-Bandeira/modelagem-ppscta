@@ -147,7 +147,10 @@ class Data:
         variable_file = open(variable_path, "w")
         
 
+        trabalhos_alocados_orientadores = list()
         for advisor in self.advisors:
+            trabalhos_alocados = 0
+            
             for index in range(enic_df.shape[0]):
                 row = enic_df.iloc[index]
                 author_name = row['ALUNO']
@@ -161,16 +164,18 @@ class Data:
                 # Se ele foi alocado como avaliador, vamos achar
                 # o indice correspondente no array padrão e salvar no arquivo
                 if advisor.get_name().rstrip() == avaliador1.rstrip() or advisor.get_name() == avaliador2.rstrip():
+                    trabalhos_alocados += 1
+
                     for id,resume in enumerate(self.resumes):
                         
                         if resume.get_name_author().rstrip() == author_name.rstrip():
                             variable_file.write(str(id) + ' ')
                             break
                     
-
             
+            trabalhos_alocados_orientadores.append(trabalhos_alocados)
             variable_file.write('\n')
-
+        variable_file.write(str(min(trabalhos_alocados_orientadores)) + ' ' + str(max(trabalhos_alocados_orientadores)) + '\n')
         variable_file.close()
                 
 
