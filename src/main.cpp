@@ -12,8 +12,8 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-#define LMini  1// Limite minimo de trabalhos por professor i
-#define LMaxi  4 // Limite maximo de trabalhos por professor i
+#define LMini  0// Limite minimo de trabalhos por professor i
+#define LMaxi  11 // Limite maximo de trabalhos por professor i
 
 
 typedef struct {
@@ -206,7 +206,9 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	// Devemos enviar os parametros de ambiente  e quantia de linha inicial
 
 	/* Utilização do template de classe IloArray para criar um	array de duas dimensões*/
-	/* Do tipo IloNumVarArray, chamado x	*/
+	/* Do tipo IloNumVarArray, chamado x, z é um vetor bidimensional
+	 * que indica indica a seguinte diferença z[i][j] = |x[i][j] - w[i][j]|*/
+
 	IloArray < IloNumVarArray > x(env, quantiaOrientadores);
 	IloArray < IloExprArray> z(env, quantiaOrientadores);
 
@@ -214,7 +216,6 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
 		z[i] = IloExprArray(env, quantiaTrabalhos);
-
 	}
 	
 	
@@ -229,14 +230,11 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			sprintf(var, "x[%d][%d]", i, j);
 			x[i][j].setName(var);
 			Model.add(x[i][j]);
-			
-
+				
 			z[i][j] = IloAbs(x[i][j] - w[i][j]);
 			sprintf(var, "(x[%d][%d] - %d)", i, j, w[i][j]);	
 			z[i][j].setName(var);
-
 			
-
 		}
 	}
 
@@ -266,7 +264,6 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 		trabalhosInteresseOrientador.clear();
 	}
 	std::cout << "Quantia total do valor de k: " << y << std::endl;
-	getchar();
 	Model.add(IloMaximize(env,exp0)); // Adiciona ao modelo para maximizar a função
 	
 
@@ -349,19 +346,20 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
-		int number_aloc = 0;
+		std::vector <int> trabalhosIguais;;
+
 		*saidaBinario << i << " ";
 		
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 			
-			if(cplex.getValue(x[i][j]) == 1){
-				*saidaBinario << j << " ";
-				number_aloc++;
+			if(cplex.getValue(x[i][j]) == 1 and cplex.getValue(x[i][j]) == w[i][j]){
+				trabalhosIguais.push_back(j);
 			}
 			
 		}
-		if(number_aloc > LMaxi){
-			ultrapassaram.push_back(i);
+		
+		for(int k = 0; k < trabalhosIguais.size(); k++){
+			*saidaBinario << trabalhosIguais[k] << " ";
 		}
 		*saidaBinario << "\n";
 
