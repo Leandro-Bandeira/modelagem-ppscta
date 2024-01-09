@@ -12,8 +12,10 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-#define LMini  0// Limite minimo de trabalhos por professor i
-#define LMaxi  11 // Limite maximo de trabalhos por professor i
+//#define LMini  0// Limite minimo de trabalhos por professor i
+//#define LMaxi  11 // Limite maximo de trabalhos por professor i
+
+int LMini, LMaxi = 0;
 
 
 typedef struct {
@@ -70,7 +72,15 @@ int **lerVariavelAuxiliar(const std::string& caminho, int quantiaOrientadores, i
 			
 			
 		}
-
+		
+		// EStamos na linha que indica o minimo e maximo
+		if(indiceOrientador == quantiaOrientadores){
+			LMini = valoresLinha[0];
+			LMaxi = valoresLinha[1];
+			std::cout << "Valor Minimo de trabalhos por orientador: " << LMini << std::endl;
+			std::cout << "Valor Maximo de trabalhos por orientador: " << LMaxi << std::endl;
+			break;
+		}
 		/* Os valores em valoresLinha representa os trabalhos que o orientador i foram alocados
 		 * Como cada linha representa um orientador, vamos acessar o indice do trabalho
 		 * e então dar 1 para a variável*/
@@ -338,12 +348,12 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	
 	
 	/* Gera o arquivo binario para leitura	*/
-	std::fstream* saidaBinario = new std::fstream("binario17.txt", std::ios::out);
+	std::fstream* saidaBinario = new std::fstream("../results/comparativo.txt", std::ios::out);
 	
-	std::vector < int > ultrapassaram;
-	int ultrapassou = 0;
-	
-	
+	std::vector <int> porcentagemComparativa;
+	int quantia_total_iguais = 0; // Quantia que representa que houve 100% de igualdade
+	int pelo_menos_unico_igual = 0;
+
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
 		std::vector <int> trabalhosIguais;;
@@ -358,6 +368,39 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			
 		}
 		
+		int quantia_trabalhos_alocados_enic = 0; // Variavel que indica a quantia de trabalhos que o orientador i foi alocado no enic
+
+		for(int l = 0; l < quantiaTrabalhos; l++){
+			if(w[i][l] == 1){
+				quantia_trabalhos_alocados_enic += 1;
+			}
+		}
+		int porcentagem = -1; // -1 indica que ambos nao foram alocados a nenhum trabalho
+
+		/* Para realizar a leitura do comparativo	*;
+		 * Se em ambos tanto no enic como nesse modelo, não foram alocados trabalhos
+		 * está escrito como -1
+		 * caso não foi alocado no enic mas aqui, estará como -2
+		 * caso contrario será a porcentagem seguido pelos trabalhos iguais	*/
+		if(quantia_trabalhos_alocados_enic != 0){
+			porcentagem = (trabalhosIguais.size() / quantia_trabalhos_alocados_enic) * 100;
+			porcentagemComparativa.push_back(porcentagem);
+			if(porcentagem == 100){
+				quantia_total_iguais += 1;
+			}
+			else if(porcentagem != 0){
+				pelo_menos_unico_igual += 1;
+			}
+			*saidaBinario << porcentagem << " ";
+		}else{
+			
+			if(trabalhosIguais.size() == 0){
+				*saidaBinario << "-1" << " ";
+			}
+			else{
+				*saidaBinario << "-2" << " ";
+			}
+		}
 		for(int k = 0; k < trabalhosIguais.size(); k++){
 			*saidaBinario << trabalhosIguais[k] << " ";
 		}
@@ -365,6 +408,12 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 
 	}
 	
+	std::cout << "Quantia de Orientadores: " << quantiaOrientadores << std::endl;
+	std::cout << "Houveram trabalhos alocados iguais: " << quantia_total_iguais << std::endl;
+	std::cout << "Houverem pelo menos 1 trabalho igual: " << pelo_menos_unico_igual << std::endl;
+	std::cout << "Porcentagem de igualdade: " << ((quantia_total_iguais * 1.0 / quantiaOrientadores) * 100.0) << std::endl; 
+	*saidaBinario << *min_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << " "
+			<< *max_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << "\n";
 	delete saidaBinario;
 
 	env.end();
@@ -392,20 +441,6 @@ int main(int argc, char** argv) {
 	int** w = lerVariavelAuxiliar(argv[2], quantiaOrientadores, quantiaTrabalhos);
 	
 	
-	/*
-	for(int i = 0; i < quantiaOrientadores; i++){
-		std::cout << "O orientador(" << i << ") foi alocado aos trabalhos no ENIC: ";
-		for(int j = 0; j < quantiaTrabalhos; j++){
-
-			if(w[i][j] != 0){
-				
-				std::cout << j << " ";
-			}
-		}
-		std::cout << std::endl;
-		getchar();
-	}
-	*/
 
 	std::cout << "QuantiaOrientadores: " << quantiaOrientadores << std::endl;
 	std::cout << "QuantiaTrabalhos: " << quantiaTrabalhos << std::endl;

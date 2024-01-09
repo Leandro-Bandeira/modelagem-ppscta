@@ -7,4 +7,9 @@ a quais trabalhos j no ENIC. É importante notar que as duas matrizes
 devem estar correspondentes, ou seja, o primeiro orientador
 do arquivo da instancia_dia.txt deve ser o mesmo da variável w_i_j assim como
 a ordem dos trabalhos.
+Para realizar a leitura do comparativo
+Se tiver -1 é porque ambos não foram alocados a nenhum trabalho
+Se tiver -2 é porque houve alocação no modelo e não no enic
+Se tiver 0, é porque foi alocado no enic mas não no modelo
+Se não, será uma porcentagem seguida de quantos trabalhos foram alocados igualmente
 ##############################################################################
