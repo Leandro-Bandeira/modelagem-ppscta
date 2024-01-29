@@ -398,6 +398,8 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			}
 			else if(porcentagem != 0){
 				pelo_menos_unico_igual += 1;
+				std::cout << "O orientador  " << i << " nao foi alocado a todos os trabalhos" << std::endl;
+				getchar();
 			}
 			else{
 				quantia_total_diferentes += 1;
@@ -474,7 +476,7 @@ int main(int argc, char** argv) {
 				
 			if(w[i][j]){
 				
-				beneficios[i][j] *= 1000;
+				beneficios[i][j] *= 100000;
 			}
 		}
 	}
