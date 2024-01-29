@@ -12,8 +12,8 @@
 
 #define NA 2 // Numero maximo de avaliadores por trabalho
 
-//#define LMini  0// Limite minimo de trabalhos por professor i
-//#define LMaxi  11 // Limite maximo de trabalhos por professor i
+//#define LMini  0 // Limite minimo de trabalhos por professor i
+//#define LMaxi  2 // Limite maximo de trabalhos por professor i
 
 int LMini, LMaxi = 0;
 
@@ -58,7 +58,9 @@ int **lerVariavelAuxiliar(const std::string& caminho, int quantiaOrientadores, i
 		
 		if(ptrArquivo->eof())
 			break;
-
+		if(linha == "\n"){
+			continue;
+		}
 		std::stringstream dados(linha); // Criacao de uma sstream
 
 		// Separa os dados da string de stream pelo espaço e então armazena no vector de valores
@@ -220,12 +222,12 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	 * que indica indica a seguinte diferença z[i][j] = |x[i][j] - w[i][j]|*/
 
 	IloArray < IloNumVarArray > x(env, quantiaOrientadores);
-	IloArray < IloExprArray> z(env, quantiaOrientadores);
+	//IloArray < IloExprArray> z(env, quantiaOrientadores);
 
 	// Acessamos cada valor dessa linha inicial, e iniciamos um array com o ambiente, tamanho, indice incial e assim	
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		x[i] = IloNumVarArray(env, quantiaTrabalhos, 0, 1, ILOINT);
-		z[i] = IloExprArray(env, quantiaTrabalhos);
+	//	z[i] = IloExprArray(env, quantiaTrabalhos);
 	}
 	
 	
@@ -241,9 +243,9 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			x[i][j].setName(var);
 			Model.add(x[i][j]);
 				
-			z[i][j] = IloAbs(x[i][j] - w[i][j]);
-			sprintf(var, "(x[%d][%d] - %d)", i, j, w[i][j]);	
-			z[i][j].setName(var);
+		//	z[i][j] = IloAbs(x[i][j] - w[i][j]);
+		//	sprintf(var, "(x[%d][%d] - %d)", i, j, w[i][j]);	
+		//	z[i][j].setName(var);
 			
 		}
 	}
@@ -265,9 +267,9 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			int trabalhoIndice = trabalhosInteresseOrientador[j];
 
 			exp0 += beneficios[i][trabalhoIndice] * x[i][trabalhoIndice];
-			exp0 += 1 - z[i][trabalhoIndice];	
+		//	exp0 += 1 - z[i][trabalhoIndice];	
 			
-			y += 1;
+		//	y += 1;
 		}
 		
 		
@@ -353,6 +355,7 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	std::vector <int> porcentagemComparativa;
 	int quantia_total_iguais = 0; // Quantia que representa que houve 100% de igualdade
 	int pelo_menos_unico_igual = 0;
+	int quantia_total_diferentes = 0;
 
 	for(int i = 0; i < quantiaOrientadores; i++) {
 		
@@ -360,13 +363,16 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 
 		*saidaBinario << i << " ";
 		
+		//std::cout << "O orientador " << i << " foi alocado aos trabalhos iguais: ";
 		for(int j = 0; j < quantiaTrabalhos; j++) {
 			
 			if(cplex.getValue(x[i][j]) == 1 and cplex.getValue(x[i][j]) == w[i][j]){
 				trabalhosIguais.push_back(j);
+				//std::cout << j << " ";
 			}
 			
 		}
+		//std::cout << std::endl;
 		
 		int quantia_trabalhos_alocados_enic = 0; // Variavel que indica a quantia de trabalhos que o orientador i foi alocado no enic
 
@@ -375,6 +381,7 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 				quantia_trabalhos_alocados_enic += 1;
 			}
 		}
+		//std::cout << "O orientador " << i << " foi alocado no enic a " << quantia_trabalhos_alocados_enic << " trabalhos" << std::endl;
 		int porcentagem = -1; // -1 indica que ambos nao foram alocados a nenhum trabalho
 
 		/* Para realizar a leitura do comparativo	*;
@@ -383,7 +390,8 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 		 * caso não foi alocado no enic mas aqui, estará como -2
 		 * caso contrario será a porcentagem seguido pelos trabalhos iguais	*/
 		if(quantia_trabalhos_alocados_enic != 0){
-			porcentagem = (trabalhosIguais.size() / quantia_trabalhos_alocados_enic) * 100;
+			porcentagem = (trabalhosIguais.size() / (float)quantia_trabalhos_alocados_enic) * 100;
+			//std::cout << "Logo, sua porcentagem: " << porcentagem << std::endl;
 			porcentagemComparativa.push_back(porcentagem);
 			if(porcentagem == 100){
 				quantia_total_iguais += 1;
@@ -391,11 +399,15 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 			else if(porcentagem != 0){
 				pelo_menos_unico_igual += 1;
 			}
+			else{
+				quantia_total_diferentes += 1;
+			}
 			*saidaBinario << porcentagem << " ";
 		}else{
 			
 			if(trabalhosIguais.size() == 0){
 				*saidaBinario << "-1" << " ";
+
 			}
 			else{
 				*saidaBinario << "-2" << " ";
@@ -404,6 +416,7 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 		for(int k = 0; k < trabalhosIguais.size(); k++){
 			*saidaBinario << trabalhosIguais[k] << " ";
 		}
+		//getchar();
 		*saidaBinario << "\n";
 
 	}
@@ -412,6 +425,7 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	std::cout << "Houveram trabalhos alocados iguais: " << quantia_total_iguais << std::endl;
 	std::cout << "Houverem pelo menos 1 trabalho igual: " << pelo_menos_unico_igual << std::endl;
 	std::cout << "Porcentagem de igualdade: " << ((quantia_total_iguais * 1.0 / quantiaOrientadores) * 100.0) << std::endl; 
+	std::cout << "Quantia de orientadores alocados a diferentes trabalhos: " << quantia_total_diferentes << std::endl;
 	*saidaBinario << *min_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << " "
 			<< *max_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << "\n";
 	delete saidaBinario;
@@ -449,6 +463,21 @@ int main(int argc, char** argv) {
 	std::vector < Orientador > orientadores;
 	std::vector < int > trabalhosInteresse;
 	
+
+
+
+	/* A ideia é aumentar o beneficio se w[i][j] == 1, multiplica em 1000x */
+
+	for(int i = 0; i < quantiaOrientadores; i++){
+		
+		for(int j = 0; j < quantiaTrabalhos; j++){
+				
+			if(w[i][j]){
+				
+				beneficios[i][j] *= 1000;
+			}
+		}
+	}
 
 	/* Criação da matriz de trabalhos percentes a área de interesse de um professor/orientador i	*/
 
