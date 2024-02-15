@@ -33,7 +33,7 @@ SRCS = $(wildcard $(SRCDIR)/*.cpp)
 #############################
 
 #### regra principal, gera o executavel
-$(SRCDIR)/main: $(SRCS) 
+$(SRCDIR)/solver: $(SRCS) 
 	@echo  "\033[31m \nLinking all objects files: \033[0m"
 	$(CPPC) $(BITS_OPTION) $(SRCS) -o $@ $(CCLNFLAGS) $(CCFLAGS)
 ############################
