@@ -124,7 +124,7 @@ class Data:
                     count_nt += 1
 
 
-        print(f'Foram alocados a mesma especialidade, subárea, área e grande área e a nenhum, respectivamente: {count_same_especiality}, {count_same_subarea}, {count_same_area}, {count_nt}')
+        print(f'Foram alocados a mesma especialidade, subárea, área e grande área e a nenhum, respectivamente: {count_same_especiality}, {count_same_subarea}, {count_same_area}, {count_same_grand_area}, {count_nt}')
 
     # Cria o arquivo de instancia estruturado da seguinte forma
     # Quantia de orientadores |  Quantia de trabalhos
