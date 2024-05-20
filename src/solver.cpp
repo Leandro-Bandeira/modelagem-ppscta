@@ -335,7 +335,9 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	
 	/* Gera o arquivo binario para leitura	*/
 	std::fstream* saidaBinario = new std::fstream("../results/comparativo.txt", std::ios::out);
-	
+  std::fstream* outputModel = new std::fstream("../results/outputModel.txt", std::ios::out);
+  
+
 	std::vector <int> porcentagemComparativa;
 	int quantia_total_iguais = 0; // Quantia que representa que houve 100% de igualdade
 	int pelo_menos_unico_igual = 0;
@@ -408,6 +410,17 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 
 	}
 	
+  for(int j = 0; j < quantiaTrabalhos; j++){
+
+    for(int i = 0; i < quantiaOrientadores; i++){
+      
+      if(cplex.getValue(x[i][j]) == 1){
+        *outputModel << i << " ";
+      }
+    }
+    *outputModel << "\n";
+  }
+
 	std::cout << "Quantia de Orientadores: " << quantiaOrientadores << std::endl;
 	std::cout << "Houveram trabalhos alocados iguais: " << quantia_total_iguais << std::endl;
 	std::cout << "Houverem pelo menos 1 trabalho igual: " << pelo_menos_unico_igual << std::endl;
@@ -416,6 +429,7 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	*saidaBinario << *min_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << " "
 			<< *max_element(porcentagemComparativa.begin(), porcentagemComparativa.end()) << "\n";
 	delete saidaBinario;
+  delete outputModel;
 
 	env.end();
 }

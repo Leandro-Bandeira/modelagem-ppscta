@@ -90,7 +90,42 @@ class Data:
                 self.resumes.append(Resume(row['nome_aluno_autor'], row['nome_orientador'],
                         row['area_cnpq'], row['grande_area_cnpq'], row['sub_area'],
                         row['especialidade']))
-        
+    
+
+    # Função responsável por calcular as porcentagem de similaridade
+    def calculate_datas(self, path_model):
+
+        file = open(path_model, "r")
+        file_lines = file.readlines();
+        count_same_especiality = 0
+        count_same_subarea = 0
+        count_same_area = 0
+        count_same_grand_area = 0
+        count_nt = 0
+
+        # Vamos ler cada linha que representa um trabalho
+        # e verificar se aquele revisor foi alocado a um trabalho com o qual possui 
+        # especialidade, subárea, área ou grande_area em comum
+        for id_project,line in enumerate(file_lines):
+            line = line.strip()
+            advisors_allocated = line.split()
+
+            for id_advisor in advisors_allocated:
+
+                if self.resumes[id_project].get_especiality() == self.advisors[int(id_advisor)].get_especiality():
+                    count_same_especiality += 1
+                elif self.resumes[id_project].get_sub_area() == self.advisors[int(id_advisor)].get_sub_area():
+                    count_same_subarea += 1
+                elif self.resumes[id_project].get_area() == self.advisors[int(id_advisor)].get_area():
+                    count_same_area += 1 
+                elif self.resumes[id_project].get_grande_area() == self.advisors[int(id_advisor)].get_grande_area():
+                    count_same_grand_area += 1 
+                else:
+                    count_nt += 1
+
+
+        print(f'Foram alocados a mesma especialidade, subárea, área e grande área e a nenhum, respectivamente: {count_same_especiality}, {count_same_subarea}, {count_same_area}, {count_nt}')
+
     # Cria o arquivo de instancia estruturado da seguinte forma
     # Quantia de orientadores |  Quantia de trabalhos
     # A partir do primeiro orientador verifica a relação dele com todos os trabalhos
@@ -234,6 +269,7 @@ def main():
     os.chdir("src")
     os.system(f'./solver ../results/instancia_{dia}.txt ../results/variable_{dia}.txt ../results/modelo_{dia}.lp')
     
+    data_df.calculate_datas("../results/outputModel.txt")
 
 
 
