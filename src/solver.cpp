@@ -334,8 +334,8 @@ void resolveModelo(int** beneficios, int** w, int quantiaOrientadores, int quant
 	
 	
 	/* Gera o arquivo binario para leitura	*/
-	std::fstream* saidaBinario = new std::fstream("../results/comparativo.txt", std::ios::out);
-  std::fstream* outputModel = new std::fstream("../results/outputModel.txt", std::ios::out);
+	std::fstream* saidaBinario = new std::fstream("../results22/comparativo.txt", std::ios::out);
+  std::fstream* outputModel = new std::fstream("../results22/outputModel.txt", std::ios::out);
   
 
 	std::vector <int> porcentagemComparativa;

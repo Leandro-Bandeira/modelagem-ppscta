@@ -241,14 +241,14 @@ def main():
     ano = int(sys.argv[2])
     campus_numero = int(sys.argv[3])
 
-    input_path = f'../DadosTrabalhos/dadosEnic{ano}.csv' # Dados de entrada
-    enic_path  = f'../DadosTrabalhos/campus{campus_numero}_{dia}.csv'
+    input_path = f'../DadosTrabalhos22/dadosEnic{ano}.csv' # Dados de entrada
+    enic_path  = f'../DadosTrabalhos22/campus{campus_numero}_{dia}.csv'
 
     # Configuração do caminho de saída dos arquivos
-    output_path = "../results/instancia_{dia}.txt".format(dia=dia)
-    variable_path = "../results/variable_{dia}.txt".format(dia=dia)
-    advisor_path = "../results/advisor_{dia}.csv".format(dia=dia)
-    resumes_path = "../results/resumes_{dia}.csv".format(dia=dia)
+    output_path = "../results22/instancia_{dia}.txt".format(dia=dia)
+    variable_path = "../results22/variable_{dia}.txt".format(dia=dia)
+    advisor_path = "../results22/advisor_{dia}.csv".format(dia=dia)
+    resumes_path = "../results22/resumes_{dia}.csv".format(dia=dia)
     
 
     
@@ -267,9 +267,9 @@ def main():
     os.chdir("../")
     os.system("make")
     os.chdir("src")
-    os.system(f'./solver ../results/instancia_{dia}.txt ../results/variable_{dia}.txt ../results/modelo_{dia}.lp')
+    os.system(f'./solver ../results22/instancia_{dia}.txt ../results22/variable_{dia}.txt ../results22/modelo_{dia}.lp')
     
-    data_df.calculate_datas("../results/outputModel.txt")
+    data_df.calculate_datas("../results22/outputModel.txt")
 
 
 
